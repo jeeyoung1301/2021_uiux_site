@@ -19,7 +19,6 @@
     #header .topWrap{display: none;}
     #header .navWrap{display: none;}
     .toggle{display: block;}
-    #header .logoWrap{}
     #header .logoWrap h1{float: left;}
     #header .logoWrap .toggle{float: right;}
 
