@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+.toggle{
+    width: 48px;height: 48px;
+    border: 1px solid #aaa;
+    position: relative;
+    display:none;
+}
+.toggle div{
+    width: 24px;height:3px;
+    background-color: #aaa;
+    position: absolute;left: 50%;
+    margin-left:-12px;
+}
+.bar1{top:12px;}
+.bar2{top:21px;}
+.bar3{top:30px;}
+
+@media screen and (max-width:699px){
+    #header{box-shadow: 0 10px 10px rgb(0,0,0,0.2);position: relative;}
+    #header .topWrap{display:none;}
+    #header .navWrap{display:none;}
+
+    #header .logoWrap{padding: 4px 16px;}
+    #header h1{float: left;}
+    #header .toggle{display: block;float: right;}
+
+    /* visual  */
+    .visualWrap{
+        background: #213c6b url(../images/visualbg01.gif) no-repeat;
+        background-size: cover;}
+    .visual{position: relative;height: 600px;overflow:hidden;}
+    .visualTxt{position: absolute;font-size:76px;color:white;
+        line-height: 76px;
+        padding:16px;
+        padding-top: 50px;
+        font-weight:bold;
+        text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    }
+    .visual img{position: absolute;bottom:0;right:-55px;}
+
+    /* banner  */
+
+
+}
+
+@media screen and (min-width:700px){
+    .topWrap{border-bottom: 1px solid #c4c4c4;;}
+    .top{width: 980px;margin: 0 auto;}
+    nav.util{float: right;line-height: 26px;}
+    nav.util li{float: left;}
+    nav.util a{position: relative;font-size:14px;height: 26px;color:#888;padding: 0 10px;}
+    nav.util>ul>li>a:after{
+        content:"";position: absolute;
+        height: 10px;width: 1px;
+        right: 0; top:7px;
+        display: block;
+        background-color: #c4c4c4;}
+    nav.util li:last-child>a:after{content:"";display:none;}
+    
+    .logoWrap h1{text-align: center;line-height: 76px;}
+    
+    .navWrap{background-color: #1d5da4;}
+    nav.gnb{width: 980px;margin: 0 auto;}
+    nav.gnb li{float: left;width: 16.666%;border-right: 1px solid #2b67a9;text-align: center;line-height: 42px;}
+    nav.gnb li:first-child{border-left: 1px solid #2b67a9;}
+    nav.gnb a{color:white;display: block;}
+    nav.gnb a:hover{background-color: skyblue;}
+
+    /* visual  */
+    .visualWrap{background: #213c6b url(../images/visualbg01.gif) center no-repeat;overflow:hidden;}
+    .visual{width: 980px;height:400px;margin: 0 auto;position: relative;}
+    .visualTxt{position: absolute;font-size:76px;line-height: 76px;color:white;
+        font-weight: bold;
+        top:50%;margin-top: -81px;
+        letter-spacing: 00.42em;
+    }
+    .visual img{position: absolute;right: 0;top:10px;}
+}
