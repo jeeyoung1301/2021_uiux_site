@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+
+@media screen and (min-width:700px) {
+    #header{background-color: skyblue;}
+    .headerWrap{width: 980px;height: 76px;line-height: 76px;margin: 0 auto;}
+    .logoWrap{float: left;width: 165px;}
+    .logoWrap h1{float: left;display: block;font-size:20px;}
+    .logoWrap a{color:white;}
+    .navWrap li{float: right;width: 170px;}
+    .navWrap a{float: left;color:white;}
+
+    .sliderWrap{width: 100%;}
+}

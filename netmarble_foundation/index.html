@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+
+    <!-- script  -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("ul.slide").bxSlider({
+                pager:false,
+                auto:true
+            });
+        });
+    </script>
+
+    <style>
+    .bx-wrapper {
+        -moz-box-shadow: 0 none;
+        -webkit-box-shadow: 0 none;
+        box-shadow: 0 none;
+        border: 0 none;
+    }
+    </style>
+</head>
+<body>
+    <!-- header start -->
+    <div id="header">
+        <div class="headerWrap">
+            <div class="logoWrap clearfix">
+                <h1><a href="#">넷마블문화재단</a></h1>
+            </div>
+            <div class="navWrap">
+                <ul class="clearfix">
+                    <li><a href="#">재단소개</a></li>
+                    <li><a href="#">재단활동</a></li>
+                    <li><a href="#">재단소식</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sliderWrap">
+        <ul class="slide">
+            <li><img src="images/banner01.jpg" alt="img1"></li>
+            <li><img src="images/banner02.jpg" alt="img2"></li>
+            <li><img src="images/banner03.jpg" alt="img3"></li>
+            <li><img src="images/banner04.jpg" alt="img4"></li>
+        </ul>
+    </div>
+    <!-- header end -->
+</body>
+</html>
