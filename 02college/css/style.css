@@ -50,7 +50,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 #contentWrap .content2 .slider .txt{position: absolute;top: 85px;left: 85px;}
 #contentWrap .content2 .slider .txt h1{font-size: 74px;font-weight: lighter;color:#1551B7;padding-bottom: 26px;}
 #contentWrap .content2 .slider .txt p{border: 1px solid #000;width: 176px;line-height: 40px;text-align: center;background-color: #192D4E;}
-#contentWrap .content2 .slider .txt a{font-size: 16px;color:white;}
+#contentWrap .content2 .slider .txt a{font-size: 16px;color:white;display: block;}
 
 
 #contentWrap .content2 .slider img{
