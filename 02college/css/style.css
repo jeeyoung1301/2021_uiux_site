@@ -17,7 +17,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .top .selctBtn a:hover{background-color: white;color: black;transition: 0.3s;}
 /* .top .selctBtn a:active{background: white;} */
 
-.top .util{float: right;}
+.top .util{float: right;font-size: 12px;}
 .top .util li{float: left;margin-left: 10px;
     line-height: 40px;
 }
