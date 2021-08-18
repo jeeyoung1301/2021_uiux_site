@@ -48,7 +48,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
 #contentWrap .content2 li:nth-child(1){width: 75%;position: relative;height: 450px;overflow:hidden;}
 #contentWrap .content2 li:nth-child(1) img{width:1269px;height:847px;position: absolute;top: -250px;right: -130px;}
-#contentWrap .content2 li:nth-child(1) .txt{position: absolute;bottom: 0;}
+#contentWrap .content2 li:nth-child(1) .txt{position: absolute;top:80px;left: 80px;}
 #contentWrap .content2 li:nth-child(1) .txt h1{font-size: 74px;font-weight: lighter;color:#1551B7}
 #contentWrap .content2 li:nth-child(1) .txt p{font-size: 16px;border: 1px solid #000;}
 
