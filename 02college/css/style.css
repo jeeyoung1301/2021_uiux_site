@@ -36,8 +36,8 @@ body{font-family: 'Nanum Gothic', sans-serif;}
     background-image: url(../images/배경01.jpg);background-size: 100%;
     margin: 0 auto;
 }
-#contentWrap .content1{width: 1200px;margin: 0 auto;}
-#contentWrap .txt{color:white;float: left;}
+#contentWrap .content1{width: 1200px;margin: 0px auto;}
+#contentWrap .txt{color:white;float: left;padding: 59.5px 0;}
 
 
 
