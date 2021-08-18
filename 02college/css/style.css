@@ -31,9 +31,11 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .gnb li{float: left;margin-left: 32px;line-height: 118px;}
 
 /* content  */
-.contentWrap{
-    background-image: url(../images/배경01.jpg);
-    background-repeat: no-repeat;
+#contentWrap{
+    height: 1308px;width: 1500px;
+    background-image: url(../images/배경01.jpg);background-size: cover;
 }
+
+
 
 
