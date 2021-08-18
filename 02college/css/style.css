@@ -49,8 +49,12 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 #contentWrap .content2 li:nth-child(1){width: 75%;position: relative;height: 450px;overflow:hidden;}
 #contentWrap .content2 li:nth-child(1) img{width:1269px;height:847px;position: absolute;top: -250px;right: -130px;}
 #contentWrap .content2 li:nth-child(1) .txt{position: absolute;top:80px;left: 80px;}
-#contentWrap .content2 li:nth-child(1) .txt h1{font-size: 74px;font-weight: lighter;color:#1551B7}
-#contentWrap .content2 li:nth-child(1) .txt p{font-size: 16px;border: 1px solid #000;}
+#contentWrap .content2 li:nth-child(1) .txt h1{font-size: 74px;font-weight: lighter;color: #1551b7;padding-bottom: 26px;}
+#contentWrap .content2 li:nth-child(1) .txt p{
+    font-size: 16px;border: 1px solid #000;
+    background-color: #192D4E;color:white;
+    text-align: center;width: 176px;line-height: 40px;
+}
 
 
 
