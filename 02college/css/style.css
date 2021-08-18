@@ -32,8 +32,8 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
 /* content  */
 .contentWrap{
-    _background-image: url(../images/배경01.jpg) no-repeat;
-    width: 100%;background-color: yellow ;
+    background-image: url(../images/배경01.jpg);
+    background-repeat: no-repeat;
 }
 
 
