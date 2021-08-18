@@ -34,10 +34,15 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 #contentWrap{
     height: 1308px;width: 100%;
     background-image: url(../images/배경01.jpg);background-size: 100%;
+    background-repeat: no-repeat;
     margin: 0 auto;
 }
 #contentWrap .content1{width: 1200px;margin: 0px auto;}
-#contentWrap .txt{color:white;float: left;padding: 59.5px 0;}
+#contentWrap .txt{color:white;float: left;padding: 59.5px 0;letter-spacing: -5px;}
+
+#contentWrap ul{float: right;}
+#contentWrap ul>li{float: left;}
+#contentWrap ul a{color:white;}
 
 
 
