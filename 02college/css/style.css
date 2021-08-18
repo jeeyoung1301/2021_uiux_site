@@ -33,7 +33,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 /* content  */
 #contentWrap{
     height: 1308px;width: 100%;
-    background-image: url(../images/배경01.jpg);background-size: 100%;
+    background-image: url(../images/배경01.jpg);background-size: 100% fixed;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
@@ -46,16 +46,16 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
 #contentWrap .content2{width: 1200px;margin: 0 auto;}
 
-#contentWrap .content2 li:nth-child(1){width: 75%;position: relative;height: 450px;overflow:hidden;}
-#contentWrap .content2 li:nth-child(1) img{width:1269px;height:847px;position: absolute;top: -250px;right: -130px;}
-#contentWrap .content2 li:nth-child(1) .txt{position: absolute;top:80px;left: 80px;}
-#contentWrap .content2 li:nth-child(1) .txt h1{font-size: 74px;font-weight: lighter;color: #1551b7;padding-bottom: 26px;}
-#contentWrap .content2 li:nth-child(1) .txt p{
-    font-size: 16px;border: 1px solid #000;
-    background-color: #192D4E;color:white;
-    text-align: center;width: 176px;line-height: 40px;
-}
+#contentWrap .content2 .sliderWrap1{width: 900px;height: 450px;position: relative;overflow: hidden;}
+#contentWrap .content2 .slider .txt{position: absolute;top: 85px;left: 85px;}
+#contentWrap .content2 .slider .txt h1{font-size: 74px;font-weight: lighter;color:#1551B7;padding-bottom: 26px;}
+#contentWrap .content2 .slider .txt p{border: 1px solid #000;width: 176px;line-height: 40px;text-align: center;background-color: #192D4E;}
+#contentWrap .content2 .slider .txt a{font-size: 16px;color:white;}
 
+
+#contentWrap .content2 .slider img{
+    width: 1269px;height: 847px;   
+}
 
 
 
