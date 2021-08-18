@@ -32,9 +32,12 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
 /* content  */
 #contentWrap{
-    height: 1308px;width: 1500px;
-    background-image: url(../images/배경01.jpg);background-size: cover;
+    height: 1308px;width: 100%;
+    background-image: url(../images/배경01.jpg);background-size: 100%;
+    margin: 0 auto;
 }
+#contentWrap .content1{width: 1200px;margin: 0 auto;}
+#contentWrap .txt{color:white;float: left;}
 
 
 
