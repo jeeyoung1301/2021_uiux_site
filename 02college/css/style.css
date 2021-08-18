@@ -38,11 +38,19 @@ body{font-family: 'Nanum Gothic', sans-serif;}
     margin: 0 auto;
 }
 #contentWrap .content1{width: 1200px;margin: 0px auto;}
-#contentWrap .txt{color:white;float: left;padding: 59.5px 0;letter-spacing: -5px;}
+#contentWrap .content1 .txt{color:white;float: left;padding: 59.5px 0;letter-spacing: -5px;}
 
-#contentWrap ul{float: right;}
-#contentWrap ul>li{float: left;text-align: center;padding: 74px 0px 74px 18px;}
-#contentWrap ul a{color:white;}
+#contentWrap .content1 ul{float: right;}
+#contentWrap .content1 ul>li{float: left;text-align: center;padding: 74px 0px 74px 18px;}
+#contentWrap .content1 ul a{color:white;}
+
+#contentWrap .content2{width: 1200px;margin: 0 auto;}
+
+#contentWrap .content2 li:nth-child(1){width: 75%;position: relative;}
+#contentWrap .content2 li:nth-child(1) img{width: 100%;}
+#contentWrap .content2 li:nth-child(1) .txt{position: absolute;bottom: 0;top:50%;}
+#contentWrap .content2 li:nth-child(1) .txt h1{font-size: 74px;font-weight: lighter;color:#1551B7}
+#contentWrap .content2 li:nth-child(1) .txt p{font-size: 16px;border: 1px solid #000;}
 
 
 
