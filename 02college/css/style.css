@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+body{font-family: 'Nanum Gothic', sans-serif;}
+
+/* top  */
+#headerWrap{height: 157px;}
+.topWrap{background-color: #0044AF;height: 40px;}
+.topWrap .top{width: 1200px;margin: 0 auto;}
+
+.top .selctBtn{float: left;}
+.top .selctBtn li{
+    float: left;background-color: #00163B;
+    width: 120px;line-height: 40px;text-align: center;
+    margin-right:2px; 
+}
+.top .selctBtn a{color:white;display: block;}
+.top .selctBtn a:hover{background-color: white;color: black;transition: 0.3s;}
+/* .top .selctBtn a:active{background: white;} */
+
+.top .util{float: right;}
+.top .util li{float: left;margin-left: 10px;
+    line-height: 40px;
+}
+.top .util li:nth-child(2) a{float: left;margin-right: 2px;}
+.top .util a{color:white;display: block;}
+
+/* nav  */
+.nav{width: 1200px;margin: 0 auto;}
+.logo{float: left;height: 118px;display: flex;justify-content: center;align-items: center;}
+.gnb{float: right;}
+.gnb li{float: left;margin-left: 32px;line-height: 118px;}
+
+/* content  */
+.contentWrap{
+    _background-image: url(../images/배경01.jpg) no-repeat;
+    width: 100%;background-color: yellow ;
+}
+
+
