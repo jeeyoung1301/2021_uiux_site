@@ -41,7 +41,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 #contentWrap .txt{color:white;float: left;padding: 59.5px 0;letter-spacing: -5px;}
 
 #contentWrap ul{float: right;}
-#contentWrap ul>li{float: left;}
+#contentWrap ul>li{float: left;text-align: center;padding: 74px 0px 74px 18px;}
 #contentWrap ul a{color:white;}
 
 
