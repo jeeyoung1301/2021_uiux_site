@@ -3,59 +3,83 @@
 body{font-family: 'Nanum Gothic', sans-serif;}
 
 /* top  */
-#headerWrap{height: 157px;}
+#headerWrap{min-width:1200px;}
 .topWrap{background-color: #0044AF;height: 40px;}
 .topWrap .top{width: 1200px;margin: 0 auto;}
 
 .top .selctBtn{float: left;}
-.top .selctBtn li{
-    float: left;background-color: #00163B;
-    width: 120px;line-height: 40px;text-align: center;
-    margin-right:2px; 
+.top .selctBtn li{float: left;}
+.top .selctBtn a{
+    color:white;display: block;
+    background-color: #00163B;
+    width: 120px;line-height: 40px;
+    text-align: center;
+    margin-right:2px;
 }
-.top .selctBtn a{color:white;display: block;}
 .top .selctBtn a:hover{background-color: white;color: black;transition: 0.3s;}
-/* .top .selctBtn a:active{background: white;} */
+.top .selctBtn a.active{background: white;color:black;}
 
 .top .util{float: right;font-size: 12px;}
-.top .util li{float: left;margin-left: 10px;
+.top .util li{float: left;}
+.top .util li:nth-child(2) a{
+    float: left;background: #fff;color: #000;
+    line-height: 20px;width: 20px;padding: 0;text-align: center;margin-top: 10px;
+    margin-right: 2px;}
+.top .util a{
+    color:white;display: block;
+    margin-left: 10px;
     line-height: 40px;
 }
-.top .util li:nth-child(2) a{float: left;margin-right: 2px;}
-.top .util a{color:white;display: block;}
 
 /* nav  */
-.nav{width: 1200px;margin: 0 auto;}
+.nav{width: 1200px;margin: 0 auto;height: 118px;}
 .logo{float: left;height: 118px;display: flex;justify-content: center;align-items: center;}
 .gnb{float: right;}
 .gnb li{float: left;margin-left: 32px;line-height: 118px;}
 
 /* content  */
 #contentWrap{
-    height: 1308px;width: 100%;
-    background-image: url(../images/배경01.jpg);background-size: 100% fixed;
-    background-repeat: no-repeat;
-    margin: 0 auto;
+    height: 1308px; /*나중에 삭제*/
+    min-width: 1200px;
+    background-image: url(../images/dot.png),url(../images/배경01.jpg);
+    background-size: auto,cover;
+    background-repeat: repeat,no-repeat;
+    background-position: center;
+    padding-top: 59.5px;
 }
-#contentWrap .content1{width: 1200px;margin: 0px auto;}
-#contentWrap .content1 .txt{color:white;float: left;padding: 59.5px 0;letter-spacing: -5px;}
 
-#contentWrap .content1 ul{float: right;}
-#contentWrap .content1 ul>li{float: left;text-align: center;padding: 74px 0px 74px 18px;}
+/* content1  */
+#contentWrap .content1{width: 1200px;height: 130px;margin: 0px auto;margin-bottom: 59.5px;}
+#contentWrap .content1 .txt{color:white;float: left;letter-spacing: -5px;}
+
+#contentWrap .content1>ul{float: right;}
+#contentWrap .content1>ul>li{
+    float: left;text-align: center;
+    padding-left: 18px;
+}
 #contentWrap .content1 ul a{color:white;}
 
+/* contetn2  */
 #contentWrap .content2{width: 1200px;margin: 0 auto;}
+.content2>ul>li{float: left;width: 25%;height: 225px;}
 
-#contentWrap .content2 .sliderWrap1{width: 900px;height: 450px;position: relative;overflow: hidden;}
-#contentWrap .content2 .slider .txt{position: absolute;top: 85px;left: 85px;}
-#contentWrap .content2 .slider .txt h1{font-size: 74px;font-weight: lighter;color:#1551B7;padding-bottom: 26px;}
-#contentWrap .content2 .slider .txt p{border: 1px solid #000;width: 176px;line-height: 40px;text-align: center;background-color: #192D4E;}
-#contentWrap .content2 .slider .txt a{font-size: 16px;color:white;display: block;}
+.content2>ul>li:nth-child(1){width: 75%;height: 450px;}
+.content2 .slider1{position: relative;}
+.content2 .slider1>li>.txt{position: absolute;top: 75px;left: 75px;}
+.content2 .slider1>li>.txt>h1{font-size: 68px;font-weight: lighter;color:#1551B7;padding-bottom: 26px;}
+.content2 .slider1>li>.txt>p{border: 1px solid #000;width: 176px;line-height: 40px;text-align: center;background-color: #192D4E;}
+.content2 .slider1>li>.txt>p>a{font-size: 16px;color: white;;display: block;}
+
+.content2>ul>li:nth-child(2){height: 450px;}
+.content2>ul>li:nth-child(3){}
+.content2>ul>li:nth-child(4){}
+.content2>ul>li:nth-child(5){}
+.content2>ul>li:nth-child(6){}
+.content2>ul>li:nth-child(7){}
+.content2>ul>li:nth-child(8){width: 75%;}
 
 
-#contentWrap .content2 .slider img{
-    width: 1269px;height: 847px;   
-}
+
 
 
 
