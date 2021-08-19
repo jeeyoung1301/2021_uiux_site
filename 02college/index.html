@@ -19,7 +19,12 @@
 
     <script>
         $(document).ready(function(){
-            $('.slider1').bxSlider({});
+            var myslide1 = $('.slider1').bxSlider({controls:false});
+            $('.nextBtn').click(function(){myslide1.goToNextSlide();});
+            $('.prevBtn').click(function(){myslide1.goToPrevSlide();});
+
+
+
             $('.slider2').bxSlider({});
         });
     </script>
@@ -105,12 +110,44 @@
                                     새로운 <span style="font-weight: bold;">꿈
                                 </h1>
                                 <p><a href="#">자세히보기 ▶</a></p>
-                            </div>    
+                            </div> 
                         </li>
-                        <li><img src="images/slide02.jpg" alt=""></li>
-                        <li><img src="images/slide03.jpg" alt=""></li>
-                        <li><img src="images/slide04.jpg" alt=""></li>
+                        <li>
+                            <img src="images/slide02.jpg" alt="">
+                            <div class="txt">
+                                <h1>
+                                    <span style="font-weight: bold;">한국</span>에서<br>
+                                    <span style="font-weight: bold;">시작</span>하는<br>
+                                    새로운 <span style="font-weight: bold;">꿈
+                                </h1>
+                                <p><a href="#">자세히보기 ▶</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/slide03.jpg" alt="">
+                            <div class="txt">
+                                <h1>
+                                    <span style="font-weight: bold;">한국</span>에서<br>
+                                    <span style="font-weight: bold;">시작</span>하는<br>
+                                    새로운 <span style="font-weight: bold;">꿈
+                                </h1>
+                                <p><a href="#">자세히보기 ▶</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/slide04.jpg" alt="">
+                            <div class="txt">
+                                <h1>
+                                    <span style="font-weight: bold;">한국</span>에서<br>
+                                    <span style="font-weight: bold;">시작</span>하는<br>
+                                    새로운 <span style="font-weight: bold;">꿈
+                                </h1>
+                                <p><a href="#">자세히보기 ▶</a></p>
+                            </div>
+                        </li> 
                     </ul>
+                    <div class="nextBtn"><img src="images/btn_right.png" alt=""></div>  
+                    <div class="prevBtn"><img src="images/btn_left.png" alt=""></div>
                 </li>
                 <li>2</li>
                 <li>3</li>

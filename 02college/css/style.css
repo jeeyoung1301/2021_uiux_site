@@ -63,12 +63,22 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 #contentWrap .content2{width: 1200px;margin: 0 auto;}
 .content2>ul>li{float: left;width: 25%;height: 225px;}
 
-.content2>ul>li:nth-child(1){width: 75%;height: 450px;}
+.content2>ul>li:nth-child(1){width: 75%;height: 450px;position: relative;}
 .content2 .slider1{position: relative;}
 .content2 .slider1>li>.txt{position: absolute;top: 75px;left: 75px;}
 .content2 .slider1>li>.txt>h1{font-size: 68px;font-weight: lighter;color:#1551B7;padding-bottom: 26px;}
-.content2 .slider1>li>.txt>p{border: 1px solid #000;width: 176px;line-height: 40px;text-align: center;background-color: #192D4E;}
+.content2 .slider1>li>.txt>p{width: 176px;line-height: 40px;text-align: center;background-color: #192D4E;}
 .content2 .slider1>li>.txt>p>a{font-size: 16px;color: white;;display: block;}
+
+.content2>ul>li:nth-child(1)>.nextBtn,.prevBtn{position: absolute;top: 50%;margin-top: -36.5px;background-color: rgba(0,0,0,0.5);}
+.content2>ul>li:nth-child(1)>.nextBtn{right: 0;}
+.content2>ul>li:nth-child(1)>.prevBtn{left: 0;}
+.content2>ul>li:nth-child(1)>.nextBtn>img,.prevBtn>img{width: 55px;height: 71px;}
+
+/* .content2>ul>li:nth-child(1)>.bx-controls{position: relative;}
+.content2>ul>li:nth-child(1)>.bx-pager{position: absolute;} */
+
+
 
 .content2>ul>li:nth-child(2){height: 450px;}
 .content2>ul>li:nth-child(3){}
