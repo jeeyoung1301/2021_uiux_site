@@ -79,6 +79,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .content2>ul>li:nth-child(1)>.bx-pager{position: absolute;} */
 
 .content2>ul{position: relative;}
+
 .content2>ul>li:nth-child(2){height: 450px;justify-content: center;display: flex;align-items: center;}
 .content2>ul>li:nth-child(2)>.txt{position: absolute;}
 .content2>ul>li:nth-child(2)>.txt>h3{font-weight: lighter;font-size: 42px;color:white;padding-bottom: 22px;}
@@ -86,12 +87,21 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .content2>ul>li:nth-child(2)>.txt>a{
     font-size: 16px;color:white;font-weight: bold;
     border: 1px solid #fff;
-    display: block;width: 170px;line-height: 40px;
+    width: 170px;line-height: 40px;display: block;
     text-align: center;background-color: rgba(0,0,0,0.5);
 }
 
 .content2>ul>li:nth-child(3){background-color: #00163B;}
+
 .content2>ul>li:nth-child(4){background-color: #1651B7;}
+.content2>ul>li:nth-child(4) a{color: #fff;}
+.content2>ul>li:nth-child(4)>.txt{width: 266px;height: 180px;margin: 0 auto;padding: 22.5px 0 22.5px 0;}
+.content2>ul>li:nth-child(4)>.txt>ul{padding-top: 22px;}
+.content2>ul>li:nth-child(4)>.txt>ul>li>a{font-size: 14px;}
+.content2>ul>li:nth-child(4)>.txt>ul>li>a:nth-child(1){float: left;}
+.content2>ul>li:nth-child(4)>.txt>ul>li>a:nth-child(2){float: right;}
+.content2>ul>li:nth-child(4)>.txt h3{border-bottom: 2px solid #fff;padding-bottom: 22px;color:white;}
+
 .content2>ul>li:nth-child(5){background-color: #fff;}
 
 .content2>ul>li:nth-child(6){
@@ -111,6 +121,18 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
 
 .content2>ul>li:nth-child(8){width: 75%;}
+.content2>ul>li:nth-child(8) .txt{position: absolute;top: 32px;left: 35px;color: #FF503F;}
+.content2>ul>li:nth-child(8) .txt>h3{font-size: 30px;}
+.content2>ul>li:nth-child(8) .txt>h1{font-size: 50px;padding-bottom: 25px;padding-top: 5px;}
+.content2>ul>li:nth-child(8) .txt>a{
+    font-size: 16px;color:white;font-weight: bold;
+    border: 1px solid #fff;display: block;
+    width: 170px;line-height: 40px;
+    text-align: center;background-color: rgba(246,15,0,0.8);
+}
+.content2>ul>li>.bx-wrapper .bx-pager{bottom: 15px;padding-top: 0;} 
+
+
 
 
 

@@ -34,6 +34,7 @@ ul.bxslider {
   -webkit-box-shadow: 0 none;
   box-shadow: 0 none;
   border: none;
+  margin-bottom: 0;
 
 }
 .bx-wrapper .bx-pager,
