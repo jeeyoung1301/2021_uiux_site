@@ -4,7 +4,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
 .content2>ul>li:nth-child(1)>.bx-wrapper .bx-pager{bottom: 36px;padding-top: 0;}
 .content2>ul>li:nth-child(8)>.bx-wrapper>.bx-controls{position: relative;}
-.content2>ul>li:nth-child(8)>.bx-wrapper .bx-pager{position: absolute;top: -225px;right: -365px;}
+.content2>ul>li:nth-child(8)>.bx-wrapper .bx-pager{position: absolute;top: -225px;right: -50px;width: 25%;}
 
 /* top  */
 #headerWrap{min-width:1200px;}
@@ -160,10 +160,12 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .content3>ul>li:nth-child(1){width: 25%;position: relative;}
 .content3>ul>li:nth-child(1)>h3{position: absolute;}
 .content3>ul>li:nth-child(1)>ul{position: absolute;right: 0;}
+.content3>ul>li:nth-child(1)>ul>li{width: 106px;}
+
 .content3>ul>li:nth-child(2){width: 75%;position: relative;}
 .content3>ul>li:nth-child(2)>h3{position: absolute;}
 .content3>ul>li:nth-child(2)>ul{position: absolute;right: 0;width: 100px;}
-.content3>ul>li:nth-child(2)>ul .bx-wrapper{width: 106px;}
+
 
 
 
