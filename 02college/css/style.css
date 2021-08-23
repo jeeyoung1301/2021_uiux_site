@@ -114,15 +114,16 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .content2>ul>li:nth-child(4)>.txt h3{border-bottom: 2px solid #fff;padding-bottom: 22px;color:white;}
 
 .content2>ul>li:nth-child(5){background-color: #fff;}
-.content2>ul>li:nth-child(5)>ul{padding: 30px 0 0 18px;}
-.content2>ul>li:nth-child(5)>ul>h3{padding-bottom: 25px;}
-.content2>ul>li:nth-child(5)>ul>p,.content2>ul>li:nth-child(5)>ul>img{float: left;}
-.content2>ul>li:nth-child(5)>ul>img{width: 115px;height: 80px;}
-.content2>ul>li:nth-child(5)>ul>p{padding-left: 10px;font-size: 15px;padding-bottom: 22px;}
-.content2>ul>li:nth-child(5)>ul>li img{width: 241px;height: 182px;}
-.content2>ul>li:nth-child(5)>ul>li>ul{width: 129px;height: 32px;float: right;}
-.content2>ul>li:nth-child(5)>ul>li>ul>li{width: 32px;height: 32px;}
-.content2>ul>li:nth-child(5)>ul>li>ul>li:nth-child(1){}
+.content2>ul>li:nth-child(5)>.clearfix{padding: 30px 0 0 18px;}
+.content2>ul>li:nth-child(5) h3{padding-bottom: 25px;}
+.content2>ul>li:nth-child(5) p,.content2>ul>li:nth-child(5) img{float: left;}
+.content2>ul>li:nth-child(5) img{width: 115px;height: 80px;}
+.content2>ul>li:nth-child(5) p{padding-left: 10px;font-size: 15px;}
+.content2>ul>li:nth-child(5) ul{width: 129px;height: 32px;}
+.content2>ul>li:nth-child(5) ul>li{width: 32px;}
+.content2>ul>li:nth-child(5) ul>li:nth-child(1){background-image: url(../images/SNS이미지.png);}
+
+
 
 .content2>ul>li:nth-child(6){
     background-image: url(../images/학교02.jpg);

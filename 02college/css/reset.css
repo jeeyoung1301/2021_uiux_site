@@ -2,5 +2,5 @@
 
 *{margin: 0;padding: 0;box-sizing: border-box;}
 a:link,a:visited{text-decoration: none;color:black;}
-.claerfix:after{content:"";clear: both;display: block;}
+.clearfix:after{content:"";clear: both;display: block;}
 li{list-style: none;}
