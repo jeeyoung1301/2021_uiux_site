@@ -27,21 +27,16 @@
 
             $('.slider2').bxSlider({controls:false});
             
-        });
-
-        $(document).ready(function(){
             var myslide2 = $('.slider3').bxSlider({pager:false,controls:false,mode:'vertical'});
-                $('.nextBtn2').click(function(){myslide2.goToNextSlide();});
-                $('.prevBtn2').click(function(){myslide2.goToPrevSlide();});
-        });
+            $('.nextBtn2').click(function(){myslide2.goToNextSlide();});
+            $('.prevBtn2').click(function(){myslide2.goToPrevSlide();});
 
-        $(document).ready(function(){
             $('.youtube').colorbox({
-                ifram:true,
+                iframe:true,
                 innerWidth:560,
                 innerHeight:315
             });
-        })
+        });
     </script>
 
 </head>
@@ -229,15 +224,15 @@
                         <h3>SNS NEWS</h3>
                         <img src="images/학교01.jpg" alt="학교01">
                         <p>한국 대학교는<br>2017학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관 ...</p>
-                        <div class="sns">
-                            <ul>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                            </ul>
-                        </div>
                     </div>
+                    <div class="sns">
+                        <ul class="clearfix">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                        </ul>
+                    </div>    
                 </li>
                 <li>
                     <div class="overlay">
@@ -249,7 +244,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/embed/0DwaSSDtX-c" class="youtube"><img src="images/playbtn.png" alt=""></a>
+                    <a href="https://www.youtube.com/embed/jSFxXAAJFbI" class="youtube"><img src="images/playbtn.png" alt=""></a>
                 </li>
                 <li>
                     <ul class="slider2">
