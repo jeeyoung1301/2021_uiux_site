@@ -141,8 +141,8 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .content2>ul>li:nth-child(6)>.overlay>.txt{text-align: center;padding-top: 5px;}
 
 
-.content2>ul>li:nth-child(7){background-image: url(../images/학교03_01.png);background-position: center;}
-
+.content2>ul>li:nth-child(7){background-image: url(../images/학교03_01.png);background-position: center;position: relative;}
+.content2>ul>li:nth-child(7) img{position: absolute;top: 92px;left: 120px;}
 
 .content2>ul>li:nth-child(8){width: 75%;}
 .content2>ul>li:nth-child(8) .txt{position: absolute;top: 32px;left: 35px;color: #FF503F;}

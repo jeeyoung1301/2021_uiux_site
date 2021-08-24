@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colorbox.css">
     
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
 
     <script>
         $(document).ready(function(){
@@ -25,13 +27,21 @@
 
             $('.slider2').bxSlider({controls:false});
             
-            
         });
+
         $(document).ready(function(){
             var myslide2 = $('.slider3').bxSlider({pager:false,controls:false,mode:'vertical'});
                 $('.nextBtn2').click(function(){myslide2.goToNextSlide();});
                 $('.prevBtn2').click(function(){myslide2.goToPrevSlide();});
         });
+
+        $(document).ready(function(){
+            $('.youtube').colorbox({
+                ifram:true,
+                innerWidth:560,
+                innerHeight:315
+            });
+        })
     </script>
 
 </head>
@@ -238,7 +248,11 @@
                         </div> 
                     </div>
                 </li>
-                <li></li>
+                <li>
+                    <div class="container">
+                        <a href="https://www.youtube.com/embed/0DwaSSDtX-c" class="youtube"><img src="images/playbtn.png" alt=""></a>
+                    </div>
+                </li>
                 <li>
                     <ul class="slider2">
                         <li>
@@ -279,8 +293,8 @@
         </div>
         <div class="content3 clearfix">
             <div class="txt">
-                <h3>학사일정</h3>
-                <p>&lt; 2016 06 &gt;</p>
+                <h3><a href="#">학사일정</a></h3>
+                <p><a href="#">&lt; 2016 06 &gt;</a></p>
             </div>
             <div class="slide">
                 <h3>2016-1학기 성적 열람 및 상담 신청</h3>
