@@ -18,7 +18,9 @@ input[type="text"]:focus{outline: none;}
     border-radius: 15px;font-size: 13px;
     border: 0 none;
 }
+
 .tel_sns>h3,.tel_sns>ul{float: left;}
+.tel_sns>ul{margin-left: 16px;}
 .sns>li{
     width: 34px;height: 30px;
     background-image: url(../images/sns_img.png);
@@ -26,10 +28,10 @@ input[type="text"]:focus{outline: none;}
     float: left;
 }
 .sns>li>a{display: block;height: 30px;text-indent: -9999px;}
-.sns>li:nth-child(1){background-position: -7px -7px;}
-.sns>li:nth-child(2){background-position: -167px -7px;}
-.sns>li:nth-child(3){background-position: 0 0;}
-.sns>li:nth-child(4){}
+.sns>li:nth-child(1){background-position: -7px -9px;}
+.sns>li:nth-child(2){background-position: -169px -9px;}
+.sns>li:nth-child(3){background-position: -88px -80px;}
+.sns>li:nth-child(4){background-position: -88px -9px;}
 
 .nav{background: #E5E5E5;}
 .gnb{margin: 0 auto;width: 980px;}
