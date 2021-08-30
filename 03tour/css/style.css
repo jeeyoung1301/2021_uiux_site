@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-#header{background: #075FA2 url(../images/top_bg01.jpg) no-repeat center;}
+.top{background: #075FA2 url(../images/top_bg01.jpg) no-repeat center;}
 
 input[type="text"]:focus{outline: none;}
 .searchTitle{
@@ -14,3 +14,4 @@ input[type="text"]:focus{outline: none;}
     border-radius: 15px;font-size: 13px;
     border: 0 none;
 }
+
