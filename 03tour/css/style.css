@@ -66,4 +66,7 @@ form[action="#"]{position: relative;}
     margin: 0 auto;width: 980px;
 }
 
+.slide1{width: 482px;}
+.slide1>.slider{}
+
 
