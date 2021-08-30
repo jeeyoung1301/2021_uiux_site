@@ -7,16 +7,29 @@
 }
 
 input[type="text"]:focus{outline: none;}
+form[action="#"]{position: relative;}
 .searchTitle{
     background-image: url(../images/search_text.jpg);
-    height: 18px;width: 55px;
-    font-size: 14px;position: absolute;
+    background-repeat: no-repeat;
+    background-position: -1px ;
+    height: 18px;width: 58px;
+    position: absolute;top: 6px;left: 5px;
     text-indent: -9999px;
 }
 .searchInp{
     width: 290px;height: 30px;
     border-radius: 15px;font-size: 13px;
-    border: 0 none;
+    border: 0 none;text-indent: 80px;
+}
+.searchBtn{
+    width: 25px;height: 20px;
+    background-image: url(../images/search_icon.jpg);
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border: 0;cursor: pointer;
+    position: absolute;
+    text-indent: -9999px;
+    right: 12px;top: 5px;
 }
 
 .tel_sns>h3,.tel_sns>ul{float: left;}
