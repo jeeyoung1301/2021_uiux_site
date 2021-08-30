@@ -55,3 +55,15 @@ form[action="#"]{position: relative;}
 }
 .gnb>li:nth-child(1){border-left: 1px solid #dfdfdf;}
 
+/* contents  */
+.contents{
+    height: 1390px; /* 나중에지우기  */
+    background:url(../images/body_bgi.png) no-repeat;
+    background-size: cover;
+}
+/* sec1 */
+.contents>.sec1{
+    margin: 0 auto;width: 980px;
+}
+
+
