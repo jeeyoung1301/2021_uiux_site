@@ -1,5 +1,0 @@
-@charset "utf-8";
-
-#header{background: #075FA2 url(../images/top_bg01.jpg) no-repeat center;}
-input[type="text"]:focus{outline: none;}
-.searchInp{width: 290px;height: 30px;border-radius: 15px;font-size: 13px;}

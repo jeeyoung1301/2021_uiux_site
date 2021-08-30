@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+#header{background: #075FA2 url(../images/top_bg01.jpg) no-repeat center;}
+
+input[type="text"]:focus{outline: none;}
+.searchTitle{
+    background-image: url(../images/search_text.jpg);
+    height: 18px;width: 55px;
+    font-size: 14px;position: absolute;
+    text-indent: -9999px;
+}
+.searchInp{
+    width: 290px;height: 30px;
+    border-radius: 15px;font-size: 13px;
+    border: 0 none;
+}
