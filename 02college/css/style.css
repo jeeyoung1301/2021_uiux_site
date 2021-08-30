@@ -130,6 +130,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
     float: left;background-image: url(../images/SNS이미지.png);
     background-size: 241px;
 }
+.content2>ul>li:nth-child(5)>.sns>ul>li>a{display: block;height: 36px;text-indent: -9999px;}
 .content2>ul>li:nth-child(5)>.sns>ul>li:nth-child(1){background-position: -10px -10px;}
 .content2>ul>li:nth-child(5)>.sns>ul>li:nth-child(2){background-position: -195px -10px;}
 .content2>ul>li:nth-child(5)>.sns>ul>li:nth-child(3){background-position: -58px -93px;}
