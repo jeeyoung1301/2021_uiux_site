@@ -73,14 +73,37 @@ form[action="#"]{position: relative;}
 .sec1 .left,.sec1 .right{width: 50%;float: left;}
 
 /* sec1 slide_01  */
-.sec1 .slide_01 .bx-clone{display: none;}
+/* .sec1 .slide_01 .bx-clone{display: none;} */
 .sec1 .slide_01{position: relative;width: 482px;height: 300px;}
+.sec1 .sliderWrap{width: 280px;float: right;margin-right: 32px;margin-top: 27px;}
+.sec1 .slider_01>li{
+    width: 280px;
+    height: 252px;
+    position: absolute;right: 0;
+}
 
 
 
 /* sec1 form  */
-.sec1 .slide_01 form{width: 280px;height: 252px;float: right;}
-.sec1 .slide_01 fieldset{border: 0;}
+fieldset{border: 0;}
+legend{display: block;position: absolute;left: 0;top: -9999px;}
+.form{width: 280px;height: 252px;float: right;}
+.form label{display: block;font-size: 14px;color: #404040;font-weight: bold;}
+.form fieldset>ul>li:nth-child(1)>select{
+    width: 276px;height: 32px;
+    border-radius: 2px;
+    font-size: 14px;color: #C8C8C8;
+    border: 1px solid #C8C8C8;
+}
+.form .left1,.form .right1,.form .left2,.form .right2{float: left;}
+.form .left1 input[type="date"],.form .right1 input[type="date"]{width: 131px;height: 31px;}
+.form .left1{margin-right: 14px;}
+
+.form .left2 select{width: 116px;height: 32px;}
+.form .left2{margin-right: 20px;}
+.form .right2 li{float: left;}
+.form .right2 li:nth-child(1){margin-right: 6px;}
+.form .right2 input{width: 66px;height: 32px;}
 
 
 /* sec1 pager  */
@@ -141,9 +164,21 @@ form[action="#"]{position: relative;}
 
 
 /* sec2  */
-
-.sec2 .slider_02 .txt{background: #529351;width: 233px;height: 66px;}
+.sec2>ul{margin: 0 auto;width: 980px;}
+.sec2>ul>li{width: 233px;height: 246px;float: left;margin-right: 16px;}
+.sec2 .slider_02 li{position: relative;}
+.sec2 .slider_02 .txt{
+    background: #529351;width: 233px;height: 66px;
+    position: absolute;bottom: 0;
+}
 .sec2 .slider_02 .txt .star01-1,.sec2 .slider_02 .txt .star01-2,.sec2 .slider_02 .txt .star01-3{color: orange;}
 .sec2 .slider_02 .txt .star01-4,.sec2 .slider_02 .txt .star01-5{color: white;}
+
+.sec2 .slider_02{position: relative;}
+.sec2 .slider_02 .nextBtn{
+    position: absolute;right: 0;
+    background-color: rgba(0,0,0,0.7);
+    background-size: 34px 54px;
+}
 
 
