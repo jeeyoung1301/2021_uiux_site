@@ -2,6 +2,8 @@
 
 body{background:url(../images/body_bgi.png) no-repeat;
     background-size: cover;}
+
+
 #header{min-width: 980px;}
 .headerWrap{background: #075FA2 url(../images/top_bg01.jpg) no-repeat center;}
 .top{
@@ -71,7 +73,9 @@ form[action="#"]{position: relative;}
 .sec1 .left,.sec1 .right{width: 50%;float: left;}
 
 /* sec1 slide_01  */
+.sec1 .slide_01 .bx-clone{display: none;}
 .sec1 .slide_01{position: relative;width: 482px;height: 300px;}
+
 
 
 /* sec1 form  */
@@ -135,5 +139,11 @@ form[action="#"]{position: relative;}
 }
 
 
+
+/* sec2  */
+
+.sec2 .slider_02 .txt{background: #529351;width: 233px;height: 66px;}
+.sec2 .slider_02 .txt .star01-1,.sec2 .slider_02 .txt .star01-2,.sec2 .slider_02 .txt .star01-3{color: orange;}
+.sec2 .slider_02 .txt .star01-4,.sec2 .slider_02 .txt .star01-5{color: white;}
 
 

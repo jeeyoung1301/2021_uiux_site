@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
@@ -18,9 +19,10 @@
         $(document).ready(function(){
             $('.slider_01').bxSlider({
                 pagerCustom:'.bxPager',
-                mode:'vertical'
-                
+                mode:'vertical'    
             });
+            $('.slider_02').bxSlider({});
+            $('.slider_03').bxSlider({});
         });
     </script>
 
@@ -61,7 +63,7 @@
         <div class="sec1 clearfix">
             <div class="left">
                 <div class="slide_01 clearfix">
-                    <ul class="slider_01 clearfix">
+                    <ul class="slider_01">
                         <li>
                             <form action="#" method="POST" class="form">
                                 <fieldset>
@@ -297,7 +299,55 @@
                 <img src="images/sec1_balloon01.png" alt="sec1_balloon01" class="bal01">
             </div>
         </div>
-        <div class="sec2"></div>
+        <div class="sec2">
+            <ul>
+                <li>
+                    <ul class="slider_02">
+                        <li>
+                            <div class="txt">
+                                <h3>HILLTON HOTEL (PARIS)</h3>
+                                <i class="fas fa-star star01-1"></i><i class="fas fa-star star01-2"></i><i class="fas fa-star star01-3"></i><i class="fas fa-star star01-4"></i><i class="fas fa-star star01-5"></i>
+                            </div>
+                            <img src="images/sec2_img01.png" alt="sec2_img01">
+                        </li>
+                        <li>
+                            <div class="txt">
+                                <h3>HILLTON HOTEL (RONDON)</h3>
+                            </div>
+                            <img src="images/sec2_img01.png" alt="sec2_img01">
+                        </li>
+                        <li>
+                            <div class="txt">
+                                <h3>HILLTON HOTEL (SEOUL)</h3>
+                            </div>
+                            <img src="images/sec2_img01.png" alt="sec2_img01">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="slider_03">
+                        <li>
+                            <div class="txt">
+                                <h3>관광명소(디즈니랜드)</h3>
+                            </div>
+                            <img src="images/sec2_img02.png" alt="sec2_img02">
+                        </li>
+                        <li>
+                            <div class="txt">
+                                <h3>관광명소(유니버셜 스튜디오)</h3>
+                            </div>
+                            <img src="images/sec2_img02.png" alt="sec2_img02">
+                        </li>
+                        <li>
+                            <div class="txt">
+                                <h3>관광명소(에버랜드)</h3>
+                            </div>
+                            <img src="images/sec2_img02.png" alt="sec2_img02">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
         <div class="sec3"></div>
     </div>
 </body>
