@@ -72,13 +72,8 @@ form[action="#"]{position: relative;}
 
 /* sec1 slide  */
 .sec1 .slide1{position: relative;width: 482px;height: 300px;background: white;}
-.sec1 .slider{
-    margin: 26px 35px;
-    width: 280px;height: 252px;
-    position: absolute;
-    /* top: 26px;left: 35px; */
-    top: 0;right: 0;
-}
+
+
 /* sec1 pager  */
 .sec1 .sliderPager{position: absolute;top: 0;width: 132px;height: 300px;}
 .sec1 .bxPager{height: 100%;}
