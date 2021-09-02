@@ -72,7 +72,10 @@ form[action="#"]{position: relative;}
 .nav>.gnb>li.active{background: #fff;}
 
 /* contents  */
-.contents{height: 1390px;} /* 나중에지우기  */   
+.contents{
+    _height: 1390px;/* 나중에지우기  */
+    margin-bottom: 18px;
+}  
 
 /* sec1 */
 .contents>.sec1{
@@ -219,13 +222,17 @@ legend{display: block;position: absolute;left: 0;top: -9999px;}
 .sec2 .slider_03 .star03-1,.sec2 .slider_03 .star03-2,.sec2 .slider_03 .star03-3,.sec2 .slider_03 .star03-4{color: orange;}
 .sec2 .slider_03 .star03-5{color: white;}
 
-.sec2 .slider_02{position: relative;}
-.sec2 .slider_02 .nextBtn{
-    position: absolute;right: 0;
+.sec2 .nextBtn2,.sec2 .nextBtn3,.sec2 .prevBtn2,.sec2 .prevBtn3{
+    position: absolute;top: 30%;
     width: 34px;height: 54px;
     background-color: rgba(0,0,0,0.7);
-    background-size: 34px 54px;
+    color: white;
 }
+.sec2 .nextBtn2,.sec2 .nextBtn3{right: 0;}
+.sec2 .prevBtn2,.sec2 .prevBtn3{left: 0;}
+.sec2 .nextBtn2 i,.sec2 .nextBtn3 i,.sec2 .prevBtn2 i,.sec2 .prevBtn3 i{position: absolute;top: 20px;left: 15px;}
+
+
 
 .sec2>ul>li:nth-child(3) a,.sec2>ul>li:nth-child(4) a{color: white;font-size: 16px;font-weight: lighter;}
 
@@ -235,7 +242,31 @@ legend{display: block;position: absolute;left: 0;top: -9999px;}
 .sec2>ul>li:nth-child(4) h3>a{font-size: 18px;letter-spacing: -1px;}
 .sec2>ul>li:nth-child(4) p>a{font-size: 14px;}
 
+
+/* sec3  */
+.sec3>ul{width: 980px;margin: 16px auto;}
+.sec3>ul>li{width: 233px;height: 242px;float: left;margin-right: 16px;}
+.sec3>ul>li:last-child{margin-right: 0;}
+
+.sec3>ul>li:nth-child(1) .overlay01,.sec3>ul>li:nth-child(2) .overlay02,
+.sec3 ul>li:nth-child(3) .overlay03,.sec3>ul>li:nth-child(4) .overlay04{width: 233px;height: 242px;}
+
+.sec3>ul>li:nth-child(1){background-image: url(../images/sec3_img01.png);}
+.sec3>ul>li:nth-child(1) .overlay01{background-color: rgba(79,194,219,0.6);}
+
+
+
+.sec3>ul>li:nth-child(2){background-image: url(../images/sec3_img02.png);}
+.sec3>ul>li:nth-child(3){background-image: url(../images/sec3_img03.png);}
+.sec3>ul>li:nth-child(4){background-image: url(../images/sec3_img04.jpg);}
+
 /* footer  */
+#footer .txt{width: 980px;margin: 0 auto;}
+#footer .txt li{float: left;}
+#footer .txt h3{font-size: 14px;}
+
+
+
 
 /* subpage  */
 .subContent .subImg{

@@ -25,17 +25,18 @@
             });
 
             var myslide2 = $('.slider_02').bxSlider({pager:false,});
-            $('.nextBtn').click(function(){myslide2.goToNextSlide();});
-            $('.prevBtn').click(function(){myslide2.goToPrevSlide();});
+            $('.nextBtn2').click(function(){myslide2.goToNextSlide();});
+            $('.prevBtn2').click(function(){myslide2.goToPrevSlide();});
 
             var myslide3 = $('.slider_03').bxSlider({pager:false});
-            $('.nextBtn').click(function(){myslide3.goToNextSlide();});
-            $('.prevBtn').click(function(){myslide3.goToPrevSlide();});
+            $('.nextBtn3').click(function(){myslide3.goToNextSlide();});
+            $('.prevBtn3').click(function(){myslide3.goToPrevSlide();});
         });
     </script>
 
 </head>
 <body>
+    <!-- header start -->
     <header id="header">
         <div class="headerWrap">
             <div class="top">
@@ -67,6 +68,9 @@
             </ul>
         </div>
     </header>
+    <!-- header end  -->
+
+    <!-- contents start -->
     <div class="contents">
         <div class="sec1 clearfix">
             <div class="left">
@@ -345,8 +349,8 @@
                             <img src="images/sec2_img01.png" alt="sec2_img01">
                         </li>
                     </ul>
-                    <div class="nextBtn"><img src="images/btn_right.png" alt="btn_right"></div>
-                    <div class="prevBtn"><img src="images/btn_left.png" alt="btn_left"></div>
+                    <div class="nextBtn2"><i class="fas fa-angle-right"></i></div>
+                    <div class="prevBtn2"><i class="fas fa-angle-left"></i></div>
                 </li>
                 <li>
                     <ul class="slider_03">
@@ -378,8 +382,8 @@
                             <img src="images/sec2_img02.png" alt="sec2_img02">
                         </li>
                     </ul>
-                    <div class="nextBtn"><img src="images/btn_right.png" alt="btn_right"></div>
-                    <div class="prevBtn"><img src="images/btn_left.png" alt="btn_left"></div>
+                    <div class="nextBtn3"><i class="fas fa-angle-right"></i></div>
+                    <div class="prevBtn3"><i class="fas fa-angle-left"></i></div>
                 </li>
                 <li>
                     <h1><a href="#" style="font-size: 20px;">TOKYO</a></h1>
@@ -400,7 +404,75 @@
                 </li>
             </ul>
         </div>
-        <div class="sec3"></div>
+        <div class="sec3">
+            <ul>
+                <li>
+                    <div class="overlay01">
+                        <h3><i class="fas fa-umbrella-beach"></i> 여행정보</h3>
+                        <br>
+                        <p></p>
+                        <div class="circle">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay02">
+                        <h3><i class="fas fa-umbrella-beach"></i> 여행정보</h3>
+                        <br>
+                        <p></p>
+                        <div class="circle">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay03">
+                        <h3><i class="fas fa-umbrella-beach"></i> 여행정보</h3>
+                        <br>
+                        <p></p>
+                        <div class="circle">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay04">
+                        <h3><i class="fas fa-umbrella-beach"></i> 여행정보</h3>
+                        <br>
+                        <p></p>
+                        <div class="circle">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
+    <!-- contents end  -->
+
+    <!-- footer start -->
+    <footer id="footer">
+        <div class="txt">
+            <ul class="clearfix">
+                <li>이용약관</li>
+                <li>개인정보취급방침</li>
+                <li>사이트맵</li>
+                <li>고객센터</li>
+                <li>광고 및 제휴문의</li>
+            </ul>
+            <br>
+            <h3>
+                123-456 서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호: 123-45-678910  &nbsp;대표이사: 홍길동 &nbsp;대표번호: 02-1234-5678
+                <br>
+                COPYLIGHT&copy;2014 HIMEDIA TOUR. ALL RIGHTS RESERVED.
+            </h3>
+        </div>
+    </footer>
+    <!-- footer end -->
 </body>
 </html>
