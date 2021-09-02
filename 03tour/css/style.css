@@ -248,23 +248,49 @@ legend{display: block;position: absolute;left: 0;top: -9999px;}
 .sec3>ul{width: 980px;margin: 16px auto;}
 .sec3>ul>li{width: 233px;height: 242px;float: left;margin-right: 16px;}
 .sec3>ul>li:last-child{margin-right: 0;}
+.sec3>ul>li,.sec3>ul>li a{color: white;font-size: 22px;}
+.sec3>ul>li p{font-size: 14px;margin: 10px 0;}
+
+.sec3>ul>li .txt{width: 192px;height: 192px;margin: 0 auto;}
+
+
+.sec3 .circle{
+    width: 28px;height: 28px;border-radius: 50%;
+    border: 3px solid #fff;position: absolute;left: calc(50% + 5px);top: 50%;
+    transform: translate(-50%,-50%);
+}
+.sec3 .overlay01 .circle,.sec3 .overlay04 .circle{top: calc(50% + 10px);}
+.sec3 .overlay02 .circle,.sec3 .overlay03 .circle{top: calc(50% - 10px);}
+
+.sec3 .bar1,.sec3 .bar2{
+    width: 14px;height: 2px;background: #fff;position: absolute;
+    top: 50%;left: 50%;transform: translate(-50%,-50%);
+}
+.sec3 .bar2{transform:translate(-50%,-50%) rotate(90deg);}
 
 .sec3>ul>li:nth-child(1) .overlay01,.sec3>ul>li:nth-child(2) .overlay02,
-.sec3 ul>li:nth-child(3) .overlay03,.sec3>ul>li:nth-child(4) .overlay04{width: 233px;height: 242px;}
+.sec3 ul>li:nth-child(3) .overlay03,.sec3>ul>li:nth-child(4) .overlay04{
+    width: 233px;height: 242px;text-align: center;position: relative;
+    display: flex;align-items: center;justify-content: center;
+}
 
 .sec3>ul>li:nth-child(1){background-image: url(../images/sec3_img01.png);}
 .sec3>ul>li:nth-child(1) .overlay01{background-color: rgba(79,194,219,0.6);}
 
-
-
 .sec3>ul>li:nth-child(2){background-image: url(../images/sec3_img02.png);}
+.sec3>ul>li:nth-child(2) .overlay02{background-color: rgba(0,0,0,0.6);}
+
 .sec3>ul>li:nth-child(3){background-image: url(../images/sec3_img03.png);}
+.sec3>ul>li:nth-child(3) .overlay03{background-color: rgba(0,0,0,0.6);}
+
 .sec3>ul>li:nth-child(4){background-image: url(../images/sec3_img04.jpg);}
+.sec3>ul>li:nth-child(4) .overlay04{background-color: rgba(0,106,68,0.6);}
 
 /* footer  */
-#footer .txt{width: 980px;margin: 0 auto;}
-#footer .txt li{float: left;}
-#footer .txt h3{font-size: 14px;}
+#footer .txt{width: 980px;margin: 16px auto;}
+#footer .txt li{float: left;padding-right: 22px;}
+#footer .txt li>a{color: #010101;}
+#footer .txt h3{font-size: 14px;color: #707070;}
 
 
 
