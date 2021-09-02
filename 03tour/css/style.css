@@ -66,6 +66,8 @@ form[action="#"]{position: relative;}
 .gnb a{display: block;}
 .gnb a:hover{background-color: #fff;}
 
+.nav>ul>li>a:active{background: pink;}
+
 /* contents  */
 .contents{height: 1390px;} /* 나중에지우기  */   
 
@@ -114,7 +116,7 @@ legend{display: block;position: absolute;left: 0;top: -9999px;}
 .form .right2 li{float: left;}
 .form .right2 li:nth-child(1){margin-right: 6px;}
 .form .right2 input{width: 66px;height: 32px;}
-input[type="submit"]{
+.form input[type="submit"]{
     background-image: url(../images/btnSubmit.png);
     text-indent: -9999px;width: 280px;height: 38px;
     background-repeat: no-repeat;
@@ -230,5 +232,24 @@ input[type="submit"]{
 .sec2>ul>li:nth-child(4) h3>a{font-size: 18px;letter-spacing: -1px;}
 .sec2>ul>li:nth-child(4) p>a{font-size: 14px;}
 
+/* footer  */
 
+/* subpage  */
+.subContent .subImg{
+    height: 200px;
+    background: skyblue;
+    display: flex;justify-content: center;align-items: center;
+}
+.subContent .subImgTitle{text-align: center;}
+.subContent .subImgTitle h3{font-size: 2em;}
+.subContent .subImgTitle h3:after{
+    content: "";display: block;
+    width: 80%;height: 2px;background: #000;
+    margin: 10px auto;
+}
+
+/* subpage company  */
+.subContent.company .subImg{
+    background-image: url(../images/);
+}
 
