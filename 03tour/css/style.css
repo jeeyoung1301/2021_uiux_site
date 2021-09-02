@@ -1,7 +1,10 @@
 @charset "utf-8";
 
-body{background:url(../images/body_bgi.png) no-repeat;
-    background-size: cover;}
+body{
+    background:url(../images/body_bgi.png) no-repeat;
+    background-size: cover;
+    min-width: 980px;
+}
 /* common  */
 .pb7{padding-bottom: 7px;}
 .pb24{padding-bottom: 24px;}
@@ -66,7 +69,7 @@ form[action="#"]{position: relative;}
 .gnb a{display: block;}
 .gnb a:hover{background-color: #fff;}
 
-.nav>ul>li>a:active{background: pink;}
+.nav>.gnb>li.active{background: #fff;}
 
 /* contents  */
 .contents{height: 1390px;} /* 나중에지우기  */   
@@ -239,17 +242,41 @@ legend{display: block;position: absolute;left: 0;top: -9999px;}
     height: 200px;
     background: skyblue;
     display: flex;justify-content: center;align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-.subContent .subImgTitle{text-align: center;}
-.subContent .subImgTitle h3{font-size: 2em;}
+.subContent .subImgTitle{text-align: center;transform: translateY(-20px);}
+.subContent .subImgTitle h3{font-size: 2em;text-shadow: 0 0 10px #fff;}
 .subContent .subImgTitle h3:after{
     content: "";display: block;
     width: 80%;height: 2px;background: #000;
     margin: 10px auto;
 }
+.subContent .subImgTitle p{text-shadow: 0 0 10px #fff;}
+
+.subContent .container{margin: 0 auto;width: 980px;}
+.subContent .container img{display: block;margin: 0 auto;}
+
+.subContent .location{width: 860px;font-size: 14px;margin: 16px auto;}
 
 /* subpage company  */
+body.sub{background: #C8C8C8;}
+
 .subContent.company .subImg{
-    background-image: url(../images/);
+    background-image: url(../images/subimg01.jpg);
+}
+.subContent.company .container{
+    border: 1px solid #333;
+    border-top: 5px solid #0664A1;
+    border-bottom: 5px solid #0664A1;
+    background-color: #fff;
+    position: relative;top: -40px;
+}
+
+/* subpage citytour  */
+.subContent.cityTour .subImg{
+    background-image: url(../images/subimg02.jpg);
+    
 }
 

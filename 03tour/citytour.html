@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/colorbox.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.slider_01').bxSlider({
+                pagerCustom:'.bxPager',
+                mode:'vertical',
+                controls:false
+                
+            });
+
+            var myslide2 = $('.slider_02').bxSlider({pager:false,});
+            $('.nextBtn').click(function(){myslide2.goToNextSlide();});
+            $('.prevBtn').click(function(){myslide2.goToPrevSlide();});
+
+            var myslide3 = $('.slider_03').bxSlider({pager:false});
+            $('.nextBtn').click(function(){myslide3.goToNextSlide();});
+            $('.prevBtn').click(function(){myslide3.goToPrevSlide();});
+        });
+    </script>
+
+</head>
+<body>
+    <header id="header">
+        <div class="headerWrap">
+            <div class="top">
+                <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+                <form action="#" method="POST">
+                    <label for="search" class="searchTitle">search</label>
+                    <input type="text" id="search" placeholder="검색어를 입력하세요" class="searchInp">
+                    <input type="submit" value="search" class="searchBtn">
+                </form>
+                <div class="tel_sns clearfix">
+                    <h3>+82 02 12345678</h3>
+                    <ul class="sns clearfix">
+                        <li><a href="#">페이스북</a></li>
+                        <li><a href="#">트위터</a></li>
+                        <li><a href="#">블로그</a></li>
+                        <li><a href="#">윈도우클럽</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul class="gnb clearfix">
+                <li class="active"><a href="citytour.html">여행도시</a></li>
+                <li><a href="#">호텔예약</a></li>
+                <li><a href="#">렌트카</a></li>
+                <li><a href="#">여행TIP</a></li>
+                <li><a href="company.html">회사소개</a></li>
+                <li><a href="#">커뮤니티</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="subContent cityTour">
+        <div class="subImg">
+            <div class="subImgTitle">
+                <h3>CITYTOUR</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="container">
+            test
+        </div>
+    </div>
+    <footer class="footer"></footer>
+    
+    
+</body>
+</html>
