@@ -355,8 +355,8 @@ body.sub{background: #C8C8C8;}
 }
 .subContent.rentCar .container{
     height: 839px;background-image: url(../images/bg_main_fall_pc2021.jpg);position: relative;
-    border-top: 5px solid #0664A1;
-    border-bottom: 5px solid #0664A1;
+    border-top: 5px solid #E97715;
+    border-bottom: 5px solid #E97715;
     top: -40px;
 }
 .subContent.rentCar .txt{position: absolute;left: 50%;transform: translateX(-50%);width: 590px;top: 10%;}
