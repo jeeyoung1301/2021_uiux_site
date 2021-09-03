@@ -353,7 +353,12 @@ body.sub{background: #C8C8C8;}
 .subContent.rentCar .subImg{
     background-image: url(../images/rentcar_subimg.jpg);
 }
-.subContent.rentCar .container{height: 839px;;background-image: url(../images/bg_main_fall_pc2021.jpg);position: relative;}
+.subContent.rentCar .container{
+    height: 839px;background-image: url(../images/bg_main_fall_pc2021.jpg);position: relative;
+    border-top: 5px solid #0664A1;
+    border-bottom: 5px solid #0664A1;
+    top: -40px;
+}
 .subContent.rentCar .txt{position: absolute;left: 50%;transform: translateX(-50%);width: 590px;top: 10%;}
 .subContent.rentCar .txt h3{font-size: 50px;font-style: italic;}
 
@@ -361,4 +366,6 @@ body.sub{background: #C8C8C8;}
 .subContent.rentCar .images>img{float: left;padding-right: 14.666px;}
 .subContent.rentCar .images>img:nth-child(3){padding-right: calc(14.666px + 0.03px);}
 .subContent.rentCar .images>img:last-child{padding-right: 0;}
+
+
 
