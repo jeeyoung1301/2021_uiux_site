@@ -348,6 +348,30 @@ body.sub{background: #C8C8C8;}
 .subContent.cityTour .subImg{
     background-image: url(../images/citytour_subimg.png);
 }
+.subContent.cityTour .container{
+    background: #FFC31E;transform: translateY(-40px);
+    border-top: 5px solid #D93534;
+    border-bottom: 5px solid #D93534;
+}
+.subContent.cityTour .container h3{text-align: center;font-size: 24px;padding: 20px 0;}
+.subContent.cityTour .container a{float: left;padding-right: 30px;}
+.subContent.cityTour .container a:last-child{padding-right: 0;}
+.subContent.cityTour .container .most{padding: 0 30px;}
+.subContent.cityTour .container .region,.subContent.cityTour .container .recommand{padding: 10px 40px;}
+.subContent.cityTour .region img,.subContent.cityTour .recommand img{border-radius: 10px;}
+.subContent.cityTour .activity{padding: 30px 0;}
+
+.subContent.cityTour .region ul{width: 900px;display: flex;align-items: center;justify-content: center;}
+.subContent.cityTour .region ul li{float: left;}
+.subContent.cityTour .region ul li:last-child{margin-right: 0;}
+.subContent.cityTour .region li a{
+    display: block;text-align: center;font-weight: bold;
+    width: 68px;height: 40px;background: #e5e5e5;
+    display: flex;align-items: center;justify-content: center;
+    margin-right: 10px;border-radius: 8px;
+}
+.subContent.cityTour .region ul{padding: 0 0 20px 0;}
+
 
 /* subpage rentcar  */
 .subContent.rentCar .subImg{
