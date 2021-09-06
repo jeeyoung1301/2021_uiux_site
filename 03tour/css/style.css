@@ -109,8 +109,7 @@ legend{display: block;position: absolute;left: 0;top: -9999px;}
 .form fieldset>ul>li:nth-child(1)>select{
     width: 276px;height: 32px;
     border-radius: 2px;
-    font-size: 14px;color: #C8C8C8;
-    border: 1px solid #C8C8C8;
+    font-size: 14px;
 }
 .form .left1,.form .right1,.form .left2,.form .right2{float: left;}
 .form .left1 input[type="date"],.form .right1 input[type="date"]{width: 131px;height: 31px;}
@@ -390,6 +389,10 @@ body.sub{background: #C8C8C8;}
 .subContent.rentCar .images>img{float: left;padding-right: 14.666px;}
 .subContent.rentCar .images>img:nth-child(3){padding-right: calc(14.666px + 0.03px);}
 .subContent.rentCar .images>img:last-child{padding-right: 0;}
+
+/* subpage tourtip  */
+
+.subContent.tourTip .subImg{background-image: url(../images/tip_subimg.jpg);}
 
 
 

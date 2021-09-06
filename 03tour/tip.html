@@ -16,14 +16,32 @@
     <script src="js/jquery.colorbox-min.js"></script>
 
     <script>
+        $(document).ready(function(){
+            $('.slider_01').bxSlider({
+                pagerCustom:'.bxPager',
+                mode:'vertical',
+                controls:false,
+                touchEnabled:false
+                
+            });
+
+            var myslide2 = $('.slider_02').bxSlider({pager:false,});
+            $('.nextBtn2').click(function(){myslide2.goToNextSlide();});
+            $('.prevBtn2').click(function(){myslide2.goToPrevSlide();});
+
+            var myslide3 = $('.slider_03').bxSlider({pager:false});
+            $('.nextBtn3').click(function(){myslide3.goToNextSlide();});
+            $('.prevBtn3').click(function(){myslide3.goToPrevSlide();});
+        });
     </script>
 
 </head>
-<body class="sub">
+<body>
+    <!-- header start -->
     <header id="header">
         <div class="headerWrap">
             <div class="top">
-                <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+                <h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
                 <form action="#" method="POST">
                     <label for="search" class="searchTitle">search</label>
                     <input type="text" id="search" placeholder="검색어를 입력하세요" class="searchInp">
@@ -45,45 +63,52 @@
                 <li><a href="citytour.html">여행도시</a></li>
                 <li><a href="#">호텔예약</a></li>
                 <li><a href="rentcar.html">렌트카</a></li>
-                <li><a href="tip.html">여행TIP</a></li>
-                <li class="active"><a href="company.html">회사소개</a></li>
+                <li class="active"><a href="tip.html">여행TIP</a></li>
+                <li><a href="company.html">회사소개</a></li>
                 <li><a href="#">커뮤니티</a></li>
             </ul>
         </div>
     </header>
-    <div class="subContent company">
-        <div class="subImg">
-            <div class="subImgTitle">
-                <h3>COMPANY</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="location">홈 | 회사소개 | 회사소개</div>
-            <img src="images/company_img01.jpg" alt="">
-            <img src="images/company_img02.jpg" alt="">
+    <!-- header end  -->
+
+</header>
+<!-- header end  -->
+
+<!-- contents start  -->
+<div class="subContent tourTip">
+    <div class="subImg">
+        <div class="subImgTitle">
+            <h3>TOUR TIP</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
         </div>
     </div>
-    <!-- footer start -->
-    <footer id="footer">
-        <div class="txt">
-            <ul class="clearfix">
-                <li><a href="#">이용약관</a></li>
-                <li><a href="#">개인정보취급방침</a> </li>
-                <li><a href="#">사이트맵</a> </li>
-                <li><a href="#">고객센터</a> </li>
-                <li><a href="#">광고 및 제휴문의</a></li>
-            </ul>
+    <div class="container">
+        <div class="location">홈 | 여행TIP | 여행TIP</div>
+    </div>
+</div>
+<!-- contents end  -->
+
+<!-- footer start -->
+<footer id="footer">
+    <div class="txt">
+        <ul class="clearfix">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급방침</a> </li>
+            <li><a href="#">사이트맵</a> </li>
+            <li><a href="#">고객센터</a> </li>
+            <li><a href="#">광고 및 제휴문의</a></li>
+        </ul>
+        <br>
+        <h3>
+            123-456 서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호: 123-45-678910  &nbsp;대표이사: 홍길동 &nbsp;대표번호: 02-1234-5678
             <br>
-            <h3>
-                123-456 서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호: 123-45-678910  &nbsp;대표이사: 홍길동 &nbsp;대표번호: 02-1234-5678
-                <br>
-                COPYLIGHT&copy;2014 HIMEDIA TOUR. ALL RIGHTS RESERVED.
-            </h3>
-        </div>
-    </footer>
-    <!-- footer end -->
-    
-    
+            COPYLIGHT&copy;2014 HIMEDIA TOUR. ALL RIGHTS RESERVED.
+        </h3>
+    </div>
+</footer>
+<!-- footer end -->
+</body>
+</html>
+
 </body>
 </html>
