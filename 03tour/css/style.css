@@ -391,8 +391,27 @@ body.sub{background: #C8C8C8;}
 .subContent.rentCar .images>img:last-child{padding-right: 0;}
 
 /* subpage tourtip  */
-
+.subContent.tourTip .container{
+    background: #FEE78D;position: relative;top: -40px;
+    border-top: 5px solid #EB0000;border-bottom: 5px solid #EB0000;
+}
 .subContent.tourTip .subImg{background-image: url(../images/tip_subimg.jpg);}
+.subContent.tourTip .container li{width: 200px;height: 200px;float: left;position: relative;margin-right: 30px;}
+.subContent.tourTip .container li:last-child{margin-right: 0;}
+
+.subContent.tourTip .container .commonTIP li:nth-child(1){background-image: url(../images/tip_bgi.jpg);}
+.subContent.tourTip .container .commonTIP li:nth-child(2){background-image: url(../images/tip_abroad.jpg);}
+.subContent.tourTip .container .commonTIP li:nth-child(3){background-image: url(../images/tip_pack.jpg);}
+
+.subContent.tourTip .container .regionTIP li:nth-child(1){background-image: url(../images/tip_paris.jpg);}
+.subContent.tourTip .container .regionTIP li:nth-child(2){background-image: url(../images/tip_LA.jpg);}
+.subContent.tourTip .container .regionTIP li:nth-child(3){background-image: url(../images/tip_taiwan.jpg);}
+
+.subContent.tourTip .container .commonTIP img,.subContent.tourTip .container .regionTIP img{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.subContent.tourTip .container h3{position: absolute;left: 0;bottom: 20px;color: #FF9614;background-color: #fff;width: 200px;font-size: 22px;}
+.subContent.tourTip .container h1{margin-bottom: 30px;}
+.subContent.tourTip .container .common,.subContent.tourTip .container .region{width: 660px;margin: 0 auto;margin-bottom: 30px;}
+
 
 
 

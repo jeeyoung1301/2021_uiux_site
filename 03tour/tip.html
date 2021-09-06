@@ -17,21 +17,37 @@
 
     <script>
         $(document).ready(function(){
-            $('.slider_01').bxSlider({
-                pagerCustom:'.bxPager',
-                mode:'vertical',
-                controls:false,
-                touchEnabled:false
-                
+
+            $('.youtube_trip').colorbox({
+                iframe:true,
+                innerWidth:700,
+                innerHeight:393.75
             });
-
-            var myslide2 = $('.slider_02').bxSlider({pager:false,});
-            $('.nextBtn2').click(function(){myslide2.goToNextSlide();});
-            $('.prevBtn2').click(function(){myslide2.goToPrevSlide();});
-
-            var myslide3 = $('.slider_03').bxSlider({pager:false});
-            $('.nextBtn3').click(function(){myslide3.goToNextSlide();});
-            $('.prevBtn3').click(function(){myslide3.goToPrevSlide();});
+            $('.youtube_abroad').colorbox({
+                iframe:true,
+                innerWidth:700,
+                innerHeight:393.75
+            });
+            $('.youtube_pack').colorbox({
+                iframe:true,
+                innerWidth:700,
+                innerHeight:393.75
+            });
+            $('.youtube_paris').colorbox({
+                iframe:true,
+                innerWidth:700,
+                innerHeight:393.75
+            });
+            $('.youtube_LA').colorbox({
+                iframe:true,
+                innerWidth:700,
+                innerHeight:393.75
+            });
+            $('.youtube_taiwan').colorbox({
+                iframe:true,
+                innerWidth:700,
+                innerHeight:393.75
+            });
         });
     </script>
 
@@ -84,6 +100,40 @@
     </div>
     <div class="container">
         <div class="location">홈 | 여행TIP | 여행TIP</div>
+        <div class="common">
+            <h1>여행 TIP</h1>
+            <ul class="commonTIP clearfix">
+                <li>
+                    <h3>자유 or 패키지?</h3>
+                    <a href="https://www.youtube.com/embed/MNX6kasP_iI" class="youtube_trip"><img src="images/playbtn.png" alt="youtube_trip"></a></li>
+                <li>
+                    <h3>해외여행 TIP!</h3>
+                    <a href="https://www.youtube.com/embed/-xsttMJLFwI" class="youtube_abroad"><img src="images/playbtn.png" alt="youtube_pack"></a>
+                </li>
+                <li>
+                    <h3>여행 짐싸기</h3>
+                    <a href="https://www.youtube.com/embed/cKn77RynWp8" class="youtube_pack"><img src="images/playbtn.png" alt="youtube_pack"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="region">
+            <h1>나라별 TIP</h1>
+            <ul class="regionTIP clearfix">
+                <li>
+                    <h3>파리여행</h3>
+                    <a href="https://www.youtube.com/embed/y4ObYEBA1iU" class="youtube_paris"><img src="images/playbtn.png" alt=""></a>
+                </li>
+                <li>
+                    <h3>LA여행</h3>
+                    <a href="https://www.youtube.com/embed/4IsWtulP17k" class="youtube_LA"><img src="images/playbtn.png" alt=""></a>
+                </li>
+                <li>
+                    <h3>대만여행</h3>
+                    <a href="https://www.youtube.com/embed/qBCZxCpRFrs" class="youtube_taiwan"><img src="images/playbtn.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+        <img src="images/210812_ota_introduce_04.jpg" alt="" style="width: 980px;">
     </div>
 </div>
 <!-- contents end  -->
