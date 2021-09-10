@@ -25,7 +25,7 @@ html,body{height: 100%;}
     #headerTop .gnb li>a{
         display: block;text-align: center;
         line-height: 50px;padding: 0 30px;
-        color: white;
+        /* color: white; */
         font-size: 20px;
     }
 
@@ -45,6 +45,7 @@ html,body{height: 100%;}
         top: 14%;left: 20%;
     }
     .sliderWrap .slideTxt h3{font-size: 50px;color: white;font-weight: lighter;}
+
 
 }
 /* pc media  */
