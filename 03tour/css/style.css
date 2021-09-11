@@ -329,23 +329,9 @@ legend{display: block;position: absolute;left: 0;top: -9999px;}
 
 .subContent .location{width: 860px;font-size: 14px;margin: 16px auto;}
 
-/* subpage company  */
-body.sub{background: #C8C8C8;}
-
-.subContent.company .subImg{
-    background-image: url(../images/subimg01.jpg);
-}
-.subContent.company .container{
-    border: 1px solid #333;
-    border-top: 5px solid #0664A1;
-    border-bottom: 5px solid #0664A1;
-    background-color: #fff;
-    position: relative;top: -40px;
-}
-
 /* subpage citytour  */
 .subContent.cityTour .subImg{
-    background-image: url(../images/citytour_subimg.png);
+    background-image: url(../images/EraqPwT9OSc.jpg);
 }
 .subContent.cityTour .container{
     background: #FFC31E;transform: translateY(-40px);
@@ -369,7 +355,33 @@ body.sub{background: #C8C8C8;}
     display: flex;align-items: center;justify-content: center;
     margin-right: 10px;border-radius: 8px;
 }
+.subContent.cityTour .region li:hover a{background-color: #fff;}
 .subContent.cityTour .region ul{padding: 0 0 20px 0;}
+
+/* subpage hotel  */
+.subContent.hotel .subImg{background-image: url(../images/hotel_subImg.png);}
+.subContent.hotel .container{
+    background-color: #EDEDED;transform: translateY(-40px);
+    border-top: 5px solid #FFC72C;
+    border-bottom: 5px solid #FFC72C;
+}
+.subContent.hotel .container img{width: 860px;}
+
+/* subpage company  */
+body.sub{background: #C8C8C8;}
+
+.subContent.company .subImg{
+    background-image: url(../images/subimg01.jpg);
+}
+.subContent.company .container{
+    border: 1px solid #333;
+    border-top: 5px solid #0664A1;
+    border-bottom: 5px solid #0664A1;
+    background-color: #fff;
+    position: relative;top: -40px;
+}
+
+
 
 
 /* subpage rentcar  */
@@ -391,27 +403,33 @@ body.sub{background: #C8C8C8;}
 .subContent.rentCar .images>img:last-child{padding-right: 0;}
 
 /* subpage tourtip  */
-.subContent.tourTip .container{
-    background: #FEE78D;position: relative;top: -40px;
-    border-top: 5px solid #EB0000;border-bottom: 5px solid #EB0000;
+.tourTip .container{
+    background: #FFC31E;position: relative;top: -40px;
+    border-top: 5px solid #C9DB2B;border-bottom: 5px solid #C9DB2B;
 }
-.subContent.tourTip .subImg{background-image: url(../images/tip_subimg.jpg);}
-.subContent.tourTip .container li{width: 200px;height: 200px;float: left;position: relative;margin-right: 30px;}
-.subContent.tourTip .container li:last-child{margin-right: 0;}
+.tourTip .subImg{background-image: url(../images/tip_subimg.jpg);}
+.tourTip .container li{width: 200px;height: 200px;float: left;position: relative;margin-right: 30px;}
+.tourTip .container li:last-child{margin-right: 0;}
 
-.subContent.tourTip .container .commonTIP li:nth-child(1){background-image: url(../images/tip_bgi.jpg);}
-.subContent.tourTip .container .commonTIP li:nth-child(2){background-image: url(../images/tip_abroad.jpg);}
-.subContent.tourTip .container .commonTIP li:nth-child(3){background-image: url(../images/tip_pack.jpg);}
+.tourTip .container .commonTIP li:nth-child(1){background-image: url(../images/tip_bgi.jpg);}
+.tourTip .container .commonTIP li:nth-child(2){background-image: url(../images/tip_abroad.jpg);}
+.tourTip .container .commonTIP li:nth-child(3){background-image: url(../images/tip_pack.jpg);}
 
-.subContent.tourTip .container .regionTIP li:nth-child(1){background-image: url(../images/tip_paris.jpg);}
-.subContent.tourTip .container .regionTIP li:nth-child(2){background-image: url(../images/tip_LA.jpg);}
-.subContent.tourTip .container .regionTIP li:nth-child(3){background-image: url(../images/tip_taiwan.jpg);}
+.tourTip .container .regionTIP li:nth-child(1){background-image: url(../images/tip_paris.jpg);}
+.tourTip .container .regionTIP li:nth-child(2){background-image: url(../images/tip_LA.jpg);}
+.tourTip .container .regionTIP li:nth-child(3){background-image: url(../images/tip_taiwan.jpg);}
 
-.subContent.tourTip .container .commonTIP img,.subContent.tourTip .container .regionTIP img{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
-.subContent.tourTip .container h3{position: absolute;left: 0;bottom: 20px;color: #FF9614;background-color: #fff;width: 200px;font-size: 22px;}
-.subContent.tourTip .container h1{margin-bottom: 30px;}
-.subContent.tourTip .container .common,.subContent.tourTip .container .region{width: 660px;margin: 0 auto;margin-bottom: 30px;}
+.tourTip .container .commonTIP img,.subContent.tourTip .container .regionTIP img{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.tourTip .container h3{position: absolute;left: 0;bottom: 20px;color: #FF9614;background-color: #fff;width: 200px;font-size: 22px;}
+.tourTip .container h1{margin-bottom: 30px;}
+.tourTip .container .common,.subContent.tourTip .container .region{width: 660px;margin: 0 auto;margin-bottom: 30px;}
 
+/* subpage community  */
+.subContent.community .subImg{background-image: url(../images/community_subImg.jpg);}
+.subContent.community .container{
+    background: #FFC31E;position: relative;top: -40px;
+    border-top: 5px solid #7497A9;border-bottom: 5px solid #7498A8;
+}
 
 
 

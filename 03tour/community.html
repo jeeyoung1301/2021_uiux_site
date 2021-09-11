@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -16,10 +16,11 @@
     <script src="js/jquery.colorbox-min.js"></script>
 
     <script>
+        $(document).ready(function(){});
     </script>
 
 </head>
-<body class="sub">
+<body>
     <header id="header">
         <div class="headerWrap">
             <div class="top">
@@ -46,22 +47,21 @@
                 <li><a href="hotel.html">호텔예약</a></li>
                 <li><a href="rentcar.html">렌트카</a></li>
                 <li><a href="tip.html">여행TIP</a></li>
-                <li class="active"><a href="company.html">회사소개</a></li>
-                <li><a href="community.html">커뮤니티</a></li>
+                <li><a href="company.html">회사소개</a></li>
+                <li class="active"><a href="community.html">커뮤니티</a></li>
             </ul>
         </div>
     </header>
-    <div class="subContent company">
+    <div class="subContent community">
         <div class="subImg">
             <div class="subImgTitle">
-                <h3>COMPANY</h3>
+                <h3>COMMUNITY</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
         <div class="container">
-            <div class="location">홈 | 회사소개 | 회사소개</div>
-            <img src="images/company_img01.jpg" alt="">
-            <img src="images/company_img02.jpg" alt="">
+            <div class="location">홈 | 여행도시 | 커뮤니티</div>
+            <div><img src="images/community_content.jpg" alt=""></div>
         </div>
     </div>
     <!-- footer start -->
@@ -83,7 +83,3 @@
         </div>
     </footer>
     <!-- footer end -->
-    
-    
-</body>
-</html>
