@@ -156,6 +156,7 @@ legend{display: block;position: absolute;left: 0;top: -9999px;}
 .sec1 .bxPager a:nth-child(4).active{background-image:url(../images/sec1_pager4-2.png);}
 
 
+
 /* sec1 아래부분  */
 .sec1 .down{margin-top: 16px;}
 .sec1 .down>li{float: left;position: relative;}
