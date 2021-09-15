@@ -16,6 +16,31 @@ $(document).ready(function(){
 
     $('.slider_01').bxSlider({
         controls:false,
+        auto:true,
+    });
+
+    $('.slider_02').bxSlider({
+        controls:false
+    });
+    $('.sec1_0701').colorbox({
+        iframe:true,
+        innerWidth:700,
+        innerHeight:393.75
+    });
+    $('.sec1_0702').colorbox({
+        iframe:true,
+        innerWidth:700,
+        innerHeight:393.75
+    });
+    $('.sec1_0703').colorbox({
+        iframe:true,
+        innerWidth:700,
+        innerHeight:393.75
+    });
+    $('.sec1_0704').colorbox({
+        iframe:true,
+        innerWidth:700,
+        innerHeight:393.75
     });
 
 
