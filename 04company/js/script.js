@@ -1,6 +1,7 @@
 $(document).ready(function(){
     const slider1 = $('.slider').bxSlider({
         controls:false,
+        auto:true,
     });
     $('.nextBtn').click(function(){
         slider1.goToNextSlide();
@@ -12,6 +13,10 @@ $(document).ready(function(){
     // $('.toggleMenu').click();
     // $('.toggleMenu').on('이벤트명',리스너);
     // $('.toggleMenu').on('click',function(){});
+
+    $('.slider_01').bxSlider({
+        controls:false,
+    });
 
 
     $('.toggleMenu').click(function(){
@@ -33,4 +38,5 @@ $(document).ready(function(){
         $('.toggleMenu').removeClass('active');
         $('.gnb').removeClass('view');
     });
+
 });
