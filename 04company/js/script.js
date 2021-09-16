@@ -1,13 +1,13 @@
 $(document).ready(function(){
-    const slider1 = $('.slider').bxSlider({
+    const visual_01 = $('.slider').bxSlider({
         controls:false,
         auto:true,
     });
     $('.nextBtn').click(function(){
-        slider1.goToNextSlide();
+        visual_01.goToNextSlide();
     });
     $('.prevBtn').click(function(){
-        slider1.goToPrevSlide();
+        visual_01.goToPrevSlide();
     });
 
     // $('.toggleMenu').click();
@@ -15,11 +15,15 @@ $(document).ready(function(){
     // $('.toggleMenu').on('click',function(){});
 
     $('.slider_01').bxSlider({
+        controls:false
+    })
+
+    $('.slider_02').bxSlider({
         controls:false,
         auto:true,
     });
 
-    $('.slider_02').bxSlider({
+    $('.slider_04').bxSlider({
         controls:false
     });
     $('.sec1_0701').colorbox({
