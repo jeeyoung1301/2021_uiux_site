@@ -15,7 +15,7 @@ $(document).ready(function(){
     // $('.toggleMenu').on('click',function(){});
 
     $('.slider_01').bxSlider({
-        controls:false
+        controls:false,
     })
 
     $('.slider_02').bxSlider({
