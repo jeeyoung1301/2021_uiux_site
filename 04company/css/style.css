@@ -389,10 +389,10 @@ html,body{height: 100%;}
     .content>ul>li:nth-child(8){display: none;}
 
 
-    .container .sec_02{width: 100%;padding: 0 20px;}
-    .container .vision li{width: calc((100% - 20px) / 2);margin-bottom: 20px;}
-    .container .vision li:nth-child(2n){margin-right: 0;}
-    .container .cardBody>p{display: none;}
+    .sec_02 .container{width: 100%;padding: 0 20px;}
+    .sec_02 .vision li{width: calc((100% - 20px) / 2);margin-bottom: 20px;height: 280px;}
+    .sec_02 .vision li:nth-child(2n){margin-right: 0;}
+    .sec_02 .cardBody>p{display: none;}
 
 }
 /* mobile media  */
