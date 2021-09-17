@@ -22,7 +22,9 @@ $(document).ready(function(){
         controls:false,
         auto:true,
     });
-
+    $('.slider_03').bxSlider({
+        controls:false
+    })
     $('.slider_04').bxSlider({
         controls:false
     });
