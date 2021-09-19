@@ -253,8 +253,8 @@ html,body{height: 100%;}
 
 @media screen and (max-width:699px) {
     #headerTop{
-        padding: 0 16px;
-        width: 100%;
+        padding: 0;
+        width: 80%;
         position: fixed;
         display: flex;justify-content: space-between;align-items: center;
         z-index: 99999;
