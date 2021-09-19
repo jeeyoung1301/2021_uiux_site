@@ -63,8 +63,11 @@ html,body{height: 100%;}
 .sliderWrap_02 .bx-wrapper .bx-pager.bx-default-pager a.active{background: none;border: 2px solid #b3b3b3;}
 .sliderWrap_02 .bx-wrapper .bx-pager.bx-default-pager a{background: #b3b3b3;}
 
-.content>ul>li:nth-child(5){width: 50%;background-image: url(../images/sec1_05.jpg);position: relative;}
-.content>ul>li:nth-child(5) img{position: absolute;top: 56px;left: 28px;}
+.content>ul>li:nth-child(5){
+    width: 50%;background-image: url(../images/sec1_05.jpg);
+    position: relative;background-repeat: no-repeat;
+}
+.content>ul>li:nth-child(5) img{position: absolute;top: 82px;left: 36px;}
 
 .content>ul>li:nth-child(7){position: absolute;bottom: 0;right: 620px;}
 .slider_04>li{height: 310px;}
@@ -111,10 +114,11 @@ html,body{height: 100%;}
 
 .sec_03{padding: 60px 0;}
 .sec_03>.container{height: 620px;width: 1240px;margin: 0 auto;background: yellow;}
-.sec_03>.container li{width: 25%;height: 310px;float: left;background: orange;}
-.sec_03>.container li:nth-child(2n+1){background-color: #DDBDA4;}
+.sec_03>.container li{width: 25%;height: 310px;float: left;background: orange;cursor: pointer;}
+.sec_03>.container li:nth-child(2n+1){background-color: #DDBDA4;position: relative;}
 .sec_03>.container li:nth-child(2n){background-color: #F4F1E6;}
 .sec_03>.container li:first-child{height: 620px;background-color: #F8E0C6;}
+.sec_03>.container li:nth-child(2n+1) img{width: 60%;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
 
 
 
@@ -384,10 +388,13 @@ html,body{height: 100%;}
 
     .content>ul>li:nth-child(5){
         order:4;
+        background-image: url(../images/sec1_05_mo.jpg);
         background-repeat: no-repeat;
-        width: 100%;position: relative;
+        position: relative;
+        width: 100%;
+        background-size: 100%;
     }
-    .content>ul>li:nth-child(5)>img{position: absolute;top: 30px;left: 30px;}
+    .content>ul>li:nth-child(5) img{position: absolute;height: 70%;left: 42%;top: 46px;}
 
     .content>ul>li:nth-child(6){order:5;background-size: 100%;color: #333;}
     .content>ul>li:nth-child(6)>.icon{display: none;}
@@ -409,14 +416,39 @@ html,body{height: 100%;}
     .sliderWrap_03 .bx-wrapper .bx-pager.bx-default-pager a{background: #b3b3b3;}
     .sliderWrap_03 .bx-clone {display: none;}
 
-    .content>ul>li:nth-child(7){order:6;width: 100%;height: 210px;}
+    .content>ul>li:nth-child(7){order:6;width: 100%;height: 210px;background: skyblue;}
     .content>ul>li:nth-child(8){display: none;}
 
     /* section  */
+    .sec_02{padding: 25px 0;}
     .sec_02 .container{width: 100%;padding: 0 20px;}
-    .sec_02 .vision li{width: calc((100% - 20px) / 2);margin-bottom: 20px;height: 280px;}
-    .sec_02 .vision li:nth-child(2n){margin-right: 0;}
+    .sec_02 .vision li{width: 200px;margin-bottom: 20px;height: 200px;padding: 20px;margin-right: 30px;margin-left: 10px;}
+    .sec_02 .vision li:nth-child(2n){margin-right: 0;margin-left: 0;}
     .sec_02 .cardBody>p{display: none;}
+
+    .sec_03{padding: 0;}
+    .sec_03>ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec_03 .container{width: 100%;}
+    .sec_03 .container li{width: 50%;order: 7;}
+    .sec_03 .container li:first-child{
+        width: 100%;height: 100px;
+        position: relative;
+    }
+    .sec_03 .container li:first-child img{width: 50px;position: absolute;left: -30px;}
+    .sec_03 .container li:first-child p{display: none;}
+    .sec_03 .container li:first-child .txt{position: absolute;left: 45%;top: 50%;transform: translateY(-50%);}
+    .sec_03 .container li:nth-child(2) img,.sec_03 .container li:nth-child(4) img,
+    .sec_03 .container li:nth-child(6) img{width: 100%;height: 310px;}
+    .sec_03 .container li:nth-child(1){order: 1;}
+    .sec_03 .container li:nth-child(2){order: 2;}
+    .sec_03 .container li:nth-child(3){order: 4;}
+    .sec_03 .container li:nth-child(4){order: 6;}
+    .sec_03 .container li:nth-child(5){order: 3;}
+    .sec_03 .container li:nth-child(6){order: 5;}
+    .sec_03 .container li:nth-child(7){order: 7;}
 
 }
 /* mobile media  */
