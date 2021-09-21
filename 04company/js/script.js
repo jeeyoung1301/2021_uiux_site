@@ -1,12 +1,12 @@
 $(window).scroll(function(){
     win_scr = $(window).scrollTop();
     if(win_scr<50){
-        $('#headerTop').css({background:'none'})
-        $('#headerTop a').css({color:'#fff'})
+        $('#headerWrap').css({background:'none'})
+        $('.headerTop a').css({color:'#fff'})
     }
     else{
-        $('#headerTop').css({background:'rgba(255,255,255,0.6)',transition:'0.3s',});
-        $('#headerTop a').css({color:'#333'});
+        $('#headerWrap').css({background:'rgba(255,255,255,0.6)',transition:'0.3s',});
+        $('.headerTop a').css({color:'#333'});
     }
     
 })
