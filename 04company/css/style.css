@@ -237,6 +237,9 @@ body {
   font-size: 16px;
 }
 
+.sec_03{
+    margin-bottom: 60px;
+}
 .sec_03 > .container {
   height: 620px;
   width: 1240px;
@@ -267,6 +270,57 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.sec_04 {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.sec_04 > .container > div{
+    float: left;
+    width: 50%;
+    height: 310px;
+    position: relative;
+}
+.sec_04 > .container .txt{
+    position: absolute;
+    top: 56px;
+    left: 36px;
+}
+.sec_04 .event{
+    background-image: url(../images/sec04_bg01.jpg);
+}
+.sec_04 .cs{
+    background-image: url(../images/sec04_bg02.jpg);
+}
+.sec_04 h3{
+    font-size: 32px;
+    color: #333;
+}
+.sec_04 h3:after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50px;
+    margin-top: 18px;
+    background: #333;
+}
+.sec_04 p{
+    font-size: 20px;
+    color: #333;
+    padding-top: 36px;
+}
+.sec_04 a{
+    border: 2px solid #000;
+    width: 150px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 36px;
+}
+.sec_04 a:hover{
+    background-color: #F8E0C6;
+    transition: 0.3s;
 }
 
 @media screen and (min-width: 700px) {
