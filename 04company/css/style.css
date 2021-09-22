@@ -260,11 +260,47 @@ body {
 .sec_03 > .container li:nth-child(2n) {
   background-color: #f4f1e6;
 }
+.sec_03 > .container li:nth-child(5):after,
+.sec_03 > .container li:nth-child(7):after{
+  content: "";
+  display: block;
+  border-width: 30px;
+  border-style: solid;
+  border-color: transparent transparent #F4F1E6;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(-180deg);
+}
+.sec_03 > .container li:nth-child(3):after{
+  content: "";
+  display: block;
+  position: absolute;
+  border-width: 30px;
+  border-style: solid;
+  border-color: transparent transparent #F4F1E6;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .sec_03 > .container li:first-child {
   height: 620px;
   background-color: #f8e0c6;
+  position: relative;
 }
-.sec_03 > .container li:nth-child(2n + 1) img {
+.sec_03 > .container li:first-child > .txt{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.sec_03 > .container li:first-child > .txt > img{
+  width: 96px;
+}
+.sec_03 > .container li:nth-child(3) img,
+.sec_03 > .container li:nth-child(5) img,
+.sec_03 > .container li:nth-child(7) img {
   width: 60%;
   position: absolute;
   left: 50%;
@@ -328,6 +364,61 @@ body {
 .sec_04 .cs p > br:nth-child(1){
   display: none;
 }
+
+/* footer  */
+footer{
+  border-top: 1px solid #E3E3E3;
+  height: 200px;
+}
+.footer {
+  width: 1240px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer > h1{
+  margin: 79.5px 50px;
+}
+.footer > .txt {
+  font-size: 12px;
+  color: #333333;
+}
+.footer > .txt > ul > li {
+  float: left;
+  border-right: 1px solid #000;
+  padding: 0 10px;
+}
+.footer > .txt > ul > li:first-child {
+  padding-left: 0;
+}
+.footer > .txt > ul > li:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+.footer > .txt > ul {
+  margin-bottom: 10px;
+}
+.footer > .txt > address {
+  font-style: normal;
+}
+
+.form fieldset{border: 0;}
+.form #site{
+  width: 160px;
+  height: 35px;
+  font-size: 14px;
+  border: 1px solid #E3E3E3;
+  color: #333;
+}
+.form > fieldset > ul {
+  display: flex;
+  align-items: center;
+}
+.form > fieldset > ul > li {
+  margin-right: 10px;
+}
+
 
 @media screen and (min-width: 700px) {
   #main_header {
