@@ -397,7 +397,7 @@ footer{
   border-right: 0;
 }
 .footer > .txt > ul {
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 .footer > .txt > address {
   font-style: normal;
@@ -417,6 +417,9 @@ footer{
 }
 .form > fieldset > ul > li {
   margin-right: 10px;
+}
+.form > fieldset > ul > li:last-child {
+  margin-right: 0;
 }
 
 
@@ -1127,6 +1130,33 @@ footer{
   }
   .sec_04 .event > .txt > a{
     margin-top: 57px;
+  }
+
+  /* footer */
+  .footer {
+    width: 100%;
+    display: block;
+    padding: 0 26px;
+  }
+  .footer > h1 {
+    margin: 10px 0;
+  }
+  .footer > h1 > img{
+    width: 30%;
+  }
+  .footer > .txt > ul {
+    margin-bottom: 0;
+    padding-bottom: 18px;
+  }
+  .footer > .txt > address {
+    padding-bottom: 18px;
+  }
+  .form {
+    padding-bottom: 10px;
+  }
+  .form #site {
+    width: 140px;
+    font-size: 12px;
   }
 
 }
