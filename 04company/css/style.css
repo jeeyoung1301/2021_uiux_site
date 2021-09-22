@@ -322,6 +322,12 @@ body {
     background-color: #F8E0C6;
     transition: 0.3s;
 }
+.sec_04 .event p > br{
+  display: none;
+}
+.sec_04 .cs p > br:nth-child(1){
+  display: none;
+}
 
 @media screen and (min-width: 700px) {
   #main_header {
@@ -949,7 +955,7 @@ body {
   }
 
   .sec_03 {
-    padding: 0;
+    padding-bottom: 310px;
   }
   .sec_03 > ul {
     display: flex;
@@ -1008,5 +1014,29 @@ body {
   .sec_03 .container li:nth-child(7) {
     order: 7;
   }
+
+  .sec_04{
+    width: 100%;
+  }
+  .sec_04 .event .txt{
+    top: 26px;left: 26px;
+  }
+  .sec_04 .cs .txt{
+    top: 26px;left: 26px;
+  }
+  .sec_04 h3{
+    font-size: 22px;
+  }
+  .sec_04 p,
+  .sec_04 a{
+    font-size: 16px;
+  }
+  .sec_04 .container .txt>p>br{
+    display: block;
+  }
+  .sec_04 .event > .txt > a{
+    margin-top: 57px;
+  }
+
 }
 /* mobile media  */
