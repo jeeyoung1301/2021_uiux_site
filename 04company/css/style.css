@@ -11,8 +11,11 @@ body {
   height: 72px;
 }
 .headerTop .logo {
-  height: 50px;
+  width: 200px;
   padding: 3px 0 0 0;
+}
+.headerTop .logo img{
+  width: 80%;
 }
 .gnb a {
   font-weight: bold;
@@ -332,7 +335,7 @@ body {
     background-image: url(../images/sec04_bg02.jpg);
 }
 .sec_04 h3{
-    font-size: 32px;
+    font-size: 22px;
     color: #333;
 }
 .sec_04 h3:after{
@@ -344,7 +347,7 @@ body {
     background: #333;
 }
 .sec_04 p{
-    font-size: 20px;
+    font-size: 16px;
     color: #333;
     padding-top: 36px;
 }
@@ -643,7 +646,7 @@ footer{
 
 @media screen and (max-width: 699px) {
   #headerWrap {
-    height: 50px;
+    height: 40px;
     width: 100%;
     z-index: 1;
     position: fixed;
@@ -657,7 +660,11 @@ footer{
     align-items: center;
     z-index: 99999;
   }
+  .headerTop .logo {
+    width: 180px;
+    padding: 0 26px;
 
+  }
   /* gnb  */
   .headerTop .gnb {
     background: skyblue;
@@ -1014,16 +1021,30 @@ footer{
   .sliderWrap_03 .bx-wrapper .bx-pager.bx-default-pager a {
     background: #b3b3b3;
   }
-  .sliderWrap_03 .bx-clone {
-    display: none;
-  }
 
   .content > ul > li:nth-child(7) {
     order: 6;
     width: 100%;
-    height: 210px;
-    background: skyblue;
+    position: unset;
+    overflow: hidden;
   }
+  .slider_04 > li{
+    height: 210px;
+  }
+  .slider_04 > li > img{
+    height: 210px;
+  }
+  .slider_04 > li > a > img{
+    bottom: 30px;
+  }
+  .sliderWrap_04 .bx-wrapper{
+    height: 210px;
+  }
+  .sliderWrap_04 .bx-pager {
+    bottom: 30px;
+    left: 28px;
+  }
+
   .content > ul > li:nth-child(8) {
     display: none;
   }
