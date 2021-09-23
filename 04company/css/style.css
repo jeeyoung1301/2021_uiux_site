@@ -696,6 +696,7 @@ footer{
     height: 40px;
     position: relative;
     cursor: pointer;
+    z-index: 99999;
   }
   .toggleMenu div {
     position: absolute;
