@@ -1035,13 +1035,13 @@ footer{
   }
   .sec_02 .container {
     width: 100%;
-    padding: 60px 20px;
+    padding: 30px 20px;
   }
   .sec_02 .vision li {
     /* width: 200px; */
     width: calc((100% - 20px) / 2);
-    margin-bottom: 20px;
-    height: 200px;
+    margin-bottom: 30px;
+    height: 160px;
     padding: 20px;
   }
   .sec_02 .vision li:nth-child(2n) {
@@ -1050,6 +1050,14 @@ footer{
   }
   .sec_02 .cardBody > p {
     display: none;
+  }
+  .sec_02 .vision .card img{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+  }
+  .sec_02 .vision li:nth-child(1) .card img{
+    height: 60px;
   }
 
   .sec_03 {
@@ -1162,9 +1170,11 @@ footer{
   .footer > .txt > ul {
     margin-bottom: 0;
     padding-bottom: 18px;
+    font-size: 10px;
   }
   .footer > .txt > address {
     padding-bottom: 18px;
+    font-size: 10px;
   }
   .form {
     padding-bottom: 10px;
@@ -1172,6 +1182,10 @@ footer{
   .form #site {
     width: 140px;
     font-size: 12px;
+  }
+  .form li:nth-child(2),
+  .form li:nth-child(3){
+    display: none;
   }
 
 }
