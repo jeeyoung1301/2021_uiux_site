@@ -668,7 +668,7 @@ footer{
     top: 0;
     text-align: center;
     transition: 0.3s;
-    z-index: 2;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -696,7 +696,7 @@ footer{
     height: 40px;
     position: relative;
     cursor: pointer;
-    z-index: 3;
+    z-index: 2;
   }
   .toggleMenu div {
     position: absolute;
