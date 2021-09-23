@@ -314,7 +314,7 @@ body {
 }
 .sec_04 {
     width: 1240px;
-    margin: 0 auto;
+    margin: 0 auto 60px auto;
 }
 
 .sec_04 > .container > div{
@@ -377,13 +377,13 @@ footer{
 }
 .footer {
   width: 1240px;
-  margin: 0px auto;
+  margin: 60px auto 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .footer > h1{
-  margin: 79.5px 50px;
+  margin: 0 50px;
 }
 .footer > .txt {
   font-size: 12px;
@@ -1061,8 +1061,8 @@ footer{
   .sec_02 .vision li {
     /* width: 200px; */
     width: calc((100% - 20px) / 2);
-    margin-bottom: 30px;
-    height: 160px;
+    margin-bottom: 20px;
+    height: 170px;
     padding: 20px;
   }
   .sec_02 .vision li:nth-child(2n) {
@@ -1078,7 +1078,7 @@ footer{
     margin-bottom: 10px;
   }
   .sec_02 .vision li:nth-child(1) .card img{
-    height: 60px;
+    /* height: 60px; */
   }
 
   .sec_03 {
@@ -1155,6 +1155,7 @@ footer{
 
   .sec_04{
     width: 100%;
+    margin-bottom: 0;
   }
   .sec_04 .event .txt{
     top: 26px;left: 26px;
