@@ -958,9 +958,9 @@ footer{
   }
   .content > ul > li:nth-child(5) img {
     position: absolute;
-    height: 60%;
-    left: 45%;
-    top: 56px;
+    height: 50%;
+    left: 40%;
+    top: 60px;
   }
 
   .content > ul > li:nth-child(6) {
