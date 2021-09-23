@@ -644,6 +644,9 @@ footer{
 @media screen and (max-width: 699px) {
   #headerWrap {
     height: 50px;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
   }
   .headerTop {
     padding: 0;
