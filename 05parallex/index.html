@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+      }
+      .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      a:link,
+      a:visited {
+        color: black;
+        text-decoration: none;
+      }
+
+      body {
+        height: 400vh;
+        background-color: #210002;
+      }
+      .header {
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        background-color: #210002;
+      }
+      .layer {
+        /* width: 100vh; */
+        width: 100%;
+        /* height: 100vh; */
+        height: 1000px;
+        /* 높이 지정해야 창 줄여도 같게 보임 */
+        position: absolute;
+        /* background-position: center bottom; */
+        background-position: bottom center;
+        /* background-repeat: no-repeat; */
+        background-repeat: repeat-x;
+      }
+      .p0 {
+        background-image: url(images/parallax0.png);
+      }
+      .p1 {
+        background-image: url(images/parallax1.png);
+      }
+      .p2 {
+        background-image: url(images/parallax2.png);
+      }
+      .p3 {
+        background-image: url(images/parallax3.png);
+      }
+      .p4 {
+        background-image: url(images/parallax4.png);
+      }
+      .p5 {
+        background-image: url(images/parallax5.png);
+      }
+      .p6 {
+        background-image: url(images/parallax6.png);
+      }
+      .p7 {
+        background-image: url(images/parallax7.png);
+      }
+      .p8 {
+        background-image: url(images/parallax8.png);
+      }
+
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="layer p0" data-speed="4"></div>
+      <div class="layer p1" data-speed="5"></div>
+      <div class="layer p2" data-speed="4"></div>
+      <div class="layer p3" data-speed="7"></div>
+      <div class="layer p4" data-speed="8"></div>
+      <div class="layer p5" data-speed="10"></div>
+      <div class="layer p6" data-speed="20"></div>
+      <div class="layer p7" data-speed="30"></div>
+      <div class="layer p8" data-speed="50"></div>
+    </div>
+
+    <div class="container">1111</div>
+
+    <script>
+      let layer = document.querySelectorAll(".layer");
+
+      window.addEventListener("scroll", function () {
+        let scroll = window.pageYOffset;
+        // console.log(scroll);
+
+        layer.forEach(function(item,index){
+            // console.log(index);
+            // data-speed / scroll / style (transform변경)
+            // scroll 값을 data로 나눔
+            let speed = item.dataset.speed; //data-speed의 4라는 값이 앞의 speed에 들어감
+
+            // item = document.querySelectorAll('.layer')[0] ~ [8]
+
+            item.style.transform = `translate3d(0,${scroll/speed*4}px,0)` // `translate3d(x,y,z)`
+        });
+      });
+    </script>
+  </body>
+</html>
