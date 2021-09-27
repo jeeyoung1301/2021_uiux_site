@@ -886,8 +886,7 @@ footer{
   }
   .headerTop .logo {
     width: 180px;
-    padding: 0;
-
+    margin-left: 15px;
   }
   /* gnb  */
   .headerTop .gnb {
@@ -903,6 +902,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .headerTop .gnb.view {
     left: 0;
@@ -928,6 +928,7 @@ footer{
     position: relative;
     cursor: pointer;
     z-index: 2;
+    margin-right: 15px;
   }
   .toggleMenu div {
     position: absolute;
