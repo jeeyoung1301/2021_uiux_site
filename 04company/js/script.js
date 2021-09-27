@@ -43,8 +43,8 @@ $(document).ready(function(){
     });
     $('.slider_04 > li a').colorbox({
         iframe:true,
-        innerWidth:700,
-        innerHeight:393.75
+        innerWidth:'50%',
+        innerHeight:'100%'
     });
 
 

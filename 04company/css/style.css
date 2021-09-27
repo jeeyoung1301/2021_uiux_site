@@ -489,7 +489,7 @@ footer{
   font-size: 20px;
   color: white;
 }
-.subImgTitle > div{
+.subImgTitle .bar{
   color: #EE2C33;
   font-size: 16px;
   font-weight: bold;
@@ -532,25 +532,27 @@ footer{
 .section > div{display: none;}
 .section > div:first-child{display: block;}
 
+.section .txt{
+  width: 1240px;
+  margin: 36px auto 0px auto;
+  color: #333;
+}
+.section .txt h2{
+  text-align: center;
+  font-size: 40px;
+  margin: 50px 0 30px 0;
+}
+.section img{
+  width: 1240px;
+  margin: 0 auto;
+}
+
 /* sub company_dongsuh  */
 #company{
   height: 400px;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
-}
-.companyDongsuh .txt{
-  width: 1240px;
-  margin: 36px auto 0px auto;
-  color: #333;
-}
-.companyDongsuh .section .txt h2{
-  text-align: center;
-  font-size: 40px;
-  margin: 50px 0 30px 0;
-}
-.companyDongsuh .section img{
-  width: 100%;
 }
 .companyDongsuh > #company{
   background-image: url(../images/sub01_01visual.jpg);
@@ -573,20 +575,6 @@ footer{
   background-position: center center;
   position: relative;
 }
-.companySafe .section .txt{
-  width: 1240px;
-  margin: 36px auto 0px auto;
-  color: #333;
-}
-.companySafe .section .txt h2{
-  text-align: center;
-  font-size: 40px;
-  margin: 50px 0 30px 0;
-}
-.companySafe .section img{
-  width: 1240px;
-  margin: 0 auto;
-}
 .companySafe > #company{
   background-image: url(../images/sub01_02visual.jpg);
   background-size: 100% cover;
@@ -601,6 +589,54 @@ footer{
 .companySafe #company .gnb > ul > li:first-child > .subWrap > ul > li:nth-child(2).active > a{
   color: #ee2c33;
 }
+/* sub promotion  */
+#promotion{
+  position: relative;
+}
+.promotion .tabMenu{
+  position: absolute;
+  top: 358px;
+}
+.promotion .tabMenu li{
+  width: calc(1240px / 9);
+  text-align: center;
+}
+.promotion .section .txt{
+  padding-top: 140px;
+}
+.promotion #promotion .gnb > ul > li:nth-child(3).active > a{
+  color: #ee2c33;
+}
+.promotion #promotion .gnb > ul > li:nth-child(3) > .subWrap > ul > li:first-child.active > a{
+  color: #ee2c33;
+}
+.promotion .section{
+  padding-top: 60px;
+}
+.promotion .section .subImgTitle{
+  padding-top: 70px;
+}
+.promotion .section .subImgTitle h5,
+.promotion .section .subImgTitle h3,
+.promotion .section .subImgTitle p{
+  color: #333;
+}
+.promotion .section{
+  background-color: #F4F4F4;
+}
+.promotion .sectionEvent,
+.promotion .sectionCoffeeclass,
+.promotion .sectionCoffeetaste,
+.promotion .sectionSns{
+  background-color: #F4EFE6;
+}
+.promotion .sectionWebzine{
+  background-color: #fff;
+}
+.promotion .sectionPrfilm img{
+  padding-top: 78px;
+}
+
 
 @media screen and (min-width: 700px) {
   #main_header {
@@ -1048,9 +1084,9 @@ footer{
     order: 8;
     cursor: pointer;
   }
-  .content > ul > li:nth-child(2n) {
+  /* .content > ul > li:nth-child(2n) {
     background: skyblue;
-  }
+  } */
   .content > ul > li:nth-child(1) {
     display: none;
   }
