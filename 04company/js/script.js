@@ -1,17 +1,3 @@
-$(window).scroll(function(){
-    win_scr = $(window).scrollTop();
-    if(win_scr<50){
-        $('#main_header #headerWrap').css({background:'none'})
-        $('#main_header .gnb > ul > li > a').css({color:'#fff'})
-    }
-    else{
-        $('#main_header #headerWrap').css({background:'rgba(255,255,255,0.6)',transition:'0.3s',});
-        $('#main_header .gnb > ul > li > a').css({color:'#333'});
-        $('#main_header .lan a').css({color:'#333'});
-    }
-    
-});
-
 $(document).ready(function(){
     const visual_01 = $('.slider').bxSlider({
         controls:false,
