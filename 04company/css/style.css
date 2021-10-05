@@ -1578,10 +1578,6 @@ footer{
     width: 100%;
     /* display: none; */
   }
-  .sectionMo > .mobile > img{
-    /* width: 100vw; */
-    display: none;
-  }
   .tabMenu > .tab{
     width: 100%;
   }
@@ -1622,6 +1618,9 @@ footer{
   .companySafe > #company > .tabMenu > .tab > li{
     width: 50%;
   }
+
+  /* sub promotion */
+  .promotion #promotion .section img{width: 20%;}
 
 
 
