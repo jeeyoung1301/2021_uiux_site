@@ -1620,7 +1620,16 @@ footer{
   }
 
   /* sub promotion */
-  .promotion #promotion .section img{width: 20%;}
+  .promotion #promotion .tabMenu{
+    top: 240px;
+  }
+  .promotion .section .subImgTitle{
+    padding-top: 20px;
+  }
+  .promotion .section .txt{
+    padding-top: 200px;
+  }
+  /* .promotion .section img{width: 80%;} */
 
 
 
