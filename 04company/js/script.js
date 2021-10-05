@@ -29,8 +29,8 @@ $(document).ready(function(){
     });
     $('.slider_04 > li a').colorbox({
         iframe:true,
-        innerWidth:'50%',
-        innerHeight:'100%'
+        innerWidth:'64%',
+        innerHeight:'64%'
     });
 
 
