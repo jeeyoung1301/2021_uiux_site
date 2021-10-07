@@ -714,6 +714,50 @@ footer{
 .product_intro{
   background-color: #F4F1E6;
 }
+/* sub csr */
+#csr{
+  position: relative;
+}
+.csr .subImgTitle{
+  height: 362px;
+}
+#csr .tabMenu{
+  position: absolute;
+  top:356px;
+}
+#csr .tabMenu li{
+  width: calc(1240px / 6);
+  text-align: center;
+}
+.csr .section .txt{
+  padding-top: 36px;
+  background: white;
+}
+.csr .sectionLiteraryAward{
+  background-image: url(../images/subpage/bg_literary.jpg);
+  background-repeat: no-repeat;
+}
+.csr .sectionMaximAward{
+  background-image: url(../images/subpage/bg_award.jpg);
+  background-repeat: no-repeat;
+}
+.csr .sectionCoffeeClassic{
+  background-image: url(../images/subpage/bg_coffee_classic.jpg);
+  background-repeat: no-repeat;
+}
+.csr .sectionScholarship{
+  background-image: url(../images/subpage/bg_scholarship.jpg);
+  background-repeat: no-repeat;
+}
+.csr .sectionMaximLove{
+  background-image: url(../images/subpage/bg_love.jpg);
+  background-repeat: no-repeat;
+}
+.csr .sectionLibrary{
+  background-image: url(../images/subpage/bg_library.jpg);
+  background-repeat: no-repeat;
+}
+
 
 
 
@@ -776,21 +820,16 @@ footer{
     line-height: 40px;
   }
   .gnb li:nth-child(1) .submenu{
-    left: calc(50% - 150px);
+    left: calc(50% - 90px);
     transform: translateX(-50%);
   }
   .gnb li:nth-child(2) .submenu{
-    left: calc(50% - 30px);
+    left: calc(50% + 30px);
     transform: translateX(-50%);
   }
-  .gnb li:nth-child(3) .submenu{
-    left: 10px;
-  }
-  .gnb li:nth-child(4) .submenu{
-    left: 30px;
-  }
+
   .gnb li:nth-child(5) .submenu{
-    right: 0;
+    right: -20px;
   }
 
   .toggleMenu {
@@ -1713,6 +1752,28 @@ footer{
     width: 33.3%;
   }
   .promotion .section img{width: 90%;}
+
+  /* csr  */
+
+  .csr .section{
+    padding-top: 40px;
+  }
+  .csr #csr .tabMenu{
+    top: 240px;
+  }
+  .csr .section .subImgTitle{
+    padding-top: 40px;
+  }
+  .csr .section .txt{
+    padding-top: 200px;
+  }
+  .csr #csr .tabMenu li{
+    width: 33.3%;
+  }
+  .csr .section img{width: 90%;}
+  .csr .sectionLiteraryAward{
+    background-size: 100%;
+  }
 
 
 
