@@ -759,7 +759,25 @@ footer{
   background-repeat: no-repeat;
 }
 
-
+/* sub customer  */
+.customer_faq{
+  background-color: #f4f4f4;
+}
+.customer_etc .subImgTitle p,
+.customer_etc .subImgTitle h3,
+.customer_etc .subImgTitle h5,
+.customer_faq .subImgTitle p,
+.customer_faq .subImgTitle h3,
+.customer_faq .subImgTitle h5,
+.customer_complain .subImgTitle p,
+.customer_complain .subImgTitle h3,
+.customer_complain .subImgTitle h5{
+  color: #333;
+}
+.customer_complain .subImgTitle,
+.customer_etc .subImgTitle{
+  padding-bottom: 50px;
+}
 
 
 @media screen and (min-width: 700px) {
@@ -1772,17 +1790,16 @@ footer{
   }
   .csr .section .subImgTitle{
     padding-top: 40px;
-    height: 300px;
-  }
-  .csr .section .subImgTitle p{
-    padding-bottom: 200px;
+    height: 290px;
   }
   .csr #csr .tabMenu li{
     width: 33.3%;
   }
   .csr .section .txt{
     padding-top: 0;
-    padding-left: 30px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
   .csr .section img{width: 90%;}
   .csr .sectionLiteraryAward{
