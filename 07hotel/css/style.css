@@ -2,7 +2,9 @@
 :root{
     --primary-color:#AD9E87;
 }
-
+body{
+    overflow-x: hidden;
+}
 .topWrap{
     background-color: #E9E8E7;
     width: 100%;
@@ -15,7 +17,6 @@
 }
 .top h1{
     position: absolute;
-    margin: 0;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -26,22 +27,40 @@
     left: 50%;
     transform: translate(-50%,-50% );
 }
-.top > ul{
-    margin: 0;
-    float: right;
-}
 .top > ul >li{
-    float: left;
     line-height: 50px;
     font-size: 12px;
-    text-align: center;
-    margin-left: 8px;
 }
-.top > ul > .lan > .nav-link,
-.top > ul > .currency > .nav-link{
-    padding: 0;
+.currency .dropdown-menu,
+.lan .dropdown-menu{
+    top: -6px !important;
+    min-width: initial;
 }
-.dropdown-item{}
+.lan .nav-link{
+    background-image: url(../images/ico-lang.png);
+    background-position: -6px -233px;
+}
+.lan .nav-link,
+.lan .dropdown-item{
+    background-repeat: no-repeat;
+}
+.lan .dropdown-item:nth-child(1){
+    background-image: url(../images/ico-lang.png);
+    background-position: -10px -46px;
+}
+.lan .dropdown-item:nth-child(2){
+    background-image: url(../images/ico-lang.png);
+    background-position: -10px -85px;
+}
+.lan .dropdown-item:nth-child(3){
+    background-image: url(../images/ico-lang.png);
+    background-position: -10px -5px;
+}
+.lan .dropdown-menu a,
+.currency .dropdown-menu a{
+    font-size: 12px;
+    line-height: 16px;
+}
 .navWrap{
     width: 100%;
     background: var(--primary-color);
@@ -50,19 +69,27 @@
 .navWrap .navbar{
     width: 1140px;
     margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
 }
 .navbar .navbar-brand{
     display: none;
 }
+.navbar .collapse button{
+    background-color: #193028;
+    font-size: 14px;
+}
 
-@media screen and (max-width:699px) {
+@media screen and (max-width:768px) {
     .navbar .navbar-brand{
         display: block;
     }
-    .top{
+    .topWrap{
         display: none;
+    }
+    .navWrap .navbar{
+        width: initial;
+    }
+    .navbar{
+        background: #AD9E87;
     }
     
 }
