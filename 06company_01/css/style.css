@@ -3,9 +3,10 @@
 :root{
     --primary-color:#02b3e4;
     --secondary-color:#ff5483;
-    --third-color:#;
 }
-
+.navbar{
+    transition: 0.3s;
+}
 #headerWrap .bgcolor01{
     background-image: linear-gradient(316deg,#02ccba 0%,#aa7ecd 100%);
     position: absolute;
@@ -163,5 +164,8 @@
 /* subpage catalog */
 .subpage.catalog{
     background-image: url(../images/nano2.jpg);
+}
+.navbar.onView{
+    background: none;
 }
 

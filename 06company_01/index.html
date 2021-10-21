@@ -16,27 +16,27 @@
           <div class="bgcolor01"></div>
           <div class="container px-md-0">
               <nav class="navbar navbar-expand-md navbar-dark px-md-0">
-                  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" style="width: 180px;"></a>
-                  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                      aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="collapsibleNavId">
-                      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                          <li class="nav-item">
-                              <a class="nav-link" href="company.html">COMPANY</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="catalog.html">CATALOG</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">BUSINESS</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">COMMUNITY</a>
-                          </li>
-                      </ul>
-                  </div>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" style="width: 180px;"></a>
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="company.html">COMPANY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="catalog.html">CATALOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BUSINESS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">COMMUNITY</a>
+                            </li>
+                        </ul>
+                    </div>
               </nav>
               <div class="row">
                   <div class="col-xl-8 mb-3 mb-xl-0">
@@ -360,6 +360,18 @@
         },
 
         });
+
+        window.addEventListener('scroll',function(){
+            let scrollY = window.pageYOffset;
+            if (scrollY > 60){
+                document.querySelector('.navbar').classList.add('fixed-top','bg-dark','px-lg-5')
+            }
+            else{
+                document.querySelector('.navbar').classList.remove('fixed-top','bg-dark','px-lg-5')
+            }
+        })
+
+
     </script>
   </body>
 </html>
