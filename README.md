@@ -4,3 +4,5 @@
 1. tour https://jeeyoung1301.github.io/2021_uiux_site/03tour
 1. company https://jeeyoung1301.github.io/2021_uiux_site/04company
 1. parallex https://jeeyoung1301.github.io/2021_uiux_site/05parallex
+1. company_boot1 https://jeeyoung1301.github.io/2021_uiux_site/06company
+1. company_boot2 https://jeeyoung1301.github.io/2021_uiux_site/06company_01
