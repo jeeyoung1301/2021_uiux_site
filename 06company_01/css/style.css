@@ -143,3 +143,25 @@
     background-size: cover;
     background-attachment: fixed;
 }
+
+/* subpage */
+.subpage{
+    background: skyblue;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.subcontent{
+    position: relative;
+}
+/* subpage company */
+.subpage.company{
+    background-image: url(../images/contact-cover.jpg);
+}
+
+/* subpage catalog */
+.subpage.catalog{
+    background-image: url(../images/nano2.jpg);
+}
+
