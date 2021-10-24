@@ -111,6 +111,9 @@ body{
     .navbar{
         background: #AD9E87;
     }
+    .visual{
+        overflow:hidden;
+    }
     .visaul video{
         width: 100vw;
         height: 100vh;
