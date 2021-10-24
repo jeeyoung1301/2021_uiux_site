@@ -369,7 +369,18 @@
             else{
                 document.querySelector('.navbar').classList.remove('fixed-top','bg-dark','px-lg-5')
             }
+        });
+        window.addEventListener('resize',function(){
+            let winWidth = window.innerWidth;
+            console.log(winWidth)
+            if( winWidth < 768){
+                document.querySelector('.navbar-toggler').classList.add('onview')
+            }
+            else{
+                document.querySelector('.navbar-toggler').classList.remove('onview')
+            }
         })
+        
 
 
     </script>
