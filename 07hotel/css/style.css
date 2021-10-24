@@ -111,5 +111,8 @@ body{
     .navbar{
         background: #AD9E87;
     }
+    .visaul video{
+        width: 100%;
+    }
     
 }
