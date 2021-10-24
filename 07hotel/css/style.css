@@ -75,7 +75,27 @@ body{
 }
 .navbar .collapse button{
     background-color: #193028;
-    font-size: 14px;
+}
+.visual video{
+    width: 100vw;
+}
+.visual{
+    position: relative;
+}
+.visual .txt{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container .card-img img{
+    transition: 0.5s ease-in-out;
+}
+.container .card-img:hover img{
+    transform: scale(1.05);
+}
+.container .card{
+    cursor: pointer;
 }
 
 @media screen and (max-width:768px) {
