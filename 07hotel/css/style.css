@@ -4,6 +4,7 @@
 }
 body{
     overflow-x: hidden;
+    height: 100vh;
 }
 .topWrap{
     background-color: #E9E8E7;
@@ -101,7 +102,74 @@ body{
 .container .card p{
     font-size: 14px;
 }
+.container .card-text > span:nth-child(2):after{
+    content: "";
+    display: block;
+    width: inherit;
+    height: 1px;
+    background: #000;
+}
+.container .card h5{
+    font-size: 16px;
+}
+.container .card h5:after{
+    content: "";
+    display: block;
+    width: inherit;
+    height: 1px;
+    background: #000;
+    margin: 30px 0;
+}
+.rooms{
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.slide{
+    width: 100%;
+    background: #AD9E87;
+}
+.slide .carousel-indicators{
+    left: initial;
+    margin-right: 11.5%;
+}
+.slide .carousel-indicators li{
+    width: 20px;
+}
+.slide #carousel{
+    width: 1140px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slide .carousel-inner img{
+    width: 700px;
+}
+.slide .carousel-inner .txtWrap{
+    right: 40px;
+    top: 40%;
+    width: 400px;
+}
+.slide .carousel-inner .txtWrap .bar{
+    height: 1px;
+    width: 150px;
+    background: #fff;
+}
 
+.slide .carousel-inner .txt{
+    width: 300px;
+}
+.slide .carousel-item .carousel-caption{
+    left: 16px;
+    right: initial;
+    bottom: 0;
+    padding: 0;
+}
+.slide .carousel-control-prev,
+.slide .carousel-control-next{
+    width: initial;
+}
 @media screen and (max-width:768px) {
     .navbar .navbar-brand{
         display: block;
