@@ -88,6 +88,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
+/* container  */
 .container .card-img img{
     transition: 0.5s ease-in-out;
 }
@@ -96,6 +97,9 @@ body{
 }
 .container .card{
     cursor: pointer;
+}
+.container .card p{
+    font-size: 14px;
 }
 
 @media screen and (max-width:768px) {
