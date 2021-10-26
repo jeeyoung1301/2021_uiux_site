@@ -8,7 +8,7 @@ body{
 }
 .topWrap{
     background-color: #E9E8E7;
-    width: 100%;
+    width: 100vw;
 }
 .top{
     width: 1140px;
@@ -63,13 +63,18 @@ body{
     line-height: 16px;
 }
 .navWrap{
-    width: 100%;
+    width: 100vw;
     background: var(--primary-color);
     height: 60px;
+    z-index: 1111;
+}
+.navWrap.position-fixed{
+    top: 0;
 }
 .navWrap .navbar{
     width: 1140px;
     margin: 0 auto;
+    z-index: 1111;
 }
 .navbar .navbar-brand{
     display: none;
@@ -77,6 +82,7 @@ body{
 .navbar .collapse button{
     background-color: #193028;
 }
+/* visual  */
 .visual video{
     width: 100vw;
 }
@@ -183,9 +189,12 @@ body{
     .navbar{
         background: #AD9E87;
     }
-    .visual{
-        width: 100%;
-        overflow:hidden;
+    .visual video{
+        height: 100vh;
+        object-fit: fill;
+        top: 0;
+        left: 0;
     }
+
     
 }
