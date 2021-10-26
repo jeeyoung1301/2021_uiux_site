@@ -176,6 +176,23 @@ body{
 .slide .carousel-control-next{
     width: initial;
 }
+.introduction .img-view{
+    position: relative;
+    height: 400px;
+}
+.introduction .img-view img{
+    position: absolute;
+}
+.introduction .img-1st{
+    width: 500px;
+    right: 0;
+    top: 0;
+}
+.introduction .img-2nd{
+    width: 400px;
+    bottom: 0;
+    left: 0;
+}
 @media screen and (max-width:768px) {
     .navbar .navbar-brand{
         display: block;
