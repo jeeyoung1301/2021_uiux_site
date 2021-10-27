@@ -55,6 +55,9 @@
                     <div class="collapse navbar-collapse" id="collapsibleNavId">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item dropdown">
+                                <a class="nav-link text-white d-block d-md-none" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">객실예약</a>
+                            </li>
+                            <li class="nav-item dropdown">
                                 <a class="nav-link text-white" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">시그니엘 서울 소개</a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownId">
                                     <a class="dropdown-item" href="#">시그니엘 서울 소개</a>
@@ -132,11 +135,12 @@
             </form>
             </div>
       </div>
-      <div class="container">
+      <div class="container special-offers">
           <h2 class="py-5">Special Offers</h2>
           <div class="row">
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
                   <div class="card" onclick="location.href=''">
+                      <div class="package d-flex align-items-center justify-content-center text-white">패키지</div>
                       <div class="card-img overflow-hidden">
                           <img src="images/offers01.png" alt="" class="img-fluid w-100">
                       </div>
@@ -144,7 +148,7 @@
                           <h4 class="card-title">Falling in fall</h4>
                           <div class="card-text">
                               <h5 class="">객실+24/30시간 투숙+기타 특전</h5>
-                              <p>
+                              <p class="mt-5">
                                 <span style="font-weight: bold;">투숙:</span> 2021년 10월 01일 - 2021년 11월 30일<br>
                                 <span style="font-weight: bold;">예약:</span> 2021년 10월 01일 - 2021년 11월 29일
                               </p>
@@ -155,24 +159,26 @@
               </div>
               <div class="col-lg-4 col-md-6">
                   <div class="card" onclick="location.href=''">
+                      <div class="package d-flex align-items-center justify-content-center text-white">패키지</div>
                       <div class="card-img overflow-hidden ">
                           <img src="images/offers02.png" alt="" class="w-100 img-fluid">
                       </div>
                       <div class="card-body">
-                          <h4 class="card-title">Falling in fall</h4>
+                          <h4 class="card-title">Eternal Promise</h4>
                           <div class="card-text clearfix">
-                              <h5 class="mb-3">객실+24/30시간 투숙+기타 특전</h5>
-                              <p>
-                                <span style="font-weight: bold;">투숙:</span> 2021년 10월 01일 - 2021년 11월 30일<br>
-                                <span style="font-weight: bold;">예약:</span> 2021년 10월 01일 - 2021년 11월 29일
+                              <h5 class="mb-3">객실+객실 데코레이션+와인/초콜릿</h5>
+                              <p class="mt-5">
+                                <span style="font-weight: bold;">투숙:</span> 2021년 10월 01일 - 2021년 12월 22일<br>
+                                <span style="font-weight: bold;">예약:</span> 2021년 10월 01일 - 2021년 12월 21일
                               </p>
-                              <p class="float-right m-0">최저<span style="font-size: 24px;">480,000</span>KRW</p>
+                              <p class="float-right m-0">최저<span style="font-size: 24px;">750,000</span>KRW</p>
                           </div>
                       </div>
                   </div>
               </div>
               <div class="col-lg-4 col-md-6 d-none d-lg-block">
                   <div class="card" onclick="location.href=''">
+                      <div class="package d-flex align-items-center justify-content-center text-white">패키지</div>
                       <div class="card-img overflow-hidden">
                           <img src="images/offers03.png" alt="" class="w-100 img-fluid">
                       </div>
@@ -206,14 +212,16 @@
                 <li data-target="#carousel" data-slide-to="7"></li>
                 <li data-target="#carousel" data-slide-to="8"></li>
                 <li data-target="#carousel" data-slide-to="9"></li>
-                <li data-target="#carousel" data-slide-to="10"></li>
           </ol>
           <div class="carousel-inner">
                 <div class="carousel-item active position-relative">
                 <div class="img text-center">
                     <img src="images/01grand-delux-room.jpg" class="d-block img-fluid" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p style="font-size: 12px;"><span style="font-weight: bold;font-size: 14px;">그랜드 디럭스 룸</span> | 침대타입 더블 | 투숙인원 2명 | 전망 시티뷰/리버뷰/전망욕실 | 객실면적 40~50m<sup>2</sup></p>
+                    <div class="title">
+                        <h5 class="text-white">그랜드 디럭스 룸</h5>
+                    </div>
+                    <div class="carousel-caption">
+                        <p style="font-size: 12px;" class="d-none d-md-block"><span style="font-weight: bold;font-size: 14px;">그랜드 디럭스 룸</span> | 침대타입 더블 | 투숙인원 2명 | 전망 시티뷰/리버뷰/전망욕실 | 객실면적 40~50m<sup>2</sup></p>
                     </div>
                 </div>
                 <div class="txtWrap position-absolute">
@@ -283,7 +291,7 @@
                 </div>
                 <div class="carousel-item position-relative">
                 <div class="img text-center">
-                    <img src="images/03signiel-premier-room.jpg" class="d-block img-fluid" alt="...">
+                    <img src="images//05premier-suite-room.jpg" class="d-block img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p style="font-size: 12px;"><span style="font-weight: bold;font-size: 14px;">프리미어 스위트 룸</span> | 침대타입 더블/트윈 | 투숙인원 2명 | 전망 시티뷰 | 객실면적 70~86m<sup>2</sup></p>
                     </div>
@@ -300,7 +308,7 @@
                 </div>
                 <div class="carousel-item position-relative">
                 <div class="img text-center">
-                    <img src="images/03signiel-premier-room.jpg" class="d-block img-fluid" alt="...">
+                    <img src="images/06korean-premier-room.jpg" class="d-block img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p style="font-size: 12px;"><span style="font-weight: bold;font-size: 14px;">시그니엘 프리미어 룸</span> | 침대타입 더블/트윈 | 투숙인원 2명 | 전망 시티뷰/전망욕실/리버뷰 및 전망욕실 | 객실면적 56~65m<sup>2</sup></p>
                     </div>
@@ -318,7 +326,7 @@
                 </div>
                 <div class="carousel-item position-relative">
                 <div class="img text-center">
-                    <img src="images/03signiel-premier-room.jpg" class="d-block img-fluid" alt="...">
+                    <img src="images/07korean-signiel-premier-room.jpg" class="d-block img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p style="font-size: 12px;"><span style="font-weight: bold;font-size: 14px;">시그니엘 프리미어 룸</span> | 침대타입 더블/트윈 | 투숙인원 2명 | 전망 시티뷰/전망욕실/리버뷰 및 전망욕실 | 객실면적 56~65m<sup>2</sup></p>
                     </div>
@@ -336,7 +344,7 @@
                 </div>
                 <div class="carousel-item position-relative">
                 <div class="img text-center">
-                    <img src="images/03signiel-premier-room.jpg" class="d-block img-fluid" alt="...">
+                    <img src="images/08korean-suite-room.jpg" class="d-block img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p style="font-size: 12px;"><span style="font-weight: bold;font-size: 14px;">시그니엘 프리미어 룸</span> | 침대타입 더블/트윈 | 투숙인원 2명 | 전망 시티뷰/전망욕실/리버뷰 및 전망욕실 | 객실면적 56~65m<sup>2</sup></p>
                     </div>
@@ -354,7 +362,7 @@
                 </div>
                 <div class="carousel-item position-relative">
                 <div class="img text-center">
-                    <img src="images/03signiel-premier-room.jpg" class="d-block img-fluid" alt="...">
+                    <img src="images/09presidential-suite-room.jpg" class="d-block img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <p style="font-size: 12px;"><span style="font-weight: bold;font-size: 14px;">시그니엘 프리미어 룸</span> | 침대타입 더블/트윈 | 투숙인원 2명 | 전망 시티뷰/전망욕실/리버뷰 및 전망욕실 | 객실면적 56~65m<sup>2</sup></p>
                     </div>
@@ -402,14 +410,37 @@
 
       <div class="container introduction">
           <h2 class="py-5">Introduction</h2>
-          <div class="row">
-              <div class="col-md-6 d-flex flex-column justify-content-center order2 order-md-1">
+          <div class="row mb-5 dining">
+              <div class="col-md-6 d-flex flex-column justify-content-center order-2 order-md-1">
+                  <div class="icon d-flex align-items-center justify-content-center mb-3"><img src="images/food.svg" alt=""></div>
                   <h4>다이닝</h4>
-                  <p>탁트인 도심의 전경을 바라보며 세계 최고 수준의 셰프들이 직접 선보이는 다양한 요리를 즐기실 수 있습니다.</p>
+                  <p>탁트인 도심의 전경을 바라보며 세계 최고 수준의 셰프들이<br> 직접 선보이는 다양한 요리를 즐기실 수 있습니다.</p>
               </div>
-              <div class="col-md-6 img-view order1 order-md-2">
-                <img src="images/dining01.jpg" alt="" class="img-1st">
-                <img src="images/dining02.jpg" alt="" class="img-2nd">
+              <div class="col-md-6 img-view order-1 order-md-2 mb-4 mb-md-0">
+                <img src="images/dining01.jpg" alt="" class="img-1st px-4 px-md-0">
+                <img src="images/dining02.jpg" alt="" class="img-2nd pl-4 pl-md-d">
+            </div>
+          </div>
+          <div class="row mb-5 facilities">
+              <div class="col-md-6 d-flex flex-column justify-content-center order-2 order-md-2">
+                  <div class="icon d-flex align-items-center justify-content-center mb-3"><img src="images/hot-tub.svg" alt=""></div>
+                  <h4>부대시설</h4>
+                  <p>고객의 라이프 스타일과 1:1 맞춤 카운셀링 결과를 토대로,<br> 각 개인에 적합한 프로그램 및 트리트먼트를 제공합니다.</p>
+              </div>
+              <div class="col-md-6 img-view order-1 order-md-1 mb-4 mb-md-0">
+                <img src="images/facilities01.jpg" alt="" class="img-1st px-4 px-md-0">
+                <img src="images/facilities02.jpg" alt="" class="img-2nd pr-4 pr-md-0">
+            </div>
+          </div>
+          <div class="row wedding-conference">
+              <div class="col-md-6 d-flex flex-column justify-content-center order-2 order-md-1">
+                  <div class="icon d-flex align-items-center justify-content-center mb-3"><img src="images/glass-cheers-solid.svg" alt=""></div>
+                  <h4>웨딩&컨벤션</h4>
+                  <p>가장 특별한 날, 웨딩&파티를 위한 최고의 장소와 섬세한 배려로 잊지 못할 순간을 선사하고, 고객의 성공적인 행사를 위해 첨단 시설과 품격 높은 서비스를 제공합니다. </p>
+              </div>
+              <div class="col-md-6 img-view order-1 order-md-2 mb-4 mb-md-0">
+                <img src="images/wedding.jpg" alt="" class="img-1st px-4 px-md-0">
+                <img src="images/conference.jpg" alt="" class="img-2nd pl-4 pl-md-d">
             </div>
           </div>
       </div>
@@ -428,7 +459,9 @@
             else{
                 nav.classList.remove('position-fixed')
             }
-        })
+        });
+
+
 
     </script>
 

@@ -96,6 +96,14 @@ body{
     transform: translateX(-50%);
 }
 /* container  */
+.container .package{
+    position: absolute;
+    font-size: 14px;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+}
 .container .card-img img{
     transition: 0.5s ease-in-out;
 }
@@ -107,6 +115,9 @@ body{
 }
 .container .card p{
     font-size: 14px;
+}
+.container .card-text{
+    height: 193px;
 }
 .container .card-text > span:nth-child(2):after{
     content: "";
@@ -126,6 +137,7 @@ body{
     background: #000;
     margin: 30px 0;
 }
+/* slide  */
 .rooms{
     max-width: 1140px;
     padding-right: 15px;
@@ -172,10 +184,16 @@ body{
     bottom: 0;
     padding: 0;
 }
+.slide .carousel-inner .img .title{
+    display: none;
+}
 .slide .carousel-control-prev,
 .slide .carousel-control-next{
     width: initial;
 }
+
+
+/* introduction */
 .introduction .img-view{
     position: relative;
     height: 400px;
@@ -189,9 +207,26 @@ body{
     top: 0;
 }
 .introduction .img-2nd{
-    width: 400px;
+    width: 350px;
     bottom: 0;
     left: 0;
+}
+.introduction .facilities .img-1st{
+    left: 0;
+    right: initial;
+}
+.introduction .facilities .img-2nd{
+    right: 0;
+    left: initial;
+}
+.introduction .icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #DFBF9F;
+}
+.introduction .icon img{
+    width: 50px;
 }
 @media screen and (max-width:768px) {
     .navbar .navbar-brand{
@@ -212,6 +247,39 @@ body{
         top: 0;
         left: 0;
     }
+
+    .slide #carousel{
+        width: initial;
+    }
+    .slide .carousel-inner .txtWrap{
+        display: none;
+    }
+    .slide .carousel-inner .img img{
+        width: 100vw;
+    }
+    .slide .carousel-inner .img .title{
+        display: block;
+        width: 130px;
+        height: 40px;
+        background: var(--primary-color);
+        position: absolute;
+        top: 0;
+    }
+    .slide .carousel-inner .img h5{
+        font-size: 14px;
+        line-height: 40px;
+    }
+    .slide .carousel-control-next,
+    .slide .carousel-control-prev{
+        display: none;
+    }
+    .slide .carousel-indicators{
+        left: 0;
+    }
+
+
+
+
 
     
 }
