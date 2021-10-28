@@ -104,7 +104,7 @@ body{
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
-    background: #8D8C8A;
+    background: #8c8b89;
 }
 .visual form ul{
     width: 1140px;
@@ -329,6 +329,35 @@ body{
     bottom: 16px;
     position: fixed;
 }
+
+/* container location  */
+.container.location .col-4{
+    background: #8c8b89;
+}
+.container.location .col-4 .txt{
+    padding: 40px;
+}
+.container.location .col-4 h5{
+    font-weight: bold;
+    font-size: 22px;
+}
+.container .info .col-6{
+    border-right: 1px solid #8c8b89;
+    font-size: 14px;
+}
+.container .info .col-6:last-child{
+    border-right: none;
+}
+
+/* promotion-video  */
+.container.promotion-video a{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
 @media screen and (max-width:768px) {
     .navbar .navbar-brand{
         display: block;
@@ -346,6 +375,8 @@ body{
     .navWrap .mo-login{
         display: block;
         border-bottom: 1px solid #333;
+        display: flex;
+        justify-content: space-between;
     }
     .navWrap .mo-login a:first-child{
         font-size: 18px;
@@ -462,6 +493,11 @@ body{
         display: flex;
         align-items: center;
         text-align: center;
+    }
+    
+    /* location  */
+    .container.location{
+        display: none;
     }
 
 
