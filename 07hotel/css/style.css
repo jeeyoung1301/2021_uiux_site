@@ -367,12 +367,12 @@ body{
         display: flex;
         justify-content: space-around;
         border-top: 1px solid #333;
-        margin-top: 5px;
+        margin-top: 0.5rem;
     }
     .navWrap .mo-util li{
         margin-right: 0.5rem;
         line-height: 30px;
-        padding-top: 5px;
+        padding-top: 0.5rem;
     }
     .navWrap .mo-util .nav-link{
         font-size: 14px;
