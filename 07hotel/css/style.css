@@ -166,6 +166,7 @@ body{
 .slide .carousel-indicators{
     left: initial;
     margin-right: 13.7%;
+    z-index: 1;
 }
 .slide .carousel-indicators li{
     width: 20px;
@@ -198,6 +199,7 @@ body{
     right: initial;
     bottom: 0;
     padding: 0;
+    z-index: initial;
 }
 .slide .carousel-inner .img .title{
     display: none;
