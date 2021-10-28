@@ -66,6 +66,9 @@ body{
     font-size: 12px;
     line-height: 16px;
 }
+.navWrap .mo-util{
+    display: none;
+}
 .navWrap{
     width: 100vw;
     background: var(--primary-color);
@@ -342,16 +345,72 @@ body{
     }
     .navWrap .mo-login{
         display: block;
-        border-bottom: 1px solid #8D8C8A;
+        border-bottom: 1px solid #333;
     }
     .navWrap .mo-login a:first-child{
         font-size: 18px;
         font-weight: bold;
     }
     .navWrap .mo-login a:last-child{
+        width: 60px;
         font-size: 12px;
         line-height: 27px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        text-align: center;
+        background: #333;
+        color: white;
     }
+    .navWrap .mo-util{
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid #333;
+        margin-top: 5px;
+    }
+    .navWrap .mo-util li{
+        margin-right: 0.5rem;
+        line-height: 30px;
+        padding-top: 5px;
+    }
+    .navWrap .mo-util .nav-link{
+        font-size: 14px;
+    }
+    .mo-util .mo-lan .dropdown-menu,
+    .mo-util .mo-currency .dropdown-menu{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        border: none;
+        text-align: left;
+        background-color: #E5E5E5;
+    }
+    .mo-util .mo-currency .dropdown-item{
+        width: 49%;
+        display: inline-block;
+        line-height: 10px;
+        font-size: 12px;
+        padding: 0 1.5rem;
+    }
+    .mo-util .mo-lan .dropdown-item{
+        font-size: 12px;
+        background-repeat: no-repeat;
+    }
+    .mo-util .mo-lan .dropdown-item:first-child{
+        background-image: url(../images/ico-lang.png);
+        background-position: -8px -39px;
+    }
+    .mo-util .mo-lan .dropdown-item:nth-child(2){
+        background-image: url(../images/ico-lang.png);
+        background-position: -8px -79px;
+    }
+    .mo-util .mo-lan .dropdown-item:last-child{
+        background-image: url(../images/ico-lang.png);
+        background-position: -8px 1px;
+    }
+
+    /* visual  */
     .visual video{
         height: 100vh;
         object-fit: fill;
@@ -359,6 +418,7 @@ body{
         left: 0;
     }
 
+    /* slide  */
     .slide #carousel{
         width: initial;
     }
