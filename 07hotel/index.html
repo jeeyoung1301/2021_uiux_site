@@ -113,7 +113,7 @@
                 </nav>
             </div>
       </header>
-      
+
       <div class="visual">
             <div class="video">
                 <video src="images/signiel seoul.mp4" autoplay muted loop></video>
@@ -121,16 +121,30 @@
             <div class="txt bg-secondary text-white d-md-block d-none">
             <form action="#" method="post">
                 <fieldset>
-                    <ul class="clearfix">
-                        <li class="float-left d-flex flex-column">
+                    <ul class="clearfix mt-3">
+                        <li class="float-left d-flex flex-column px-5">
+                            <label for="hotel">호텔</label>
+                            시그니엘 서울
+                        </li>
+                        <li class="float-left d-flex flex-column pl-1">
                             <label for="chek-in">체크인</label>
                             <input type="date">
                         </li>
-                        <li class="float-left d-flex flex-column">
+                        <li class="float-left d-flex flex-column pl-1">
                             <label for="chek-out">체크아웃</label>
                             <input type="date">
                         </li>
-                        <li></li>
+                        <li class="float-left d-flex flex-column pl-1">
+                            <label for="num">성인</label>
+                            <input type="number" id="num" placeholder="0" class="adult">
+                        </li>
+                        <li class="float-left d-flex flex-column pl-1">
+                            <label for="num">어린이</label>
+                            <input type="number" id="num" placeholder="0" class="child">
+                        </li>
+                        <li class="float-left d-flex flex-column px-5">
+                            프로모션코드
+                        </li>
                     </ul>
                 </fieldset>
             </form>
