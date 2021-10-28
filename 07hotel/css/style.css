@@ -311,25 +311,6 @@ body{
     color: white;
 }
 
-
-/* btn top  */
-.scrollTop{
-    background: #193028;
-    font-weight: bold;
-    width: 36px;
-    height: 36px;
-    text-align: center;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    position: absolute;
-    right: 16px;
-    bottom: 16px;
-    position: fixed;
-}
-
 /* container location  */
 .container.location .col-4{
     background: #8c8b89;
@@ -355,6 +336,29 @@ body{
     top: 50%;
     transform: translate(-50%,-50%);
 }
+
+footer{
+    background: #AD9E87;
+}
+
+/* btn top  */
+.scrollTop{
+    background: #193028;
+    font-weight: bold;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    position: fixed;
+}
+
 
 
 
