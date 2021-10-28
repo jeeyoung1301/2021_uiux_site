@@ -15,7 +15,7 @@
             <div class="topWrap">
                 <div class="top clearfix">
                     <h1 class="m-0"><a href="#"><img src="images/gnb_logo_signiel.png" alt="" class=""></a></h1>
-                    <ul class="clearfix m-0 float-right">
+                    <ul class="clearfix m-0 float-right util">
                         <li class="float-left"><a href="#">글로벌</a></li>
                         <li class="float-left ml-2"><a href="#">호텔찾기</a></li>
                         <li class="float-left ml-2"><a href="#">멤버십</a></li>
@@ -53,6 +53,10 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <div class="mo-login d-flex justify-content-between mt-3">
+                            <a href="#!">로그인 &#10148;</a>
+                            <a href="#!">회원가입</a>
+                        </div>
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item dropdown">
                                 <a class="nav-link text-white d-block d-md-none" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">객실예약</a>
@@ -118,32 +122,35 @@
             <div class="video">
                 <video src="images/signiel seoul.mp4" autoplay muted loop></video>
             </div>
-            <div class="txt bg-secondary text-white d-md-block d-none">
+            <div class="txt text-white d-md-block d-none">
             <form action="#" method="post">
                 <fieldset>
-                    <ul class="clearfix mt-3">
+                    <ul class="clearfix py-2">
                         <li class="float-left d-flex flex-column px-5">
                             <label for="hotel">호텔</label>
                             시그니엘 서울
                         </li>
-                        <li class="float-left d-flex flex-column pl-1">
+                        <li class="float-left d-flex flex-column pl-3">
                             <label for="chek-in">체크인</label>
                             <input type="date">
                         </li>
-                        <li class="float-left d-flex flex-column pl-1">
+                        <li class="float-left d-flex flex-column pl-1 pr-3">
                             <label for="chek-out">체크아웃</label>
                             <input type="date">
                         </li>
-                        <li class="float-left d-flex flex-column pl-1">
+                        <li class="float-left d-flex flex-column pl-3">
                             <label for="num">성인</label>
                             <input type="number" id="num" placeholder="0" class="adult">
                         </li>
-                        <li class="float-left d-flex flex-column pl-1">
+                        <li class="float-left d-flex flex-column pl-1 pr-3">
                             <label for="num">어린이</label>
                             <input type="number" id="num" placeholder="0" class="child">
                         </li>
                         <li class="float-left d-flex flex-column px-5">
-                            프로모션코드
+                            <div class="promotion-code"><img src="images/Vector.png" alt=""> 프로모션 코드</div>
+                        </li>
+                        <li class="float-left d-flex flex-column text-center mt-2">
+                            <a href="#!">검색</a>
                         </li>
                     </ul>
                 </fieldset>
@@ -512,6 +519,15 @@
           </div>
       </div>
 
+      <footer class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-6"></div>
+                  <div class="col-6"></div>
+              </div>
+          </div>
+      </footer>
+
       <button class="btn scrollTop text-white">Top</button>
 
 
@@ -532,6 +548,9 @@
             const scrollTop = document.querySelector('.scrollTop');
             const visualHeight = document.querySelector('')
         });
+
+
+
 
 
 

@@ -72,6 +72,9 @@ body{
     height: 60px;
     z-index: 1111;
 }
+.navWrap .mo-login{
+    display: none;
+}
 .navWrap.position-fixed{
     top: 0;
 }
@@ -98,11 +101,42 @@ body{
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
+    background: #8D8C8A;
+}
+.visual form ul{
+    width: 1140px;
+    margin-bottom: 0;
 }
 .visual form .adult,
 .visual form .child{
     width: 66px;
     height: 30px;
+}
+.visual form .promotion-code{
+   line-height: 62px;
+   display: block;
+}
+.visual form li:last-child a{
+    line-height: 40px;
+    display: block;
+    width: 160px;
+    color: white;
+    font-weight: bold;
+}
+.visual form li:last-child{
+    border: 2px solid #fff;
+}
+.visual form li:last-child:hover{
+    background: #fff;
+    transition: 0.3s;
+}
+.visual form li:last-child:hover a{
+    color: #AD9E87;
+}
+.visual form li:nth-child(1),
+.visual form li:nth-child(3),
+.visual form li:nth-child(5){
+    border-right: 1px solid #fff;
 }
 /* container  */
 .container .package{
@@ -299,11 +333,24 @@ body{
     .topWrap{
         display: none;
     }
+
     .navWrap .navbar{
         width: initial;
     }
     .navbar{
         background: #AD9E87;
+    }
+    .navWrap .mo-login{
+        display: block;
+        border-bottom: 1px solid #8D8C8A;
+    }
+    .navWrap .mo-login a:first-child{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .navWrap .mo-login a:last-child{
+        font-size: 12px;
+        line-height: 27px;
     }
     .visual video{
         height: 100vh;
