@@ -618,6 +618,18 @@ footer{
         margin-top: 10px;
     }
 
+    /* subpage  */
+    /* .container.sigIntro{
+        padding: 0;
+    } */
+    .container.sigIntro img{
+        width: 360px;
+    }
+    .subLocation{
+        font-size: 12px;
+    }
+    
+
 
 
 
