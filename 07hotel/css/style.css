@@ -145,7 +145,7 @@ body{
 .container .package{
     position: absolute;
     font-size: 14px;
-    /* z-index: 1; */
+    z-index: 1;
     width: 50px;
     height: 50px;
     background: var(--primary-color);
@@ -208,7 +208,7 @@ body{
 .slide .carousel-indicators{
     left: initial;
     margin-right: 13.7%;
-    z-index: initial;
+    z-index: 1;
 }
 .slide .carousel-indicators li{
     width: 20px;
