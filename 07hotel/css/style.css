@@ -375,7 +375,11 @@ footer{
 .footer .footer-top .app img{
     height: 22px;
 }
-.footer .txt .left{
+.footer .info{
+    font-size: 14px;
+}
+.footer .row .right a{
+    color: white;
     font-size: 14px;
 }
 
@@ -385,13 +389,17 @@ footer{
 .footer-bottom .txt{
     width: 1140px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 .footer-bottom p{
     font-size: 14px;
 }
-.footer .right li a{
-    font-size: 14px;
+.footer-bottom select{
+    background: #928677;
+    border: 1px solid #C4C4C4;
     color: white;
+    font-size: 14px;
 }
 
 
