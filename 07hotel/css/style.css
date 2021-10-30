@@ -411,6 +411,13 @@ footer{
     transition: 0.8s;
 }
 
+/* subpage  */
+.container.delux .row .pc img{
+    width: 1140px;
+}
+.container.delux .row .mo{
+    display: none;
+}
 
 
 @media screen and (max-width:768px) {
@@ -627,6 +634,18 @@ footer{
     }
     .subLocation{
         font-size: 12px;
+    }
+
+    /* delux  */
+    .container.delux .row .pc img{
+        display: none;
+    }
+    .container.delux .row .mo{
+        display: block;
+        padding: 0;
+    }
+    .container.delux .row .mo img{
+        width: 100%;
     }
     
 
