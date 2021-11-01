@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/colorbox.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <title>hotel</title>
   </head>
@@ -145,7 +146,7 @@
 
       <div class="visual">
             <div class="video">
-                <video src="images/signiel seoul.mp4" autoplay muted loop></video>
+                <video src="images/SIGNIEL SEOUL by LOTTE Hotels & Resorts (official)_1.mp4" autoplay muted loop></video>
             </div>
             <div class="txt text-white d-md-block d-none">
                 <form action="#" method="post">
@@ -727,7 +728,7 @@
         </div>
       </footer>
 
-      <button class="btn scrollTop text-white">Top</button>
+      <button class="btn scrollTop text-white"><a href="#"><i class="fas fa-chevron-up"></i></a></button>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -738,8 +739,6 @@
     <script>
         const nav = document.querySelector('.navWrap');
         let scrollY = window.pageYOffset;
-        docElem = document.documentElement; // document 전체
-        const topBtn = document.querySelector('.scrollTop');
 
         window.addEventListener('scroll',function(){
             if(scrollY > 48){
@@ -749,24 +748,60 @@
                 nav.classList.remove('fixed-top')
             }
 
-            
-            // if(scrollY > 400){
-            //     topBtn.classList.add('active')
-            // }
-            // else if(scrollY < 400){
-            //     topBtn.classList.remove('active')
-            // }
-            // else{
-            //     topBtn.classList.remove('active')
-            // }
+
         });
-        // (function smoothscroll(){
-        //     var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-        //     if (topBtn.addEventListener('click')) {
-        //         window.requestAnimationFrame(smoothscroll);
-        //         window.scrollTo (0,currentScroll - (currentScroll/5));
-        //     }
-        // })();
+
+        const btt = document.querySelector('.scrollTop');
+        // click 하면 작동될 버튼 가져오기
+        const docElem = document.documentElement;
+        // html 문서 전체의 높이
+        let docHeight = Math.max(docElem.scrollHeight, docElem.offsetHeight);
+        //문서 높이 계산
+        // let scrollPos = docElem.scrollTop;
+        let scrollPos;
+        // 스크롤 되어 올라간 만큼의 높이
+        let offset = docHeight / 5
+
+        // window.addEventListener('scroll'),function(){}
+        // 윈도우에 스크롤이 생기면 할 일
+        window.addEventListener('scroll',function(){
+            // scrollPos;
+            scrollPos = docElem.scrollTop;
+            console.log(scrollPos)
+            
+            if(scrollPos > offset){
+                btt.classList.add('active')
+            }
+            else{
+                btt.classList.remove('active')
+            }
+        });
+
+        //버튼 클릭하면 할 일
+        btt.addEventListener('click',function(e){
+            e.preventDefault();//a link의 속성을 막는다.
+            scrollToTop()
+        });
+        function scrollToTop(){
+            //일정시간마다 할 일
+            // setInterval(할일, 시간)
+            // 0.001s = 10
+            // 할 일 = function(){실제로 할 일}
+            // 실제로 할 일: 위도우의 스크롤이 0이 아닐 때 window.scrollBy(x,y); 
+            // y축만 -55 (윈도우의 스크롤 양을 조금씩 빼기)
+            // 스크롤이 0이면 setInterval을 멈춰라 : clearInterval(이름)
+
+            // let scrollInterval = setInterval(function(){할일},15)
+            let scrollInterval = setInterval(function(){
+                if(scrollPos != 0){
+                    window.scrollBy(0,-55);
+                }
+                else{
+                    clearInterval(scrollInterval)
+                }
+            },10)
+        }
+
 
 
 
@@ -779,14 +814,6 @@
                 innerHeight: 540
             });
         })
-
-
-
-
-
-
-
-
 
     </script>
 
