@@ -7,6 +7,10 @@ body{
     height: 100vh;
     width: 100vw;
 }
+.container{
+    padding-left: 0;
+    padding-right: 0;
+}
 #headerWrap{
     position: absolute;
     z-index: 1111;
@@ -191,7 +195,6 @@ body{
 .rooms{
     max-width: 1140px;
     padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -555,10 +558,13 @@ footer{
     .slide .carousel-indicators{
         left: 0;
     }
+    .slide .carousel-indicators li{
+        background-color: #fff;
+    }
 
     /* introduction  */
     .introduction .img-1st{
-        
+        /* width: 360px; */
     }
     .introduction .facilities .img-1st{
         right: 0;
@@ -572,8 +578,13 @@ footer{
         display: flex;
         align-items: center;
         text-align: center;
+        padding: 0;
+
+        width: 360px;
     }
-    
+    .introduction .img-view{
+        padding: 0;
+    }
     /* location  */
     .container.location{
         display: none;
