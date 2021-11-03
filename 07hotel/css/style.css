@@ -79,6 +79,7 @@ body{
 }
 .navWrap.position-fixed{
     top: 0;
+    position: fixed;
 }
 .navWrap .navbar{
     width: 1140px;
@@ -412,6 +413,7 @@ footer{
 .scrollTop.active{
     opacity: 1;
     transition: 0.8s;
+    z-index: 100;
 }
 
 /* subpage  */
