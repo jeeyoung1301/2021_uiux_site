@@ -77,10 +77,6 @@ body{
 .navWrap .mo-login{
     display: none;
 }
-.navWrap.position-fixed{
-    top: 0;
-    position: fixed;
-}
 .navWrap .navbar{
     width: 1140px;
     margin: 0 auto;
@@ -643,6 +639,11 @@ footer{
         margin-top: 10px;
     }
 
+    .scrollTop{
+        right: 16px;
+        bottom: 16px;
+    }
+
     /* subpage  */
     /* .container.sigIntro{
         padding: 0;
@@ -686,6 +687,8 @@ footer{
     .container.promotionRooms .subTitle p{
         font-size: 12px;
     }
+
+
 
 
 

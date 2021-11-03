@@ -146,7 +146,7 @@
 
       <div class="visual">
             <div class="video">
-                <video src="images/SIGNIEL SEOUL by LOTTE Hotels & Resorts (official)_1.mp4" autoplay muted loop></video>
+                <video src="images/SIGNIEL SEOUL by LOTTE Hotels & Resorts (official)_1.m4v" autoplay muted loop></video>
             </div>
             <div class="txt text-white d-md-block d-none">
                 <form action="#" method="post">
@@ -739,13 +739,14 @@
     <script>
         const nav = document.querySelector('.navWrap');
         let scrollY = window.pageYOffset;
+        
 
         window.addEventListener('scroll',function(){
-            if(scrollY > 48){
-                nav.classList.add('position-fixed')
+            if(scrollY > 108){
+                nav.classList.add('fixed-top')
             }
             else{
-                nav.classList.remove('position-fixed')
+                nav.classList.remove('fixed-top')
             }
 
 
@@ -767,7 +768,7 @@
         window.addEventListener('scroll',function(){
             // scrollPos;
             scrollPos = docElem.scrollTop;
-            console.log(scrollPos)
+            
             
             if(scrollPos > offset){
                 btt.classList.add('active')
