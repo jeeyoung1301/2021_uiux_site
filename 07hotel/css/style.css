@@ -557,6 +557,9 @@ footer{
     }
 
     /* introduction  */
+    .introduction .img-1st{
+        
+    }
     .introduction .facilities .img-1st{
         right: 0;
         left: initial;
