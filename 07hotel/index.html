@@ -743,19 +743,6 @@
     <script>
         const nav = document.querySelector('.navWrap');
         let scrollY = window.pageYOffset;
-        
-
-        window.addEventListener('scroll',function(){
-            if(scrollY > 48){
-                nav.classList.add('fixed-top')
-            }
-            else{
-                nav.classList.remove('fixed-top')
-            }
-
-
-        });
-
         const btt = document.querySelector('.scrollTop');
         // click 하면 작동될 버튼 가져오기
         const docElem = document.documentElement;
@@ -770,7 +757,13 @@
         // window.addEventListener('scroll'),function(){}
         // 윈도우에 스크롤이 생기면 할 일
         window.addEventListener('scroll',function(){
-            // scrollPos;
+            if(scrollY > 48){
+                nav.classList.add('fixed-top')
+            }
+            else{
+                nav.classList.remove('fixed-top')
+            }
+            
             scrollPos = docElem.scrollTop;
             
             
@@ -780,7 +773,16 @@
             else{
                 btt.classList.remove('active')
             }
+
         });
+
+
+
+
+        // window.addEventListener('scroll',function(){
+        //     // scrollPos;
+
+        // });
 
         //버튼 클릭하면 할 일
         btt.addEventListener('click',function(e){
@@ -806,10 +808,6 @@
                 }
             },10)
         }
-
-
-
-
 
 
         $(function(){
