@@ -7,3 +7,4 @@
 1. company_boot1 https://jeeyoung1301.github.io/2021_uiux_site/06company
 1. company_boot2 https://jeeyoung1301.github.io/2021_uiux_site/06company_01
 1. hotel https://jeeyoung1301.github.io/2021_uiux_site/07hotel
+1. fullpage https://jeeyoung1301.github.io/2021_uiux_site/08fullpage
