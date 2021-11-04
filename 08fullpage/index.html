@@ -5,37 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.fullpage.extensions.min.js"></script>
+    <script src="js/script.js"></script>
 
-    <style>
-        body{
-            background: url(images/background02.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .donut{
-            position: absolute;
-            top: 28%;
-            left: 5%;
-            width: 140px;
-            animation: donut linear infinite 1.5s alternate;
-        }
-        .heart{
-            position: absolute;
-            left: 25%;
-            top: 20%;
-            width: 100px;
-            animation: heart linear infinite 1s alternate;
-        }
-        @keyframes donut{
-            100%{transform: translateY(50px);}
-        }
-        @keyframes heart{
-            100%{transform: translateY(20px);}
-        }
-    </style>
 </head>
 <body>
     <img src="images/donut.png" alt="" class="donut">
     <img src="images/heart.svg" alt="" class="heart">
+    <header>
+        <nav>
+            <ul>
+                <li data-menuanchor="section1"><a href="#section1">section1</a></li>
+                <li data-menuanchor="section2"><a href="#section2">section2</a></li>
+                <li data-menuanchor="section3"><a href="#section3">section3</a></li>
+                <li data-menuanchor="section4"><a href="#section4">section4</a></li>
+                <li data-menuanchor="section5"><a href="#section5">section5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="fullpage">
+        <section class="section">
+            <h2>section1</h2>
+        </section>
+        <section class="section">
+            <div class="slide">
+                <h3>slide 01</h3>
+            </div>
+            <div class="slide">
+                <h3>slide 02</h3>
+            </div>
+            <div class="slide">
+                <h3>slide 03</h3>
+            </div>
+        </section>
+        <section class="section">
+            <h2>section3</h2>
+        </section>
+        <section class="section">
+            <h2>section4</h2>
+        </section>
+        <footer class="section fp-auto-height">
+            <h2>footer</h2>
+        </footer>
+    </div>
 </body>
 </html>
