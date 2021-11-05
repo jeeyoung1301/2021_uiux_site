@@ -5,23 +5,39 @@ header{
     left: 0;
     right: 0;
     top: 0;
-    padding: 40px 0;
-    background: rgba(0,0,0,0.6);
+    padding: 20px 0;
+    background: rgba(0,0,0,0.3);
     z-index: 100;
 }
 header nav ul{
     display: flex;
     justify-content: center;
 }
-header nav ul li{
-    margin: 0 20px;
+header > nav > ul > li > a{
+    line-height: 20px;
+    display: block;
+    padding: 0 20px;
+    color: white !important;
 }
 section:first-child{
     background-image: url(../images/bg_02.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.donut{
+section:nth-child(2) .slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section:nth-child(2) .slide:nth-child(1){
+    background-image: url(../images/slide01.png);
+}
+section:nth-child(2) .slide:nth-child(2){
+    background-image: url(../images/slide02.png);
+}
+section:nth-child(2) .slide:nth-child(3){
+    background-image: url(../images/slide03.png);
+}
+/* .donut{
     position: absolute;
     top: 28%;
     left: 5%;
@@ -42,4 +58,4 @@ section:first-child{
 }
 @keyframes heart{
     100%{transform: translateY(20px);}
-}
+} */
