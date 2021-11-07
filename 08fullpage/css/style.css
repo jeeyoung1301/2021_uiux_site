@@ -24,19 +24,6 @@ section:first-child{
     background-repeat: no-repeat;
     background-size: cover;
 }
-section:nth-child(2) .slide{
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-section:nth-child(2) .slide:nth-child(1){
-    background-image: url(../images/slide01.png);
-}
-section:nth-child(2) .slide:nth-child(2){
-    background-image: url(../images/slide02.png);
-}
-section:nth-child(2) .slide:nth-child(3){
-    background-image: url(../images/slide03.png);
-}
 /* .donut{
     position: absolute;
     top: 28%;
@@ -59,3 +46,101 @@ section:nth-child(2) .slide:nth-child(3){
 @keyframes heart{
     100%{transform: translateY(20px);}
 } */
+
+/* section3  */
+.collaboWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin: 0 calc((100% - 1320px) / 2);
+}
+.collaboWrapper h2{
+    font-size: 3em;
+    margin-bottom: 40px;
+    font-family: 'Pacifico', cursive;
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+.content div{
+    width: 400px;
+    height: 600px;
+    margin-right: 60px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.content div img{
+    width: 100%;
+}
+.content .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content div:hover .overlay{
+    top: 0;
+    left: 0;
+}
+.content .overlay img{
+    width: 60px;
+}
+.content .innisfree{
+    margin-right: 0;
+}
+
+.content .modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 1;
+}
+.content .modalWindow{
+    width: 1320px;
+    height: 800px;
+    margin-right: 0;
+}
+.content .modalWindow{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content .modalMoncher .modalWindow{
+    background-image: url(../images/slide01.png);
+}
+.content .modalMoncher .modalKakao{
+    background-image: url(../images/slide02.png);
+}
+.content .modalMoncher .modalInnisfree{
+    background-image: url(../images/slide03.png);
+}
+@media screen and (max-width:1000px){
+    .collaboWrapper{
+        margin: 0 calc((100% - 640px) / 2);
+    }
+    .content div{
+        width: 200px;
+        height: 300px;
+        margin-right: 40px;
+    }
+
+    .content .modalWindow{
+        width: 800px;
+        height: 400px;
+    }
+}
