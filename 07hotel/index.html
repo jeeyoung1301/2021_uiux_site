@@ -757,6 +757,7 @@
         // window.addEventListener('scroll'),function(){}
         // 윈도우에 스크롤이 생기면 할 일
         window.addEventListener('scroll',function(){
+            scrollY = window.pageYOffset;
             if(scrollY > 48){
                 nav.classList.add('fixed-top')
             }
