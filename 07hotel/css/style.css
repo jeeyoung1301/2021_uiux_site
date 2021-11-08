@@ -563,28 +563,36 @@ footer{
     }
 
     /* introduction  */
-    .introduction .img-1st{
-        /* width: 360px; */
+    .introduction{
+        padding: 0 15px;
+    }
+    .introduction .row{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .introduction .row .img-1st{
+        width: 400px;
+    }
+    .introduction .row .img-2nd{
+        width: 300px;
+        bottom: 20px;
     }
     .introduction .facilities .img-1st{
         right: 0;
         left: initial;
     }
     .introduction .facilities .img-2nd{
+        right: 20px;
         left: 0;
-        right: initial;
     }
+
     .introduction .row .txt{
         display: flex;
         align-items: center;
         text-align: center;
         padding: 0;
+    }
 
-        width: 360px;
-    }
-    .introduction .img-view{
-        padding: 0;
-    }
     /* location  */
     .container.location{
         display: none;
