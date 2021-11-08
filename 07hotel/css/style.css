@@ -566,16 +566,12 @@ footer{
     .introduction{
         padding: 0 15px;
     }
-    .introduction .row{
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
     .introduction .row .img-1st{
-        width: 400px;
+        width: 340px;
     }
     .introduction .row .img-2nd{
         width: 300px;
-        bottom: 20px;
+        bottom: 60px;
     }
     .introduction .facilities .img-1st{
         right: 0;
@@ -585,12 +581,16 @@ footer{
         right: 20px;
         left: 0;
     }
+    .introduction .row{
+        justify-content: center;
+    }
 
     .introduction .row .txt{
         display: flex;
         align-items: center;
         text-align: center;
         padding: 0;
+        width: 300px;
     }
 
     /* location  */
@@ -662,8 +662,8 @@ footer{
     }
 
     .scrollTop{
-        right: 16px;
-        bottom: 16px;
+        right: 32px;
+        bottom: 32px;
     }
 
     /* subpage  */
