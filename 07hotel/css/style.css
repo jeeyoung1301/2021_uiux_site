@@ -563,8 +563,12 @@ footer{
     }
 
     /* introduction  */
-    .introduction{
-        padding: 0 15px;
+    .introduction .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .introduction .img-view{
+        margin-bottom: 0;
     }
     .introduction .row .img-1st{
         width: 340px;
