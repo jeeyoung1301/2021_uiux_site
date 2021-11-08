@@ -149,6 +149,51 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
+.promotionForm{
+    width: 410px;
+    position: absolute;
+    margin-top: 5px;
+    right: 0;
+    background-color: #8C8B89;
+    border-radius: 5px;
+    display: none;
+}
+.visual .promotionForm ul{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 10px 5px;
+}
+.visual .promotionForm ul li:first-child{
+    border-right: 0 none;
+    margin-right: 5px;
+}
+.visual .promotionForm select,
+.visual .promotionForm input,
+.visual .promotionForm button{
+    height: 30px;
+}
+.visual .promotionForm button{
+    background-color: unset;
+    color: white;
+    border: 2px solid #fff;
+    padding: 0 5px;
+    font-weight: bold;
+}
+.visual .promotionForm ul li:last-child{
+    border: 0 none;
+    border-right: 0 none;
+    margin-left: 5px;
+}
+.visual .promotionForm ul li:last-child:hover button{
+    color: #AD9E87;
+}
+.visual .promotionForm .close{
+    border: 0 none;
+}
+
+
 /* container  */
 .container .package{
     position: absolute;
