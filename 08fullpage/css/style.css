@@ -82,7 +82,6 @@ section:first-child{
     top: 100%;
     left: 0;
     transition: 0.3s;
-    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,6 +92,7 @@ section:first-child{
 }
 .content .overlay img{
     width: 60px;
+    cursor: pointer;
 }
 .content .innisfree{
     margin-right: 0;
@@ -115,6 +115,7 @@ section:first-child{
     width: 1320px;
     height: 800px;
     margin-right: 0;
+    position: relative;
 }
 .content .modalWindow{
     background-repeat: no-repeat;
@@ -123,12 +124,24 @@ section:first-child{
 .content .modalMoncher .modalWindow{
     background-image: url(../images/slide01.png);
 }
-.content .modalMoncher .modalKakao{
+.content .modalKakao .modalWindow{
     background-image: url(../images/slide02.png);
 }
-.content .modalMoncher .modalInnisfree{
+.content .modalInnisfree .modalWindow{
     background-image: url(../images/slide03.png);
 }
+.modal button#close{
+    background-color: unset;
+    border: 0 none;
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    width: 30px;
+    margin: 16px 16px;
+    cursor: pointer;
+}
+
+
 @media screen and (max-width:1000px){
     .collaboWrapper{
         margin: 0 calc((100% - 640px) / 2);
