@@ -20,7 +20,7 @@ header > nav > ul > li > a{
     color: white !important;
 }
 section:first-child{
-    background-image: url(../images/bg_02.png);
+    background-image: url(../images/section01_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
