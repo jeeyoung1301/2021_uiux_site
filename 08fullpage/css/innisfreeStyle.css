@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 16px 0;
+    background: #fce66e;
+    z-index: 100;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    align-items: center;
+}
+header nav h2{
+    height: 40px;
+}
+header nav h2 a{
+    background-image: url(../images/innisfree/innisfreeXknotted.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 600px;
+    height: 40px;
+}
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header > nav > ul > li > a{
+    display: block;
+    padding: 0 20px;
+}
+header > nav > ul > li:nth-child(1) img{
+    height: 60px;
+}
+header > nav > ul > li:nth-child(2) img{
+    height: 40px;
+}
+header > nav > ul > li:nth-child(3) img{
+    height: 60px;
+}
+header > nav > ul > li:nth-child(4) img{
+    height: 60px;
+}
+.section:first-child{
+    background-image: url(../images/innisfree/section01_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* section3  */
+
+
+
+
