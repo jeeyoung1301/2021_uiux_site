@@ -192,8 +192,104 @@ header > nav > ul > li:nth-child(4) img{
 }
 
 .section:nth-child(3) .slide03{
-    background-color: #FFD96D ;
+    background-color: #FFD96D;
 }
+.section:nth-child(3) .slide03 .contentWrapper{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.section:nth-child(3) .slide03 .contentWrapper h3{
+    font-size: 36px;
+    background: #FFF9E9;
+    color: #40B8AE;
+    width: 390px;
+    padding: 0 10px;
+    transform:  translateX(50%);
+}
+.section:nth-child(3) .slide03 .contentWrapper h3 span{
+    color: #FC96B9;
+}
+.section:nth-child(3) .slide03 .content01,
+.section:nth-child(3) .slide03 .content02,
+.section:nth-child(3) .slide03 .content03{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    justify-content: center;
+}
+
+.section:nth-child(3) .slide03 .content01 .txt,
+.section:nth-child(3) .slide03 .content03 .txt{
+    padding-left: 300px;
+}
+.section:nth-child(3) .slide03 .content02 .txt{
+    padding-right: 300px;
+}
+.section:nth-child(3) .slide03{
+    text-align: center;
+}
+.section:nth-child(3) .slide03 .txt p{
+    font-size: 26px;
+}
+.section:nth-child(3) .slide03 .txt span{
+    font-weight: bold;
+}
+.section:nth-child(3) .slide03 .txt img{
+    height: 60px;
+}
+.section:nth-child(3) .slide03 .content02 .txt img{
+    width: 560px;
+}
+
+.section:nth-child(3) .slide03 .img{
+    position: relative;
+}
+.section:nth-child(3) .slide03 .img p{
+    position: absolute;
+    bottom: 5px;
+    background: #F7D2DE;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 0 5px;
+    z-index: 1;
+}
+.section:nth-child(3) .slide03 .content01 .img p,
+.section:nth-child(3) .slide03 .content03 .img p{
+    right: 0;
+}
+.section:nth-child(3) .slide03 .img img{
+    height: 400px;
+}
+.section:nth-child(3) .slide03 .content02 .img img{
+    transform: rotateZ(-14deg);
+}
+.section:nth-child(3) .slide03 .content03 .img img{
+    height: 200px;
+}
+
+.section:nth-child(3) .slide03 .flower{
+    width: 100px;
+    position: absolute;
+}
+.section:nth-child(3) .slide03 .flower01{
+    top: 20%;
+    left: 5%;
+    animation: flower01 ;
+}
+@keyframes flower01 {
+    100%{}
+}
+.section:nth-child(3) .slide03 .flower02{
+    right: 0;
+}
+.section:nth-child(3) .slide03 .flower03{
+    bottom: 0;
+    right: 0;
+}
+
 
 
 
