@@ -44,6 +44,14 @@ header nav ul{
 header > nav > ul > li > a{
     display: block;
     padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+header > nav > ul > li > a > p{
+    display: none;
+}
+header > nav > ul > li > a:hover > p{
+    display: block;
 }
 header > nav > ul > li:nth-child(1) img{
     height: 60px;
