@@ -517,13 +517,14 @@ header > nav > ul > li:nth-child(4) img{
 /* footer  */
 .footerWrap{
     color: #6e6e6e;
+    padding: 0 30px;
 }
 .footerTop{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    border-bottom: 1px solid #F1F1F1;
+    border-bottom: 1px solid #a4a4a4;
 }
 .footerTop ul li{
     float: left;
@@ -536,6 +537,7 @@ header > nav > ul > li:nth-child(4) img{
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .footerBottom .left p{
     font-size: 14px;
@@ -552,6 +554,20 @@ header > nav > ul > li:nth-child(4) img{
 .footerBottom .right p span{
     font-weight: bold;
     font-size: 20px;
+}
+.footerBottom .right .txt{
+    margin-bottom: 10px;
+}
+.footerBottom .right > button{
+    background-color: unset;
+    border: 1px solid #a4a4a4;
+    padding: 10px;
+    color: #a4a4a4;
+}
+.footerBottom .right > button:hover{
+    background: #a4a4a4;
+    color: #333;
+    cursor: pointer;
 }
 
 
