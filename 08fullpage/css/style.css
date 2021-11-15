@@ -570,7 +570,9 @@ header > nav > ul > li:nth-child(4) img{
     cursor: pointer;
 }
 
-
+@media screen and (max-width:699px){
+    
+}
 
 
 
