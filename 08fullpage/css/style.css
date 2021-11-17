@@ -768,10 +768,20 @@ header > nav > ul > li:nth-child(4) img{
         width: 45px;
     }
 
+
+    .section:nth-child(3) .slide03 .contentWrapper{
+        height: 80%;
+    }
     .section:nth-child(3) .slide03 .contentWrapper h3{
         font-size: 24px;
-        width: 300px;
+        width: 100%;
         transform: translateX(0);
+    }
+    .section:nth-child(3) .slide03 .content01,
+    .section:nth-child(3) .slide03 .content02,
+    .section:nth-child(3) .slide03 .content03{
+        height: unset;
+        padding-top: 20px;
     }
     .section:nth-child(3) .slide03 .content01 .txt,
     .section:nth-child(3) .slide03 .content02 .txt,
@@ -785,6 +795,9 @@ header > nav > ul > li:nth-child(4) img{
     }
     .section:nth-child(3) .slide03 .content02 .txt img{
         width: 200px;
+    }
+    .section:nth-child(3) .slide03 .txt p{
+        font-size: 18px;
     }
     .section:nth-child(3) .slide03 .txt p br{
         display: block;
@@ -804,18 +817,19 @@ header > nav > ul > li:nth-child(4) img{
         width: 50px;
     }
     .section:nth-child(3) .slide03 .flower01{
-        top: 6%;
+        top: 8%;
     }
     .section:nth-child(3) .slide03 .flower02{
-        top: 35%;
+        top: 38%;
+        left: 30%;
     }
     .section:nth-child(3) .slide03 .flower03{
-        bottom: 30%;
-        left: 50%;
+        bottom: 20%;
+        left: 60%;
     }
     .section:nth-child(3) .slide03 .flower04{
-        bottom: 1%;
-        right: 60%;
+        bottom: -10%;
+        right: 56%;
     }
 
     /* section4  */
