@@ -559,7 +559,8 @@ header > nav > ul > li:nth-child(4) img{
 /* footer  */
 .footerWrap{
     color: #6e6e6e;
-    padding: 0 30px;
+    width: 60%;
+    margin: 0 auto;
 }
 .footerTop{
     display: flex;
@@ -610,6 +611,9 @@ header > nav > ul > li:nth-child(4) img{
     background: #a4a4a4;
     color: #333;
     cursor: pointer;
+}
+.footerMo{
+    display: none;
 }
 
 @media screen and (max-width:699px){
