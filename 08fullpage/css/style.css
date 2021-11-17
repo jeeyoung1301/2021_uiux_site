@@ -737,6 +737,12 @@ header > nav > ul > li:nth-child(4) img{
     .section:nth-child(3) .slide01 .right img{
         width: 100px;
     }
+    .section:nth-child(3) .slide01 .right .case{
+        justify-content: space-between;
+    }
+    .section:nth-child(3) .slide01 .right .txt{
+        padding: 0;
+    }
     .section:nth-child(3) .slide01 .right .txt h3{
         font-size: 16px;
     }
@@ -913,6 +919,10 @@ header > nav > ul > li:nth-child(4) img{
     }
 
     /* footer  */
+    .footerWrap{
+        color: #a4a4a4;
+        width: 100%;
+    }
     .footerTop{
         flex-direction: column;
     }
