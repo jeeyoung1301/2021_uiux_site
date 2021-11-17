@@ -27,14 +27,9 @@ header nav{
 header nav h2{
     height: 40px;
 }
-header nav h2 a{
-    background-image: url(../images/innisfree/innisfreeXknotted.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    width: 600px;
-    height: 40px;
+
+header nav h2 a img{
+    width: 400px;
 }
 header nav ul{
     display: flex;
@@ -177,18 +172,32 @@ header > nav > ul > li:nth-child(4) img{
 .section:nth-child(2){
     position: relative;
 }
-.section:nth-child(2) .video{
+.section:nth-child(2) .videoWrap{
     position: absolute;
+    width: 60%;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
 }
-.section:nth-child(2) .video .txt{
+.section:nth-child(2) .videoWrap .video{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 56.25%;
+}
+.section:nth-child(2) .videoWrap .video iframe{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.section:nth-child(2) .videoWrap .txt{
     position: relative;
     text-align: center;
     margin: 16px 0;
 }
-.section:nth-child(2) .video .txt:after{
+.section:nth-child(2) .videoWrap .txt:after{
     content: "";
     display: block;
     position: absolute;
@@ -198,8 +207,11 @@ header > nav > ul > li:nth-child(4) img{
     height: 30px;
     z-index: -1;
 }
-.section:nth-child(2) .video .txt h3{
+.section:nth-child(2) .videoWrap .txt h3{
     font-size: 30px;
+}
+.section:nth-child(2) .videoWrap .txt h3 br{
+    display: none;
 }
 
 /* section3  */
@@ -579,7 +591,102 @@ header > nav > ul > li:nth-child(4) img{
 }
 
 @media screen and (max-width:699px){
-    
+    header nav{
+        justify-content: center;
+    }
+    header nav ul{
+        display: none;
+    }
+    header nav h2 a img{
+        width: 300px;
+    }
+
+    /* section1  */
+    .section:first-child{
+        background-image: url(../images/innisfree/section01_bg_mo.png);
+    }
+    .section:first-child .collaboration{
+        width: 300px;
+    }
+    .section:first-child .bear{
+        width: 300px;
+        top: 46%;
+        animation: bear alternate infinite linear forwards 1s;
+    }
+    @keyframes bear{
+        100%{
+            transform: translate(-50%,10px);
+        }
+    }
+    .section:first-child .brownBear{
+        display: none;
+    }
+    .section:first-child .flowerFace{
+       width: 80px;
+       top: 32%;
+       left: 20%;
+    }
+    .section:first-child .flower01{
+        top: 56%;
+        left: 5%;
+        width: 50px;
+    }
+    .section:first-child .doughnut01{
+        width: 80px;
+        bottom: 8%;
+        left: 5%;
+    }
+    .section:first-child .doughnut02{
+        width: 90px;
+        bottom: 5%;
+        left: 14%;
+    }
+    .section:first-child .doughnutBox{
+        width: 80px;
+        right: 18%;
+        bottom: 10%;
+    }
+    .section:first-child .flower02{
+        width: 80px;
+        right: 0;
+        bottom: 12%;
+    }
+    .section:first-child .happyday{
+        right: 1%;
+        width: 160px;
+        bottom: 1%;
+        animation: unset;
+    }
+    .section:first-child .flower03{
+        width: 60px;
+        bottom: 52%;
+        right: 20%;
+        animation-delay: 0.5s;
+    }
+    @keyframes smallFlower03{
+        100%{
+            transform: translateY(0) rotate(30deg);
+        }
+    }
+
+    /* section2  */
+    .section:nth-child(2) .videoWrap .txt h3{
+        font-size: 20px;
+    }
+    .section:nth-child(2) .videoWrap .txt h3 br{
+        display: block;
+    }
+    .section:nth-child(2) .videoWrap .txt:after{
+        display: none;
+    }
+
+    /* section3  */
+    .section:nth-child(3) .fp-controlArrow{
+        display: none;
+    }
+    .section:nth-child(3) .slide01 .left{
+        display: none;
+    }
 }
 
 
