@@ -9,10 +9,6 @@ $(document).ready(function(){
         visual_01.goToPrevSlide();
     });
 
-    // $('.toggleMenu').click();
-    // $('.toggleMenu').on('이벤트명',리스너);
-    // $('.toggleMenu').on('click',function(){});
-
     $('.slider_01').bxSlider({
         controls:false,
     })
@@ -35,16 +31,14 @@ $(document).ready(function(){
 
 
     $('.toggleMenu').click(function(){
-        const toggleMenu = $('.toggleMenu').attr('class'); // value toggleMenu
+        const toggleMenu = $('.toggleMenu').attr('class');
         console.log(toggleMenu);
         if(toggleMenu == 'toggleMenu'){
-          //  $('.toggleMenu').addClass('active'); //제이쿼리
-          document.getElementsByClassName('toggleMenu')[0].classList.add('active'); //자바스크립트
+          document.getElementsByClassName('toggleMenu')[0].classList.add('active'); 
           $('.gnb').addClass('view');
         }
         else{
-            // $('.toggleMenu').removeClass('active');
-            document.getElementsByClassName('toggleMenu')[0].classList.remove('active'); //자바스크립트
+            document.getElementsByClassName('toggleMenu')[0].classList.remove('active');
             $('.gnb').removeClass('view');
         }
     });
