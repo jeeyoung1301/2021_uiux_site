@@ -771,6 +771,7 @@ header > nav > ul > li:nth-child(4) img{
     .section:nth-child(3) .slide03 .contentWrapper h3{
         font-size: 24px;
         width: 300px;
+        transform: translateX(0);
     }
     .section:nth-child(3) .slide03 .content01 .txt,
     .section:nth-child(3) .slide03 .content02 .txt,
