@@ -856,6 +856,7 @@ header > nav > ul > li:nth-child(4) img{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 50%;
     }
     .section:nth-child(4) .product .thumbnail:nth-child(3),
     .section:nth-child(4) .product .thumbnail:last-child{
