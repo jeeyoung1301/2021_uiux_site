@@ -2,6 +2,8 @@
 
 body{
     color: #333;
+    font-family: 'Cute Font', cursive;
+    font-family: 'Noto Sans', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
 }
 #fp-nav ul li .fp-tooltip{
@@ -44,6 +46,9 @@ header > nav > ul > li > a{
 }
 header > nav > ul > li > a > p{
     display: none;
+    font-family: 'Cute Font', cursive;
+    font-size: 20px;
+    font-weight: bold;
 }
 header > nav > ul > li > a:hover > p{
     display: block;
@@ -209,6 +214,7 @@ header > nav > ul > li:nth-child(4) img{
 }
 .section:nth-child(2) .videoWrap .txt h3{
     font-size: 30px;
+    font-family: 'Cute Font', cursive;
 }
 .section:nth-child(2) .videoWrap .txt h3 br{
     display: none;
@@ -254,8 +260,8 @@ header > nav > ul > li:nth-child(4) img{
 .section:nth-child(3) .slide01 .right .pink .besticon{
     width: 80px;
     position: absolute;
-    top: 14%;
-    left: -6%;
+    top: 10%;
+    left: -10%;
 }
 .section:nth-child(3) .slide01 .right .txt{
     padding: 0 30px;
@@ -265,8 +271,9 @@ header > nav > ul > li:nth-child(4) img{
     font-size: 36px;
 }
 .section:nth-child(3) .slide01 .right .txt p{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
+    font-family: 'Cute Font', cursive;
 }
 .section:nth-child(3) .slide01 .left img{
     width: 600px;
@@ -305,6 +312,7 @@ header > nav > ul > li:nth-child(4) img{
     background: #FFD96E;
     padding: 0 10px;
     margin: 10px 0;
+    font-weight: bold;
 }
 .section:nth-child(3) .slide02 .right .txt{
     display: flex;
@@ -347,6 +355,7 @@ header > nav > ul > li:nth-child(4) img{
     align-items: center;
     height: 200px;
     justify-content: center;
+    font-family: 'Cute Font', cursive;
 }
 
 .section:nth-child(3) .slide03 .content01 .txt,
@@ -360,7 +369,7 @@ header > nav > ul > li:nth-child(4) img{
     text-align: center;
 }
 .section:nth-child(3) .slide03 .txt p{
-    font-size: 26px;
+    font-size: 34px;
 }
 .section:nth-child(3) .slide03 .txt span{
     font-weight: bold;
@@ -724,7 +733,7 @@ header > nav > ul > li:nth-child(4) img{
     }
     .section:nth-child(3) .slide01 .right .pink .besticon{
         width: 40px;
-        left: -4%;
+        left: -14%;
         top: -6%;
     }
 
