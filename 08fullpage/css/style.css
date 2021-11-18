@@ -840,12 +840,12 @@ header > nav > ul > li:nth-child(4) img{
         left: 30%;
     }
     .section:nth-child(3) .slide03 .flower03{
-        bottom: 20%;
+        bottom: 30%;
         left: 60%;
     }
     .section:nth-child(3) .slide03 .flower04{
-        bottom: -10%;
-        right: 56%;
+        bottom: 5%;
+        right: 50%;
     }
 
     /* section4  */
