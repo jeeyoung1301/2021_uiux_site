@@ -68,7 +68,7 @@ header > nav > ul > li:nth-child(4) img{
 
 /* section1  */
 .section:first-child{
-    background-image: url(../images/innisfree/section01_bg.png);
+    background-image: url(../images/innisfree/section01/section01_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -641,7 +641,7 @@ header > nav > ul > li:nth-child(4) img{
 
     /* section1  */
     .section:first-child{
-        background-image: url(../images/innisfree/Group\ 47.png);
+        background-image: url(../images/innisfree/section01/section01_bg_mo.png);
     }
     .section:first-child .collaboration{
         width: 90%;
