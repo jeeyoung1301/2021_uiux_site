@@ -629,60 +629,30 @@ header > nav > ul > li:nth-child(4) img{
 
     /* section1  */
     .section:first-child{
-        background-image: url(../images/innisfree/section01_bg_mo.png);
+        background-image: url(../images/innisfree/Group\ 47.png);
     }
     .section:first-child .collaboration{
-        width: 300px;
+        width: 90%;
         top: 12%;
     }
-    .section:first-child .bear{
-        width: 300px;
-        top: 46%;
-        animation: bear alternate infinite linear forwards 1s;
-    }
-    @keyframes bear{
-        100%{
-            transform: translate(-50%,10px);
-        }
-    }
-    .section:first-child .brownBear{
+    .section:first-child .bear,
+    .section:first-child .brownBear,
+    .section:first-child .doughnut01,
+    .section:first-child .doughnut02,
+    .section:first-child .doughnutBox,
+    .section:first-child .flower02,
+    .section:first-child .happyday{
         display: none;
     }
     .section:first-child .flowerFace{
-       width: 80px;
-       top: 32%;
+       width: 20%;
+       top: 34%;
        left: 20%;
     }
     .section:first-child .flower01{
         top: 56%;
         left: 5%;
-        width: 50px;
-    }
-    .section:first-child .doughnut01{
-        width: 80px;
-        bottom: 8%;
-        left: 5%;
-    }
-    .section:first-child .doughnut02{
-        width: 90px;
-        bottom: 5%;
-        left: 14%;
-    }
-    .section:first-child .doughnutBox{
-        width: 80px;
-        right: 18%;
-        bottom: 10%;
-    }
-    .section:first-child .flower02{
-        width: 80px;
-        right: 0;
-        bottom: 12%;
-    }
-    .section:first-child .happyday{
-        right: 1%;
-        width: 160px;
-        bottom: 1%;
-        animation: unset;
+        width: 14%;
     }
     .section:first-child .flower03{
         width: 60px;
@@ -784,10 +754,6 @@ header > nav > ul > li:nth-child(4) img{
         width: 45px;
     }
 
-
-    .section:nth-child(3) .slide03 .contentWrapper{
-        height: 80%;
-    }
     .section:nth-child(3) .slide03 .contentWrapper h3{
         font-size: 24px;
         width: 100%;
@@ -837,14 +803,14 @@ header > nav > ul > li:nth-child(4) img{
     }
     .section:nth-child(3) .slide03 .flower02{
         top: 38%;
-        left: 30%;
+        left: 20%;
     }
     .section:nth-child(3) .slide03 .flower03{
-        bottom: 30%;
-        left: 60%;
+        bottom: 24%;
+        left: 80%;
     }
     .section:nth-child(3) .slide03 .flower04{
-        bottom: 5%;
+        bottom: -7%;
         right: 50%;
     }
 
