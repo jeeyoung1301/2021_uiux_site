@@ -625,13 +625,14 @@ footer{
     }
     .introduction .img-view{
         margin-bottom: 0;
+        height: 300px;
     }
     .introduction .row .img-1st{
         width: 340px;
     }
     .introduction .row .img-2nd{
         width: 300px;
-        bottom: 60px;
+        bottom: 20px;
     }
     .introduction .facilities .img-1st{
         right: 0;
