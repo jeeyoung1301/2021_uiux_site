@@ -414,16 +414,26 @@
 
     <script>
 
-        const header = document.getElementById('headerWrap')
-        document.body.addEventListener('scroll',function(){
-            let y = document.body.scrollTop;
+        // const header = document.getElementById('headerWrap')
+        // document.body.addEventListener('scroll',function(){
+        //     let y = document.body.scrollTop;
 
-            if(y> 60){
-                header.classList.add('active')               
-            }
-            else{
-                header.classList.remove('active')
-            }
+        //     if(y> 60){
+        //         header.classList.add('active')               
+        //     }
+        //     else{
+        //         header.classList.remove('active')
+        //     }
+        // });
+
+        window.addEventListener('scroll',function(){
+            let scrollY = window.pageYOffset;
+            const bHeight = document.body.offsetHeight;
+            let wHeight = window.innerHeight;
+            let sHeight = bHeight - wHeight;
+            let progress = scrollY / sHeight
+
+            console.log(progress)
         });
 
 
