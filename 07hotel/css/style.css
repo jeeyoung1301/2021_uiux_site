@@ -476,6 +476,11 @@ footer{
 
 
 @media screen and (max-width:768px) {
+    .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
     .navbar .navbar-brand{
         display: block;
     }
@@ -571,6 +576,12 @@ footer{
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
+    }
+    /* special offers */
+
+    .special-offers .row .col-lg-4{
+        padding-left: 0;
+        padding-right: 0;
     }
 
     /* slide  */
@@ -711,14 +722,10 @@ footer{
     }
 
     .scrollTop{
-        right: 32px;
-        bottom: 32px;
+        right: 16px;
+        bottom: 16px;
     }
 
-    /* subpage  */
-    /* .container.sigIntro{
-        padding: 0;
-    } */
     .container.sigIntro img{
         width: 360px;
     }
