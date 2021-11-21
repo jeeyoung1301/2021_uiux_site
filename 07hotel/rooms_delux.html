@@ -157,7 +157,7 @@
       <footer class="footer">
           <div class="container p-0">
               <div class="footer-top">
-                <a href="#!"><img src="images/footer-logo.png" alt=""></a>
+                <a href="#!" class="mt-3"><img src="images/footer-logo.png" alt=""></a>
                 <div class="app">
                     <div class="application">
                         <a href="#!" class="pr-1"><img src="images/footer_appstore.png" alt=""></a>
@@ -291,17 +291,49 @@
     <script>
         const nav = document.querySelector('.navWrap');
         let scrollY = window.pageYOffset;
-        docElem = document.documentElement; // document 전체
-        const topBtn = document.querySelector('.scrollTop');
+        const btt = document.querySelector('.scrollTop');
+        const docElem = document.documentElement;
+        let docHeight = Math.max(docElem.scrollHeight, docElem.offsetHeight);
+        let scrollPos;
+        let offset = docHeight / 5
 
-        // window.addEventListener('scroll',function(){
-        //     if(scrollY > 48){
-        //         nav.classList.add('fixed-top')
-        //     }
-        //     else{
-        //         nav.classList.remove('fixed-top')
-        //     }
+        window.addEventListener('scroll',function(){
+            scrollY = window.pageYOffset;
+            if(scrollY > 48){
+                nav.classList.add('fixed-top')
+            }
+            else{
+                nav.classList.remove('fixed-top')
+            }
+            
 
+            scrollPos = docElem.scrollTop;
+        
+            if(scrollPos > offset){
+                btt.classList.add('active')
+            }
+            else{
+                btt.classList.remove('active')
+            }
+
+
+        });
+
+
+        btt.addEventListener('click',function(e){
+            e.preventDefault();
+            scrollToTop()
+        });
+        function scrollToTop(){
+            let scrollInterval = setInterval(function(){
+                if(scrollPos != 0){
+                    window.scrollBy(0,-55);
+                }
+                else{
+                    clearInterval(scrollInterval)
+                }
+            },10)
+        };
     </script>
 
   </body>
