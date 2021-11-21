@@ -687,7 +687,7 @@ header > nav > ul > li:nth-child(4) img{
 
     /* section2  */
     .section:nth-child(2) .videoWrap .txt h3{
-        font-size: 20px;
+        font-size: 30px;
         display: block;
     }
     .section:nth-child(2) .videoWrap .txt h3 br{
