@@ -283,7 +283,7 @@ header > nav > ul > li:nth-child(4) img{
 }
 
 .section:nth-child(3) .slide02{
-    background-image: url(../images/innisfree/slide02_bg.png);
+    background-image: url(../images/innisfree/section03/slide02_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
