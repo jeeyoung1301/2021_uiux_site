@@ -177,6 +177,7 @@ header > nav > ul > li:nth-child(4) img{
 .section:nth-child(2){
     position: relative;
 }
+
 .section:nth-child(2) .videoWrap{
     position: absolute;
     width: 60%;
@@ -215,9 +216,15 @@ header > nav > ul > li:nth-child(4) img{
 .section:nth-child(2) .videoWrap .txt h3{
     font-size: 30px;
     font-family: 'Cute Font', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .section:nth-child(2) .videoWrap .txt h3 br{
     display: none;
+}
+.section:nth-child(2) .txt img{
+    width: 30px;
 }
 
 /* section3  */
@@ -681,6 +688,7 @@ header > nav > ul > li:nth-child(4) img{
     /* section2  */
     .section:nth-child(2) .videoWrap .txt h3{
         font-size: 20px;
+        display: block;
     }
     .section:nth-child(2) .videoWrap .txt h3 br{
         display: block;
