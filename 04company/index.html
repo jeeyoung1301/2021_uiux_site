@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/colorbox.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/script.js"></script>
     <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/wow.min.js"></script>
 </head>
 <body>
     <header id="main_header">
@@ -283,14 +283,14 @@
     </div>
     <div class="sec_03">
         <ul class="container clearfix">
-            <li onclick="location.href=''" class="animate__fadeInLeft" id="opacity">
+            <li onclick="location.href=''" class="wow animate__fadeInLeft" id="opacity">
                 <div class="txt">
                     <img src="images/sec3_icon.png" alt="">
                     <h3>NEW PRODUCT</h3>
                     <p>늘 고객을<br>최우선으로 생각하고<br>여러분의 삶에<br>향기를 가져다 드리는<br>식품회사가 되도록<br>노력하겠습니다.</p>
                 </div>
             </li>
-            <li onclick="location.href=''" class="animate__fadeInDown" id="opacity">
+            <li onclick="location.href=''" class="wow animate__fadeInDown" id="opacity">
                 <img src="images/sec3_02.jpg" alt="">
                 <div class="overlay">
                     <div class="txt">
@@ -303,8 +303,8 @@
                     </div>
                 </div>
             </li>
-            <li onclick="location.href=''" class="animate__fadeInDown" id="opacity"><img src="images/img_top.png" alt=""></li>
-            <li onclick="location.href=''" class="animate__fadeInTopRight" id="opacity">
+            <li onclick="location.href=''" class="wow animate__fadeInDown" id="opacity"><img src="images/img_top.png" alt=""></li>
+            <li onclick="location.href=''" class="wow animate__fadeInTopRight" id="opacity">
                 <img src="images/sec3_04.jpg" alt="">
                 <div class="overlay">
                     <div class="txt">
@@ -321,8 +321,8 @@
                     </div>
                 </div>
             </li>
-            <li onclick="location.href=''" class="animate__fadeInUp" id="opacity"><img src="images/img_maxim.png" alt=""></li>
-            <li onclick="location.href=''" class="animate__fadeInUp" id="opacity">
+            <li onclick="location.href=''" class="wow animate__fadeInUp" id="opacity"><img src="images/img_maxim.png" alt=""></li>
+            <li onclick="location.href=''" class="wow animate__fadeInUp" id="opacity">
                 <img src="images/sec3_06.jpg" alt="">
                 <div class="overlay">
                     <div class="txt">
@@ -340,7 +340,7 @@
                     </div>
                 </div>
             </li>
-            <li onclick="location.href=''" class="animate__fadeInBottomRight" id="opacity"><img src="images/img_starbucks.png" alt=""></li>
+            <li onclick="location.href=''" class="wow animate__fadeInBottomRight" id="opacity"><img src="images/img_starbucks.png" alt=""></li>
         </ul>
     </div>
     <div class="sec_04">
@@ -425,6 +425,23 @@
                 header.classList.remove('active')
             }
         });
+
+        var wow = new WOW(
+        {
+            boxClass:     'wow',      // animated element css class (default is wow)
+            animateClass: 'animate__animated', // animation css class (default is animated)
+            offset:       100,          // distance to the element when triggering the animation (default is 0)
+            mobile:       true,       // trigger animations on mobile devices (default is true)
+            live:         true,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null,    // optional scroll container selector, otherwise use window,
+            resetAnimation: true,     // reset animation on end (default is true)
+        }
+        );
+        wow.init();
 
 
 
