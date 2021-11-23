@@ -1337,10 +1337,6 @@ footer{
     margin-top: 25px;
     margin-bottom: 25px;
   }
-  #colorbox.active{
-    width: 420px !important;
-    height: 236.25px !important;
-  }
   .sliderWrap_04{
     height: 142px;
     position: relative;

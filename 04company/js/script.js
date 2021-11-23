@@ -24,8 +24,10 @@ $(document).ready(function(){
     });
     $('.slider_04 > li a').colorbox({
         iframe:true,
-        // innerWidth:960,
-        // innerHeight:540
+        innerWidth:960,
+        innerHeight:540,
+        maxWidth: '90%',
+        maxHeight: '90%'
     });
 
 
@@ -49,12 +51,6 @@ $(document).ready(function(){
 
     });
 
-    if($('#colorbox').style.display = 'block'){
-        document.getElementById('colorbox').classList.add('active');
-    }
-    else{
-        document.getElementById('colorbox').classList.remove('active')
-    }
 
 });
 
