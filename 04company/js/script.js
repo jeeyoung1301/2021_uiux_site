@@ -1,3 +1,16 @@
+const header = document.getElementById('headerWrap')
+document.body.addEventListener('scroll',function(){
+    let y = document.body.scrollTop;
+
+    if(y> 60){
+        header.classList.add('active')               
+    }
+    else{
+        header.classList.remove('active')
+    }
+});
+
+
 $(document).ready(function(){
     const visual_01 = $('.slider').bxSlider({
         controls:false,
