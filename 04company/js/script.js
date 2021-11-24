@@ -40,7 +40,7 @@ $(document).ready(function(){
         innerWidth:960,
         innerHeight:540,
         maxWidth: '90%',
-        maxHeight: '90%'
+        maxHeight: '50%'
     });
 
 
