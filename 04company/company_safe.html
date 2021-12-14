@@ -210,6 +210,25 @@
             tabList[j].style.color = 'white'
             };
         };
+
+        $('.toggleMenu').click(function(){
+        const toggleMenu = $('.toggleMenu').attr('class');
+        console.log(toggleMenu);
+        if(toggleMenu == 'toggleMenu'){
+          document.getElementsByClassName('toggleMenu')[0].classList.add('active'); 
+          $('.gnb').addClass('view');
+        }
+        else{
+            document.getElementsByClassName('toggleMenu')[0].classList.remove('active');
+            $('.gnb').removeClass('view');
+        }
+    });
+
+    $(window).resize(function(){
+        $('.toggleMenu').removeClass('active');
+        $('.gnb').removeClass('view');
+
+    });
     </script>
   </body>
 </html>
