@@ -275,15 +275,15 @@ header > nav > ul > li:nth-child(4) img{
     text-align: center;
 }
 .section:nth-child(3) .slide01 .right .txt h3{
-    font-size: 36px;
+    font-size: 1.5em;
 }
 .section:nth-child(3) .slide01 .right .txt p{
-    font-size: 24px;
+    font-size: 1.1em;
     font-weight: bold;
     font-family: 'Cute Font', cursive;
 }
 .section:nth-child(3) .slide01 .left img{
-    width: 600px;
+    width: 30em;
 }
 .section:nth-child(3) .slide01 .right img{
     width: 300px;
@@ -308,9 +308,12 @@ header > nav > ul > li:nth-child(4) img{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    width: 80%;
+    padding-left: 3em;
 }
 .section:nth-child(3) .slide02 .right{
-    padding-left: 30px;
+    /* padding-left: 30px; */
+    padding-right: 3em;
 }
 .section:nth-child(3) .slide02 .right > img{
     display: none;
@@ -324,7 +327,7 @@ header > nav > ul > li:nth-child(4) img{
 .section:nth-child(3) .slide02 .right .txt{
     display: flex;
     align-items: center;
-    font-size: 26px;
+    font-size: 1.3em;
     padding-bottom: 30px;
 }
 .section:nth-child(3) .slide02 .right .txt img{
@@ -382,7 +385,7 @@ header > nav > ul > li:nth-child(4) img{
     font-weight: bold;
 }
 .section:nth-child(3) .slide03 .txt img{
-    height: 60px;
+    height: 4em;
 }
 .section:nth-child(3) .slide03 .txt p br{
     display: none;
@@ -408,7 +411,7 @@ header > nav > ul > li:nth-child(4) img{
     right: 0;
 }
 .section:nth-child(3) .slide03 .img img{
-    height: 400px;
+    height: 20em;
 }
 .section:nth-child(3) .slide03 .content02 .img img{
     transform: rotateZ(-14deg);
@@ -446,7 +449,7 @@ header > nav > ul > li:nth-child(4) img{
     flex-direction: column;
 }
 .section:nth-child(4) .content h3{
-    font-size: 26px;
+    font-size: 1.3em;
     text-align: center;
     width: 400px;
     margin-bottom: 10px;
@@ -462,6 +465,9 @@ header > nav > ul > li:nth-child(4) img{
 .section:nth-child(4) .thumbnail{
     cursor: pointer;
 }
+.section:nth-child(4) .thumbnail > img{
+    width: 13em;
+}
 .section:nth-child(4) .product{
     padding-bottom: 30px;
 }
@@ -472,7 +478,7 @@ header > nav > ul > li:nth-child(4) img{
     font-weight: bold;
 }
 .section:nth-child(4) .review .thumbnailWrapper{
-    justify-content: unset;
+    /* justify-content: unset; */
 }
 .section:nth-child(4) .review .thumbnail{
     padding-right: 30px;
@@ -481,8 +487,8 @@ header > nav > ul > li:nth-child(4) img{
     padding-right: 0;
 }
 .section:nth-child(4) .review .thumbnail img{
-    width: 250px;
-    height: 250px;
+    width: 13em;
+    height: 13em;
 }
 .section:nth-child(4) .review .up{
     padding-right: 30px;
@@ -570,8 +576,8 @@ header > nav > ul > li:nth-child(4) img{
     margin: 0 auto;
     display: block;
     padding: 16px 0;
-    width: 580px;
-    height: 580px;
+    width: 30em;
+    height: 30em;
 }
 
 
@@ -841,12 +847,15 @@ header > nav > ul > li:nth-child(4) img{
     }
     .section:nth-child(4) .content h3{
         font-size: 16px;
-        width: 300px;
+        width: 260px;
         margin-left: 0;
     }
     .section:nth-child(4) .product{
         padding-top: 30px;
         padding-bottom: 20px;
+    }
+    .section:nth-child(4) .product h3{
+        margin: 0 auto;
     }
     .section:nth-child(4) .product .thumbnail{
         display: flex;
