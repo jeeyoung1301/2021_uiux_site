@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 a:link,a:visited{
     color: #333;
@@ -16,4 +17,32 @@ a:link,a:visited{
 }
 li{
     list-style: none;
+}
+
+/* header  */
+.top_ban_kakao,
+.top_ban_tell{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.top_ban_kakao{
+    background-color: #FCCE00;
+    justify-content: center;
+}
+.top_ban_tell{
+    justify-content: space-between;
+    background-color: #213F85;
+}
+.top_ban_tell_info{
+    margin-left: 16px;
+}
+.top_ban_tell_slo{
+    margin-right: 16px;
+}
+.top_ban_tell_info a,
+.top_ban_tell_slo a{
+    color: #fff;
 }
