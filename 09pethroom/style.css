@@ -129,40 +129,13 @@ nav{
 #main{
     padding-top: 210px;
 }
-/* main_visual  */
-.main_visual .visual_slide{
-    position: relative;
-    width: 100vw;
-    height: 860px;
-    overflow: hidden;
-}
-.main_visual .slider01{
-    position: absolute;
-    left: 0;
-    top: 0;
-}
+
 .main_visual li{
     width: 100%;
     height: 860px;
-    float: left;
 }
-/* main_new  */
-.main_new .new_slide{
-    position: relative;
-    width: 100vw;
-    height: 279px;
-    overflow: hidden;
-}
-.main_new .slider02{
-    position: absolute;
-    left: 0;
-    top: 0;
-}
+
 .main_new li{
-    width: 640px;
+    width: 33.3%;
     float: left;
-}
-/* wiggle_ban  */
-.wiggle_ban{
-    width: 100vw;
 }
