@@ -174,7 +174,8 @@ nav{
     margin: 100px 0 100px 0;
 }
 .main_best .best_item{
-    width: 1280px;
+    max-width: 1280px;
+    width: 100vw;
     margin: 0 auto;
 }
 .best_item .title_wrap{
@@ -183,27 +184,27 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .best_item .title_wrap h3{
-    width: 280px;
-    line-height: 40px;
+    width: 200px;
+    line-height: 30px;
     text-align: center;
     background-color: #213f85;
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1rem;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 .best_item .title_wrap h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .item_wrap ul li:first-child{
     width: 50%;
 }
 .item_wrap ul li{
-    width: 320px;
+    width: 25%;
 }
 .item_wrap .thumbs_wrap:hover{
     transform: scale(1.05);
@@ -227,8 +228,8 @@ nav{
    width: 57px;
 }
 .item_wrap .thumbs_wrap .item_img{
-    width: 480px;
-    padding-left: 57px;
+    width: 100vw;
+    max-width: 100%;
 }
 .item_wrap .name{
     text-align: center;
@@ -250,26 +251,31 @@ nav{
     margin-bottom: 10px;
 }
 
+.title_wrap ul li:first-child{
+    padding-bottom: 30px;
+}
+.item_wrap .thumbs_wrap .num_box img{
+    width: 19%;
+}
 .item_wrap ul li:first-child .icon img{
     position: absolute;
-    width: 92px;
+    width: 77px;
     top: 50px;
 }
 .item_wrap ul li:first-child .icon_new{
     left: 100px;
 }
 .item_wrap ul li:first-child .icon .icon_delivery{
-    left: 200px;
-    width: 100px;
+    left: 180px;
+    width: 82px;
 }
 .item_wrap ul li:first-child .name{
-    margin: 0 0 40px 0;
+    margin-bottom: 20px;
 }
 .item_wrap ul li:first-child .name a{
     font-size: 1.3rem;
 }
 .item_wrap ul li:first-child .item_img{
-    width: 590px;
 }
 .item_wrap ul li:first-child .price_wrap a{
     height: 40px;
