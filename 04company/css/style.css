@@ -1289,9 +1289,10 @@ footer{
   .content > ul > li:nth-child(3){
     order:5;
     width: 328px;
-    padding-top: 20px;
+    padding-top: 30px;
     cursor: pointer;
     border-top: 3px solid #ddbda4;
+    margin-bottom: 30px;
   }
   .content > ul > li:nth-child(3) > .news > ul{
     padding-top: 10px;
@@ -1358,8 +1359,7 @@ footer{
     order:6;
     position: initial;
     width: 100%;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
   .sliderWrap_04{
     height: 142px;
