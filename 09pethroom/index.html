@@ -54,11 +54,77 @@
                     </div>
                     <div class="nav_menu">
                         <ul class="clearfix">
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">PRODUCT</a></li>
-                            <li><a href="#">EVENT</a></li>
-                            <li><a href="#">REVIEW</a></li>
-                            <li><a href="#">COMMUNITY</a></li>
+                            <li>
+                                <a href="#">ABOUT</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">7%MIRACLE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">PHILOSOPHY</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">SOCIAL ACTIVITY</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">GLOBAL</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ROOMAATE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">PARTNERS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">PRODUCT</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">ALL PRODUCT</a>
+                                        <ul class="snav">
+                                            <li><a href="#">목욕/미용 용품</a></li>
+                                            <li><a href="#">야외/관리 용품</a></li>
+                                            <li><a href="#">배변용품</a></li>
+                                            <li><a href="#">위생용품</a></li>
+                                            <li><a href="#">강아지&고양이</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">MY DOG</a></li>
+                                    <li><a href="#">MY CAT</a></li>
+                                    <li><a href="#">BEST&STEADY</a></li>
+                                    <li><a href="#">NEW PRODUCT</a></li>
+                                    <li><a href="#">SPECIAL SET</a></li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/pethroom-logo.png" alt="pethroom-logo">
+                                            &nbsp;X&nbsp;
+                                            <img src="img/wiggle-logo.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">EVENT</a>
+                            </li>
+                            <li>
+                                <a href="#">REVIEW</a>
+                                <ul class="submenu">
+                                    <li><a href="#">BEST REVIEW</a></li>
+                                    <li><a href="#">ALL REVIEW</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">COMMUNITY</a>
+                                <ul class="submenu">
+                                    <li><a href="#">NOTICE</a></li>
+                                    <li><a href="#">Q&A</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">EVENT</a></li>
+                                    <li><a href="#">MEMBERSHIP</a></li>
+                                    <li><a href="#">INQUIRY</a></li>
+                                </ul>
+                            </li>
                         </ul>
                         <div class="nav_search">
                             <form action="" method="get">
@@ -83,59 +149,37 @@
             <div class="visual_slide">
                 <ul class="slider01 clearfix">
                     <li>
-                        <a href="#">
-                            <img src="img/main/wiggle-pc.gif" alt="wiggle">
-                        </a>
+                        <img src="img/main/wiggle-pc.gif" alt="wiggle">
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="img/main/bathtub_pc.gif" alt="bathtub">
-                        </a>
+                        <img src="img/main/bathtub_pc.gif" alt="bathtub">
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="img/main/Easy-Facial-Comb_pc.gif" alt="Easy-Facial-Comb">
-                        </a>
+                        <img src="img/main/Easy-Facial-Comb_pc.gif" alt="Easy-Facial-Comb">
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="img/main/gel_m.gif" alt="gel">
-                        </a>
+                        <img src="img/main/gel_m.gif" alt="gel">
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="img/main/litter_pc.gif" alt="litter">
-                        </a>
+                        <img src="img/main/litter_pc.gif" alt="litter">
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="img/main/mist_pc.gif" alt="mist">
-                        </a>
+                        <img src="img/main/mist_pc.gif" alt="mist">
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="img/main/nail-clipper.gif" alt="nail-clipper">
-                        </a>
+                        <img src="img/main/nail-clipper.gif" alt="nail-clipper">
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="img/main/quick_cleaner_main-pc.gif" alt="quick_cleaner">
-                        </a>
+                        <img src="img/main/quick_cleaner_main-pc.gif" alt="quick_cleaner">
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="img/main/scoop_pc.gif" alt="scoop">
-                        </a>
+                        <img src="img/main/scoop_pc.gif" alt="scoop">
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="img/main/solution_pc.gif" alt="solution">
-                        </a>
+                        <img src="img/main/solution_pc.gif" alt="solution">
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="img/main/wellfit-pc.gif" alt="wellfit">
-                        </a>
+                        <img src="img/main/wellfit-pc.gif" alt="wellfit">
                     </li>
                 </ul>
             </div>
@@ -285,6 +329,7 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script>
+        const nav = 
         // $(document).ready(function(){
         //   $('.slider01').bxSlider({
         //       auto:true,
