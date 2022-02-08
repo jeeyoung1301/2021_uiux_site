@@ -478,11 +478,9 @@ header > nav > ul > li:nth-child(4) img{
 .section:nth-child(4) .product h4 span{
     font-weight: bold;
 }
+
 .section:nth-child(4) .review .thumbnail{
-    padding-right: 30px;
-}
-.section:nth-child(4) .review .thumbnail:last-child{
-    padding-right: 0;
+    padding: 0 30px;
 }
 .section:nth-child(4) .review .thumbnail img{
     width: 13em;
@@ -490,10 +488,6 @@ header > nav > ul > li:nth-child(4) img{
 }
 .section:nth-child(4) .review .up{
     padding-right: 30px;
-}
-.section:nth-child(4) .review .up,
-.section:nth-child(4) .review .down{
-    display: flex;
 }
 
 .section:nth-child(4) .modal{
@@ -878,16 +872,20 @@ header > nav > ul > li:nth-child(4) img{
         font-size: 14px;
     }
 
-    .section:nth-child(4) .review .thumbnailWrapper{
-        flex-direction: column;
+    .section:nth-child(4) .review h3{
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
-    .section:nth-child(4) .review .thumbnailWrapper .up{
-        padding-right: 0;
-        padding-bottom: 10px;
+    .section:nth-child(4) .review .thumbnail{
+        padding: 0 20px;
+    }
+    .section:nth-child(4) .review .thumbnail.review03,
+    .section:nth-child(4) .review .thumbnail.review04{
+        display: none;
     }
     .section:nth-child(4) .review .thumbnail img{
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
     .section:nth-child(4) .review .thumbnail .txt h4{
         font-size: 12px;
