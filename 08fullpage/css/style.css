@@ -73,6 +73,7 @@ header > nav > ul > li:nth-child(4) img{
     background-size: cover;
     position: relative;
     width: 100%;
+    background-position: center;
 }
 .section:first-child img{
     position: absolute;
@@ -636,12 +637,28 @@ header > nav > ul > li:nth-child(4) img{
     display: none;
 }
 
+/* mobile start  */
 @media screen and (max-width:699px){
     header nav{
-        justify-content: center;
+        flex-direction: column;
     }
-    header nav ul{
-        display: none;
+    header nav ul li{
+        width: 90px;
+    }
+    header nav ul li:first-child{
+        width: 80px;
+    }
+    header nav ul li:nth-child(2){
+        width: 100px;
+    }
+    header nav ul li a{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    header nav ul li a p{
+        font-size: 16px;
+        text-align: center;
     }
     header nav h2 a img{
         width: 300px;
@@ -687,9 +704,15 @@ header > nav > ul > li:nth-child(4) img{
     }
 
     /* section2  */
+    .section:nth-child(2) .videoWrap{
+        width: 100%;
+    }
     .section:nth-child(2) .videoWrap .txt h3{
         font-size: 30px;
         display: block;
+    }
+    .section:nth-child(2) .videoWrap .txt span{
+        font-size: 24px;
     }
     .section:nth-child(2) .videoWrap .txt h3 br{
         display: block;
