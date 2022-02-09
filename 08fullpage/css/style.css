@@ -462,7 +462,7 @@ header > nav > ul > li:nth-child(4) img{
 }
 .section:nth-child(4) .thumbnailWrapper{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .section:nth-child(4) .thumbnail{
     cursor: pointer;
@@ -482,6 +482,12 @@ header > nav > ul > li:nth-child(4) img{
 
 .section:nth-child(4) .review .thumbnail{
     padding: 0 30px;
+}
+.section:nth-child(4) .review .review01{
+    padding-left: 0;
+}
+.section:nth-child(4) .review .review04{
+    padding-right: 0;
 }
 .section:nth-child(4) .review .thumbnail img{
     width: 13em;
