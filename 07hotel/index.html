@@ -186,7 +186,7 @@
                 </form>
                 <form action="#" method="post">
                     <fieldset  class="promotionForm">
-                        <button class="close">X</button>
+                        <button class="close">x</button>
                         <ul>
                             <li>
                                 <select name="promotionCode" id="promotionCode">
@@ -272,7 +272,7 @@
               </div>
           </div>
       </section>
-      <section class="slide">
+      <section class="slide mb-5">
           <h2 class="rooms pt-5 pb-3">Rooms</h2>
           <div id="carousel" class="carousel" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -756,8 +756,6 @@
     <script src="js/wow.js"></script>
 
     <script>
-        const nav = document.querySelector('.navWrap');
-        let scrollY = window.pageYOffset;
         const btt = document.querySelector('.scrollTop');
         const docElem = document.documentElement;
         let docHeight = Math.max(docElem.scrollHeight, docElem.offsetHeight);
@@ -765,14 +763,6 @@
         let offset = docHeight / 5
 
         window.addEventListener('scroll',function(){
-            scrollY = window.pageYOffset;
-            if(scrollY > 48){
-                nav.classList.add('fixed-top')
-            }
-            else{
-                nav.classList.remove('fixed-top')
-            }
-            
 
             scrollPos = docElem.scrollTop;
         
@@ -785,7 +775,6 @@
 
 
         });
-
 
         btt.addEventListener('click',function(e){
             e.preventDefault();
@@ -801,6 +790,17 @@
                 }
             },10)
         };
+
+        const proCode = document.querySelector('.promotion-code')
+        const proForm = document.querySelector('.promotionForm')
+        const closeBtn = document.querySelector('.promotionFrom .close')
+
+        proCode.addEventListener('click',function(e){
+            proForm.classList.add('visible')
+        });
+        closeBtn.addEventListener('click',function(e){
+            proForm.classList.remove('visible')
+        });
 
         const youtube01 = document.querySelector('.promotion-video > a')
         const popUp = document.querySelector('.popUp')
