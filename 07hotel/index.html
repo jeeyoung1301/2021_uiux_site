@@ -211,9 +211,9 @@
             <img src="images/icon-pagedown.gif" alt="" class="pagedown">
       </div>
       <section class="container special-offers mb-5">
-          <h2 class="pt-5 pb-3">Special Offers</h2>
+          <h2 class="pt-5 pb-3">추천 프로모션</h2>
           <div class="row">
-              <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
+              <div class="col-lg-4 col-md-6 mb-5 mb-md-0 wow fadeInDown" data-wow-delay="0.3s">
                   <div class="card" onclick="location.href=''">
                       <div class="package d-flex align-items-center justify-content-center text-white">패키지</div>
                       <div class="card-img overflow-hidden">
@@ -232,7 +232,7 @@
                       </div>
                   </div>
               </div>
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 wow fadeInDown" data-wow-delay="0.8s">
                   <div class="card" onclick="location.href=''">
                       <div class="package d-flex align-items-center justify-content-center text-white">패키지</div>
                       <div class="card-img overflow-hidden ">
@@ -251,7 +251,7 @@
                       </div>
                   </div>
               </div>
-              <div class="col-lg-4 col-md-6 d-none d-lg-block">
+              <div class="col-lg-4 col-md-6 d-none d-lg-block wow fadeInDown" data-wow-delay="1.3s">
                   <div class="card" onclick="location.href=''">
                       <div class="package d-flex align-items-center justify-content-center text-white">패키지</div>
                       <div class="card-img overflow-hidden">
@@ -272,8 +272,8 @@
               </div>
           </div>
       </section>
-      <section class="slide mb-5">
-          <h2 class="rooms pt-5 pb-3">Rooms</h2>
+      <section class="slide mb-5 wow fadeInDown" data-wow-delay="0.3s">
+          <h2 class="rooms pt-5 pb-3">객실</h2>
           <div id="carousel" class="carousel" data-ride="carousel">
                 <ol class="carousel-indicators">
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -508,7 +508,7 @@
           </div>
       </section>
       <section class="container introduction mb-5">
-          <h2 class="py-5">Introduction</h2>
+          <h2 class="py-5">부대시설</h2>
           <div class="row mb-5 dining wow fadeInDown" data-wow-delay="0.1s">
               <div class="col-md-6 d-flex flex-column justify-content-center order-2 order-md-1 txt">
                   <div class="icon d-flex align-items-center justify-content-center mb-3"><img src="images/food.svg" alt=""></div>
@@ -791,17 +791,6 @@
             },10)
         };
 
-        const proCode = document.querySelector('.promotion-code')
-        const proForm = document.querySelector('.promotionForm')
-        const closeBtn = document.querySelector('.promotionFrom .close')
-
-        proCode.addEventListener('click',function(e){
-            proForm.classList.add('visible')
-        });
-        closeBtn.addEventListener('click',function(e){
-            proForm.classList.remove('visible')
-        });
-
         const youtube01 = document.querySelector('.promotion-video > a')
         const popUp = document.querySelector('.popUp')
 
@@ -816,6 +805,8 @@
         })
 
         new WOW().init();
+
+        
 
     </script>
 

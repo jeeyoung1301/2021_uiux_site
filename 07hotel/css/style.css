@@ -157,7 +157,6 @@ body{
     right: 0;
     background-color: #8C8B89;
     border-radius: 5px;
-    transition: opacity 3s ease-in;
     display: none;
     pointer-events: none;
 }
@@ -166,6 +165,7 @@ body{
     top: -130%;
     display: block;
     pointer-events: auto;
+    transition: opacity 3s ease-in;
 }
 .visual .promotionForm ul{
     width: 400px;
