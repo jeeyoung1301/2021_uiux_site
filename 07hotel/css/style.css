@@ -92,6 +92,41 @@ body{
 .navbar .collapse button{
     background-color: #193028;
 }
+.navbar-nav .nav-item.dropdown{
+    position: unset;
+}
+.navbar-nav .nav-item.show{
+    border-bottom: 2px solid #fff;
+}
+.navbar-nav .dropdown-menu.show{
+    width: 1140px;
+    display: flex;
+    border: none;
+}
+.navbar-nav .dropdown-item{
+    width: unset;
+}
+.navbar-nav .dropdown-item:hover{
+    background-color: unset;
+    text-decoration: underline;
+}
+.navbar-nav .dropdown-item:active{
+    background: unset;
+    color: #333;
+    text-decoration: underline;
+}
+.navbar-nav li:nth-child(4) .dropdown-menu a:first-child{
+    margin-left: 60px;
+}
+.navbar-nav li:nth-child(5) .dropdown-menu a:first-child{
+    margin-left: 120px;
+}
+.navbar-nav li:nth-child(6) .dropdown-menu a:first-child{
+    margin-left: 260px;
+}
+.navbar-nav li:nth-child(7) .dropdown-menu a:first-child{
+    margin-left: 380px;
+}
 /* visual  */
 .visual video{
     width: 100vw;
@@ -598,6 +633,39 @@ footer{
     .mo-util .mo-lan .dropdown-item:last-child{
         background-image: url(../images/ico-lang.png);
         background-position: -8px 1px;
+    }
+
+    .navbar-nav .nav-item.show{
+        border-bottom: none;
+    }
+    .navbar-nav li .nav-link:active,
+    .navbar-nav li .nav-link:hover{
+        text-decoration: none;
+    }
+    .navbar-nav .nav-item.dropdown{
+        position: relative;
+    }
+    .navbar-nav .dropdown-menu.show{
+        width: initial;
+        display: block;
+    }
+    .navbar-nav .dropdown-item{
+        width: 100%;
+    }
+    .navbar-nav .dropdown-item:hover{
+        background-color: initial;
+        text-decoration: none;
+    }
+    .navbar-nav .dropdown-item:active{
+        background: initial;
+        color: initial;
+        text-decoration: none;
+    }
+    .navbar-nav li:nth-child(4) .dropdown-menu a:first-child,
+    .navbar-nav li:nth-child(5) .dropdown-menu a:first-child,
+    .navbar-nav li:nth-child(6) .dropdown-menu a:first-child,
+    .navbar-nav li:nth-child(7) .dropdown-menu a:first-child{
+        margin-left: 0;
     }
     /* card  */
     .container .card:hover{
