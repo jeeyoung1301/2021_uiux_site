@@ -670,11 +670,22 @@ footer{
         transform: translateX(-50%);
     }
     /* special offers */
-
-    .special-offers .row .col-lg-4{
-        padding-left: 0;
-        padding-right: 0;
+    .special-offers .card-title{
+        font-size: 1.3em;
     }
+    .special-offers .card-text h5{
+        font-size: 0.8em;
+    }
+    .special-offers .card h5:after{
+        margin: 16px 0;
+    }
+    .special-offers .card p{
+        font-size: 12px;
+    }
+    .special-offers .card-text .offer-price span{
+        font-size: 20px !important;
+        font-weight: bold;
+    } 
 
     /* introduction  */
     .introduction .img-view{
