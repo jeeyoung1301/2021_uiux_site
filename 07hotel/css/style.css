@@ -213,19 +213,12 @@ body{
     height: 50px;
     background: var(--primary-color);
 }
-/* .container .card-img img{
-    transition: 0.5s ease-in-out;
-} */
-/* .container .card-img:hover img{
-    transform: scale(1.05);
-} */
 .container .card{
     border: none;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 .container .card:hover{
-    /* border: 1px solid #000; */
     outline: solid 2px #cfcfcf;
     transform: scale(1.05);
 }
@@ -606,7 +599,11 @@ footer{
         background-image: url(../images/ico-lang.png);
         background-position: -8px 1px;
     }
-
+    /* card  */
+    .container .card:hover{
+        outline: none;
+        transform: scale(1);
+    }
     /* slide  */
     .slide #carousel{
         width: initial;
@@ -680,20 +677,20 @@ footer{
     }
 
     /* introduction  */
-    .introduction .row{
-        margin-right: 0;
-        margin-left: 0;
-    }
     .introduction .img-view{
         margin-bottom: 0;
-        height: 300px;
+        height: 230px;
+    }
+    .introduction .img-view img{
+        position: unset;
     }
     .introduction .row .img-1st{
-        width: 340px;
+        width: 360px;
+        display: block;
+        margin: 0 auto;
     }
     .introduction .row .img-2nd{
-        width: 300px;
-        bottom: 20px;
+        display: none;
     }
     .introduction .facilities .img-1st{
         right: 0;
