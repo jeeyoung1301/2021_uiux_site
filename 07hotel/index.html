@@ -174,7 +174,7 @@
                             <li class="float-left d-flex flex-column px-4">
                                 <div class="promotion-code">
                                     <div class="btn text-white">
-                                        <img src="images/Vector.png" alt=""> 프로모션 코드
+                                        <img src="images/Vector.png" alt=""> <button type="button" class="btn text-white" data-toggle="modal" data-target="#promotion" data-whatever="@mdo"> 프로모션 코드</button>
                                     </div>
                                 </div>
                             </li>
@@ -184,29 +184,39 @@
                         </ul>
                     </fieldset>
                 </form>
-                <form action="#" method="post">
-                    <fieldset  class="promotionForm">
-                        <button class="close">x</button>
-                        <ul>
-                            <li>
-                                <select name="promotionCode" id="promotionCode">
-                                    <option value="Corporate">
-                                        Corporate
-                                    </option>
-                                    <option value="Travel Agency">
-                                        Travel Agency
-                                    </option>
-                                </select>
-                            </li>
-                            <li>
-                                <input type="text">
-                            </li>
-                            <li>
-                                <button>코드확인</button>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </form>
+            </div>
+            <div class="modal fade" id="promotion" tabindex="-1" aria-labelledby="promotionLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header border-bottom-0 p-0">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="d-flex align-items-center justify-content-around">
+                                <div class="form-group mb-0">
+                                    <label for="promotionCode" class="col-form-label"></label>
+                                    <select name="promotionCode" id="promotionCode">
+                                        <option value="Corporate">
+                                            Corporate
+                                        </option>
+                                        <option value="Travel Agency">
+                                            Travel Agency
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-0">
+                                    <input type="text" class="form-control" id="message-text"></textarea>
+                                </div>
+                                <div class="modal-footer p-0 border-top-0">
+                                    <button type="button" class="btn btn-secondary">코드확인</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
             </div>
             <img src="images/icon-pagedown.gif" alt="" class="pagedown">
       </div>
@@ -806,7 +816,8 @@
 
         new WOW().init();
 
-        
+        $('#promotion').on('show.bs.modal', function (event) {
+        })
 
     </script>
 
