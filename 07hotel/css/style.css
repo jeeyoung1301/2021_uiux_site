@@ -424,9 +424,8 @@ body{
 .container.location .col-12 .txt{
     padding: 40px;
 }
-.container.location .col-12 h5{
+.container.location .col-12 h4{
     font-weight: bold;
-    font-size: 22px;
 }
 .container .info .col-6{
     border-right: 1px solid #8c8b89;
@@ -724,6 +723,10 @@ footer{
     .container.location > .row.location{
         flex-direction: column;
     }
+    .container.location .col-12 h4,
+    .container.location .col-12 p{
+        text-align: center;
+    }
 
     /* footer  */
     footer{
@@ -804,6 +807,9 @@ footer{
         transform: translateX(-50%);
     }
     /* special offers */
+    .special-offers .card{
+        border: 1px solid rgba(0,0,0,.125);
+    }
     .special-offers .card-title{
         font-size: 1.3em;
     }
