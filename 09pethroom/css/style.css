@@ -260,50 +260,47 @@ nav{
     font-size: 2rem;
 }
 /* main-best item-wrap */
-.item_wrap ul li{
+.best_item_wrap ul li{
     width: 33.3%;
+    background-color: #f2f2f2;
+    float: left;
+    margin-left: 10px;
 }
-.item_wrap .thumbs_wrap:hover{
+.best_item_wrap ul li:nth-child(3),
+.best_item_wrap ul li:nth-child(6){
+    margin-left: 0;
+}
+
+.best_item_wrap .thumbs_wrap:hover{
     transform: scale(1.05);
 }
-.item_wrap .thumbs_wrap{
+.best_item_wrap .thumbs_wrap{
     position: relative;
     transition: ease-in-out 0.5s;
 }
-.item_wrap .thumbs_wrap .num_box{
-    position: absolute;
-    top: 16px;
-    left: 16px;
-}
-.item_wrap .thumbs_wrap .num_box p{
-    position: absolute;
-    top: 8px;
-    left: 22px;
-    font-size: 2.5rem;
-}
-.item_wrap .thumbs_wrap .num_box img{
-   width: 57px;
-}
-.item_wrap .thumbs_wrap .item_img{
+
+
+
+.best_item_wrap .thumbs_wrap .item_img{
     width: 100vw;
     max-width: 100%;
 }
-.item_wrap .name{
+.best_item_wrap .name{
     text-align: center;
     margin-bottom: 20px;
 }
-.item_wrap .name a{
+.best_item_wrap .name a{
     font-weight: 600;
 }
 
-.item_wrap .price_wrap{
+.best_item_wrap .price_wrap{
     text-align: center;
 }
-.item_wrap .price_wrap h4{
+.best_item_wrap .price_wrap h4{
     color: #b1b1b1;
     text-decoration: line-through;
 }
-.item_wrap .price_wrap h3{
+.best_item_wrap .price_wrap h3{
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -311,27 +308,27 @@ nav{
 .title_wrap ul li:first-child{
     padding-bottom: 30px;
 }
-.item_wrap ul li:first-child .icon img{
+.best_item_wrap ul li:first-child .icon img{
     position: absolute;
     width: 77px;
     top: 50px;
 }
-.item_wrap ul li:first-child .icon_new{
+.best_item_wrap ul li:first-child .icon_new{
     left: 100px;
 }
-.item_wrap ul li:first-child .icon .icon_delivery{
+.best_item_wrap ul li:first-child .icon .icon_delivery{
     left: 180px;
     width: 82px;
 }
-.item_wrap ul li:first-child .name{
+.best_item_wrap ul li:first-child .name{
     margin-bottom: 20px;
 }
-.item_wrap ul li:first-child .name a{
+.best_item_wrap ul li:first-child .name a{
     font-size: 1.3rem;
 }
-.item_wrap ul li:first-child .item_img{
+.best_item_wrap ul li:first-child .item_img{
 }
-.item_wrap ul li:first-child .price_wrap a{
+.best_item_wrap ul li:first-child .price_wrap a{
     height: 40px;
     background-color: #213f85;
     color: #fff;
