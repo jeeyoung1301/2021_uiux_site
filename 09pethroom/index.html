@@ -43,6 +43,11 @@
                             <a href="#">회원가입</a>
                             <a href="#">마이페이지</a>
                             <a href="#">멤버쉽</a>
+                            <a href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                                <div class="count" data-cartnum="0">0</div>
+                            </a>
+                            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
                         </div>
                     </div>
                     <div class="nav_menu">
@@ -101,27 +106,36 @@
                                 <a href="#">7% MIRACLE</a>
                             </li>
                         </ul>
-                        <div class="nav_search">
-                            <form action="" method="get">
-                                <legend>검색</legend>
-                                <div class="nav_search_input">
-                                    <label for="search"></label>
-                                    <input type="text" id="search" name="" style="background-color: transparent; border: none;width: 120px;">
-                                    <a href="#"><i class="fas fa-search"></i></a>
-                                </div>
-                            </form>
-                            <div class="cart">
-                                <a href="#">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    장바구니
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
+    <div class="modal search_modal">
+        <div class="search_section">
+            <div class="search_close">
+                <img src="img/btn_close.gif" alt="">
+            </div>
+            <div class="search_input">
+                <form action="" method="get">
+                    <legend>검색</legend>
+                    <div>
+                        <label for="search"></label>
+                        <input type="text" id="search" name="">
+                        <a href="#"><i class="fas fa-search search_icon"></i></a>
+                    </div>
+                </form>
+                <ul class="clearfix">
+                    <li><a href="#">더스트 벤토</a></li>
+                    <li><a href="#">덴탈 솔루션</a></li>
+                    <li><a href="#">웰 핏 테이블 & 보울</a></li>
+                    <li><a href="#">네일 클리퍼</a></li>
+                    <li><a href="#">힐링 브러쉬</a></li>
+                    <li><a href="#">화장실</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <section id="main">
         <!-- visual section -->
         <section class="main_visual">
@@ -434,6 +448,7 @@
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/script.js"></script>
     <script>
         // $(document).ready(function(){
         //   $('.slider01').bxSlider({

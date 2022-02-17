@@ -74,15 +74,97 @@ nav{
 .nav_util a img{
     width: 10rem;
 }
+.joinlist{
+    display: flex;
+}
 .joinlist a{
     margin-left: 1rem;
     font-size: 0.8rem;
     font-weight: 600;
 }
-.joinlist a:last-child{
+.joinlist a:nth-child(4){
     color: #e84200;
 }
+.joinlist a:nth-child(5){
+    display: flex;
+}
+.joinlist a:nth-child(5) i{
+    padding-right: 2px;
+}
+.joinlist a:nth-child(5) .count{
+    color: #ffc303;
+    background-color: #1c3762;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    border-radius: 100%;
+}
+/* search_modal */
+.modal.search_modal{
+    position: fixed;
+    background: rgba(0,0,0,0.5) url(../img/bg_search.png) no-repeat 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 170px;
+    left: 0;
+    z-index: 50;
+    display: none;
+}
+.modal.search_modal .search_close{
+    position: absolute;
+    right: 28%;
+    top: 30%;
+    cursor: pointer;
+}
+.modal.search_modal .search_close img{
+    width: 1.1rem;
+}
+.modal.search_modal .search_input{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.modal.search_modal .search_input input[type="text"]{
+    width: 94%;
+    line-height: 60px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+    color: #fff;
+}
+.modal.search_modal .search_input .search_icon{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.modal.search_modal .search_input ul{
+    padding-top: 30px;
+}
+.modal.search_modal .search_input ul li{
+    float: left;
+}
+.modal.search_modal .search_input ul li a{
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    padding: 0 20px;
+    background: #ffc303;
+    border-radius: 10px;
+    margin: 0 4px 4px 0;
+    font-size: 20px;
+}
+.search_section form{
+    border-bottom: 1px solid #fff;
+    margin-right: 32px;
+}
 
+
+/* nav_menu */
 .nav_menu{
     min-width: 1200px;
     display: flex;
@@ -115,37 +197,6 @@ nav{
     color: #FCCE00;
 }
 
-.nav_search{
-    display: flex;
-    align-items: flex-end;
-}
-.nav_search form{
-    border-bottom: 1px solid #fff;
-    margin-right: 32px;
-}
-.nav_search form legend{
-    display: none;
-}
-.nav_search_input a i{
-    font-size: 0.8rem;
-}
-.nav_search i{
-    color: #fff;
-}
-.nav_search .cart i{
-    font-size: 0.8rem;
-    margin-right: 6px;
-}
-.nav_search .cart a{
-    display: flex;
-    align-items: center;
-    color: #fff;
-    font-size: 0.8rem;
-    font-weight: 600;
-}
-.nav_search .cart img{
-    width: 1.5rem;
-}
 /* submenu  */
 .nav_menu .submenu{
     top: 60px;
@@ -347,7 +398,7 @@ nav{
 
 @media screen and (max-width:992px){
 
-    
+     
 
     /* best_item */
     .best_item_wrap{
