@@ -476,15 +476,18 @@ header > nav > ul > li:nth-child(4) img{
 .section:nth-child(4) .product p{
     color: #787878;
 }
+.section:nth-child(4) .product .thumbnail{
+    padding-right: 30px;
+}
+.section:nth-child(4) .product .thumbnail:last-child{
+    padding-right: 0;
+}
 .section:nth-child(4) .product h4 span{
     font-weight: bold;
 }
 
 .section:nth-child(4) .review .thumbnail{
-    padding: 0 30px;
-}
-.section:nth-child(4) .review .review01{
-    padding-left: 0;
+    padding-right: 30px;
 }
 .section:nth-child(4) .review .review04{
     padding-right: 0;
