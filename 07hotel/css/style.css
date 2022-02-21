@@ -24,13 +24,13 @@ body{
     margin: 0 auto;
     position: relative;
 }
-.top h1{
+.top .logo{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
 }
-.top h1 img{
+.top .logo img{
     position: absolute;
     top:50%;
     left: 50%;
@@ -458,6 +458,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    border: none;
 }
 /* footer  */
 footer{

@@ -16,7 +16,7 @@
       <header id="headerWrap">
             <div class="topWrap">
                 <div class="top clearfix">
-                    <h1 class="m-0"><a href="index.html"><img src="images/gnb_logo_signiel.png" alt="" class=""></a></h1>
+                    <div class="m-0 logo"><a href="index.html"><img src="images/gnb_logo_signiel.png" alt="" class=""></a></div>
                     <ul class="clearfix m-0 float-right util">
                         <li class="float-left"><a href="#">글로벌</a></li>
                         <li class="float-left ml-2"><a href="#">호텔찾기</a></li>
@@ -115,7 +115,7 @@
                             </li>
                         </ul>
                         <button class="btn text-white btn-sm" onclick="location.href='https://www.lottehotel.com/global/ko/lotte-hotel-rewards.html'">LOTTE HOTEL REWARDS</button>
-                        <div class="mo-util">
+                        <ul class="mo-util">
                             <li class="mo-lan ml-2">
                                 <a class="nav-link dropdown-toggle p-0" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">한국어</a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownId">
@@ -138,7 +138,7 @@
                                     <a class="dropdown-item" href="#">Việt Nam (VND)</a>
                                 </div>
                             </li>
-                        </div>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -153,15 +153,15 @@
                         <ul class="clearfix py-2">
                             <li class="float-left d-flex flex-column px-5">
                                 <label for="hotel">호텔</label>
-                                시그니엘 서울
+                                <input type="hidden" id="hotel"> 시그니엘 서울
                             </li>
                             <li class="float-left d-flex flex-column pl-3">
                                 <label for="chek-in">체크인</label>
-                                <input type="date">
+                                <input type="date" id="chek-in">
                             </li>
                             <li class="float-left d-flex flex-column pl-1 pr-3">
                                 <label for="chek-out">체크아웃</label>
-                                <input type="date">
+                                <input type="date" id="chek-out">
                             </li>
                             <li class="float-left d-flex flex-column pl-3">
                                 <label for="num">성인</label>
@@ -185,7 +185,7 @@
                     </fieldset>
                 </form>
             </div>
-            <div class="modal fade" id="promotion" tabindex="-1" aria-labelledby="promotionLabel" aria-hidden="true">
+            <div class="modal fade" id="promotion" tabindex="-1" aria-labelledby="promotion-code" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header border-bottom-0 p-0">
@@ -207,7 +207,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group mb-0">
-                                    <input type="text" class="form-control" id="message-text"></textarea>
+                                    <input type="text" class="form-control" id="message-text">
                                 </div>
                                 <div class="modal-footer p-0 border-top-0">
                                     <button type="button" class="btn btn-secondary">코드확인</button>
@@ -613,7 +613,7 @@
           </a>
           <img src="images/youtube01.PNG" alt="" class="img-fluid">
           <div class="popUp">
-            <iframe width="1120" height="630" src="https://www.youtube.com/embed/K-DuVXfANSQ?mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/K-DuVXfANSQ?mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
       </div>
       <footer class="footer">
@@ -683,65 +683,65 @@
                 <form action="#" method="post" class="form">
                     <fieldset>
                         <select name="familySite" id="site">
-                            <option value=""><a href="#!">패밀리사이트</a></option>
-                            <option value="롯데지주"><a href="#!">롯데지주</a></option>
-                            <option value="롯데건설"><a href="#!">롯데건설</a></option>
-                            <option value="롯데글로벌로지스"><a href="#!">롯데글로벌로지스</a></option>
-                            <option value="롯데기공"><a href="#!">롯데기공</a></option>
-                            <option value="롯데렌탈"><a href="#!">롯데렌탈</a></option>
-                            <option value="롯데비피화학"><a href="#!">롯데비피화학</a></option>
-                            <option value="롯데면세점제주"><a href="#!">롯데면세점제주</a></option>
-                            <option value="롯데멤버스(L.POINT)"><a href="#!">롯데멤버스(L.POINT)</a></option>
-                            <option value="롯데물산"><a href="#!">롯데물산</a></option>
-                            <option value="롯데스카이힐CC"><a href="#!">롯데스카이힐CC</a></option>
-                            <option value="롯데상사"><a href="#!">롯데상사</a></option>
-                            <option value="롯데시네마"><a href="#!">롯데시네마</a></option>
-                            <option value="롯데아사히주류"><a href="#!">롯데아사히주류</a></option>
-                            <option value="롯데알미늄"><a href="#!">롯데알미늄</a></option>
-                            <option value="롯데엠시시"><a href="#!">롯데엠시시</a></option>
-                            <option value="롯데월드"><a href="#!">롯데월드</a></option>
-                            <option value="롯데유통사업본부"><a href="#!">롯데유통사업본부</a></option>
-                            <option value="롯데인재개발원"><a href="#!">롯데인재개발원</a></option>
-                            <option value="롯데자산개발"><a href="#!">롯데자산개발</a></option>
-                            <option value="롯데자이언츠"><a href="#!">롯데자이언츠</a></option>
-                            <option value="롯데정밀화학"><a href="#!">롯데정밀화학</a></option>
-                            <option value="롯데정보통신"><a href="#!">롯데정보통신</a></option>
-                            <option value="롯데제과"><a href="#!">롯데제과</a></option>
-                            <option value="롯데제이티비"><a href="#!">롯데제이티비</a></option>
-                            <option value="롯데중앙연구소"><a href="#!">롯데중앙연구소</a></option>
-                            <option value="롯데채용사이트"><a href="#!">롯데채용사이트</a></option>
-                            <option value="롯데칠성음료(음료BG)"><a href="#!">롯데칠성음료(음료BG)</a></option>
-                            <option value="롯데칠성음료(주류BG)"><a href="#!">롯데칠성음료(주류BG)</a></option>
-                            <option value="롯데캐피탈"><a href="#!">롯데캐피탈</a></option>
-                            <option value="롯데케미칼"><a href="#!">롯데케미칼</a></option>
-                            <option value="롯데푸드"><a href="#!">롯데푸드</a></option>
-                            <option value="롯데하이마트"><a href="#!">롯데하이마트</a></option>
-                            <option value="롯데쇼핑e커머스"><a href="#!">롯데쇼핑e커머스</a></option>
-                            <option value="롯데호텔"><a href="#!">롯데호텔</a></option>
-                            <option value="대홍기획"><a href="#!">대홍기획</a></option>
-                            <option value="캐논코리아비즈니스솔루션"><a href="#!">캐논코리아비즈니스솔루션</a></option>
-                            <option value="코리아세븐"><a href="#!">코리아세븐</a></option>
-                            <option value="한국후지필름"><a href="#!">한국후지필름</a></option>
-                            <option value="롯데백화점"><a href="#!">롯데백화점</a></option>
-                            <option value="롯데마트"><a href="#!">롯데마트</a></option>
-                            <option value="롯데슈퍼"><a href="#!">롯데슈퍼</a></option>
-                            <option value="롯데홈쇼핑"><a href="#!">롯데홈쇼핑</a></option>
-                            <option value="롯데롭스"><a href="#!">롯데롭스</a></option>
-                            <option value="FRL코리아"><a href="#!">FRL코리아</a></option>
-                            <option value="롯데건설 CM사업본부"><a href="#!">롯데건설 CM사업본부</a></option>
-                            <option value="롯데뮤지엄"><a href="#!">롯데뮤지엄</a></option>
-                            <option value="롯데사회공헌사이트"><a href="#!">롯데사회공헌사이트</a></option>
-                            <option value="롯데지알에스"><a href="#!">롯데지알에스</a></option>
-                            <option value="롯데콘서트홀"><a href="#!">롯데콘서트홀</a></option>
-                            <option value="부산롯데호텔"><a href="#!">부산롯데호텔</a></option>
-                            <option value="롯데면세점부산"><a href="#!">롯데면세점부산</a></option>
+                            <option value=""><a href="#">패밀리사이트</a></option>
+                            <option value="롯데지주"><a href="#">롯데지주</a></option>
+                            <option value="롯데건설"><a href="#">롯데건설</a></option>
+                            <option value="롯데글로벌로지스"><a href="#">롯데글로벌로지스</a></option>
+                            <option value="롯데기공"><a href="#">롯데기공</a></option>
+                            <option value="롯데렌탈"><a href="#">롯데렌탈</a></option>
+                            <option value="롯데비피화학"><a href="#">롯데비피화학</a></option>
+                            <option value="롯데면세점제주"><a href="#">롯데면세점제주</a></option>
+                            <option value="롯데멤버스(L.POINT)"><a href="#">롯데멤버스(L.POINT)</a></option>
+                            <option value="롯데물산"><a href="#">롯데물산</a></option>
+                            <option value="롯데스카이힐CC"><a href="#">롯데스카이힐CC</a></option>
+                            <option value="롯데상사"><a href="#">롯데상사</a></option>
+                            <option value="롯데시네마"><a href="#">롯데시네마</a></option>
+                            <option value="롯데아사히주류"><a href="#">롯데아사히주류</a></option>
+                            <option value="롯데알미늄"><a href="#">롯데알미늄</a></option>
+                            <option value="롯데엠시시"><a href="#">롯데엠시시</a></option>
+                            <option value="롯데월드"><a href="#">롯데월드</a></option>
+                            <option value="롯데유통사업본부"><a href="#">롯데유통사업본부</a></option>
+                            <option value="롯데인재개발원"><a href="#">롯데인재개발원</a></option>
+                            <option value="롯데자산개발"><a href="#">롯데자산개발</a></option>
+                            <option value="롯데자이언츠"><a href="#">롯데자이언츠</a></option>
+                            <option value="롯데정밀화학"><a href="#">롯데정밀화학</a></option>
+                            <option value="롯데정보통신"><a href="#">롯데정보통신</a></option>
+                            <option value="롯데제과"><a href="#">롯데제과</a></option>
+                            <option value="롯데제이티비"><a href="#">롯데제이티비</a></option>
+                            <option value="롯데중앙연구소"><a href="#">롯데중앙연구소</a></option>
+                            <option value="롯데채용사이트"><a href="#">롯데채용사이트</a></option>
+                            <option value="롯데칠성음료(음료BG)"><a href="#">롯데칠성음료(음료BG)</a></option>
+                            <option value="롯데칠성음료(주류BG)"><a href="#">롯데칠성음료(주류BG)</a></option>
+                            <option value="롯데캐피탈"><a href="#">롯데캐피탈</a></option>
+                            <option value="롯데케미칼"><a href="#">롯데케미칼</a></option>
+                            <option value="롯데푸드"><a href="#">롯데푸드</a></option>
+                            <option value="롯데하이마트"><a href="#">롯데하이마트</a></option>
+                            <option value="롯데쇼핑e커머스"><a href="#">롯데쇼핑e커머스</a></option>
+                            <option value="롯데호텔"><a href="#">롯데호텔</a></option>
+                            <option value="대홍기획"><a href="#">대홍기획</a></option>
+                            <option value="캐논코리아비즈니스솔루션"><a href="#">캐논코리아비즈니스솔루션</a></option>
+                            <option value="코리아세븐"><a href="#">코리아세븐</a></option>
+                            <option value="한국후지필름"><a href="#">한국후지필름</a></option>
+                            <option value="롯데백화점"><a href="#">롯데백화점</a></option>
+                            <option value="롯데마트"><a href="#">롯데마트</a></option>
+                            <option value="롯데슈퍼"><a href="#">롯데슈퍼</a></option>
+                            <option value="롯데홈쇼핑"><a href="#">롯데홈쇼핑</a></option>
+                            <option value="롯데롭스"><a href="#">롯데롭스</a></option>
+                            <option value="FRL코리아"><a href="#">FRL코리아</a></option>
+                            <option value="롯데건설 CM사업본부"><a href="#">롯데건설 CM사업본부</a></option>
+                            <option value="롯데뮤지엄"><a href="#">롯데뮤지엄</a></option>
+                            <option value="롯데사회공헌사이트"><a href="#">롯데사회공헌사이트</a></option>
+                            <option value="롯데지알에스"><a href="#">롯데지알에스</a></option>
+                            <option value="롯데콘서트홀"><a href="#">롯데콘서트홀</a></option>
+                            <option value="부산롯데호텔"><a href="#">부산롯데호텔</a></option>
+                            <option value="롯데면세점부산"><a href="#">롯데면세점부산</a></option>
                         </select>
                     </fieldset>
                 </form>
             </div>
         </div>
       </footer>
-      <button class="btn scrollTop text-white"><a href="#"><i class="fas fa-chevron-up"></i></a></button>
+      <button class="btn scrollTop text-white"><i class="fas fa-chevron-up"></a></button>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
