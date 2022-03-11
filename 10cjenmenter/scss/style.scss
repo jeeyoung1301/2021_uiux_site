@@ -1,0 +1,266 @@
+@charset "utf-8";
+@import "reset";
+@import "mixin";
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+
+#wrap {
+	width: 100%;
+	height: 200vh;
+
+	> video {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 1;
+	}
+
+	main {
+		width: 90%;
+		max-width: 1320px;
+		margin: 30px auto;
+		header {
+			width: 100%;
+			height: 80px;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			position: relative;
+			z-index: 1;
+			background: rgba(255, 255, 255, 0.3);
+			transition: 0.5s ease;
+
+			.logo {
+				width: 158px;
+				height: 80px;
+				background-image: url(../images/logo_full_20201102.png);
+				background-position-y: 81px;
+			}
+
+			nav {
+				ul.menu {
+					width: 644px;
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+					& > li {
+						list-style: none;
+						& > a {
+							display: block;
+							font: bold 18px/80px "Hubballi";
+							color: white;
+						}
+						.submenuWrap {
+							position: absolute;
+							left: 0;
+							top: 80px;
+							display: none;
+							.submenu {
+								display: flex;
+								position: absolute;
+							}
+						}
+						&:last-of-type {
+							display: flex;
+							#home {
+								width: 35px;
+								line-height: 35px;
+								text-align: center;
+								i {
+									font-size: 20px;
+									color: #fff;
+								}
+							}
+							#language {
+								width: 35px;
+								height: 35px;
+								ul {
+									display: flex;
+									flex-direction: column;
+									li {
+										a {
+											color: #fff;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			&:hover {
+				transition: 0.5s ease;
+				background: rgba(255, 255, 255, 0.8);
+				.logo {
+					background: url(../images/logo_20201102.png);
+				}
+
+				nav {
+					ul.menu {
+						& > li {
+							& > a {
+								color: #333;
+							}
+							&:last-of-type {
+								#home {
+									i {
+										color: #333;
+									}
+								}
+								#language a {
+									color: #333;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.container {
+			width: 100%;
+			height: 100%;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(2, minmax(auto, 392.19px));
+
+			figure {
+				width: 100%;
+				height: 100%;
+				background: #f1f1f1;
+				grid-column: 1/3;
+				overflow: hidden;
+				position: relative;
+				img {
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+
+			.company,
+			.careers {
+				position: relative;
+				overflow: hidden;
+				img {
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+				.overlay {
+					@include overlay;
+				}
+			}
+
+			.business {
+				height: 100%;
+				grid-column: 2/4;
+				.txt {
+					display: flex;
+					justify-content: space-between;
+				}
+				ul {
+					height: 100%;
+					display: grid;
+					grid-template-columns: repeat(12, 1fr);
+					grid-template-rows: repeat(2, 1fr);
+					border: 1px solid #000;
+
+					li:nth-of-type(1) {
+						grid-column: 1/5;
+					}
+					li:nth-of-type(2) {
+						grid-column: 5/9;
+					}
+					li:nth-of-type(3) {
+						grid-column: 9/13;
+					}
+					li:nth-of-type(4) {
+						grid-column: 1/4;
+					}
+					li:nth-of-type(5) {
+						grid-column: 4/7;
+					}
+					li:nth-of-type(6) {
+						grid-column: 7/10;
+					}
+					li:nth-of-type(7) {
+					}
+				}
+			}
+		}
+	}
+
+	footer {
+		.pcFooter {
+			width: 100%;
+			padding: 16px;
+			display: flex;
+			justify-content: space-between;
+			.left {
+				ul {
+					display: flex;
+					li {
+						a {
+							display: block;
+							padding-right: 10px;
+							font-size: 14px;
+						}
+					}
+				}
+				p.companyInfo {
+					span {
+						font-size: 12px;
+						color: #999;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	#wrap {
+		.container {
+			grid-template-rows: repeat(3, minmax(auto, 392.19px));
+			figure {
+				grid-column: 1/4;
+			}
+			.company {
+				grid-column: 1 / 3;
+				grid-row: 2 / 2;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#wrap {
+		main {
+			grid-template-rows: repeat(3, minmax(auto, 392.19px));
+			grid-template-columns: repeat(4, 1fr);
+			figure,
+			.business {
+				grid-column: 1/5;
+			}
+			.company {
+				grid-column: 1/3;
+				grid-row-start: 2;
+			}
+			.careers {
+				grid-column: 3/5;
+				grid-row-start: 2;
+			}
+			.business {
+				grid-row-start: 3;
+			}
+		}
+	}
+}
