@@ -30,7 +30,9 @@
 	</head>
 	<body>
 		<div id="wrap">
-			<video src="images/bg.mp4" loop autoplay muted></video>
+			<figure class="background">
+				<video src="images/bg.mp4" loop autoplay muted></video>
+			</figure>
 			<main>
 				<header>
 					<a href="#" class="logo"></a>
@@ -110,15 +112,11 @@
 									<i class="fas fa-home"></i>
 								</div>
 								<div id="language">
-									<ul>
-										<li>
-											<a href="#" title="한국어">KR</a>
-										</li>
-										<li>
-											<a href="#" title="English">EN</a>
-										</li>
-										<li><a href="#" title="中文">CN</a></li>
-									</ul>
+									<select name="" id="">
+										<option value="KR">KR</option>
+										<option value="EN">EN</option>
+										<option value="CN">CN</option>
+									</select>
 								</div>
 							</li>
 						</ul>
@@ -133,47 +131,56 @@
 							</li>
 						</ul>
 					</figure>
-					<section class="company">
-						<img src="images/main/main_company.png" alt="" />
-						<div class="overlay">
-							<div class="title">
-								<h2>COMPANY</h2>
-								<p>
-									WORLD’S NO.1 LIFESTYLE CREATOR<br />
-									FOR YOUR VIBRANT LIFE
-								</p>
-								<button class="more">more &#8640;</button>
-							</div>
-						</div>
-					</section>
-					<section class="careers">
-						<img src="images/main/main_careers_en.png" alt="" />
-						<div class="overlay">
-							<div class="title">
-								<h2>CAREERS</h2>
-								<p>CREATE YOUR FUTURE WITH CJ ENM</p>
-								<button class="more">more &#8640;</button>
-							</div>
-						</div>
-					</section>
-					<section class="business">
-						<div class="txt">
-							<h2>BUSINESS</h2>
+					<section class="latestNews">
+						<div class="title">
+							<h2>Latest News</h2>
 							<button class="more">more &#8640;</button>
 						</div>
 						<ul>
-							<li>
-								<h3>TV/STUDIO</h3>
-								<a href="#" title=""><img src="" alt="" /></a>
+							<li onclick="location.href=''">
+								<div class="txt">
+									<h3>
+										Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Non, tenetur?
+									</h3>
+									<p>2022.02.14</p>
+								</div>
 							</li>
-							<li>
-								<h3>TV/STUDIO</h3>
-								<a href="#" title=""><img src="" alt="" /></a>
+							<li onclick="location.href=''">
+								<div class="txt">
+									<h3>
+										Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Non, tenetur?
+									</h3>
+									<p>2022.02.14</p>
+								</div>
 							</li>
-							<li>
-								<h3>TV/STUDIO</h3>
-								<a href="#" title=""><img src="" alt="" /></a>
+							<li onclick="location.href=''">
+								<div class="txt">
+									<h3>
+										Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Non, tenetur?
+									</h3>
+									<p>2022.02.14</p>
+								</div>
 							</li>
+							<li onclick="location.href=''">
+								<div class="txt">
+									<h3>
+										Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Non, tenetur?
+									</h3>
+									<p>2022.02.14</p>
+								</div>
+							</li>
+						</ul>
+					</section>
+					<section class="featuredContents">
+						<div class="txt">
+							<h2>Featured Contents</h2>
+							<button class="more">more &#8640;</button>
+						</div>
+						<ul>
 							<li>
 								<h3>TV/STUDIO</h3>
 								<a href="#" title=""><img src="" alt="" /></a>

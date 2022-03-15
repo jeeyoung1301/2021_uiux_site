@@ -4,32 +4,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
 
 #wrap {
-	width: 100%;
-	height: 200vh;
-
-	> video {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	figure.background {
 		width: 100%;
-		height: 100%;
-		object-fit: cover;
+		height: 100vh;
 		position: absolute;
 		top: 0;
 		left: 0;
-		opacity: 1;
+
+		video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 
 	main {
-		width: 90%;
-		max-width: 1320px;
-		margin: 30px auto;
+		width: 1280px;
+		max-height: 960px;
+		display: grid;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(12, 1fr);
+		background: rgba(255, 255, 255, 0.2);
+
 		header {
+			grid-column: 1/4;
+			grid-row: 1/2;
 			width: 100%;
-			height: 80px;
 			display: flex;
 			justify-content: space-between;
-			align-items: flex-start;
+			align-items: center;
 			position: relative;
 			z-index: 1;
-			background: rgba(255, 255, 255, 0.3);
 			transition: 0.5s ease;
 
 			.logo {
@@ -73,18 +85,11 @@
 									color: #fff;
 								}
 							}
-							#language {
-								width: 35px;
+							#language select {
 								height: 35px;
-								ul {
-									display: flex;
-									flex-direction: column;
-									li {
-										a {
-											color: #fff;
-										}
-									}
-								}
+								background-color: transparent;
+								color: #fff;
+								border: none;
 							}
 						}
 					}
@@ -110,7 +115,7 @@
 										color: #333;
 									}
 								}
-								#language a {
+								#language select {
 									color: #333;
 								}
 							}
@@ -123,14 +128,17 @@
 			width: 100%;
 			height: 100%;
 			display: grid;
+			grid-column: 1/4;
+			grid-row: 2/12;
 			grid-template-columns: repeat(3, 1fr);
-			grid-template-rows: repeat(2, minmax(auto, 392.19px));
+			grid-template-rows: repeat(10, 1fr);
 
 			figure {
 				width: 100%;
 				height: 100%;
 				background: #f1f1f1;
 				grid-column: 1/3;
+				grid-row: 1/6;
 				overflow: hidden;
 				position: relative;
 				img {
@@ -143,123 +151,205 @@
 				}
 			}
 
-			.company,
-			.careers {
+			.latestNews {
 				position: relative;
 				overflow: hidden;
-				img {
-					height: 100%;
-					position: absolute;
-					top: 0;
-					left: 50%;
-					transform: translateX(-50%);
-				}
-				.overlay {
-					@include overlay;
-				}
-			}
+				grid-column: 3/4;
+				grid-row: 1/6;
+				color: #fff;
+				display: flex;
+				flex-direction: column;
+				background: rgba(0, 0, 0, 0.5);
 
-			.business {
-				height: 100%;
-				grid-column: 2/4;
-				.txt {
+				.title {
 					display: flex;
 					justify-content: space-between;
+					align-items: center;
+					padding: 0 16px;
+					h2 {
+						font-size: 34px;
+					}
+					button {
+						@include moreBtn;
+					}
 				}
+
 				ul {
 					height: 100%;
-					display: grid;
-					grid-template-columns: repeat(12, 1fr);
-					grid-template-rows: repeat(2, 1fr);
-					border: 1px solid #000;
-
-					li:nth-of-type(1) {
-						grid-column: 1/5;
-					}
-					li:nth-of-type(2) {
-						grid-column: 5/9;
-					}
-					li:nth-of-type(3) {
-						grid-column: 9/13;
-					}
-					li:nth-of-type(4) {
-						grid-column: 1/4;
-					}
-					li:nth-of-type(5) {
-						grid-column: 4/7;
-					}
-					li:nth-of-type(6) {
-						grid-column: 7/10;
-					}
-					li:nth-of-type(7) {
-					}
-				}
-			}
-		}
-	}
-
-	footer {
-		.pcFooter {
-			width: 100%;
-			padding: 16px;
-			display: flex;
-			justify-content: space-between;
-			.left {
-				ul {
-					display: flex;
 					li {
-						a {
-							display: block;
-							padding-right: 10px;
-							font-size: 14px;
+						height: 25%;
+						transition: 0.3s;
+						padding-left: 16px;
+						&:hover {
+							background: rgba(255, 255, 255, 0.7);
+							color: #333;
+						}
+
+						.txt {
+							h3 {
+								margin-bottom: 5px;
+							}
 						}
 					}
 				}
-				p.companyInfo {
-					span {
-						font-size: 12px;
-						color: #999;
+			}
+
+			.featuredContents {
+				height: 100%;
+				grid-column: 1/4;
+				grid-row: 6/11;
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				grid-template-rows: repeat(5, 1fr);
+				position: relative;
+				padding: 0 16px;
+				.txt {
+					grid-column: 1/5;
+					grid-row: 1/2;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+
+					button {
+						@include moreBtn;
+					}
+				}
+				ul {
+					grid-column: 1/5;
+					grid-row: 2/6;
+					height: 100%;
+					border: 1px solid #000;
+					display: flex;
+
+					li {
+						width: 25%;
+					}
+				}
+			}
+		}
+		footer {
+			grid-column: 1/4;
+			grid-row: 12/13;
+
+			.pcFooter {
+				display: block;
+				width: 100%;
+				padding: 16px;
+				display: flex;
+				justify-content: space-between;
+				border: 1px solid rgba(0, 0, 0, 0.2);
+				border-top: none;
+
+				.left {
+					ul {
+						display: flex;
+						li {
+							a {
+								display: block;
+								padding-right: 10px;
+								font-size: 14px;
+								color: #fff;
+							}
+						}
+					}
+					p.companyInfo {
+						span {
+							font-size: 12px;
+							color: #999;
+						}
+					}
+				}
+			}
+			.moFooter {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-height: 980px) {
+	#wrap {
+		main {
+			max-height: 862.5px;
+			max-width: 1150px;
+
+			.container {
+				.latestNews {
+					.title {
+						h2 {
+							font-size: 28px;
+						}
+					}
+					ul {
+						li {
+							.txt {
+								display: flex;
+								height: 90%;
+								overflow: hidden;
+
+								h3 {
+									font-size: 18px;
+									font-weight: lighter;
+									text-overflow: ellipsis;
+									white-space: nowrap;
+									overflow: hidden;
+								}
+							}
+						}
 					}
 				}
 			}
 		}
 	}
 }
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-height: 862.5px) {
 	#wrap {
-		.container {
-			grid-template-rows: repeat(3, minmax(auto, 392.19px));
-			figure {
-				grid-column: 1/4;
-			}
-			.company {
-				grid-column: 1 / 3;
-				grid-row: 2 / 2;
-			}
+		main {
+			max-height: 720px;
+			max-width: 960px;
 		}
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 959px) {
 	#wrap {
 		main {
-			grid-template-rows: repeat(3, minmax(auto, 392.19px));
-			grid-template-columns: repeat(4, 1fr);
-			figure,
-			.business {
-				grid-column: 1/5;
+			max-width: 360px;
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(16, 1fr);
+
+			header {
+				grid-row: 1/2;
 			}
-			.company {
-				grid-column: 1/3;
-				grid-row-start: 2;
-			}
-			.careers {
-				grid-column: 3/5;
-				grid-row-start: 2;
-			}
-			.business {
-				grid-row-start: 3;
+			.container {
+				grid-row: 2/15;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(13, 1fr);
+
+				figure {
+					grid-column: 1/3;
+					grid-row: 1/5;
+				}
+				.company {
+					grid-column: 1/2;
+					grid-row: 5/9;
+				}
+				.careers {
+					grid-column: 2/3;
+					grid-row: 5/9;
+				}
+				.business {
+					grid-column: 1/3;
+					grid-row: 9/14;
+					grid-template-columns: repeat(12, 1fr);
+					grid-template-rows: repeat(4, 1fr);
+					grid-gap: 5px;
+				}
 			}
 		}
 	}
