@@ -1,21 +1,17 @@
 @mixin moreBtn {
-	display: block;
-	width: 80px;
-	height: 30px;
-	line-height: 30px;
-	border: 1px solid #fff;
-	color: white;
-	text-align: center;
 	background-color: transparent;
+	border: none;
 	cursor: pointer;
-	transition: 0.3s;
-	font-size: 0.8rem;
-	&:hover {
-		color: #333;
-		background: #fff;
+	i {
+		font-size: 24px;
+		color: #ff5a00;
+		transition: 0.3s;
+	}
+	&:hover i {
+		color: #ff5a00;
+		text-shadow: 0 0 20px rgb(255, 90, 0);
 	}
 }
-
 @mixin overlay {
 	position: absolute;
 	top: 0;

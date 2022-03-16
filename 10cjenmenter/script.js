@@ -11,3 +11,10 @@
 // 		header.style.height = "80px";
 // 	});
 // }
+
+const familySite = document.querySelector(".familySite > p");
+const familyList = document.querySelector(".familySiteList");
+
+familySite.addEventListener("click", (e) => {
+	familyList.style.display = "block";
+});

@@ -2,6 +2,13 @@
 @import "reset";
 @import "mixin";
 @import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+@font-face {
+	font-family: "OTEnjoystoriesBA";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
 
 #wrap {
 	width: 100vw;
@@ -167,7 +174,10 @@
 					align-items: center;
 					padding: 0 16px;
 					h2 {
-						font-size: 34px;
+						font: 48px/1 "OTEnjoystoriesBA";
+						// font-size: 34px;
+						color: #ff5a00;
+						text-shadow: 0 0 20px rgb(255, 90, 0);
 					}
 					button {
 						@include moreBtn;
@@ -181,12 +191,14 @@
 						transition: 0.3s;
 						padding-left: 16px;
 						&:hover {
-							background: rgba(255, 255, 255, 0.7);
+							background: rgba(255, 255, 255, 0.9);
 							color: #333;
 						}
 
 						.txt {
+							padding-top: 5px;
 							h3 {
+								font-family: "arial";
 								margin-bottom: 5px;
 							}
 						}
@@ -245,7 +257,7 @@
 				border: 1px solid rgba(0, 0, 0, 0.2);
 				border-top: none;
 
-				.left {
+				.info {
 					ul {
 						display: flex;
 						li {
@@ -264,6 +276,27 @@
 						}
 					}
 				}
+				.familySite {
+					.familySiteList {
+						background: #333;
+						display: none;
+						div {
+							display: flex;
+							flex-direction: column;
+							p::after {
+								content: "";
+								display: block;
+								width: 10px;
+								height: 1px;
+								background: #000;
+								color: #fff;
+							}
+							a {
+								color: #fff;
+							}
+						}
+					}
+				}
 			}
 			.moFooter {
 				display: none;
@@ -272,7 +305,7 @@
 	}
 }
 
-@media screen and (max-height: 980px) {
+@media screen and (max-width: 1300px) {
 	#wrap {
 		main {
 			max-height: 862.5px;
@@ -307,16 +340,69 @@
 		}
 	}
 }
-@media screen and (max-height: 862.5px) {
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
 	#wrap {
 		main {
-			max-height: 720px;
+			max-height: 720;
 			max-width: 960px;
+
+			.container {
+				.latestNews {
+					.title {
+						h2 {
+							font-size: 28px;
+						}
+					}
+					ul {
+						li {
+							.txt {
+								display: flex;
+								height: 90%;
+								overflow: hidden;
+
+								h3 {
+									font-size: 18px;
+									font-weight: lighter;
+									text-overflow: ellipsis;
+									white-space: nowrap;
+									overflow: hidden;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	#wrap {
+		main {
+			//여기부터 컨텐츠 이름만 나오도록하기
+			max-height: 562.5px;
+			max-width: 750px;
+
+			footer {
+				.pcFooter {
+					.info {
+						ul {
+							li {
+								a {
+									font-size: 11px;
+								}
+							}
+						}
+						p {
+							font-size: 10px;
+						}
+					}
+				}
+			}
 		}
 	}
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 700px) {
 	#wrap {
 		main {
 			max-width: 360px;
