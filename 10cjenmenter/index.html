@@ -24,7 +24,12 @@
 			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
 			crossorigin="anonymous"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 		<script defer src="script.js"></script>
 	</head>
 	<body>
@@ -122,14 +127,88 @@
 					</nav>
 				</header>
 				<div class="container">
-					<figure>
-						<ul class="slider">
-							<li>
-								<div class="txt"></div>
-								<img src="images/main/slide01.jpg" alt="" />
-							</li>
-						</ul>
-					</figure>
+					<section class="swiper01">
+						<div class="swiper-wrapper">
+							<article class="swiper-slide">
+								<div class="inner">
+									<div class="content">
+										<img
+											src="images/main/main-kv-street-woman-fighter-ko-01.png"
+											alt="street-woman-fighter"
+										/>
+										<div class="txt"></div>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide">
+								<div class="inner">
+									<div class="content">
+										<img
+											src="images/main/main-kv-you-quiz-on-the-block-ko-02_1647243099851.png"
+											alt="you-quiz-on-the-block"
+										/>
+										<div class="txt"></div>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide">
+								<div class="inner">
+									<div class="content">
+										<img
+											src="images/main/main-kv-kcon-03_1647243103387.png"
+											alt="kcon"
+										/>
+										<div class="txt"></div>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide">
+								<div class="inner">
+									<div class="content">
+										<img
+											src="images/main/main-kv-parasite-04_1647243106517.png"
+											alt="parasite"
+										/>
+										<div class="txt"></div>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide">
+								<div class="inner">
+									<div class="content">
+										<img
+											src="images/main/main-kv-moulin-rouge-05_1647243619180.png"
+											alt="moulin-rouge"
+										/>
+										<div class="txt"></div>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide">
+								<div class="inner">
+									<div class="content">
+										<img
+											src="images/main/main-kv-work-later-drink-now-ko-06_1647243116672.png"
+											alt="work-later-drink-now"
+										/>
+										<div class="txt"></div>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide">
+								<div class="inner">
+									<div class="content">
+										<img
+											src="images/main/main-kv-shinbi-House-Birth-Of-ghostball-X-07_1647243121565.png"
+											alt="shinbi-House-Birth-Of-ghostball-X"
+										/>
+										<div class="txt"></div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-pagination"></div>
+					</section>
 					<section class="latestNews">
 						<div class="title">
 							<h2>Latest News</h2>
@@ -141,66 +220,231 @@
 							<li onclick="location.href=''">
 								<div class="txt">
 									<h3>
-										Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Non, tenetur?
+										오리지널 시리즈 <돼지의 왕> 김동욱의
+										과거 트라우마를 건드린 물건의 정체는?
+										1화 무료 공개!
 									</h3>
-									<p>2022.02.14</p>
+									<p>2022.03.17</p>
 								</div>
 							</li>
 							<li onclick="location.href=''">
 								<div class="txt">
 									<h3>
-										Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Non, tenetur?
+										CJ ENM, 5월 한일미서 프리미어 시작으로
+										Z세대의 취향 저격하는 KCON 페스티벌 개최
 									</h3>
-									<p>2022.02.14</p>
+									<p>2022.03.17</p>
 								</div>
 							</li>
 							<li onclick="location.href=''">
 								<div class="txt">
 									<h3>
-										Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Non, tenetur?
+										티빙 오리지널 <욘더>‘파라마운트 플러스’
+										통해 글로벌 진출 첫 신호탄! 중남미,
+										캐나다, 호주 외 영국, 프랑스 등 유럽
+										5개국 2022년 공개
 									</h3>
-									<p>2022.02.14</p>
+									<p>2022.02.16</p>
 								</div>
 							</li>
 							<li onclick="location.href=''">
 								<div class="txt">
-									<h3>
-										Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Non, tenetur?
-									</h3>
-									<p>2022.02.14</p>
+									<h3>2022년 tvN 신작 드라마 라인업 공개</h3>
+									<p>2022.01.20</p>
 								</div>
 							</li>
 						</ul>
 					</section>
 					<section class="featuredContents">
-						<div class="txt">
+						<div class="title">
 							<h2>Featured Contents</h2>
 							<button class="more">
 								<i class="fas fa-angle-double-right"></i>
 							</button>
 						</div>
-						<ul>
-							<li>
-								<h3>TV/STUDIO</h3>
-								<a href="#" title=""><img src="" alt="" /></a>
-							</li>
-							<li>
-								<h3>TV/STUDIO</h3>
-								<a href="#" title=""><img src="" alt="" /></a>
-							</li>
-							<li>
-								<h3>TV/STUDIO</h3>
-								<a href="#" title=""><img src="" alt="" /></a>
-							</li>
-							<li>
-								<h3>TV/STUDIO</h3>
-								<a href="#" title=""><img src="" alt="" /></a>
-							</li>
-						</ul>
+						<section class="swiper02">
+							<div class="swiper-wrapper">
+								<article class="swiper-slide">
+									<div class="inner">
+										<div class="content">
+											<img
+												src="images/main/Featured-Contents_01_deliver_us_from_evil.png"
+												alt="deliver_us_from_evil"
+											/>
+											<div class="txt">
+												<div class="title">
+													<h4>
+														다만 악에서 구하소서
+													</h4>
+													<p>영화 | 범죄액션</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="swiper-slide">
+									<div class="inner">
+										<div class="content">
+											<img
+												src="images/main/Featured-Contents_02_YoonsKitchen_2.png"
+												alt="yoons_kitchen"
+											/>
+											<div class="txt">
+												<h4>윤식 당 2</h4>
+												<p>예능 | 리얼리티,푸드,여행</p>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="swiper-slide">
+									<div class="inner">
+										<div class="content">
+											<img
+												src="images/main/Featured-Contents_03_PARASITE.png"
+												alt="parasite"
+											/>
+											<div class="txt">
+												<h4>기생충</h4>
+												<p>영화 | 드라마</p>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="swiper-slide">
+									<div class="inner">
+										<div class="content">
+											<img
+												src="images/main/Featured-Contents_04_YumisCells.png"
+												alt="yumis_cells"
+											/>
+											<div class="txt">
+												<h4>유미의 세포들</h4>
+												<p>드라마 | 로맨스,드라마</p>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="swiper-slide">
+									<div class="inner">
+										<div class="content">
+											<img
+												src="images/main/Featured-Contents_05_Goblin_1646643267454.png"
+												alt="goblin"
+											/>
+											<div class="txt">
+												<h4>도깨비</h4>
+												<p>드라마 | 판타지,로맨스</p>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="swiper-slide">
+									<div class="inner">
+										<div class="content">
+											<img
+												src="images/main/Featured-Contents_06_KinkyBoots_1646642859567.png"
+												alt="kinky_boots"
+											/>
+											<div class="txt">
+												<h4>킹키부츠</h4>
+												<p>뮤지컬</p>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="swiper-slide">
+									<div class="inner">
+										<div class="content">
+											<img
+												src="images/main/Featured-Contents_07_MrSunshine.png"
+												alt="mr.sunshine"
+											/>
+											<div class="txt">
+												<h4>미스터 션샤인</h4>
+												<p>드라마 | 시대극, 로맨스</p>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="swiper-slide">
+									<div class="inner">
+										<div class="content">
+											<img
+												src="images/main/Featured-Contents_08_StreetWomanFighter.png"
+												alt="street-woman-fighter"
+											/>
+											<div class="txt">
+												<h4>스트릿 우먼 파이터</h4>
+												<p>
+													예능 |
+													음악,리얼리티,서바이벌
+												</p>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="swiper-slide">
+									<div class="inner">
+										<div class="content">
+											<img
+												src="images/main/Featured-Contents_09_SomehowCEO.png"
+												alt="somehow_ceo"
+											/>
+											<div class="txt">
+												<h4>어쩌다 사장</h4>
+												<p>예능 | 리얼리티</p>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="swiper-slide">
+									<div class="inner">
+										<div class="content">
+											<img
+												src="images/main/Featured-Contents_10_CrashLandingOfLove.png"
+												alt="crash_landing_of_love"
+											/>
+											<div class="txt">
+												<h4>사랑의 불시착</h4>
+												<p>드라마 | 로맨스,드라마</p>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="swiper-slide">
+									<div class="inner">
+										<div class="content">
+											<img
+												src="images/main/Featured-Contents_11_WorkLaterDrinkNow.png"
+												alt="work_later_drink_now"
+											/>
+											<div class="txt">
+												<h4>술꾼도시여자들</h4>
+												<p>드라마 | 코미디,드라마</p>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="swiper-slide">
+									<div class="inner">
+										<div class="content">
+											<img
+												src="images/main/Featured-Contents_12_SHINBIsHAUNTED_House.png"
+												alt="shinbi's_haunted_house"
+											/>
+											<div class="txt">
+												<h4>
+													신비아파트 고스트볼의 비밀
+												</h4>
+												<p>예능 | 애니메이션</p>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</section>
 					</section>
 				</div>
 				<footer>
