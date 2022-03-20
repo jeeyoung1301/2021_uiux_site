@@ -11,18 +11,27 @@
 // 		header.style.height = "80px";
 // 	});
 // }
-const swiper01 = new Swiper(".swiper01", {
+const slide01 = new Swiper(".slide01", {
 	speed: 500,
 	loop: true,
 	direction: "horizontal",
 	centeredSlides: true,
-	autoplay: 1000,
+	spaceBetween: 20,
+	slidesPerView: 3,
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
+		type: "fraction",
 	},
+	navigation: {
+		prevEl: ".swiper-button-prev",
+		nextEl: ".swiper-button-next",
+	},
+	// autoplay: {
+	// 		delay: 10000,
+	// 	},
 });
-const swiper02 = new Swiper(".swiper02", {
+const slide02 = new Swiper(".slide02", {
 	speed: 1000,
 	loop: true,
 	direction: "horizontal",
