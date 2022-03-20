@@ -2,16 +2,25 @@
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
-	i {
-		font-size: 24px;
-		color: #ff5a00;
-		transition: 0.3s;
+	font-size: 3.5rem;
+	padding-top: 10px;
+	color: #ff5a00;
+	padding-right: 10px;
+
+	&:hover {
+		animation: moveButton 0.6s linear 1 forwards;
 	}
-	&:hover i {
-		color: #ff5a00;
-		text-shadow: 0 0 20px rgb(255, 90, 0);
+
+	@keyframes moveButton {
+		0% {
+			transform: translateX(0px);
+		}
+		100% {
+			transform: translateX(20px);
+		}
 	}
 }
+
 @mixin overlay {
 	position: absolute;
 	top: 0;

@@ -12,12 +12,11 @@
 // 	});
 // }
 const slide01 = new Swiper(".slide01", {
-	speed: 500,
+	speed: 1000,
 	loop: true,
 	direction: "horizontal",
 	centeredSlides: true,
-	spaceBetween: 20,
-	slidesPerView: 3,
+	slidesPerView: 1,
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
@@ -27,9 +26,18 @@ const slide01 = new Swiper(".slide01", {
 		prevEl: ".swiper-button-prev",
 		nextEl: ".swiper-button-next",
 	},
-	// autoplay: {
-	// 		delay: 10000,
-	// 	},
+	autoplay: {
+		delay: 10000,
+	},
+	breakpoints: {
+		768: {
+			slidesPerView: 1,
+		},
+		1024: {
+			slidesPerView: 2,
+			spaceBetween: 150,
+		},
+	},
 });
 const slide02 = new Swiper(".slide02", {
 	speed: 1000,
