@@ -45,16 +45,9 @@ const slide02 = new Swiper(".slide02", {
 	direction: "horizontal",
 	centeredSlides: true,
 	slidesPerView: 4,
-	spaceBetween: 5,
+	spaceBetween: 10,
 	navigation: {
-		prevEl: ".swiper-button-prev",
-		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev-slide02",
+		nextEl: ".swiper-button-next-slide02",
 	},
-});
-
-const familySite = document.querySelector(".familySite > p");
-const familyList = document.querySelector(".familySiteList");
-
-familySite.addEventListener("click", (e) => {
-	familyList.style.display = "block";
 });
