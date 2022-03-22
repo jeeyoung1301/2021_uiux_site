@@ -45,11 +45,7 @@ const slide02 = new Swiper(".slide02", {
 	direction: "horizontal",
 	centeredSlides: true,
 	slidesPerView: 4,
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-		type: "fraction",
-	},
+	spaceBetween: 10,
 	navigation: {
 		prevEl: ".swiper-button-prev-slide02",
 		nextEl: ".swiper-button-next-slide02",
