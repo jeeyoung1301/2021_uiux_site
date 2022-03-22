@@ -441,14 +441,21 @@ main section.featuredContents .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
-main section.featuredContents .title h3 {
+main section.featuredContents .title .txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.featuredContents .title .txt h3 {
   font-size: 2.9rem;
   padding-right: 10px;
 }
 
-main section.featuredContents .title button {
+main section.featuredContents .title .txt button {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -458,7 +465,7 @@ main section.featuredContents .title button {
   padding-right: 10px;
 }
 
-main section.featuredContents .title button:hover {
+main section.featuredContents .title .txt button:hover {
   -webkit-animation: moveButton 0.6s linear 1 forwards;
           animation: moveButton 0.6s linear 1 forwards;
 }
@@ -472,6 +479,24 @@ main section.featuredContents .title button:hover {
     -webkit-transform: translateX(20px);
             transform: translateX(20px);
   }
+}
+
+main section.featuredContents .title .slideButton .swiper-button-prev-slide02,
+main section.featuredContents .title .slideButton .swiper-button-next-slide02 {
+  width: 30px;
+  line-height: 30px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  color: #ff5a00;
+  font-weight: bold;
+}
+
+main section.featuredContents .title .slideButton .swiper-button-prev-slide02 {
+  right: 30px;
 }
 
 main section.featuredContents .slide02 {
@@ -491,15 +516,6 @@ main section.featuredContents .slide02 .swiper-wrapper .inner {
 
 main section.featuredContents .slide02 .swiper-wrapper .inner img {
   width: 100%;
-}
-
-main section.featuredContents .swiper-button-prev-slide02,
-main section.featuredContents .swiper-button-next-slide02 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 main section.latestNews {

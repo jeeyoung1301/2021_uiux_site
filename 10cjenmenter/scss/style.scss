@@ -300,13 +300,34 @@ main {
 			margin: 0 auto;
 			max-width: 1280px;
 			display: flex;
+			position: relative;
 
-			h3 {
-				font-size: 2.9rem;
-				padding-right: 10px;
+			.txt {
+				display: flex;
+				h3 {
+					font-size: 2.9rem;
+					padding-right: 10px;
+				}
+				button {
+					@include moreBtn;
+				}
 			}
-			button {
-				@include moreBtn;
+			.slideButton {
+				.swiper-button-prev-slide02,
+				.swiper-button-next-slide02 {
+					width: 30px;
+					line-height: 30px;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					text-align: center;
+					color: #ff5a00;
+					font-weight: bold;
+				}
+				.swiper-button-prev-slide02 {
+					right: 30px;
+				}
 			}
 		}
 		.slide02 {
@@ -324,14 +345,6 @@ main {
 					}
 				}
 			}
-		}
-		.swiper-button-prev-slide02,
-		.swiper-button-next-slide02 {
-			width: 100px;
-			height: 100px;
-			position: absolute;
-			top: 0;
-			right: 0;
 		}
 	}
 	section.latestNews {
