@@ -44,10 +44,27 @@ const slide02 = new Swiper(".slide02", {
 	loop: true,
 	direction: "horizontal",
 	centeredSlides: true,
-	slidesPerView: 4,
+	slidesPerView: 1,
 	spaceBetween: 10,
 	navigation: {
 		prevEl: ".swiper-button-prev-slide02",
 		nextEl: ".swiper-button-next-slide02",
+	},
+	autoplay: {
+		delay: 5000,
+	},
+	breakpoints: {
+		560: {
+			slidesPerView: 2,
+		},
+		890: {
+			slidesPerView: 3,
+			autoplay: { enabled: false },
+		},
+		1135: {
+			slidesPerView: 4,
+			spaceBetween: 10,
+			autoplay: { enabled: false },
+		},
 	},
 });
