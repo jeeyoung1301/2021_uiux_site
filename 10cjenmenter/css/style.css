@@ -506,7 +506,7 @@ main section.featuredContents .slide02 {
   margin: 0 auto;
   max-width: 1280px;
   width: 100%;
-  height: 390px;
+  height: 314px;
   overflow: hidden;
 }
 
@@ -530,7 +530,7 @@ main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner img 
 main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .overlay {
   position: absolute;
   width: 100%;
-  height: 20%;
+  height: 25%;
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.7);
@@ -566,7 +566,7 @@ main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .ove
 }
 
 main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner:hover .overlay {
-  height: 50%;
+  height: 60%;
 }
 
 main section.latestNews {
@@ -586,7 +586,10 @@ footer {
     bottom: 2.25rem;
   }
   main section.featuredContents .slide02 {
-    height: 350px;
+    height: 342px;
+  }
+  main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .overlay {
+    height: 22%;
   }
 }
 
