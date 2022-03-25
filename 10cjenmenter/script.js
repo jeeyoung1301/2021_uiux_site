@@ -54,14 +54,14 @@ const slide02 = new Swiper(".slide02", {
 		delay: 5000,
 	},
 	breakpoints: {
-		560: {
+		430: {
 			slidesPerView: 2,
 		},
 		890: {
 			slidesPerView: 3,
 			autoplay: { enabled: false },
 		},
-		1135: {
+		1134: {
 			slidesPerView: 4,
 			spaceBetween: 10,
 			autoplay: { enabled: false },

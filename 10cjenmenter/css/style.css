@@ -585,6 +585,9 @@ footer {
   main section.visual .swiper-pagination {
     bottom: 2.25rem;
   }
+  main section.featuredContents .slide02 {
+    height: 350px;
+  }
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1512px) {
@@ -593,6 +596,9 @@ footer {
   }
   main section.visual .swiper-pagination {
     bottom: 8rem;
+  }
+  main section.featuredContents .slide02 {
+    height: 330px;
   }
 }
 
@@ -612,6 +618,17 @@ footer {
   }
   main section.visual .swiper-button-next {
     right: 18%;
+  }
+  main section.business {
+    max-width: 1134px;
+  }
+  main section.business .title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.business .title h3 {
+    font-size: 2.5rem;
   }
   main section.business .tvStudio,
   main section.business .performingArts {
@@ -651,6 +668,26 @@ footer {
     -ms-grid-row-span: 6;
     grid-row: 8/14;
   }
+  main section.featuredContents {
+    max-width: 1134px;
+  }
+  main section.featuredContents .title .txt {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.featuredContents .title .txt h3 {
+    font-size: 2.5rem;
+  }
+  main section.featuredContents .slide02 {
+    height: 300px;
+  }
+  main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .overlay {
+    height: 26%;
+  }
+  main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner:hover .overlay {
+    height: 26%;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1133px) {
@@ -688,12 +725,19 @@ footer {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    margin-bottom: 200px;
   }
   main section.business .title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
     height: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.business .title h3 {
+    font-size: 2.5rem;
   }
   main section.business .tvStudio,
   main section.business .adSales,
@@ -732,6 +776,27 @@ footer {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
+  }
+  main section.featuredContents .title {
+    max-width: 955px;
+  }
+  main section.featuredContents .title .txt {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.featuredContents .title .txt h3 {
+    font-size: 2.5rem;
+  }
+  main section.featuredContents .slide02 {
+    max-width: 955px;
+    height: 330px;
+  }
+  main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .overlay {
+    height: 21%;
+  }
+  main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner:hover .overlay {
+    height: 21%;
   }
 }
 
@@ -781,18 +846,26 @@ footer {
   }
   main section.business {
     padding: 0 !important;
-    -ms-grid-columns: (300px)[3];
-        grid-template-columns: repeat(3, 300px);
+    -ms-grid-columns: (260px)[3];
+        grid-template-columns: repeat(3, 260px);
     -ms-grid-rows: 60px 1fr 1fr 1fr;
         grid-template-rows: 60px 1fr 1fr 1fr;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    max-width: 780px;
+    margin-bottom: 100px;
   }
   main section.business .title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.business .title h3 {
+    font-size: 2.5rem;
   }
   main section.business .tvStudio,
   main section.business .adSales,
@@ -832,9 +905,30 @@ footer {
     -ms-grid-row-span: 1;
     grid-row: 4/5;
   }
+  main section.featuredContents .title {
+    max-width: 780px;
+  }
+  main section.featuredContents .title .txt {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.featuredContents .title .txt h3 {
+    font-size: 2.5rem;
+  }
+  main section.featuredContents .slide02 {
+    max-width: 780px;
+    height: 300px;
+  }
+  main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .overlay {
+    height: 23%;
+  }
+  main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner:hover .overlay {
+    height: 23%;
+  }
 }
 
-@media screen and (min-width: 816px) and (max-width: 889px) {
+@media screen and (min-width: 744px) and (max-width: 889px) {
   html {
     font-size: 14px;
   }
@@ -879,18 +973,25 @@ footer {
     display: none;
   }
   main section.business {
-    max-width: 610px;
     margin: 0 auto;
     padding: 0 !important;
-    -ms-grid-columns: (300px)[2];
-        grid-template-columns: repeat(2, 300px);
+    -ms-grid-columns: (260px)[2];
+        grid-template-columns: repeat(2, 260px);
     -ms-grid-rows: 60px 1fr 1fr 1fr 1fr;
         grid-template-rows: 60px 1fr 1fr 1fr 1fr;
+    max-width: 520px;
+    margin-bottom: 360px;
   }
   main section.business .title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.business .title h3 {
+    font-size: 2.5rem;
   }
   main section.business .tvStudio,
   main section.business .music,
@@ -937,9 +1038,27 @@ footer {
   main section.business article p {
     display: block;
   }
+  main section.featuredContents .title {
+    max-width: 640px;
+  }
+  main section.featuredContents .title .txt {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.featuredContents .title .txt h3 {
+    font-size: 2.5rem;
+  }
+  main section.featuredContents .slide02 {
+    max-width: 640px;
+    height: 330px;
+  }
+  main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner:hover .overlay {
+    height: 20%;
+  }
 }
 
-@media screen and (max-width: 815px) {
+@media screen and (min-width: 431px) and (max-width: 743px) {
   html {
     font-size: 14px;
   }
@@ -949,7 +1068,7 @@ footer {
   main section.visual .visualTitle {
     width: 100%;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 200px;
   }
   main section.visual .visualTitle p {
     font-size: 1.5rem;
@@ -1008,19 +1127,20 @@ footer {
   }
   main section.whoWeAre {
     margin: auto;
-    padding-top: 5rem;
+    padding: 0;
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 75vh;
   }
   main section.whoWeAre h2 {
     letter-spacing: 5px;
     font-size: 3rem;
     margin-bottom: 0;
-    padding-bottom: 7rem;
+    padding-bottom: 6rem;
   }
   main section.whoWeAre .txt {
     margin-bottom: 0;
@@ -1039,13 +1159,14 @@ footer {
     font-size: 1rem;
   }
   main section.business {
-    max-width: 310px;
+    max-width: 328px;
     margin: 0 auto;
     padding: 0 !important;
-    -ms-grid-columns: (150px)[2];
-        grid-template-columns: repeat(2, 150px);
+    -ms-grid-columns: (159px)[2];
+        grid-template-columns: repeat(2, 159px);
     -ms-grid-rows: 60px 1fr 1fr 1fr 1fr;
         grid-template-rows: 60px 1fr 1fr 1fr 1fr;
+    margin-bottom: 100px;
   }
   main section.business .title {
     -ms-grid-column: 1;
@@ -1107,6 +1228,222 @@ footer {
     display: block;
     top: auto;
     bottom: 5px;
+  }
+  main section.featuredContents .title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 328px;
+  }
+  main section.featuredContents .title .txt {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.featuredContents .title .txt h3 {
+    font-size: 2.1rem;
+  }
+  main section.featuredContents .title .swiper-button-next-slide02,
+  main section.featuredContents .title .swiper-button-prev-slide02 {
+    display: none;
+  }
+  main section.featuredContents .slide02 {
+    max-width: 328px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 14px;
+  }
+  main section.visual {
+    height: 100vh;
+  }
+  main section.visual .visualTitle {
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+  }
+  main section.visual .visualTitle p {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  main section.visual .visualTitle h2 {
+    font-size: 3rem;
+  }
+  main section.visual .swiper-wrapper {
+    margin-top: 5vh;
+    height: 100%;
+  }
+  main section.visual .swiper-wrapper .swiper-slide {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  main section.visual .swiper-wrapper .swiper-slide .inner {
+    width: 100vw;
+  }
+  main section.visual .swiper-wrapper .swiper-slide .txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
+  main section.visual .swiper-wrapper .swiper-slide .txt h3 {
+    margin: 0 0 1rem 0;
+  }
+  main section.visual .swiper-wrapper .swiper-slide .txt p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+  main section.visual .swiper-wrapper .swiper-slide-active {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  main section.visual .swiper-button-next,
+  main section.visual .swiper-button-prev {
+    display: none;
+  }
+  main section.visual .swiper-button-next::after,
+  main section.visual .swiper-button-prev::after {
+    display: none;
+  }
+  main section.visual .swiper-pagination {
+    bottom: 8rem;
+    left: auto;
+    right: 1rem;
+    top: 56%;
+    font-size: 1rem;
+    height: 1.5rem;
+  }
+  main section.whoWeAre {
+    margin: auto;
+    padding: 0;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 75vh;
+  }
+  main section.whoWeAre h2 {
+    letter-spacing: 5px;
+    font-size: 3rem;
+    margin-bottom: 0;
+    padding-bottom: 6rem;
+  }
+  main section.whoWeAre .txt {
+    margin-bottom: 0;
+    padding-bottom: 5rem;
+  }
+  main section.whoWeAre .txt p {
+    font-size: 1.5rem;
+  }
+  main section.whoWeAre .txt h3 {
+    font-size: 2.2rem;
+  }
+  main section.whoWeAre article h3 {
+    font-size: 1.5rem;
+  }
+  main section.whoWeAre article p {
+    font-size: 1rem;
+  }
+  main section.business {
+    max-width: 328px;
+    margin: 0 auto;
+    padding: 0 !important;
+    -ms-grid-columns: (159px)[2];
+        grid-template-columns: repeat(2, 159px);
+    -ms-grid-rows: 60px 1fr 1fr 1fr 1fr;
+        grid-template-rows: 60px 1fr 1fr 1fr 1fr;
+    margin-bottom: 100px;
+  }
+  main section.business .title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.business .title h3 {
+    font-size: 2rem;
+  }
+  main section.business .tvStudio,
+  main section.business .music,
+  main section.business .performingArts,
+  main section.business .convention {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  main section.business .film,
+  main section.business .adSales,
+  main section.business .animation {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  main section.business .tvStudio,
+  main section.business .film {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  main section.business .music,
+  main section.business .adSales {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  main section.business .performingArts,
+  main section.business .animation {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
+  main section.business .convention {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+  }
+  main section.business article::before {
+    opacity: 1;
+    height: 16%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  main section.business article p {
+    display: block;
+    top: auto;
+    bottom: 5px;
+  }
+  main section.featuredContents .title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 328px;
+  }
+  main section.featuredContents .title .txt {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.featuredContents .title .txt h3 {
+    font-size: 2.1rem;
+  }
+  main section.featuredContents .title .swiper-button-next-slide02,
+  main section.featuredContents .title .swiper-button-prev-slide02 {
+    display: none;
+  }
+  main section.featuredContents .slide02 {
+    max-width: 328px;
+    height: 328px;
   }
 }
 /*# sourceMappingURL=style.css.map */
