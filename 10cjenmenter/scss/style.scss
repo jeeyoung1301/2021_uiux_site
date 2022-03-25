@@ -66,7 +66,7 @@ main {
 		.visualTitle {
 			max-width: 1280px;
 			margin: 0 auto;
-			padding-top: 100px;
+			padding-top: 150px;
 			text-align: center;
 			p {
 				font-size: 2rem;
@@ -619,6 +619,7 @@ footer {
 	}
 	main {
 		section.visual {
+			margin-bottom: 20rem;
 			.visualTitle {
 				text-align: center;
 			}
@@ -658,13 +659,16 @@ footer {
 				display: none;
 			}
 		}
+		section.whoWeAre {
+			margin-bottom: 20rem;
+		}
 		section.business {
 			padding: 0 !important;
 			grid-template-columns: repeat(3, 260px);
 			grid-template-rows: 60px 1fr 1fr 1fr;
 			justify-content: space-evenly;
 			max-width: 780px;
-			margin-bottom: 100px;
+			margin-bottom: 20rem;
 			.title {
 				grid-column: 1/4;
 				align-items: center;
@@ -732,7 +736,7 @@ footer {
 				text-align: center;
 			}
 			.swiper-pagination {
-				bottom: 8rem;
+				bottom: 9rem;
 			}
 			.swiper-wrapper {
 				margin-top: 5vh;
@@ -846,10 +850,10 @@ footer {
 	main {
 		section.visual {
 			height: 100vh;
+			margin-bottom: 10rem;
 			.visualTitle {
 				width: 100%;
 				text-align: center;
-				padding-top: 200px;
 				p {
 					font-size: 1.5rem;
 					padding-bottom: 1rem;
@@ -901,7 +905,7 @@ footer {
 			}
 		}
 		section.whoWeAre {
-			margin: auto;
+			margin: 5rem 0;
 			padding: 0;
 			justify-content: unset;
 			align-items: center;
@@ -932,10 +936,10 @@ footer {
 			}
 		}
 		section.business {
-			max-width: 328px;
+			max-width: 399px;
 			margin: 0 auto;
 			padding: 0 !important;
-			grid-template-columns: repeat(2, 159px);
+			grid-template-columns: repeat(2, 194.5px);
 			grid-template-rows: 60px 1fr 1fr 1fr 1fr;
 			margin-bottom: 100px;
 			.title {
@@ -989,7 +993,7 @@ footer {
 		section.featuredContents {
 			.title {
 				align-items: center;
-				max-width: 328px;
+				max-width: 399px;
 				.txt {
 					align-items: center;
 					h3 {
@@ -1002,7 +1006,22 @@ footer {
 				}
 			}
 			.slide02 {
-				max-width: 328px;
+				max-width: 399px;
+				height: 250px;
+				.swiper-wrapper .swiper-slide .inner .overlay {
+					height: 25%;
+				}
+				.swiper-wrapper .swiper-slide .inner:hover .overlay {
+					height: 25%;
+				}
+				.swiper-wrapper
+					.swiper-slide
+					.inner
+					.overlay.longTitle
+					.title
+					h4 {
+					font-size: 1rem;
+				}
 			}
 		}
 	}
@@ -1017,7 +1036,7 @@ footer {
 			.visualTitle {
 				width: 100%;
 				text-align: center;
-				padding-top: 200px;
+				padding-top: 140px;
 				p {
 					font-size: 1.5rem;
 					padding-bottom: 1rem;
@@ -1069,7 +1088,7 @@ footer {
 			}
 		}
 		section.whoWeAre {
-			margin: auto;
+			margin: 5rem 0;
 			padding: 0;
 			justify-content: unset;
 			align-items: center;

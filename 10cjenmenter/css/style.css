@@ -97,7 +97,7 @@ main section.visual {
 main section.visual .visualTitle {
   max-width: 1280px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 150px;
   text-align: center;
 }
 
@@ -804,6 +804,9 @@ footer {
   html {
     font-size: 14px;
   }
+  main section.visual {
+    margin-bottom: 20rem;
+  }
   main section.visual .visualTitle {
     text-align: center;
   }
@@ -844,6 +847,9 @@ footer {
   main section.visual .swiper-button-prev::after {
     display: none;
   }
+  main section.whoWeAre {
+    margin-bottom: 20rem;
+  }
   main section.business {
     padding: 0 !important;
     -ms-grid-columns: (260px)[3];
@@ -854,7 +860,7 @@ footer {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     max-width: 780px;
-    margin-bottom: 100px;
+    margin-bottom: 20rem;
   }
   main section.business .title {
     -ms-grid-column: 1;
@@ -936,7 +942,7 @@ footer {
     text-align: center;
   }
   main section.visual .swiper-pagination {
-    bottom: 8rem;
+    bottom: 9rem;
   }
   main section.visual .swiper-wrapper {
     margin-top: 5vh;
@@ -1064,11 +1070,11 @@ footer {
   }
   main section.visual {
     height: 100vh;
+    margin-bottom: 10rem;
   }
   main section.visual .visualTitle {
     width: 100%;
     text-align: center;
-    padding-top: 200px;
   }
   main section.visual .visualTitle p {
     font-size: 1.5rem;
@@ -1126,7 +1132,7 @@ footer {
     height: 1.5rem;
   }
   main section.whoWeAre {
-    margin: auto;
+    margin: 5rem 0;
     padding: 0;
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
@@ -1159,11 +1165,11 @@ footer {
     font-size: 1rem;
   }
   main section.business {
-    max-width: 328px;
+    max-width: 399px;
     margin: 0 auto;
     padding: 0 !important;
-    -ms-grid-columns: (159px)[2];
-        grid-template-columns: repeat(2, 159px);
+    -ms-grid-columns: (194.5px)[2];
+        grid-template-columns: repeat(2, 194.5px);
     -ms-grid-rows: 60px 1fr 1fr 1fr 1fr;
         grid-template-rows: 60px 1fr 1fr 1fr 1fr;
     margin-bottom: 100px;
@@ -1233,7 +1239,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 328px;
+    max-width: 399px;
   }
   main section.featuredContents .title .txt {
     -webkit-box-align: center;
@@ -1248,7 +1254,22 @@ footer {
     display: none;
   }
   main section.featuredContents .slide02 {
-    max-width: 328px;
+    max-width: 399px;
+    height: 250px;
+  }
+  main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .overlay {
+    height: 25%;
+  }
+  main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner:hover .overlay {
+    height: 25%;
+  }
+  main section.featuredContents .slide02 .swiper-wrapper
+.swiper-slide
+.inner
+.overlay.longTitle
+.title
+h4 {
+    font-size: 1rem;
   }
 }
 
@@ -1262,7 +1283,7 @@ footer {
   main section.visual .visualTitle {
     width: 100%;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 140px;
   }
   main section.visual .visualTitle p {
     font-size: 1.5rem;
@@ -1320,7 +1341,7 @@ footer {
     height: 1.5rem;
   }
   main section.whoWeAre {
-    margin: auto;
+    margin: 5rem 0;
     padding: 0;
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
