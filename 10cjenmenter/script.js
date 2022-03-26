@@ -26,9 +26,9 @@ const slide01 = new Swiper(".slide01", {
 		prevEl: ".swiper-button-prev",
 		nextEl: ".swiper-button-next",
 	},
-	// autoplay: {
-	// 	delay: 10000,
-	// },
+	autoplay: {
+		delay: 8000,
+	},
 	breakpoints: {
 		768: {
 			slidesPerView: 1,
@@ -68,3 +68,29 @@ const slide02 = new Swiper(".slide02", {
 		},
 	},
 });
+
+const openFamilySite = document.querySelector(".familySite h4 i"),
+	familySiteList = document.querySelector(".familySite > ul");
+
+// openFamilySite.addEventListener("click", (e) => {
+// 	familySiteList.style.display = "flex";
+// });
+
+openFamilySite.addEventListener("click", (e) => {
+	if (familySiteList.style.display === "flex") {
+		familySiteList.style.display = "none";
+		openFamilySite.style.transform = "rotate(45deg)";
+	} else {
+		familySiteList.style.display = "flex";
+		openFamilySite.style.transform = "rotate(0deg)";
+	}
+});
+// function openCloseToc() {
+// 	if (familySiteList.style.display === "flex") {
+// 		familySiteList.style.display = "none";
+// 		openFamilySite.style.transform = "rotate(45deg)";
+// 	} else {
+// 		familySiteList.style.display = "flex";
+// 		openFamilySite.style.transform = "rotate(0deg)";
+// 	}
+// }
