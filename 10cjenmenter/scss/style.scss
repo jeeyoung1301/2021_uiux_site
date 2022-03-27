@@ -12,45 +12,113 @@ body {
 header {
 	width: 100%;
 	height: 80px;
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.4);
 	position: fixed;
-	z-index: 1000;
-	transition: 0.3s;
+	z-index: 100;
+	transition: 0.5s;
 	&:hover {
-		background: #fff;
+		background: #333;
+		height: 400px;
+
+		nav {
+			border-bottom: 1px solid #c4c4c4;
+			a {
+				color: #f1f1f1;
+			}
+
+			.logo {
+				background-position: center -80px;
+			}
+		}
+
+		ul.submenu {
+			top: 50px;
+			opacity: 1;
+		}
 	}
 	nav {
 		max-width: 1280px;
-		height: 100%;
-		margin: 0 auto;
+		width: 100%;
+		height: 80px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 0 1rem;
 		.logo {
-			img {
-				width: 100%;
-			}
+			width: 158px;
+			height: 80px;
+			background: url(../images/logo_full_20201102.png) no-repeat center 0 /
+				100%;
 		}
-		ul {
+		> ul {
 			width: 70%;
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
-			li {
+			> li {
 				width: 100%;
-				text-align: center;
 				transition: 0.3s;
+				position: relative;
 				&:hover {
-					a {
+					> a {
 						color: #ff5a00;
 					}
 				}
-				a {
+				> a {
 					display: block;
 					width: 100%;
 					font-size: 16px;
 					font-weight: bold;
+					text-align: center;
+					padding: 0 1rem;
 				}
+				&:active {
+					> a {
+						color: #ff5a00;
+					}
+				}
+				& > ul.submenu {
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					width: 100%;
+					position: absolute;
+					top: -160px;
+					opacity: 0;
+					transition: 0.5s;
+
+					> li {
+						width: 100%;
+						padding: 1rem;
+						> a {
+							width: 100%;
+							display: block;
+							text-align: center;
+						}
+						&:hover {
+							a {
+								color: #ff5a00;
+							}
+						}
+					}
+				}
+			}
+		}
+		.lan {
+			display: flex;
+			border: 1px solid rgb(146, 146, 146);
+			a {
+				width: 25px;
+				line-height: 25px;
+				display: block;
+				text-align: center;
+			}
+			a.active {
+				background: #ff5a00;
 			}
 		}
 	}
@@ -226,7 +294,7 @@ main {
 			}
 		}
 
-		.tvStudio,
+		.tvShow,
 		.film,
 		.music {
 			grid-column: 1/5;
@@ -287,7 +355,7 @@ main {
 				transition: 0.3s linear;
 				opacity: 1;
 			}
-			p {
+			h4 {
 				display: block;
 			}
 		}
@@ -529,6 +597,7 @@ footer {
 							color: #fff;
 							transform: rotate(45deg);
 							transition: 0.3s;
+							cursor: pointer;
 						}
 					}
 				}
@@ -541,7 +610,7 @@ footer {
 	}
 }
 
-@media screen and (min-width: 1513px) and (max-width: 1839px) {
+@media screen and (max-width: 1839px) {
 	main {
 		section.visual {
 			.visualTitle {
@@ -563,12 +632,9 @@ footer {
 		}
 	}
 }
-@media screen and (min-width: 1440px) and (max-width: 1512px) {
+@media screen and (max-width: 1512px) {
 	main {
 		section.visual {
-			.visualTitle {
-				text-align: center;
-			}
 			.swiper-pagination {
 				bottom: 8rem;
 			}
@@ -582,7 +648,7 @@ footer {
 }
 
 // tablet start
-@media screen and (min-width: 1134px) and (max-width: 1439px) {
+@media screen and (max-width: 1439px) {
 	main {
 		section.visual {
 			.visualTitle {
@@ -612,7 +678,7 @@ footer {
 					font-size: 2.5rem;
 				}
 			}
-			.tvStudio,
+			.tvShow,
 			.performingArts {
 				grid-column: 1/4;
 			}
@@ -627,7 +693,7 @@ footer {
 			.adSales {
 				grid-column: 10/13;
 			}
-			.tvStudio,
+			.tvShow,
 			.film,
 			.music,
 			.adSales {
@@ -640,7 +706,6 @@ footer {
 			}
 		}
 		section.featuredContents {
-			max-width: 1134px;
 			.title {
 				.txt {
 					align-items: center;
@@ -655,6 +720,9 @@ footer {
 				.swiper-wrapper {
 					.swiper-slide {
 						.inner {
+							.overlay {
+								height: 25%;
+							}
 							&:hover .overlay {
 								height: 25%;
 							}
@@ -672,23 +740,16 @@ footer {
 			}
 		}
 		section.latestNews {
-			max-width: 1134px;
 			padding: 5rem 2rem;
 		}
 	}
 }
-@media screen and (min-width: 1024px) and (max-width: 1133px) {
+@media screen and (max-width: 1133px) {
 	html {
 		font-size: 14px;
 	}
 	main {
 		section.visual {
-			.visualTitle {
-				text-align: center;
-			}
-			.swiper-pagination {
-				bottom: 8rem;
-			}
 			.swiper-button-prev,
 			.swiper-button-next {
 				padding: 20px 20px;
@@ -696,12 +757,6 @@ footer {
 					font-size: 1.5rem;
 					font-weight: bold;
 				}
-			}
-			.swiper-button-prev {
-				left: 18%;
-			}
-			.swiper-button-next {
-				right: 18%;
 			}
 		}
 		section.business {
@@ -714,12 +769,8 @@ footer {
 			.title {
 				grid-column: 1/4;
 				height: 40px;
-				align-items: center;
-				h3 {
-					font-size: 2.5rem;
-				}
 			}
-			.tvStudio,
+			.tvShow,
 			.adSales,
 			.convention {
 				grid-column: 1/2;
@@ -732,7 +783,7 @@ footer {
 			.animation {
 				grid-column: 3/4;
 			}
-			.tvStudio,
+			.tvShow,
 			.film,
 			.music {
 				grid-row: 2/3;
@@ -749,12 +800,6 @@ footer {
 		section.featuredContents {
 			.title {
 				max-width: 955px;
-				.txt {
-					align-items: center;
-					h3 {
-						font-size: 2.5rem;
-					}
-				}
 			}
 			.slide02 {
 				max-width: 955px;
@@ -783,19 +828,10 @@ footer {
 		}
 	}
 }
-@media screen and (min-width: 890px) and (max-width: 1023px) {
-	html {
-		font-size: 14px;
-	}
+@media screen and (max-width: 1023px) {
 	main {
 		section.visual {
 			margin-bottom: 20rem;
-			.visualTitle {
-				text-align: center;
-			}
-			.swiper-pagination {
-				bottom: 8rem;
-			}
 			.swiper-wrapper {
 				margin-top: 5vh;
 				height: 100%;
@@ -833,55 +869,13 @@ footer {
 			margin-bottom: 20rem;
 		}
 		section.business {
-			padding: 0 !important;
 			grid-template-columns: repeat(3, 260px);
-			grid-template-rows: 60px 1fr 1fr 1fr;
-			justify-content: space-evenly;
 			max-width: 780px;
-			margin-bottom: 20rem;
-			.title {
-				grid-column: 1/4;
-				align-items: center;
-				h3 {
-					font-size: 2.5rem;
-				}
-			}
-			.tvStudio,
-			.adSales,
-			.convention {
-				grid-column: 1/2;
-			}
-			.film,
-			.performingArts {
-				grid-column: 2/3;
-			}
-			.music,
-			.animation {
-				grid-column: 3/4;
-			}
-			.tvStudio,
-			.film,
-			.music {
-				grid-row: 2/3;
-			}
-			.performingArts,
-			.animation,
-			.adSales {
-				grid-row: 3/4;
-			}
-			.convention {
-				grid-row: 4/5;
-			}
+			margin-bottom: 10rem;
 		}
 		section.featuredContents {
 			.title {
 				max-width: 780px;
-				.txt {
-					align-items: center;
-					h3 {
-						font-size: 2.5rem;
-					}
-				}
 			}
 			.slide02 {
 				max-width: 780px;
@@ -897,10 +891,6 @@ footer {
 		section.latestNews {
 			.title {
 				max-width: 780px;
-				align-items: center;
-				h3 {
-					font-size: 2.5rem;
-				}
 			}
 			.con {
 				max-width: 780px;
@@ -914,15 +904,9 @@ footer {
 		}
 	}
 }
-@media screen and (min-width: 744px) and (max-width: 889px) {
-	html {
-		font-size: 14px;
-	}
+@media screen and (max-width: 889px) {
 	main {
 		section.visual {
-			.visualTitle {
-				text-align: center;
-			}
 			.swiper-pagination {
 				bottom: 9rem;
 			}
@@ -950,14 +934,6 @@ footer {
 					transform: scale(1);
 				}
 			}
-			.swiper-button-next,
-			.swiper-button-prev {
-				display: none;
-			}
-			.swiper-button-next::after,
-			.swiper-button-prev::after {
-				display: none;
-			}
 		}
 		section.whoWeAre {
 			h2 {
@@ -966,19 +942,14 @@ footer {
 		}
 		section.business {
 			margin: 0 auto;
-			padding: 0 !important;
 			grid-template-columns: repeat(2, 260px);
 			grid-template-rows: 60px 1fr 1fr 1fr 1fr;
 			max-width: 520px;
 			margin-bottom: 360px;
 			.title {
 				grid-column: 1/3;
-				align-items: center;
-				h3 {
-					font-size: 2.5rem;
-				}
 			}
-			.tvStudio,
+			.tvShow,
 			.music,
 			.performingArts,
 			.convention {
@@ -989,7 +960,7 @@ footer {
 			.animation {
 				grid-column: 2/3;
 			}
-			.tvStudio,
+			.tvShow,
 			.film {
 				grid-row: 2/3;
 			}
@@ -1018,9 +989,8 @@ footer {
 			.title {
 				max-width: 640px;
 				.txt {
-					align-items: center;
 					h3 {
-						font-size: 2.5rem;
+						font-size: 2rem;
 					}
 				}
 			}
@@ -1038,9 +1008,8 @@ footer {
 		section.latestNews {
 			.title {
 				max-width: 640px;
-				align-items: center;
 				h3 {
-					font-size: 2.5rem;
+					font-size: 2rem;
 				}
 			}
 			.con {
@@ -1078,7 +1047,7 @@ footer {
 }
 
 //mobile start
-@media screen and (min-width: 431px) and (max-width: 743px) {
+@media screen and (max-width: 743px) {
 	html {
 		font-size: 14px;
 	}
@@ -1088,7 +1057,6 @@ footer {
 			margin-bottom: 10rem;
 			.visualTitle {
 				width: 100%;
-				text-align: center;
 				p {
 					font-size: 1.5rem;
 					padding-bottom: 1rem;
@@ -1098,13 +1066,7 @@ footer {
 				}
 			}
 			.swiper-wrapper {
-				margin-top: 5vh;
-				height: 100%;
 				.swiper-slide {
-					transform: scale(1);
-					.inner {
-						width: 100vw;
-					}
 					.txt {
 						display: flex;
 						flex-direction: column;
@@ -1112,23 +1074,8 @@ footer {
 						h3 {
 							margin: 0 0 1rem 0;
 						}
-						p {
-							font-size: 1.1rem;
-							line-height: 2rem;
-						}
 					}
 				}
-				.swiper-slide-active {
-					transform: scale(1);
-				}
-			}
-			.swiper-button-next,
-			.swiper-button-prev {
-				display: none;
-			}
-			.swiper-button-next::after,
-			.swiper-button-prev::after {
-				display: none;
 			}
 			.swiper-pagination {
 				bottom: 8rem;
@@ -1172,54 +1119,20 @@ footer {
 		}
 		section.business {
 			max-width: 399px;
-			margin: 0 auto;
-			padding: 0 !important;
 			grid-template-columns: repeat(2, 194.5px);
-			grid-template-rows: 60px 1fr 1fr 1fr 1fr;
 			margin-bottom: 100px;
 			.title {
-				grid-column: 1/3;
-				align-items: center;
 				h3 {
 					font-size: 2rem;
 				}
 			}
-			.tvStudio,
-			.music,
-			.performingArts,
-			.convention {
-				grid-column: 1/2;
-			}
-			.film,
-			.adSales,
-			.animation {
-				grid-column: 2/3;
-			}
-			.tvStudio,
-			.film {
-				grid-row: 2/3;
-			}
-			.music,
-			.adSales {
-				grid-row: 3/4;
-			}
-			.performingArts,
-			.animation {
-				grid-row: 4/5;
-			}
-			.convention {
-				grid-row: 5/6;
-			}
 			article {
 				&::before {
-					opacity: 1;
-					height: 16%;
 					position: absolute;
 					bottom: 0;
 					left: 0;
 				}
 				h4 {
-					display: block;
 					top: auto;
 					bottom: 5px;
 				}
@@ -1262,7 +1175,6 @@ footer {
 		section.latestNews {
 			.title {
 				max-width: 399px;
-				align-items: center;
 				h3 {
 					font-size: 2.1rem;
 				}
@@ -1273,9 +1185,10 @@ footer {
 				article {
 					width: 100%;
 					display: flex;
+					padding-right: 0;
 					.txt {
 						width: 250px;
-						height: 100%;
+						height: auto;
 						h4 {
 							font-size: 1rem;
 							line-height: 1.5rem;
@@ -1283,7 +1196,10 @@ footer {
 					}
 					.articleImg {
 						width: 149px;
-						height: 100%;
+						height: auto;
+						img {
+							width: 100%;
+						}
 					}
 				}
 			}
@@ -1291,166 +1207,19 @@ footer {
 	}
 }
 @media screen and (max-width: 430px) {
-	html {
-		font-size: 14px;
-	}
 	main {
 		section.visual {
-			height: 100vh;
 			.visualTitle {
-				width: 100%;
-				text-align: center;
 				padding-top: 140px;
-				p {
-					font-size: 1.5rem;
-					padding-bottom: 1rem;
-				}
-				h2 {
-					font-size: 3rem;
-				}
-			}
-			.swiper-wrapper {
-				margin-top: 5vh;
-				height: 100%;
-				.swiper-slide {
-					transform: scale(1);
-					.inner {
-						width: 100vw;
-					}
-					.txt {
-						display: flex;
-						flex-direction: column;
-						padding: 1rem;
-						h3 {
-							margin: 0 0 1rem 0;
-						}
-						p {
-							font-size: 1.1rem;
-							line-height: 2rem;
-						}
-					}
-				}
-				.swiper-slide-active {
-					transform: scale(1);
-				}
-			}
-			.swiper-button-next,
-			.swiper-button-prev {
-				display: none;
-			}
-			.swiper-button-next::after,
-			.swiper-button-prev::after {
-				display: none;
-			}
-			.swiper-pagination {
-				bottom: 8rem;
-				left: auto;
-				right: 1rem;
-				top: 56%;
-				font-size: 1rem;
-				height: 1.5rem;
-			}
-		}
-		section.whoWeAre {
-			margin: 5rem 0;
-			padding: 0;
-			justify-content: unset;
-			align-items: center;
-			height: 75vh;
-			h2 {
-				letter-spacing: 5px;
-				font-size: 3rem;
-				margin-bottom: 0;
-				padding-bottom: 6rem;
-			}
-			.txt {
-				margin-bottom: 0;
-				padding-bottom: 5rem;
-				p {
-					font-size: 1.5rem;
-				}
-				h3 {
-					font-size: 2.2rem;
-				}
-			}
-			article {
-				h3 {
-					font-size: 1.5rem;
-				}
-				p {
-					font-size: 1rem;
-				}
 			}
 		}
 		section.business {
 			max-width: 328px;
-			margin: 0 auto;
-			padding: 0 !important;
 			grid-template-columns: repeat(2, 159px);
-			grid-template-rows: 60px 1fr 1fr 1fr 1fr;
-			margin-bottom: 100px;
-			.title {
-				grid-column: 1/3;
-				align-items: center;
-				h3 {
-					font-size: 2rem;
-				}
-			}
-			.tvStudio,
-			.music,
-			.performingArts,
-			.convention {
-				grid-column: 1/2;
-			}
-			.film,
-			.adSales,
-			.animation {
-				grid-column: 2/3;
-			}
-			.tvStudio,
-			.film {
-				grid-row: 2/3;
-			}
-			.music,
-			.adSales {
-				grid-row: 3/4;
-			}
-			.performingArts,
-			.animation {
-				grid-row: 4/5;
-			}
-			.convention {
-				grid-row: 5/6;
-			}
-			article {
-				&::before {
-					opacity: 1;
-					height: 16%;
-					position: absolute;
-					bottom: 0;
-					left: 0;
-				}
-				h4 {
-					display: block;
-					top: auto;
-					bottom: 5px;
-				}
-			}
 		}
 		section.featuredContents {
 			.title {
-				align-items: center;
 				max-width: 328px;
-				.txt {
-					align-items: center;
-					h3 {
-						font-size: 2rem;
-					}
-				}
-				.swiper-button-next-slide02,
-				.swiper-button-prev-slide02 {
-					display: none;
-				}
 			}
 			.slide02 {
 				max-width: 328px;
@@ -1467,23 +1236,14 @@ footer {
 			padding: 5rem 2rem;
 			.title {
 				max-width: 328px;
-				align-items: center;
-				h3 {
-					font-size: 2rem;
-				}
 			}
 			.con {
-				flex-direction: column;
 				article {
-					width: 100%;
-					display: flex;
 					.txt {
 						width: 200px;
-						height: 100%;
 					}
 					.articleImg {
 						width: 100px;
-						height: 100%;
 					}
 				}
 			}

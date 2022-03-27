@@ -39,22 +39,43 @@
 	<body>
 		<header>
 			<nav>
-				<div class="logo">
-					<img src="images/logo_20201102.png" alt="CJ ENM 로고" />
-				</div>
+				<div class="logo" onclick="href='index.html'"></div>
 				<ul>
-					<li><a href="#" title="About Us">About US</a></li>
-					<li><a href="#" title="Business">Business</a></li>
+					<li>
+						<a href="#" title="About Us">About US</a>
+						<ul class="submenu">
+							<li><a href="#">Who We Are</a></li>
+							<li><a href="#">Visionary</a></li>
+							<li><a href="#">Download</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" title="Business">Business</a>
+						<ul class="submenu">
+							<li><a href="#">TV Show</a></li>
+							<li><a href="#">Film</a></li>
+							<li><a href="#">Music</a></li>
+							<li><a href="#">Digital Business</a></li>
+							<li><a href="#">Performing Arts</a></li>
+							<li><a href="#">Animation</a></li>
+						</ul>
+					</li>
 					<li>
 						<a href="#" title="Featured Contents"
 							>Featured Contents</a
 						>
+						<ul class="submenu">
+							<li><a href="#">드라마</a></li>
+							<li><a href="#">영화</a></li>
+							<li><a href="#">예능</a></li>
+							<li><a href="#">공연</a></li>
+						</ul>
 					</li>
 					<li><a href="#" title="Newsroom">Newsroom</a></li>
 					<li><a href="#" title="FAQ">FAQ</a></li>
 				</ul>
 				<div class="lan">
-					<a href="#" class="active" title="Korean">KR</a>
+					<a href="index.html" class="active" title="Korean">KR</a>
 					<a href="#" title="English">EN</a>
 				</div>
 			</nav>
@@ -222,8 +243,8 @@
 					<h3>Business</h3>
 					<button onclick="location.href=''">&rightharpoonup;</button>
 				</div>
-				<article class="tvStudio" onclick="location.href=''">
-					<h4>TV/STUDIO</h4>
+				<article class="tvShow" onclick="location.href=''">
+					<h4>TV SHOW</h4>
 					<img
 						src="images/main/business_tvStudio.jpg"
 						alt="TV / Studio"

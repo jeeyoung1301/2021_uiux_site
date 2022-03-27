@@ -1,16 +1,3 @@
-// const header = document.querySelector("header");
-// let mainMenu = document.querySelectorAll(".menu > li");
-// let submenuWrap = document.querySelectorAll(".submenuWrap");
-
-// for (let i = 0; i < mainMenu.length; i++) {
-// 	mainMenu[i].addEventListener("mouseover", (e) => {
-// 		header.style.height = "160px";
-// 		e.currentTarget.submenuWrap.style.display = "block";
-// 	});
-// 	mainMenu[i].addEventListener("mouseleave", (e) => {
-// 		header.style.height = "80px";
-// 	});
-// }
 const slide01 = new Swiper(".slide01", {
 	speed: 1000,
 	loop: true,
@@ -72,10 +59,6 @@ const slide02 = new Swiper(".slide02", {
 const openFamilySite = document.querySelector(".familySite h4 i"),
 	familySiteList = document.querySelector(".familySite > ul");
 
-// openFamilySite.addEventListener("click", (e) => {
-// 	familySiteList.style.display = "flex";
-// });
-
 openFamilySite.addEventListener("click", (e) => {
 	if (familySiteList.style.display === "flex") {
 		familySiteList.style.display = "none";
@@ -85,12 +68,3 @@ openFamilySite.addEventListener("click", (e) => {
 		openFamilySite.style.transform = "rotate(0deg)";
 	}
 });
-// function openCloseToc() {
-// 	if (familySiteList.style.display === "flex") {
-// 		familySiteList.style.display = "none";
-// 		openFamilySite.style.transform = "rotate(45deg)";
-// 	} else {
-// 		familySiteList.style.display = "flex";
-// 		openFamilySite.style.transform = "rotate(0deg)";
-// 	}
-// }
