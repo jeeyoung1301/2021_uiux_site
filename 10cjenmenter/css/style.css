@@ -37,27 +37,26 @@ header:hover {
   height: 400px;
 }
 
-header:hover nav {
+header:hover .navWrap {
   border-bottom: 1px solid #c4c4c4;
 }
 
-header:hover nav a {
+header:hover .navWrap nav a {
   color: #f1f1f1;
 }
 
-header:hover nav .logo {
-  background-position: center -80px;
-}
-
-header:hover ul.submenu {
+header:hover .navWrap nav ul.submenu {
   top: 50px;
   opacity: 1;
 }
 
-header nav {
+header:hover .navWrap .logo {
+  background-position: center -66px;
+}
+
+header .navWrap {
   max-width: 1280px;
   width: 100%;
-  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,14 +74,16 @@ header nav {
   padding: 0 1rem;
 }
 
-header nav .logo {
+header .navWrap .logo {
   width: 158px;
   height: 80px;
-  background: url(../images/logo_full_20201102.png) no-repeat center 0/100%;
+  background: url(../images/logo_full_20201102.png) no-repeat center 6px/100%;
 }
 
-header nav > ul {
-  width: 70%;
+header .navWrap nav > ul {
+  max-width: 1200px;
+  width: 100%;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,18 +94,18 @@ header nav > ul {
           align-items: center;
 }
 
-header nav > ul > li {
+header .navWrap nav > ul > li {
   width: 100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: relative;
 }
 
-header nav > ul > li:hover > a {
+header .navWrap nav > ul > li:hover > a {
   color: #ff5a00;
 }
 
-header nav > ul > li > a {
+header .navWrap nav > ul > li > a {
   display: block;
   width: 100%;
   font-size: 16px;
@@ -113,11 +114,11 @@ header nav > ul > li > a {
   padding: 0 1rem;
 }
 
-header nav > ul > li:active > a {
+header .navWrap nav > ul > li:active > a {
   color: #ff5a00;
 }
 
-header nav > ul > li > ul.submenu {
+header .navWrap nav > ul > li > ul.submenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,37 +137,56 @@ header nav > ul > li > ul.submenu {
   transition: 0.5s;
 }
 
-header nav > ul > li > ul.submenu > li {
+header .navWrap nav > ul > li > ul.submenu > li {
   width: 100%;
   padding: 1rem;
 }
 
-header nav > ul > li > ul.submenu > li > a {
+header .navWrap nav > ul > li > ul.submenu > li > a {
   width: 100%;
   display: block;
   text-align: center;
 }
 
-header nav > ul > li > ul.submenu > li:hover a {
+header .navWrap nav > ul > li > ul.submenu > li:hover a {
   color: #ff5a00;
 }
 
-header nav .lan {
+header .navWrap nav > ul .lan {
+  width: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 1px solid #929292;
 }
 
-header nav .lan a {
+header .navWrap nav > ul .lan a {
   width: 25px;
   line-height: 25px;
   display: block;
   text-align: center;
+  padding: 0;
 }
 
-header nav .lan a.active {
+header .navWrap nav > ul .lan a.active {
   background: #ff5a00;
+}
+
+header .navWrap nav > ul .lan:hover a {
+  color: #f1f1f1;
+}
+
+header .toggleMenu {
+  display: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 1rem;
+}
+
+header .toggleMenu i {
+  font-size: 24px;
 }
 
 main {
@@ -865,6 +885,93 @@ footer .inner .con .right .sns {
 }
 
 @media screen and (max-width: 1439px) {
+  header:hover {
+    background: rgba(255, 255, 255, 0.4);
+    height: 80px;
+  }
+  header:hover .navWrap {
+    border: none;
+  }
+  header:hover .navWrap .logo {
+    background-position: center 6px;
+  }
+  header .navWrap {
+    position: relative;
+  }
+  header .navWrap > nav > ul {
+    display: none;
+    background: #333 url(../images/logo_img.png) no-repeat 60vw 24vh/28rem;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem;
+  }
+  header .navWrap > nav > ul > li > ul.submenu {
+    top: auto;
+    position: unset;
+    opacity: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .navWrap > nav > ul > li > ul.submenu li {
+    width: auto;
+  }
+  header .navWrap > nav > ul > li > ul.submenu li a {
+    font-size: 1.3rem;
+  }
+  header nav.active {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  header nav.active > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header nav.active > ul > li {
+    width: unset;
+  }
+  header nav.active > ul > li ul.submenu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header nav.active > ul > li ul.submenu li a {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  header nav.active > ul > li > a {
+    text-align: left;
+    font-size: 3rem;
+  }
+  header nav.active > ul > li.lan {
+    margin-left: 1rem;
+  }
+  header nav.active > ul > li.lan a {
+    font-size: 1rem;
+  }
+  header nav.active a {
+    color: #f1f1f1;
+  }
+  header .toggleMenu {
+    display: block;
+    color: #ff5a00;
+  }
   main section.visual .visualTitle {
     text-align: center;
   }
@@ -1280,6 +1387,12 @@ h4 {
   html {
     font-size: 14px;
   }
+  header .navWrap > nav > ul {
+    background-position: 40vw 36vh;
+  }
+  header .navWrap > nav > ul > li > a {
+    font-size: 2rem;
+  }
   main section.visual {
     height: 100vh;
     margin-bottom: 10rem;
@@ -1440,6 +1553,16 @@ h4 {
 }
 
 @media screen and (max-width: 430px) {
+  header {
+    width: 100vw;
+  }
+  header .navWrap nav > ul > li {
+    width: 100%;
+  }
+  header .navWrap nav > ul > li > ul.submenu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   main section.visual .visualTitle {
     padding-top: 140px;
   }

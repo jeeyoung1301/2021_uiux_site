@@ -1,3 +1,11 @@
+const toggleNav = document.querySelector("nav"),
+	toggleMenu = document.querySelector(".toggleMenu");
+
+toggleMenu.addEventListener("click", (e) => {
+	e.preventDefault();
+	toggleNav.classList.toggle("active");
+});
+
 const slide01 = new Swiper(".slide01", {
 	speed: 1000,
 	loop: true,
