@@ -1,11 +1,24 @@
+//toggle menu control
 const toggleNav = document.querySelector("nav"),
 	toggleMenu = document.querySelector(".toggleMenu");
 
 toggleMenu.addEventListener("click", (e) => {
 	e.preventDefault();
 	toggleNav.classList.toggle("active");
+
+	const openBtn = document.querySelector(".toggleMenu .open");
+	const closeBtn = document.querySelector(".toggleMenu .close");
+
+	if (toggleNav.classList.contains("active")) {
+		openBtn.style.display = "none";
+		closeBtn.style.display = "block";
+	} else {
+		openBtn.style.display = "block";
+		closeBtn.style.display = "none";
+	}
 });
 
+//swiper slide control
 const slide01 = new Swiper(".slide01", {
 	speed: 1000,
 	loop: true,
@@ -64,10 +77,12 @@ const slide02 = new Swiper(".slide02", {
 	},
 });
 
+//footer control
 const openFamilySite = document.querySelector(".familySite h4 i"),
 	familySiteList = document.querySelector(".familySite > ul");
 
 openFamilySite.addEventListener("click", (e) => {
+	e.preventDefault();
 	if (familySiteList.style.display === "flex") {
 		familySiteList.style.display = "none";
 		openFamilySite.style.transform = "rotate(45deg)";
