@@ -34,14 +34,15 @@ const slide01 = new Swiper(".slide01", {
 		prevEl: ".swiper-button-prev",
 		nextEl: ".swiper-button-next",
 	},
-	autoplay: {
-		delay: 8000,
-	},
+	// autoplay: {
+	// 	delay: 8000,
+	// },
 	breakpoints: {
 		768: {
-			slidesPerView: 1,
+			slidesPerView: 2,
+			spaceBetween: 100,
 		},
-		1024: {
+		1200: {
 			slidesPerView: 2,
 			spaceBetween: 150,
 		},

@@ -1,0 +1,13 @@
+@charset 'utf-8';
+@import "reset";
+@import "mixin";
+
+@import "header";
+@import "footer";
+
+main {
+	section.location {
+		padding-top: 100px;
+		@include location;
+	}
+}
