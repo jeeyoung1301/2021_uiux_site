@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Yeon+Sung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Yeon+Sung&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -45,6 +47,13 @@ header:hover .navWrap nav ul.submenu {
 
 header:hover .navWrap .logo {
   background-position: center -66px;
+}
+
+header:hover .navWrap .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 header .navWrap {
@@ -335,6 +344,7 @@ footer .inner {
 }
 
 footer .inner .title {
+  font-family: "nanum myeongjo";
   margin-top: 3rem;
   margin-bottom: 10rem;
 }
@@ -563,7 +573,6 @@ footer .inner .con .downCon .copyRight {
 body {
   background: linear-gradient(175deg, #bbcfdf, #e1c79e, #e89e96);
   color: #333;
-  font-family: "NanumBarunGothicExtraLight", "NanumBarunGothicLight", "NanumBarunGothic", "NanumBarunGothicBold";
 }
 
 main {
@@ -573,8 +582,8 @@ main {
 
 main section.visual {
   width: 100%;
-  margin-top: 200px;
-  padding-bottom: 300px;
+  margin-top: 170px;
+  padding-bottom: 200px;
   position: relative;
 }
 
@@ -582,7 +591,7 @@ main section.visual .visualTitle {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 150px;
+  margin-bottom: 170px;
   text-align: center;
 }
 
@@ -590,11 +599,13 @@ main section.visual .visualTitle p {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
+  font-family: "Nanum Myeongjo";
 }
 
 main section.visual .visualTitle h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #ff5a00;
+  font-family: "Nanum Myeongjo";
 }
 
 main section.visual .slide01 {
@@ -640,15 +651,15 @@ main section.visual .slide01 .swiper-wrapper .swiper-slide .txt {
 }
 
 main section.visual .slide01 .swiper-wrapper .swiper-slide .txt h3 {
-  font-size: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
   color: #111;
-  width: 80%;
+  width: 50%;
   margin-right: 30px;
 }
 
 main section.visual .slide01 .swiper-wrapper .swiper-slide .txt p {
-  font-size: 0.8rem;
-  line-height: 1rem;
+  font: 0.8rem / 1rem "yeon sung";
 }
 
 main section.visual .slide01 .swiper-wrapper .swiper-slide-active {
@@ -673,32 +684,37 @@ main section.visual .slide01 .swiper-wrapper .swiper-slide-next .txt {
 }
 
 main section.visual .slide01 .swiper-pagination {
-  width: 100%;
+  width: 60px;
+  line-height: 30px;
   color: #f1f1f1;
-  text-shadow: 3px 3px 7px #000;
-  font-size: 1.3rem;
   border-radius: 0.625rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 7%;
+  background: rgba(0, 0, 0, 0.4);
 }
 
-main section.visual .slide01 .swiper-button-prev {
-  left: 18%;
-}
-
-main section.visual .slide01 .swiper-button-next {
-  right: 18%;
-}
-
-main section.visual .slide01 .swiper-button-prev,
-main section.visual .slide01 .swiper-button-next {
+main section.visual .slide01 .swiper-button-prev-slide01,
+main section.visual .slide01 .swiper-button-next-slide01 {
+  width: 40px;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
   color: #ff5a00;
-  padding: 30px 30px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
+  cursor: pointer;
   top: 35%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+main section.visual .slide01 .swiper-button-prev-slide01 {
+  left: 20%;
+}
+
+main section.visual .slide01 .swiper-button-next-slide01 {
+  right: 20%;
 }
 
 main section.whoWeAre {
@@ -717,18 +733,21 @@ main section.whoWeAre {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 15.625rem 0;
+  padding: 15.625rem 0;
+  font-family: "Nanum Myeongjo";
+  background: rgba(255, 255, 255, 0.4);
 }
 
 main section.whoWeAre h2 {
   font-size: 6rem;
-  letter-spacing: 30px;
+  letter-spacing: 45px;
+  font-weight: 800;
   color: #ff5a00;
-  margin-bottom: 8.125rem;
+  margin-bottom: 12.5rem;
 }
 
 main section.whoWeAre .txt {
-  margin-bottom: 6.25rem;
+  margin-bottom: 10rem;
 }
 
 main section.whoWeAre .txt p {
@@ -737,19 +756,24 @@ main section.whoWeAre .txt p {
 }
 
 main section.whoWeAre .txt h3 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: #ff9700;
 }
 
+main section.whoWeAre article {
+  font-family: "Yeon Sung";
+}
+
 main section.whoWeAre article h3 {
-  font-size: 1.875rem;
+  font-size: 2rem;
+  font-weight: lighter;
 }
 
 main section.whoWeAre article h3::after {
   content: "";
   display: block;
   width: 1px;
-  height: 6.25rem;
+  height: 10rem;
   background: #000;
   margin: 2rem auto;
 }
@@ -757,12 +781,12 @@ main section.whoWeAre article h3::after {
 main section.whoWeAre article p {
   font-size: 1.3rem;
   line-height: 2.5rem;
+  letter-spacing: 3px;
 }
 
 main section.businessWrap {
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -772,16 +796,17 @@ main section.businessWrap {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 7.8125rem 2rem;
 }
 
 main section.businessWrap .business {
-  margin: 7.8125rem 2rem;
+  margin: 0 auto;
   max-width: 1280px;
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
-  -ms-grid-columns: (85px)[12];
-      grid-template-columns: repeat(12, 85px);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
   -ms-grid-rows: (56px)[12];
       grid-template-rows: repeat(12, 56px);
 }
@@ -801,6 +826,7 @@ main section.businessWrap .business .title {
 main section.businessWrap .business .title h3 {
   font-size: 2.9rem;
   padding-right: 10px;
+  font-family: "Nanum Myeongjo";
 }
 
 main section.businessWrap .business .title button {
@@ -918,7 +944,7 @@ main section.businessWrap .business article:hover h4 {
 }
 
 main section.featuredContents {
-  padding: 7.8125rem 2rem;
+  padding: 0 2rem 7.8125rem 2rem;
   position: relative;
 }
 
@@ -940,6 +966,7 @@ main section.featuredContents .title .txt {
 main section.featuredContents .title .txt h3 {
   font-size: 2.9rem;
   padding-right: 10px;
+  font-family: "Nanum Myeongjo";
 }
 
 main section.featuredContents .title .txt button {
@@ -1027,18 +1054,19 @@ main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .ove
 }
 
 main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .overlay .title h4 {
-  font-size: 1.3rem;
-  padding-bottom: 5px;
+  font: lighter 1.5rem/1 "yeon sung";
+  padding-bottom: 10px;
 }
 
 main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .overlay .title p {
   font-size: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding-bottom: 16px;
   color: #c4c4c4;
 }
 
-main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .overlay p {
+main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .overlay > p {
   line-height: 1.3rem;
+  font-size: 0.875rem;
 }
 
 main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner:hover .overlay {
@@ -1061,6 +1089,7 @@ main section.latestNews .title {
 main section.latestNews .title h3 {
   font-size: 2.9rem;
   padding-right: 10px;
+  font-family: "Nanum Myeongjo";
 }
 
 main section.latestNews .title button {
@@ -1109,7 +1138,7 @@ main section.latestNews .con article .txt h4 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 5px;
   font-weight: lighter;
 }
