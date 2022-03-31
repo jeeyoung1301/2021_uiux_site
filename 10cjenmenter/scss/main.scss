@@ -448,19 +448,6 @@ main {
 		font-size: 14px;
 	}
 	main {
-		section.visual {
-			padding-bottom: 200px;
-			.slide01 {
-				.swiper-button-prev,
-				.swiper-button-next {
-					padding: 20px 20px;
-					&::after {
-						font-size: 1.5rem;
-						font-weight: bold;
-					}
-				}
-			}
-		}
 		section.businessWrap {
 			.business {
 				padding: 0 !important;
@@ -532,7 +519,8 @@ main {
 					.swiper-slide {
 						.txt {
 							h3 {
-								font-size: 1.5rem;
+								font-size: 1rem;
+								width: 40%;
 							}
 						}
 					}
@@ -546,7 +534,6 @@ main {
 			.business {
 				grid-template-columns: repeat(3, 260px);
 				max-width: 990px;
-				margin-bottom: 10rem;
 			}
 		}
 		section.featuredContents {
@@ -589,29 +576,38 @@ main {
 						.txt {
 							h3 {
 								margin-right: 1rem;
-								font-size: 1.2rem;
+								font-size: 0.9rem;
 							}
 							p {
-								font-size: 0.8rem;
+								font-size: 10px;
 							}
 						}
 					}
 				}
 				.swiper-pagination {
-					bottom: 5rem;
+					bottom: 3rem;
+					line-height: 20px;
+					width: 40px;
+					span {
+						font-size: 0.8rem;
+					}
+				}
+				.swiper-button-prev-slide01,
+				.swiper-button-next-slide01 {
+					top: 30%;
 				}
 			}
 		}
 		section.whoWeAre {
 			h2 {
 				font-size: 5rem;
+				letter-spacing: 30px;
 			}
 		}
 		section.businessWrap {
 			.business {
-				grid-template-columns: repeat(2, 260px);
+				grid-template-columns: repeat(2, 347px);
 				grid-template-rows: 60px 1fr 1fr 1fr 1fr;
-				max-width: 520px;
 				.title {
 					grid-column: 1/3;
 				}
@@ -740,10 +736,11 @@ main {
 							h3 {
 								margin: 0 0 1rem 0;
 								font-size: 2rem;
+								width: 100%;
 							}
 							p {
 								font-size: 1.1rem;
-								line-height: 1.1rem;
+								line-height: 1.5rem;
 							}
 						}
 					}
@@ -752,31 +749,32 @@ main {
 					}
 				}
 				.swiper-pagination {
-					bottom: 11rem;
+					bottom: 35%;
 				}
-				.swiper-button-prev {
+				.swiper-button-prev-slide01 {
 					left: 1rem;
 				}
-				.swiper-button-next {
+				.swiper-button-next-slide01 {
 					right: 1rem;
 				}
 			}
 		}
 		section.whoWeAre {
 			align-items: center;
-			margin: 10rem 0;
+			padding: 7.8125rem 0;
 			h2 {
 				letter-spacing: 1rem;
 				font-size: 4rem;
+				margin-bottom: 9.5rem;
 			}
 			.txt {
 				margin-bottom: 0;
 				padding-bottom: 5rem;
 				p {
-					font-size: 1.5rem;
+					font-size: 2rem;
 				}
 				h3 {
-					font-size: 2.2rem;
+					font-size: 3rem;
 				}
 			}
 			article {
@@ -784,16 +782,17 @@ main {
 					font-size: 1.5rem;
 				}
 				p {
-					font-size: 1rem;
+					font-size: 1.1rem;
 				}
 			}
 		}
 		section.businessWrap {
 			.business {
 				max-width: 570px;
-				grid-template-columns: repeat(2, 194.5px);
-				margin: 100px 0;
+				grid-template-columns: repeat(2, 252px);
+				grid-template-rows: 40px 1fr 1fr 1fr 1fr;
 				.title {
+					align-items: center;
 					h3 {
 						font-size: 2rem;
 					}
@@ -806,7 +805,7 @@ main {
 					}
 					h4 {
 						top: auto;
-						bottom: 5px;
+						bottom: 10px;
 					}
 				}
 			}
@@ -831,12 +830,12 @@ main {
 				height: 250px;
 				.swiper-wrapper .swiper-slide .inner {
 					&:hover .overlay {
-						height: 25%;
+						height: 28%;
 					}
 					.overlay {
-						height: 25%;
+						height: 28%;
 
-						&.longTitle .title hr {
+						&.longTitle .title h {
 							font-size: 1rem;
 						}
 					}
@@ -860,6 +859,9 @@ main {
 					.txt {
 						width: 300px;
 						height: auto;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-around;
 						h4 {
 							-webkit-line-clamp: 3;
 							font-size: 1.1rem;
@@ -883,7 +885,6 @@ main {
 	main {
 		section.visual {
 			margin-top: 130px;
-			padding-bottom: 200px;
 			.slide01 {
 				.swiper-wrapper {
 					.swiper-slide {
@@ -920,10 +921,10 @@ main {
 			}
 		}
 		section.businessWrap {
+			padding: 50px 2rem;
 			.business {
-				margin: 50px 0;
-				max-width: 328px;
-				grid-template-columns: repeat(2, 159px);
+				max-width: unset;
+				grid-template-columns: repeat(2, 1fr);
 				grid-template-rows: 40px 1fr 1fr 1fr 1fr;
 				.title {
 					align-items: center;
@@ -937,6 +938,7 @@ main {
 				article {
 					h4 {
 						font-weight: lighter;
+						bottom: 5px;
 					}
 				}
 			}

@@ -34,9 +34,9 @@ const slide01 = new Swiper(".slide01", {
 		prevEl: ".swiper-button-prev-slide01",
 		nextEl: ".swiper-button-next-slide01",
 	},
-	autoplay: {
-		delay: 8000,
-	},
+	// autoplay: {
+	// 	delay: 8000,
+	// },
 	breakpoints: {
 		768: {
 			slidesPerView: 2,
@@ -66,7 +66,7 @@ const slide02 = new Swiper(".slide02", {
 		430: {
 			slidesPerView: 2,
 		},
-		890: {
+		768: {
 			slidesPerView: 3,
 			autoplay: { enabled: false },
 		},

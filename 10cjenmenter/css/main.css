@@ -520,7 +520,7 @@ footer .inner .con .downCon .copyRight {
     margin-top: 1rem;
   }
   footer .inner .title h2 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
   footer .inner .con .upCon {
     -webkit-box-align: start;
@@ -1173,18 +1173,6 @@ main section.latestNews .con article:last-child {
   html {
     font-size: 14px;
   }
-  main section.visual {
-    padding-bottom: 200px;
-  }
-  main section.visual .slide01 .swiper-button-prev,
-  main section.visual .slide01 .swiper-button-next {
-    padding: 20px 20px;
-  }
-  main section.visual .slide01 .swiper-button-prev::after,
-  main section.visual .slide01 .swiper-button-next::after {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
   main section.businessWrap .business {
     padding: 0 !important;
     max-width: 955px;
@@ -1264,7 +1252,8 @@ main section.latestNews .con article:last-child {
 
 @media screen and (max-width: 1199px) {
   main section.visual .slide01 .swiper-wrapper .swiper-slide .txt h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    width: 40%;
   }
   main section.visual .slide01 .swiper-pagination {
     bottom: 13%;
@@ -1273,7 +1262,6 @@ main section.latestNews .con article:last-child {
     -ms-grid-columns: (260px)[3];
         grid-template-columns: repeat(3, 260px);
     max-width: 990px;
-    margin-bottom: 10rem;
   }
   main section.featuredContents .title {
     max-width: 990px;
@@ -1304,23 +1292,32 @@ main section.latestNews .con article:last-child {
 @media screen and (max-width: 991px) {
   main section.visual .slide01 .swiper-wrapper .swiper-slide .txt h3 {
     margin-right: 1rem;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
   main section.visual .slide01 .swiper-wrapper .swiper-slide .txt p {
-    font-size: 0.8rem;
+    font-size: 10px;
   }
   main section.visual .slide01 .swiper-pagination {
-    bottom: 5rem;
+    bottom: 3rem;
+    line-height: 20px;
+    width: 40px;
+  }
+  main section.visual .slide01 .swiper-pagination span {
+    font-size: 0.8rem;
+  }
+  main section.visual .slide01 .swiper-button-prev-slide01,
+  main section.visual .slide01 .swiper-button-next-slide01 {
+    top: 30%;
   }
   main section.whoWeAre h2 {
     font-size: 5rem;
+    letter-spacing: 30px;
   }
   main section.businessWrap .business {
-    -ms-grid-columns: (260px)[2];
-        grid-template-columns: repeat(2, 260px);
+    -ms-grid-columns: (347px)[2];
+        grid-template-columns: repeat(2, 347px);
     -ms-grid-rows: 60px 1fr 1fr 1fr 1fr;
         grid-template-rows: 60px 1fr 1fr 1fr 1fr;
-    max-width: 520px;
   }
   main section.businessWrap .business .title {
     -ms-grid-column: 1;
@@ -1461,55 +1458,63 @@ main section.latestNews .con article:last-child {
   main section.visual .slide01 .swiper-wrapper .swiper-slide .txt h3 {
     margin: 0 0 1rem 0;
     font-size: 2rem;
+    width: 100%;
   }
   main section.visual .slide01 .swiper-wrapper .swiper-slide .txt p {
     font-size: 1.1rem;
-    line-height: 1.1rem;
+    line-height: 1.5rem;
   }
   main section.visual .slide01 .swiper-wrapper .swiper-slide-active {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   main section.visual .slide01 .swiper-pagination {
-    bottom: 11rem;
+    bottom: 35%;
   }
-  main section.visual .slide01 .swiper-button-prev {
+  main section.visual .slide01 .swiper-button-prev-slide01 {
     left: 1rem;
   }
-  main section.visual .slide01 .swiper-button-next {
+  main section.visual .slide01 .swiper-button-next-slide01 {
     right: 1rem;
   }
   main section.whoWeAre {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 10rem 0;
+    padding: 7.8125rem 0;
   }
   main section.whoWeAre h2 {
     letter-spacing: 1rem;
     font-size: 4rem;
+    margin-bottom: 9.5rem;
   }
   main section.whoWeAre .txt {
     margin-bottom: 0;
     padding-bottom: 5rem;
   }
   main section.whoWeAre .txt p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   main section.whoWeAre .txt h3 {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
   main section.whoWeAre article h3 {
     font-size: 1.5rem;
   }
   main section.whoWeAre article p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   main section.businessWrap .business {
     max-width: 570px;
-    -ms-grid-columns: (194.5px)[2];
-        grid-template-columns: repeat(2, 194.5px);
-    margin: 100px 0;
+    -ms-grid-columns: (252px)[2];
+        grid-template-columns: repeat(2, 252px);
+    -ms-grid-rows: 40px 1fr 1fr 1fr 1fr;
+        grid-template-rows: 40px 1fr 1fr 1fr 1fr;
+  }
+  main section.businessWrap .business .title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   main section.businessWrap .business .title h3 {
     font-size: 2rem;
@@ -1521,7 +1526,7 @@ main section.latestNews .con article:last-child {
   }
   main section.businessWrap .business article h4 {
     top: auto;
-    bottom: 5px;
+    bottom: 10px;
   }
   main section.featuredContents .title {
     -webkit-box-align: center;
@@ -1546,12 +1551,12 @@ main section.latestNews .con article:last-child {
     height: 250px;
   }
   main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner:hover .overlay {
-    height: 25%;
+    height: 28%;
   }
   main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .overlay {
-    height: 25%;
+    height: 28%;
   }
-  main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .overlay.longTitle .title hr {
+  main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .overlay.longTitle .title h {
     font-size: 1rem;
   }
   main section.latestNews .title {
@@ -1577,6 +1582,15 @@ main section.latestNews .con article:last-child {
   main section.latestNews .con article .txt {
     width: 300px;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   main section.latestNews .con article .txt h4 {
     -webkit-line-clamp: 3;
@@ -1596,7 +1610,6 @@ main section.latestNews .con article:last-child {
 @media screen and (max-width: 575px) {
   main section.visual {
     margin-top: 130px;
-    padding-bottom: 200px;
   }
   main section.visual .slide01 .swiper-wrapper .swiper-slide .txt p {
     line-height: 1.5rem;
@@ -1622,11 +1635,13 @@ main section.latestNews .con article:last-child {
   main section.whoWeAre .txt h3 {
     font-weight: bold;
   }
+  main section.businessWrap {
+    padding: 50px 2rem;
+  }
   main section.businessWrap .business {
-    margin: 50px 0;
-    max-width: 328px;
-    -ms-grid-columns: (159px)[2];
-        grid-template-columns: repeat(2, 159px);
+    max-width: unset;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: 40px 1fr 1fr 1fr 1fr;
         grid-template-rows: 40px 1fr 1fr 1fr 1fr;
   }
@@ -1643,6 +1658,7 @@ main section.latestNews .con article:last-child {
   }
   main section.businessWrap .business article h4 {
     font-weight: lighter;
+    bottom: 5px;
   }
   main section.featuredContents {
     padding: 50px 2rem;
