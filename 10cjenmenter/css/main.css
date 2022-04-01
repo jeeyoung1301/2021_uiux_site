@@ -738,12 +738,23 @@ main section.whoWeAre {
   background: rgba(255, 255, 255, 0.4);
 }
 
-main section.whoWeAre h2 {
+main section.whoWeAre h2.title {
   font-size: 6rem;
   letter-spacing: 45px;
   font-weight: 800;
   color: #ff5a00;
   margin-bottom: 12.5rem;
+  opacity: 0;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main section.whoWeAre h2.title.active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 main section.whoWeAre .txt {

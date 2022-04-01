@@ -78,6 +78,33 @@ const slide02 = new Swiper(".slide02", {
 	},
 });
 
+//scroll animation
+
+const body = document.body,
+	html = document.documentElement;
+
+const height = Math.max(
+	body.scrollHeight,
+	body.offsetHeight,
+	html.clientHeight,
+	html.scrollHeight,
+	html.offsetHeight
+);
+function getScrollPercentage() {
+	return ((body.scrollTop + window.innerHeight) / height) * 100;
+}
+
+window.addEventListener("scroll", () => {
+	const activeTitle = document.querySelector(".whoWeAre > h2.title");
+	let titlePosition = activeTitle.getBoundingClientRect().top;
+	let screenPosition = window.innerHeight;
+	if (titlePosition < screenPosition) {
+		activeTitle.classList.add("active");
+	} else {
+		activeTitle.classList.remove("active");
+	}
+});
+
 //footer control
 const openFamilySite = document.querySelector(".familySite h4 i"),
 	familySiteList = document.querySelector(".familySite > ul");
