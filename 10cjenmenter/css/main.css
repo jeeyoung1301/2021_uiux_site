@@ -137,7 +137,7 @@ header .navWrap nav > ul > li > ul.submenu {
           justify-content: flex-start;
   width: 100%;
   position: absolute;
-  top: -160px;
+  top: -300px;
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -593,6 +593,7 @@ main section.visual .visualTitle {
   margin: 0 auto;
   margin-bottom: 170px;
   text-align: center;
+  position: relative;
 }
 
 main section.visual .visualTitle p {
@@ -606,6 +607,15 @@ main section.visual .visualTitle h2 {
   font-size: 5rem;
   color: #ff5a00;
   font-family: "Nanum Myeongjo";
+}
+
+main section.visual .visualTitle #lottie01 {
+  position: absolute;
+  z-index: -1;
+  top: 50px;
+  left: 45%;
+  -webkit-transform: translateX(-45%) scale(1.5);
+          transform: translateX(-45%) scale(1.5);
 }
 
 main section.visual .slide01 {
@@ -670,6 +680,11 @@ main section.visual .slide01 .swiper-wrapper .swiper-slide-active {
 main section.visual .slide01 .swiper-wrapper .swiper-slide-active .inner {
   -webkit-filter: saturate(1);
           filter: saturate(1);
+}
+
+main section.visual .slide01 .swiper-wrapper .swiper-slide-active .inner img {
+  -webkit-box-shadow: 0 0 30px rgba(255, 242, 165, 0.8);
+          box-shadow: 0 0 30px rgba(255, 242, 165, 0.8);
 }
 
 main section.visual .slide01 .swiper-wrapper .swiper-slide-prev .inner,
@@ -758,7 +773,7 @@ main section.whoWeAre h2.title.active {
 }
 
 main section.whoWeAre .txt {
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
 }
 
 main section.whoWeAre .txt p {
@@ -769,6 +784,35 @@ main section.whoWeAre .txt p {
 main section.whoWeAre .txt h3 {
   font-size: 4.5rem;
   color: #ff9700;
+  margin-bottom: 4rem;
+}
+
+main section.whoWeAre .txt svg {
+  fill: #ff5a00;
+  -webkit-animation: who_we_are_star 1s ease-in-out infinite alternate;
+          animation: who_we_are_star 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes who_we_are_star {
+  from {
+    -webkit-transform: rotate(70deg) scale(0.6);
+            transform: rotate(70deg) scale(0.6);
+  }
+  to {
+    -webkit-transform: rotate(250deg) scale(1);
+            transform: rotate(250deg) scale(1);
+  }
+}
+
+@keyframes who_we_are_star {
+  from {
+    -webkit-transform: rotate(70deg) scale(0.6);
+            transform: rotate(70deg) scale(0.6);
+  }
+  to {
+    -webkit-transform: rotate(250deg) scale(1);
+            transform: rotate(250deg) scale(1);
+  }
 }
 
 main section.whoWeAre article {

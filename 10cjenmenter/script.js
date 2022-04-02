@@ -17,6 +17,14 @@ toggleMenu.addEventListener("click", (e) => {
 		closeBtn.style.display = "none";
 	}
 });
+//lottie animation
+lottie.loadAnimation({
+	container: document.querySelector("#lottie01"), // the dom element that will contain the animation
+	renderer: "svg",
+	loop: true,
+	autoplay: true,
+	path: "https://assets3.lottiefiles.com/packages/lf20_lqhdb5ie.json", // the path to the animation json
+});
 
 //swiper slide control
 const slide01 = new Swiper(".slide01", {

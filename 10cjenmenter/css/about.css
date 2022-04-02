@@ -136,7 +136,7 @@ header .navWrap nav > ul > li > ul.submenu {
           justify-content: flex-start;
   width: 100%;
   position: absolute;
-  top: -160px;
+  top: -300px;
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -569,46 +569,167 @@ footer .inner .con .downCon .copyRight {
   }
 }
 
-main section.location {
-  padding-top: 100px;
+body {
+  background: linear-gradient(175deg, #bbcfdf, #e1c79e, #e89e96);
+  color: #333;
 }
 
-main section.location ul {
+header {
+  background: #f1f1f1;
+}
+
+main#whoWeAre section.location {
+  background: #121212;
+  padding-top: 80px;
+}
+
+main#whoWeAre section.location .con {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1280px;
   margin: 0 auto;
   padding: 1rem 2rem;
 }
 
-main section.location ul li {
+main#whoWeAre section.location .con h2 {
+  font-size: 3rem;
+  color: #f1f1f1;
+}
+
+main#whoWeAre section.location .con ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#whoWeAre section.location .con ul li {
   padding: 0 1rem;
-  border-right: 1px solid #333;
+  border-right: 1px solid #f1f1f1;
   font-size: 0.8rem;
 }
 
-main section.location ul li:first-child {
+main#whoWeAre section.location .con ul li:first-child {
   padding-left: 0;
 }
 
-main section.location ul li a {
+main#whoWeAre section.location .con ul li:last-child {
+  border-right: none;
+}
+
+main#whoWeAre section.location .con ul li a {
   font-size: 0.8rem;
+  color: #f1f1f1;
 }
 
-main section.location ul li:nth-child(2) {
-  color: #c4c4c4;
+main#whoWeAre section.location .con ul li:nth-child(2) {
+  color: #888888;
 }
 
-main section.location ul li.active a {
+main#whoWeAre section.location .con ul li.active a {
   color: #ff5a00;
   font-weight: bold;
 }
 
-main section.location h2 {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 2rem;
-  font-size: 3.75rem;
+main#whoWeAre section.whoWeAre {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Nanum Myeongjo";
+  background: rgba(255, 255, 255, 0.4);
+  padding: 9.375rem 0;
+}
+
+main#whoWeAre section.whoWeAre .txt {
+  margin-bottom: 4rem;
+}
+
+main#whoWeAre section.whoWeAre .txt p {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+main#whoWeAre section.whoWeAre .txt h3 {
+  font-size: 4.5rem;
+  color: #ff9700;
+  margin-bottom: 4rem;
+}
+
+main#whoWeAre section.whoWeAre .txt svg {
+  fill: #ff5a00;
+  -webkit-animation: who_we_are_star 1s ease-in-out infinite alternate;
+          animation: who_we_are_star 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes who_we_are_star {
+  from {
+    -webkit-transform: rotate(70deg) scale(0.6);
+            transform: rotate(70deg) scale(0.6);
+  }
+  to {
+    -webkit-transform: rotate(250deg) scale(1);
+            transform: rotate(250deg) scale(1);
+  }
+}
+
+@keyframes who_we_are_star {
+  from {
+    -webkit-transform: rotate(70deg) scale(0.6);
+            transform: rotate(70deg) scale(0.6);
+  }
+  to {
+    -webkit-transform: rotate(250deg) scale(1);
+            transform: rotate(250deg) scale(1);
+  }
+}
+
+main#whoWeAre section.whoWeAre article {
+  font-family: "Yeon Sung";
+}
+
+main#whoWeAre section.whoWeAre article h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+  padding-bottom: 2rem;
+}
+
+main#whoWeAre section.whoWeAre article h4 {
+  max-width: 800px;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  line-height: 2rem;
+}
+
+main#whoWeAre section.whoWeAre article h4::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 10rem;
+  background: #000;
+  margin: 2rem auto;
+}
+
+main#whoWeAre section.whoWeAre article p {
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  letter-spacing: 3px;
 }
 /*# sourceMappingURL=about.css.map */

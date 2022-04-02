@@ -14,34 +14,43 @@
 }
 
 @mixin location {
-	ul {
+	background: #121212;
+	.con {
 		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		max-width: 1280px;
 		margin: 0 auto;
 		padding: 1rem 2rem;
-		li {
-			padding: 0 1rem;
-			border-right: 1px solid #333;
-			font-size: 0.8rem;
-			&:first-child {
-				padding-left: 0;
-			}
-			a {
+
+		h2 {
+			font-size: 3rem;
+			color: #f1f1f1;
+		}
+		ul {
+			display: flex;
+			li {
+				padding: 0 1rem;
+				border-right: 1px solid #f1f1f1;
 				font-size: 0.8rem;
-			}
-			&:nth-child(2) {
-				color: #c4c4c4;
-			}
-			&.active a {
-				color: #ff5a00;
-				font-weight: bold;
+				&:first-child {
+					padding-left: 0;
+				}
+				&:last-child {
+					border-right: none;
+				}
+				a {
+					font-size: 0.8rem;
+					color: #f1f1f1;
+				}
+				&:nth-child(2) {
+					color: #888888;
+				}
+				&.active a {
+					color: #ff5a00;
+					font-weight: bold;
+				}
 			}
 		}
-	}
-	h2 {
-		max-width: 1280px;
-		margin: 0 auto;
-		padding-left: 2rem;
-		font-size: 3.75rem;
 	}
 }
