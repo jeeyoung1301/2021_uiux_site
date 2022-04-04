@@ -198,7 +198,7 @@ header .toggleMenu i {
   font-size: 24px;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   header:hover {
     background: rgba(255, 255, 255, 0.7);
     height: 80px;
@@ -306,7 +306,7 @@ header .toggleMenu i {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   header .navWrap > nav > ul {
     background-position: 42vw 30vh;
   }
@@ -315,14 +315,20 @@ header .toggleMenu i {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
+  header .navWrap nav > ul > li > a {
+    font-size: 1.5rem;
+  }
   header .navWrap nav > ul > li > ul.submenu {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  header .navWrap nav > ul > li > ul.submenu > li a {
+    font-size: 0.8rem;
+  }
 }
 
-@media screen and (max-width: 431px) {
+@media (max-width: 431px) {
   header .navWrap nav > ul {
     background-position: 16vw 30vh;
   }
