@@ -46,6 +46,11 @@ footer {
 								padding-left: 0;
 							}
 						}
+						&:last-child {
+							a {
+								border-right: none;
+							}
+						}
 					}
 				}
 				.left {
@@ -146,8 +151,7 @@ footer {
 	}
 }
 
-//mobile start
-@media screen and (max-width: 767px) {
+@include md {
 	footer {
 		padding-bottom: 2rem;
 		.inner {
@@ -178,7 +182,7 @@ footer {
 					}
 					.left {
 						.familySite {
-							width: 100px;
+							width: unset;
 							ul {
 								left: 0;
 								bottom: 26px;
@@ -198,6 +202,29 @@ footer {
 								padding-top: 0;
 								line-height: 1;
 							}
+						}
+						.sns {
+							justify-content: space-between;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@include xsm {
+	footer {
+		.inner {
+			.title {
+				h2 {
+					font-size: 2rem;
+				}
+			}
+			.con {
+				.upCon {
+					.list {
+						li a {
+							font-size: 0.7rem;
 						}
 					}
 				}

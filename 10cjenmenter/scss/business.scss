@@ -1,0 +1,223 @@
+@charset 'utf-8';
+@import "reset";
+@import "mixin";
+
+@import "header";
+@import "footer";
+
+body {
+	color: #333;
+}
+header {
+	background: #f1f1f1;
+}
+main#tvShow {
+	section.location {
+		@include location;
+		padding-top: 80px;
+	}
+
+	section.tvShow {
+		.titleWrap {
+			background: #1a1a1a;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			> .title {
+				max-width: 1280px;
+				width: 100vw;
+				height: 60vh;
+				margin: 0 2rem;
+				background: url(../images/sub/business/Business_television_KV_KR_YouQuiz.jpg)
+					no-repeat center center;
+				position: relative;
+				.txt {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					margin: 0 2rem;
+					color: #f1f1f1;
+					h4 {
+						font-size: 3rem;
+						margin-bottom: 2rem;
+					}
+					p {
+						line-height: 1.5rem;
+					}
+				}
+			}
+		}
+		.inner {
+			padding: 0 2rem;
+			max-width: 1280px;
+			margin: 0 auto;
+			margin-top: -12rem;
+			> .title {
+				display: flex;
+				align-items: center;
+				margin-bottom: 4rem;
+				h3 {
+					font-size: 2.5rem;
+					padding-right: 10px;
+					color: #f1f1f1;
+				}
+				button {
+					@include moreBtn;
+				}
+			}
+			.con {
+				ul.poster {
+					display: flex;
+					flex-wrap: wrap;
+					li {
+						cursor: pointer;
+						width: 25%;
+						padding-right: 1rem;
+						padding-bottom: 4rem;
+						&:nth-child(4),
+						&:last-child {
+							padding-right: 0;
+						}
+						img {
+							width: 100%;
+							height: 90%;
+						}
+						h5 {
+							font-size: 1.5rem;
+						}
+					}
+				}
+				ul.channel {
+					display: flex;
+					li {
+						width: 25%;
+						height: 160px;
+						border: 1px solid #c4c4c4;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+						margin-bottom: 4rem;
+						cursor: pointer;
+						img {
+							margin-top: 1rem;
+							filter: saturate(0);
+							opacity: 0.5;
+							width: 40%;
+							transition: 0.3s;
+						}
+						&:nth-child(2),
+						&:nth-child(4) {
+							img {
+								width: 60%;
+							}
+						}
+						h5 {
+							opacity: 0;
+						}
+						&:hover {
+							background: #f8f8f8;
+							img {
+								filter: saturate(1);
+								opacity: 1;
+								margin-bottom: 1rem;
+								transition: 0.3s;
+							}
+							img:nth-child(2) {
+								display: block;
+							}
+							h5 {
+								opacity: 1;
+								transition: 0.3s;
+								margin-bottom: 1rem;
+							}
+						}
+						&:nth-child(2):hover {
+							img {
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include xl {
+	main#tvShow {
+		section.tvShow {
+			.titleWrap {
+				> .title {
+					background-position: 75% center;
+				}
+			}
+		}
+	}
+}
+@include lg {
+	main#tvShow {
+		section.tvShow {
+			.titleWrap {
+				> .title {
+					margin: 0;
+					.txt {
+						h4 {
+							font-size: 2rem;
+							margin-bottom: 2rem;
+						}
+						p {
+							line-height: 1.5rem;
+							font-size: 0.8rem;
+						}
+					}
+				}
+			}
+			.inner {
+				> .title {
+					margin-bottom: 3rem;
+					h3 {
+						font-size: 2rem;
+					}
+				}
+				.con {
+					ul.poster {
+						li {
+							cursor: pointer;
+							width: 25%;
+							padding-right: 1rem;
+							padding-bottom: 3rem;
+							&:nth-child(4),
+							&:last-child {
+								padding-right: 0;
+							}
+							img {
+								width: 100%;
+								height: 90%;
+							}
+							h5 {
+								font-size: 1rem;
+							}
+						}
+					}
+					ul.channel {
+						li {
+							height: 100px;
+							img {
+								margin-top: 0;
+							}
+							h5 {
+								display: none;
+							}
+							&:hover {
+								img {
+									margin-bottom: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

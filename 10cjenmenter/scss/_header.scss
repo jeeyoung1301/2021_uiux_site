@@ -150,7 +150,7 @@ header {
 }
 
 // tablet start
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
 	header {
 		&:hover {
 			background: rgba(255, 255, 255, 0.7);
@@ -249,7 +249,7 @@ header {
 }
 
 //mobile start
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 	header {
 		.navWrap {
 			> nav {
@@ -265,7 +265,7 @@ header {
 		}
 	}
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
 	header .navWrap nav > ul > li > ul.submenu {
 		flex-wrap: wrap;
 	}

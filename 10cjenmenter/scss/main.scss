@@ -475,7 +475,7 @@ main {
 	}
 }
 
-@media screen and (max-width: 1399px) {
+@include xxl {
 	html {
 		font-size: 14px;
 	}
@@ -543,7 +543,7 @@ main {
 		}
 	}
 }
-@media screen and (max-width: 1199px) {
+@include xl {
 	main {
 		section.visual {
 			.slide01 {
@@ -599,7 +599,7 @@ main {
 		}
 	}
 }
-@media screen and (max-width: 991px) {
+@include lg {
 	main {
 		section.visual {
 			.slide01 {
@@ -742,7 +742,7 @@ main {
 }
 
 //mobile start
-@media screen and (max-width: 767px) {
+@include md {
 	html {
 		font-size: 14px;
 	}
@@ -913,7 +913,7 @@ main {
 		}
 	}
 }
-@media screen and (max-width: 575px) {
+@include sm {
 	main {
 		section.visual {
 			margin-top: 130px;
@@ -1036,7 +1036,7 @@ main {
 		}
 	}
 }
-@media screen and (max-width: 431px) {
+@include xsm {
 	main {
 		section.visual {
 			padding-bottom: 150px;

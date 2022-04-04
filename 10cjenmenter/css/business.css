@@ -588,7 +588,6 @@ footer .inner .con .downCon .copyRight {
 }
 
 body {
-  background: linear-gradient(175deg, #bbcfdf, #e1c79e, #e89e96);
   color: #333;
 }
 
@@ -596,12 +595,12 @@ header {
   background: #f1f1f1;
 }
 
-main#whoWeAre section.location {
+main#tvShow section.location {
   background: #121212;
   padding-top: 80px;
 }
 
-main#whoWeAre section.location .con {
+main#tvShow section.location .con {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -616,53 +615,53 @@ main#whoWeAre section.location .con {
   padding: 1rem 2rem;
 }
 
-main#whoWeAre section.location .con h2 {
+main#tvShow section.location .con h2 {
   font-size: 3rem;
   color: #f1f1f1;
 }
 
-main#whoWeAre section.location .con ul {
+main#tvShow section.location .con ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main#whoWeAre section.location .con ul li {
+main#tvShow section.location .con ul li {
   padding: 0 1rem;
   border-right: 1px solid #f1f1f1;
   font-size: 0.8rem;
 }
 
-main#whoWeAre section.location .con ul li:first-child {
+main#tvShow section.location .con ul li:first-child {
   padding-left: 0;
 }
 
-main#whoWeAre section.location .con ul li:last-child {
+main#tvShow section.location .con ul li:last-child {
   border-right: none;
 }
 
-main#whoWeAre section.location .con ul li a {
+main#tvShow section.location .con ul li a {
   font-size: 0.8rem;
   color: #f1f1f1;
 }
 
-main#whoWeAre section.location .con ul li:nth-child(2) {
+main#tvShow section.location .con ul li:nth-child(2) {
   color: #888888;
 }
 
-main#whoWeAre section.location .con ul li.active a {
+main#tvShow section.location .con ul li.active a {
   color: #ff5a00;
   font-weight: bold;
 }
 
 @media (max-width: 1400px) {
-  main#whoWeAre section.location {
+  main#tvShow section.location {
     font-size: 14px;
   }
 }
 
 @media (max-width: 992px) {
-  main#whoWeAre section.location .con {
+  main#tvShow section.location .con {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -671,39 +670,151 @@ main#whoWeAre section.location .con ul li.active a {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  main#whoWeAre section.location .con h2 {
+  main#tvShow section.location .con h2 {
     font-size: 2rem;
   }
-  main#whoWeAre section.location .con ul {
+  main#tvShow section.location .con ul {
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
 }
 
 @media (max-width: 576px) {
-  main#whoWeAre section.location .con {
+  main#tvShow section.location .con {
     padding: 1rem;
   }
-  main#whoWeAre section.location .con h2 {
+  main#tvShow section.location .con h2 {
     font-size: 1.5rem;
     padding-bottom: 5px;
   }
-  main#whoWeAre section.location .con ul {
+  main#tvShow section.location .con ul {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
-  main#whoWeAre section.location .con ul li {
+  main#tvShow section.location .con ul li {
     font-size: 0.5rem;
   }
-  main#whoWeAre section.location .con ul li a {
+  main#tvShow section.location .con ul li a {
     font-size: 0.5rem;
   }
 }
 
-main#whoWeAre section.whoWeAre {
+main#tvShow section.tvShow .titleWrap {
+  background: #1a1a1a;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main#tvShow section.tvShow .titleWrap > .title {
+  max-width: 1280px;
+  width: 100vw;
+  height: 60vh;
+  margin: 0 2rem;
+  background: url(../images/sub/business/Business_television_KV_KR_YouQuiz.jpg) no-repeat center center;
+  position: relative;
+}
+
+main#tvShow section.tvShow .titleWrap > .title .txt {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: 0 2rem;
+  color: #f1f1f1;
+}
+
+main#tvShow section.tvShow .titleWrap > .title .txt h4 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+main#tvShow section.tvShow .titleWrap > .title .txt p {
+  line-height: 1.5rem;
+}
+
+main#tvShow section.tvShow .inner {
+  padding: 0 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: -12rem;
+}
+
+main#tvShow section.tvShow .inner > .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4rem;
+}
+
+main#tvShow section.tvShow .inner > .title h3 {
+  font-size: 2.5rem;
+  padding-right: 10px;
+  color: #f1f1f1;
+}
+
+main#tvShow section.tvShow .inner > .title button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 3.5rem;
+  padding-top: 10px;
+  color: #ff5a00;
+  padding-right: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main#tvShow section.tvShow .inner > .title button:hover {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+main#tvShow section.tvShow .inner .con ul.poster {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main#tvShow section.tvShow .inner .con ul.poster li {
+  cursor: pointer;
+  width: 25%;
+  padding-right: 1rem;
+  padding-bottom: 4rem;
+}
+
+main#tvShow section.tvShow .inner .con ul.poster li:nth-child(4), main#tvShow section.tvShow .inner .con ul.poster li:last-child {
+  padding-right: 0;
+}
+
+main#tvShow section.tvShow .inner .con ul.poster li img {
   width: 100%;
-  height: 100%;
-  text-align: center;
+  height: 90%;
+}
+
+main#tvShow section.tvShow .inner .con ul.poster li h5 {
+  font-size: 1.5rem;
+}
+
+main#tvShow section.tvShow .inner .con ul.channel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#tvShow section.tvShow .inner .con ul.channel li {
+  width: 25%;
+  height: 160px;
+  border: 1px solid #c4c4c4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,126 +822,113 @@ main#whoWeAre section.whoWeAre {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Nanum Myeongjo";
-  background: rgba(255, 255, 255, 0.4);
-  padding: 9.375rem 0;
-}
-
-main#whoWeAre section.whoWeAre .txt {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 4rem;
+  cursor: pointer;
 }
 
-main#whoWeAre section.whoWeAre .txt p {
-  font-size: 2rem;
-  padding-bottom: 1rem;
+main#tvShow section.tvShow .inner .con ul.channel li img {
+  margin-top: 1rem;
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+  opacity: 0.5;
+  width: 40%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-main#whoWeAre section.whoWeAre .txt h3 {
-  font-size: 4.5rem;
-  color: #ff9700;
-  margin-bottom: 4rem;
+main#tvShow section.tvShow .inner .con ul.channel li:nth-child(2) img, main#tvShow section.tvShow .inner .con ul.channel li:nth-child(4) img {
+  width: 60%;
 }
 
-main#whoWeAre section.whoWeAre .txt svg {
-  fill: #ff5a00;
-  -webkit-animation: who_we_are_star 1s ease-in-out infinite alternate;
-          animation: who_we_are_star 1s ease-in-out infinite alternate;
+main#tvShow section.tvShow .inner .con ul.channel li h5 {
+  opacity: 0;
 }
 
-@-webkit-keyframes who_we_are_star {
-  from {
-    -webkit-transform: rotate(70deg) scale(0.6);
-            transform: rotate(70deg) scale(0.6);
-  }
-  to {
-    -webkit-transform: rotate(250deg) scale(1);
-            transform: rotate(250deg) scale(1);
-  }
+main#tvShow section.tvShow .inner .con ul.channel li:hover {
+  background: #f8f8f8;
 }
 
-@keyframes who_we_are_star {
-  from {
-    -webkit-transform: rotate(70deg) scale(0.6);
-            transform: rotate(70deg) scale(0.6);
-  }
-  to {
-    -webkit-transform: rotate(250deg) scale(1);
-            transform: rotate(250deg) scale(1);
-  }
+main#tvShow section.tvShow .inner .con ul.channel li:hover img {
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
+  opacity: 1;
+  margin-bottom: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-main#whoWeAre section.whoWeAre article {
-  font-family: "Yeon Sung";
-}
-
-main#whoWeAre section.whoWeAre article h3 {
-  font-size: 2rem;
-  font-weight: lighter;
-  padding-bottom: 2rem;
-}
-
-main#whoWeAre section.whoWeAre article h4 {
-  padding: 0 2rem;
-  max-width: 800px;
-  font-size: 1.3rem;
-  font-weight: lighter;
-  line-height: 2rem;
-}
-
-main#whoWeAre section.whoWeAre article h4::after {
-  content: "";
+main#tvShow section.tvShow .inner .con ul.channel li:hover img:nth-child(2) {
   display: block;
-  width: 1px;
-  height: 10rem;
-  background: #000;
-  margin: 2rem auto;
 }
 
-main#whoWeAre section.whoWeAre article p {
-  font-size: 1.3rem;
-  line-height: 2.5rem;
-  letter-spacing: 3px;
+main#tvShow section.tvShow .inner .con ul.channel li:hover h5 {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 1rem;
 }
 
-@media (max-width: 1400px) {
-  body {
-    font-size: 14px;
+main#tvShow section.tvShow .inner .con ul.channel li:nth-child(2):hover img {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  main#tvShow section.tvShow .titleWrap > .title {
+    background-position: 75% center;
   }
 }
 
 @media (max-width: 992px) {
-  main#whoWeAre section.whoWeAre .txt p {
-    font-size: 1.5rem;
+  main#tvShow section.tvShow .titleWrap > .title {
+    margin: 0;
   }
-  main#whoWeAre section.whoWeAre .txt h3 {
-    font-size: 3.5rem;
+  main#tvShow section.tvShow .titleWrap > .title .txt h4 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
-  main#whoWeAre section.whoWeAre article h3 {
-    font-size: 1.8rem;
+  main#tvShow section.tvShow .titleWrap > .title .txt p {
+    line-height: 1.5rem;
+    font-size: 0.8rem;
   }
-  main#whoWeAre section.whoWeAre article h4 {
+  main#tvShow section.tvShow .inner > .title {
+    margin-bottom: 3rem;
+  }
+  main#tvShow section.tvShow .inner > .title h3 {
+    font-size: 2rem;
+  }
+  main#tvShow section.tvShow .inner .con ul.poster li {
+    cursor: pointer;
+    width: 25%;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+  }
+  main#tvShow section.tvShow .inner .con ul.poster li:nth-child(4), main#tvShow section.tvShow .inner .con ul.poster li:last-child {
+    padding-right: 0;
+  }
+  main#tvShow section.tvShow .inner .con ul.poster li img {
+    width: 100%;
+    height: 90%;
+  }
+  main#tvShow section.tvShow .inner .con ul.poster li h5 {
     font-size: 1rem;
-    letter-spacing: 2px;
   }
-  main#whoWeAre section.whoWeAre article p {
-    font-size: 1rem;
+  main#tvShow section.tvShow .inner .con ul.channel li {
+    height: 100px;
+  }
+  main#tvShow section.tvShow .inner .con ul.channel li img {
+    margin-top: 0;
+  }
+  main#tvShow section.tvShow .inner .con ul.channel li h5 {
+    display: none;
+  }
+  main#tvShow section.tvShow .inner .con ul.channel li:hover img {
+    margin-bottom: 0;
   }
 }
-
-@media (max-width: 431px) {
-  main#whoWeAre section.whoWeAre .txt h3 {
-    font-size: 3rem;
-  }
-  main#whoWeAre section.whoWeAre article h4 {
-    letter-spacing: 0;
-  }
-  main#whoWeAre section.whoWeAre article p {
-    letter-spacing: 0;
-  }
-}
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=business.css.map */
