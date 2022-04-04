@@ -777,6 +777,12 @@ main#tvShow section.tvShow .inner > .title button:hover {
           transform: translateX(20px);
 }
 
+@media (max-width: 576px) {
+  main#tvShow section.tvShow .inner > .title button {
+    font-size: 3rem;
+  }
+}
+
 main#tvShow section.tvShow .inner .con ul.poster {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -803,6 +809,7 @@ main#tvShow section.tvShow .inner .con ul.poster li img {
 
 main#tvShow section.tvShow .inner .con ul.poster li h5 {
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
 main#tvShow section.tvShow .inner .con ul.channel {
@@ -848,6 +855,7 @@ main#tvShow section.tvShow .inner .con ul.channel li:nth-child(2) img, main#tvSh
 
 main#tvShow section.tvShow .inner .con ul.channel li h5 {
   opacity: 0;
+  font-weight: 400;
 }
 
 main#tvShow section.tvShow .inner .con ul.channel li:hover {
@@ -929,6 +937,105 @@ main#tvShow section.tvShow .inner .con ul.channel li:nth-child(2):hover img {
   }
   main#tvShow section.tvShow .inner .con ul.channel li:hover img {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  main#tvShow section.tvShow .titleWrap {
+    height: 90vh;
+  }
+  main#tvShow section.tvShow .titleWrap > .title {
+    background-position: 90% center;
+  }
+  main#tvShow section.tvShow .inner .con ul.poster li {
+    width: 50%;
+  }
+  main#tvShow section.tvShow .inner .con ul.channel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 4rem;
+  }
+  main#tvShow section.tvShow .inner .con ul.channel li {
+    width: 100%;
+    margin-bottom: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 1rem;
+    border-bottom: 0;
+  }
+  main#tvShow section.tvShow .inner .con ul.channel li img {
+    -webkit-filter: saturate(1);
+            filter: saturate(1);
+    opacity: 1;
+    margin-top: 0;
+    width: 50px;
+  }
+  main#tvShow section.tvShow .inner .con ul.channel li:hover h5 {
+    margin-bottom: 0;
+  }
+  main#tvShow section.tvShow .inner .con ul.channel li:nth-child(2) img,
+  main#tvShow section.tvShow .inner .con ul.channel li:nth-child(4) img {
+    width: 80px;
+  }
+  main#tvShow section.tvShow .inner .con ul.channel li:nth-child(2) {
+    padding-left: 0;
+  }
+  main#tvShow section.tvShow .inner .con ul.channel li:nth-child(2) img {
+    padding-right: 0;
+  }
+  main#tvShow section.tvShow .inner .con ul.channel li:nth-child(2) h5 {
+    padding-left: 2rem;
+  }
+  main#tvShow section.tvShow .inner .con ul.channel li:nth-child(4) h5 {
+    padding-left: 1rem;
+  }
+  main#tvShow section.tvShow .inner .con ul.channel li:last-child {
+    border-bottom: 1px solid #c4c4c4;
+  }
+  main#tvShow section.tvShow .inner .con ul.channel li h5 {
+    opacity: 1;
+    display: block;
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 431px) {
+  main#tvShow section.tvShow .titleWrap {
+    display: block;
+    height: 70vh;
+  }
+  main#tvShow section.tvShow .titleWrap > .title {
+    background-position: 86% center;
+    height: 50vh;
+  }
+  main#tvShow section.tvShow .titleWrap > .title .txt {
+    top: auto;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    bottom: 10%;
+  }
+  main#tvShow section.tvShow .inner {
+    margin-top: -8rem;
+    padding: 0 1rem;
+  }
+  main#tvShow section.tvShow .inner .title {
+    margin-bottom: 2rem;
+  }
+  main#tvShow section.tvShow .inner .title h3 {
+    font-size: 1.5rem;
+  }
+  main#tvShow section.tvShow .inner .con ul.poster li:nth-child(2n) {
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=business.css.map */

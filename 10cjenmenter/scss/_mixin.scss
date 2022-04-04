@@ -43,6 +43,9 @@
 	&:hover {
 		transform: translateX(20px);
 	}
+	@include sm {
+		font-size: 3rem;
+	}
 }
 
 @mixin location {

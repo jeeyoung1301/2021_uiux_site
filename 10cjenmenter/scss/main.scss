@@ -631,9 +631,17 @@ main {
 			}
 		}
 		section.whoWeAre {
-			h2 {
+			h2.title {
 				font-size: 5rem;
 				letter-spacing: 30px;
+			}
+			.txt {
+				p {
+					font-size: 1.5rem;
+				}
+				h3 {
+					font-size: 3.5rem;
+				}
 			}
 		}
 		section.businessWrap {
@@ -794,20 +802,14 @@ main {
 		section.whoWeAre {
 			align-items: center;
 			padding: 7.8125rem 0;
-			h2 {
-				letter-spacing: 1rem;
+			h2.title {
+				letter-spacing: 1.5rem;
 				font-size: 4rem;
 				margin-bottom: 9.5rem;
 			}
 			.txt {
 				margin-bottom: 0;
 				padding-bottom: 5rem;
-				p {
-					font-size: 2rem;
-				}
-				h3 {
-					font-size: 3rem;
-				}
 			}
 			article {
 				h3 {
@@ -941,14 +943,15 @@ main {
 		}
 		section.whoWeAre {
 			margin-top: 0;
-			h2 {
-				font-size: 3rem;
+			h2.title {
+				font-size: 3.5rem;
 				letter-spacing: 0.8rem;
 				margin-bottom: 7.14rem;
 			}
 			.txt {
 				h3 {
 					font-weight: bold;
+					font-size: 2.5rem;
 				}
 			}
 		}
@@ -1041,6 +1044,18 @@ main {
 		section.visual {
 			padding-bottom: 150px;
 		}
+		section.whoWeAre {
+			h2.title {
+				font-size: 3rem;
+				letter-spacing: 0.5rem;
+			}
+			article {
+				p {
+					font-size: 1rem;
+					letter-spacing: 1px;
+				}
+			}
+		}
 		section.featuredContents {
 			.slide02 {
 				width: 100%;
@@ -1048,10 +1063,10 @@ main {
 				max-width: unset;
 				.swiper-wrapper .swiper-slide .inner {
 					&:hover .overlay {
-						height: 19%;
+						height: 23%;
 					}
 					.overlay {
-						height: 19%;
+						height: 23%;
 						.title {
 							h4 {
 								font-size: 1.5rem;
