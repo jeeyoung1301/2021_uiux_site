@@ -596,12 +596,12 @@ body {
   color: #333;
 }
 
-main#tvShow section.location {
+main#featuredContents section.location {
   background: #121212;
   padding-top: 80px;
 }
 
-main#tvShow section.location .con {
+main#featuredContents section.location .con {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -616,53 +616,53 @@ main#tvShow section.location .con {
   padding: 1rem 2rem;
 }
 
-main#tvShow section.location .con h2 {
+main#featuredContents section.location .con h2 {
   font-size: 3rem;
   color: #f1f1f1;
 }
 
-main#tvShow section.location .con ul {
+main#featuredContents section.location .con ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main#tvShow section.location .con ul li {
+main#featuredContents section.location .con ul li {
   padding: 0 1rem;
   border-right: 1px solid #f1f1f1;
   font-size: 0.8rem;
 }
 
-main#tvShow section.location .con ul li:first-child {
+main#featuredContents section.location .con ul li:first-child {
   padding-left: 0;
 }
 
-main#tvShow section.location .con ul li:last-child {
+main#featuredContents section.location .con ul li:last-child {
   border-right: none;
 }
 
-main#tvShow section.location .con ul li a {
+main#featuredContents section.location .con ul li a {
   font-size: 0.8rem;
   color: #f1f1f1;
 }
 
-main#tvShow section.location .con ul li.inactive {
+main#featuredContents section.location .con ul li.inactive {
   color: #888888;
 }
 
-main#tvShow section.location .con ul li.active a {
+main#featuredContents section.location .con ul li.active a {
   color: #ff5a00;
   font-weight: bold;
 }
 
 @media (max-width: 1400px) {
-  main#tvShow section.location {
+  main#featuredContents section.location {
     font-size: 14px;
   }
 }
 
 @media (max-width: 992px) {
-  main#tvShow section.location .con {
+  main#featuredContents section.location .con {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -671,273 +671,32 @@ main#tvShow section.location .con ul li.active a {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  main#tvShow section.location .con h2 {
+  main#featuredContents section.location .con h2 {
     font-size: 2rem;
   }
-  main#tvShow section.location .con ul {
+  main#featuredContents section.location .con ul {
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
 }
 
 @media (max-width: 576px) {
-  main#tvShow section.location .con {
+  main#featuredContents section.location .con {
     padding: 1rem;
   }
-  main#tvShow section.location .con h2 {
+  main#featuredContents section.location .con h2 {
     font-size: 1.5rem;
     padding-bottom: 5px;
   }
-  main#tvShow section.location .con ul {
+  main#featuredContents section.location .con ul {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
-  main#tvShow section.location .con ul li {
+  main#featuredContents section.location .con ul li {
     font-size: 0.5rem;
   }
-  main#tvShow section.location .con ul li a {
+  main#featuredContents section.location .con ul li a {
     font-size: 0.5rem;
-  }
-}
-
-main#tvShow section.tvShow .titleWrap {
-  background: #1a1a1a;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main#tvShow section.tvShow .titleWrap > .title {
-  max-width: 1280px;
-  width: 100vw;
-  height: 60vh;
-  margin: 0 2rem;
-  background: url(../images/sub/business/Business_television_KV_KR_YouQuiz.jpg) no-repeat center center;
-  position: relative;
-}
-
-main#tvShow section.tvShow .titleWrap > .title .txt {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  margin: 0 2rem;
-  color: #f1f1f1;
-}
-
-main#tvShow section.tvShow .titleWrap > .title .txt h4 {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-}
-
-main#tvShow section.tvShow .titleWrap > .title .txt p {
-  line-height: 1.5rem;
-}
-
-main#tvShow section.tvShow .inner {
-  padding: 0 2rem;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-top: -12rem;
-}
-
-main#tvShow section.tvShow .inner > .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 4rem;
-}
-
-main#tvShow section.tvShow .inner > .title h3 {
-  font-size: 2.5rem;
-  padding-right: 10px;
-  color: #f1f1f1;
-}
-
-main#tvShow section.tvShow .inner > .title button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 3.5rem;
-  padding-top: 10px;
-  color: #ff5a00;
-  padding-right: 10px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-main#tvShow section.tvShow .inner > .title button:hover {
-  -webkit-transform: translateX(20px);
-          transform: translateX(20px);
-}
-
-@media (max-width: 576px) {
-  main#tvShow section.tvShow .inner > .title button {
-    font-size: 3rem;
-  }
-}
-
-main#tvShow section.tvShow .inner .con ul.poster {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-main#tvShow section.tvShow .inner .con ul.poster li {
-  cursor: pointer;
-  width: 25%;
-  padding-right: 1rem;
-  padding-bottom: 4rem;
-}
-
-main#tvShow section.tvShow .inner .con ul.poster li:nth-child(4), main#tvShow section.tvShow .inner .con ul.poster li:last-child {
-  padding-right: 0;
-}
-
-main#tvShow section.tvShow .inner .con ul.poster li img {
-  width: 100%;
-  height: 90%;
-}
-
-main#tvShow section.tvShow .inner .con ul.poster li h5 {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
-main#tvShow section.tvShow .inner .con ul.channel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-main#tvShow section.tvShow .inner .con ul.channel li {
-  width: 25%;
-  height: 160px;
-  border: 1px solid #c4c4c4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 4rem;
-  cursor: pointer;
-}
-
-main#tvShow section.tvShow .inner .con ul.channel li img {
-  margin-top: 1rem;
-  -webkit-filter: saturate(0);
-          filter: saturate(0);
-  opacity: 0.5;
-  width: 40%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-main#tvShow section.tvShow .inner .con ul.channel li:nth-child(2) img, main#tvShow section.tvShow .inner .con ul.channel li:nth-child(4) img {
-  width: 60%;
-}
-
-main#tvShow section.tvShow .inner .con ul.channel li h5 {
-  opacity: 0;
-  font-weight: 400;
-}
-
-main#tvShow section.tvShow .inner .con ul.channel li:hover {
-  background: #f8f8f8;
-}
-
-main#tvShow section.tvShow .inner .con ul.channel li:hover img {
-  -webkit-filter: saturate(1);
-          filter: saturate(1);
-  opacity: 1;
-  margin-bottom: 1rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-main#tvShow section.tvShow .inner .con ul.channel li:hover img:nth-child(2) {
-  display: block;
-}
-
-main#tvShow section.tvShow .inner .con ul.channel li:hover h5 {
-  opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  margin-bottom: 1rem;
-}
-
-main#tvShow section.tvShow .inner .con ul.channel li:nth-child(2):hover img {
-  margin-bottom: 0;
-}
-
-@media (max-width: 1200px) {
-  main#tvShow section.tvShow .titleWrap > .title {
-    background-position: 75% center;
-  }
-}
-
-@media (max-width: 992px) {
-  main#tvShow section.tvShow .titleWrap > .title {
-    margin: 0;
-  }
-  main#tvShow section.tvShow .titleWrap > .title .txt h4 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  main#tvShow section.tvShow .titleWrap > .title .txt p {
-    line-height: 1.5rem;
-    font-size: 0.8rem;
-  }
-  main#tvShow section.tvShow .inner > .title {
-    margin-bottom: 3rem;
-  }
-  main#tvShow section.tvShow .inner > .title h3 {
-    font-size: 2rem;
-  }
-  main#tvShow section.tvShow .inner .con ul.poster li {
-    cursor: pointer;
-    width: 25%;
-    padding-right: 1rem;
-    padding-bottom: 3rem;
-  }
-  main#tvShow section.tvShow .inner .con ul.poster li:nth-child(4), main#tvShow section.tvShow .inner .con ul.poster li:last-child {
-    padding-right: 0;
-  }
-  main#tvShow section.tvShow .inner .con ul.poster li img {
-    width: 100%;
-    height: 90%;
-  }
-  main#tvShow section.tvShow .inner .con ul.poster li h5 {
-    font-size: 1rem;
-  }
-  main#tvShow section.tvShow .inner .con ul.channel li {
-    height: 100px;
-  }
-  main#tvShow section.tvShow .inner .con ul.channel li img {
-    margin-top: 0;
-  }
-  main#tvShow section.tvShow .inner .con ul.channel li h5 {
-    display: none;
-  }
-  main#tvShow section.tvShow .inner .con ul.channel li:hover img {
-    margin-bottom: 0;
   }
 }
 
@@ -945,96 +704,5 @@ main#tvShow section.tvShow .inner .con ul.channel li:nth-child(2):hover img {
   body {
     font-size: 14px;
   }
-  main#tvShow section.tvShow .titleWrap {
-    height: 90vh;
-  }
-  main#tvShow section.tvShow .titleWrap > .title {
-    background-position: 90% center;
-  }
-  main#tvShow section.tvShow .titleWrap > .title .txt {
-    top: auto;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    bottom: 10%;
-  }
-  main#tvShow section.tvShow .inner .con ul.poster li {
-    width: 50%;
-  }
-  main#tvShow section.tvShow .inner .con ul.channel {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 4rem;
-  }
-  main#tvShow section.tvShow .inner .con ul.channel li {
-    width: 100%;
-    margin-bottom: 0;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding-left: 1rem;
-    border-bottom: 0;
-  }
-  main#tvShow section.tvShow .inner .con ul.channel li img {
-    -webkit-filter: saturate(1);
-            filter: saturate(1);
-    opacity: 1;
-    margin-top: 0;
-    width: 50px;
-  }
-  main#tvShow section.tvShow .inner .con ul.channel li:hover h5 {
-    margin-bottom: 0;
-  }
-  main#tvShow section.tvShow .inner .con ul.channel li:nth-child(2) img,
-  main#tvShow section.tvShow .inner .con ul.channel li:nth-child(4) img {
-    width: 80px;
-  }
-  main#tvShow section.tvShow .inner .con ul.channel li:nth-child(2) {
-    padding-left: 0;
-  }
-  main#tvShow section.tvShow .inner .con ul.channel li:nth-child(2) img {
-    padding-right: 0;
-  }
-  main#tvShow section.tvShow .inner .con ul.channel li:nth-child(2) h5 {
-    padding-left: 2rem;
-  }
-  main#tvShow section.tvShow .inner .con ul.channel li:nth-child(4) h5 {
-    padding-left: 1rem;
-  }
-  main#tvShow section.tvShow .inner .con ul.channel li:last-child {
-    border-bottom: 1px solid #c4c4c4;
-  }
-  main#tvShow section.tvShow .inner .con ul.channel li h5 {
-    opacity: 1;
-    display: block;
-    padding-left: 3rem;
-  }
 }
-
-@media (max-width: 431px) {
-  main#tvShow section.tvShow .titleWrap {
-    height: 80vh;
-  }
-  main#tvShow section.tvShow .titleWrap > .title {
-    background-position: 86% center;
-    height: 55vh;
-  }
-  main#tvShow section.tvShow .inner {
-    padding: 0 1rem;
-  }
-  main#tvShow section.tvShow .inner .title {
-    margin-bottom: 2rem;
-  }
-  main#tvShow section.tvShow .inner .title h3 {
-    font-size: 1.5rem;
-  }
-  main#tvShow section.tvShow .inner .con ul.poster li:nth-child(2n) {
-    padding-right: 0;
-  }
-}
-/*# sourceMappingURL=business.css.map */
+/*# sourceMappingURL=featured.css.map */

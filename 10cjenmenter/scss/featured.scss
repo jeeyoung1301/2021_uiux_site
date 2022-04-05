@@ -1,0 +1,30 @@
+@charset 'utf-8';
+@import "reset";
+@import "mixin";
+
+@import "header";
+@import "footer";
+
+body {
+	color: #333;
+}
+header {
+}
+main#featuredContents {
+	section.location {
+		@include location;
+		padding-top: 80px;
+	}
+}
+
+@include xl {
+}
+@include lg {
+}
+@include md {
+	body {
+		font-size: 14px;
+	}
+}
+@include xsm {
+}

@@ -1,3 +1,22 @@
+//header control
+const openSubmenu = document.querySelectorAll("header nav > ul > li"),
+	rotateI = document.querySelectorAll("header nav > ul > li > i"),
+	subMenuList = document.querySelectorAll(".submenu");
+
+for (let i = 0; i < openSubmenu.length; i++) {
+	openSubmenu[i].addEventListener("click", (e) => {
+		e.preventDefault();
+
+		if (subMenuList[i].style.display === "flex") {
+			subMenuList[i].style.display = "none";
+			rotateI[i].style.transform = "rotate(0deg)";
+		} else {
+			subMenuList[i].style.display = "flex";
+			rotateI[i].style.transform = "rotate(180deg)";
+		}
+	});
+}
+
 //toggle menu control
 const toggleNav = document.querySelector("nav"),
 	toggleMenu = document.querySelector(".toggleMenu");

@@ -8,9 +8,6 @@
 body {
 	color: #333;
 }
-header {
-	background: #f1f1f1;
-}
 main#tvShow {
 	section.location {
 		@include location;

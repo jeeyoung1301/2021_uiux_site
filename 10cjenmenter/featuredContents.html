@@ -32,8 +32,9 @@
 		/>
 		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 		<script defer src="js/script.js"></script>
-		<link rel="stylesheet" href="css/business.css" />
-		<title>Business | CJ ENM</title>
+		<script src="js/isotope.pkgd.min.js"></script>
+		<link rel="stylesheet" href="css/featured.css" />
+		<title>Featured Contents | CJ ENM</title>
 	</head>
 	<body>
 		<header>
@@ -42,7 +43,7 @@
 				<nav>
 					<ul>
 						<li title="About Us">
-							About Us <i class="fas fa-angle-down"></i>
+                            About Us <i class="fas fa-angle-down"></i>
 							<ul class="submenu">
 								<li>
 									<a href="aboutUs_who.html">Who We Are</a>
@@ -51,10 +52,10 @@
 								<li><a href="#">Download</a></li>
 							</ul>
 						</li>
-						<li class="active">
-							Business <i class="fas fa-angle-down"></i>
+						<li>
+                            Business <i class="fas fa-angle-down"></i>
 							<ul class="submenu">
-								<li class="active">
+								<li>
 									<a href="business_tv.html">TV Show</a>
 								</li>
 								<li><a href="#">Film</a></li>
@@ -64,10 +65,8 @@
 								<li><a href="#">Animation</a></li>
 							</ul>
 						</li>
-						<li>
-							<a
-								href="featuredContents.html"
-								title="Featured Contents"
+						<li class="active">
+							<a href="featuredContents.html" title="Featured Contents"
 								>Featured Contents</a
 							>
 						</li>
@@ -91,133 +90,233 @@
 				<i class="fas fa-times close"></i>
 			</div>
 		</header>
-		<main id="tvShow">
+		<main id="featuredContents">
 			<section class="location">
 				<div class="con">
-					<h2>Business</h2>
+					<h2>Featured Contents</h2>
 					<ul>
 						<li><a href="index.html">HOME</a></li>
-						<li class="inactive">Business</li>
-						<li class="active">
-							<a href="business_tv.html">TV Show</a>
-						</li>
+						<li class="active"><a href="featuredContents.html">Featured Contents</a></li></li>
 					</ul>
 				</div>
 			</section>
-			<section class="tvShow">
-				<div class="titleWrap">
-					<div class="title">
-						<div class="txt">
-							<h4>TV Shows</h4>
-							<p>
-								CJ ENM은 대한민국 최대 콘텐츠 사업자입니다.
-								<br />
-								다양한 장르의 방송 채널을 통해 공감과 재미를
-								전하며 K콘텐츠로 일상의 즐거움을 만들어가고
-								있습니다.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="inner">
-					<div class="title">
-						<h3>Featured Contents</h3>
-						<button onclick="location.href=''">
-							&rightharpoonup;
-						</button>
-					</div>
-					<div class="con">
-						<ul class="poster">
-							<li onclick="location.href=''">
-								<img
-									src="images/sub/business/twenty-five-twenty-one-tvShow01.jpg"
-									alt="스물다섯 스물하나"
-								/>
-								<h5>스물다섯 스물하나</h5>
-							</li>
-							<li onclick="location.href=''">
-								<img
-									src="images/sub/business/ghostdoctor-drama-poster-ko-tvShow02.jpg"
-									alt="고스트 닥터"
-								/>
-								<h5>고스트 닥터</h5>
-							</li>
-							<li onclick="location.href=''">
-								<img
-									src="images/sub/business/bulgasaimmortalsouls-drama-poster-ko-tvShow03.jpg"
-									alt="불가살"
-								/>
-								<h5>불가살</h5>
-							</li>
-							<li onclick="location.href=''">
-								<img
-									src="images/sub/business/badandcrazy-drama-poster-ko-tvShow04.jpg"
-									alt="배드 앤 크레이지"
-								/>
-								<h5>배드 앤 크레이지</h5>
-							</li>
-							<li onclick="location.href=''">
-								<img
-									src="images/sub/business/Contents-Detail-KV-unexpected business 2-tvShow05.jpg"
-									alt="어쩌다 사장2"
-								/>
-								<h5>어쩌다 사장2</h5>
-							</li>
-							<li onclick="location.href=''">
-								<img
-									src="images/sub/business/threemealsadaydoctors-entertainmentshow-poster-ko-tvShow06.jpg"
-									alt="슬기로운 산촌생활"
-								/>
-								<h5>슬기로운 산촌생활</h5>
-							</li>
-							<li onclick="location.href=''">
-								<img
-									src="images/sub/business/streetwomanfighter-entertainmentshow-poster-ko-tvShow07.jpg"
-									alt="스트릿 우먼 파이터"
-								/>
-								<h5>스트릿 우먼 파이터</h5>
-							</li>
-							<li onclick="location.href=''">
-								<img
-									src="images/sub/business/kingdomlegendarywar-entertainmentshow-poster-ko-tvShow08.jpg"
-									alt="킹덤: 레전더리 워"
-								/>
-								<h5>킹덤: 레전더리 워</h5>
-							</li>
-						</ul>
-						<ul class="channel">
-							<li onclick="location.href=''">
-								<img
-									src="images/sub/business/img_logo_tvn_color.png"
-									alt="tvN logo"
-								/>
-								<h5>No.1 K콘텐츠 종합 엔터테인먼트 채널</h5>
-							</li>
-							<li onclick="location.href=''">
-								<img
-									src="images/sub/business/img_logo_mnet_color.png"
-									alt="Mnet logo"
-								/>
-								<h5>글로벌 K-Pop 뮤직 엔터테인먼트 채널</h5>
-							</li>
-							<li onclick="location.href=''">
-								<img
-									src="images/sub/business/img_logo_ocn_color.png"
-									alt="OCN logo"
-								/>
-								<h5>독보적인 장르물&영화 전문 채널</h5>
-							</li>
-							<li onclick="location.href=''">
-								<img
-									src="images/sub/business/img_logo_tooniverse_color.png"
-									alt="Tooniverse logo"
-								/>
-								<h5>대한민국 대표 어린이 채널</h5>
-							</li>
-						</ul>
-					</div>
-				</div>
+			<section class="">
+                <ul>
+                    <li class="on">
+                        <a href="*">All</a>
+                    </li>
+                    <li>
+                        <a href=".odd">Drama</a>
+                    </li>
+                    <li>
+                        <a href=".even">Entertainment Shows</a>
+                    </li>
+                    <li>
+                        <a href="">Movies</a>
+                    </li>
+                    <li>
+                        <a href="">Musicals</a>
+                    </li>
+                </ul>        
 			</section>
+            <section>
+                <article class="odd">
+					<div class="inner">
+						<img src="img/p1.jpg" alt="1" />
+						<h2>Lorem, ipsum dolor.</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit.
+						</p>
+					</div>
+				</article>
+				<article class="even">
+					<div class="inner">
+						<img src="img/p2.jpg" alt="2" />
+						<h2>Asperiores, aut sequi!</h2>
+						<p>
+							Dicta, sint non provident laboriosam ut quidem
+							nobis!
+						</p>
+					</div>
+				</article>
+				<article class="odd">
+					<div class="inner">
+						<img src="img/p3.jpg" alt="3" />
+						<h2>Quas, maxime voluptatem.</h2>
+						<p>
+							Cumque deleniti veniam debitis iusto neque
+							accusantium reiciendis!
+						</p>
+					</div>
+				</article>
+				<article class="even">
+					<div class="inner">
+						<img src="img/p4.jpg" alt="4" />
+						<h2>Cupiditate, excepturi veniam.</h2>
+						<p>
+							Ipsam inventore placeat minima odit nihil ipsum
+							accusantium?
+						</p>
+					</div>
+				</article>
+				<article class="odd">
+					<div class="inner">
+						<img src="img/p5.jpg" alt="5" />
+						<h2>Omnis, iste voluptatem!</h2>
+						<p>
+							Iusto impedit magni ut, dolores fugiat nihil
+							accusamus!
+						</p>
+					</div>
+				</article>
+				<article class="even">
+					<div class="inner">
+						<img src="img/p6.jpg" alt="6" />
+						<h2>Autem, pariatur ea!</h2>
+						<p>
+							Eum, recusandae obcaecati dolor repellat fugit
+							officiis veritatis.
+						</p>
+					</div>
+				</article>
+				<article class="odd">
+					<div class="inner">
+						<img src="img/p7.jpg" alt="7" />
+						<h2>Suscipit, quis sint!</h2>
+						<p>
+							Obcaecati, autem? Odio accusamus omnis modi.
+							Reprehenderit, quaerat.
+						</p>
+					</div>
+				</article>
+				<article class="even">
+					<div class="inner">
+						<img src="img/p8.jpg" alt="8" />
+						<h2>A, fugit et.</h2>
+						<p>
+							Eaque earum laborum repellendus distinctio ad fuga
+							consequuntur?
+						</p>
+					</div>
+				</article>
+				<article class="odd">
+					<div class="inner">
+						<img src="img/p9.jpg" alt="9" />
+						<h2>Architecto, quas cum.</h2>
+						<p>
+							Illum suscipit facere magnam ipsa error. Et,
+							impedit!
+						</p>
+					</div>
+				</article>
+				<article class="even">
+					<div class="inner">
+						<img src="img/p10.jpg" alt="10" />
+						<h2>Deserunt, nesciunt hic?</h2>
+						<p>
+							Iure eos blanditiis inventore, quibusdam suscipit
+							quam possimus.
+						</p>
+					</div>
+				</article>
+				<article class="odd">
+					<div class="inner">
+						<img src="img/p11.jpg" alt="11" />
+						<h2>Inventore, eveniet doloremque.</h2>
+						<p>
+							Natus, perspiciatis. Quo ad magnam atque
+							necessitatibus vel.
+						</p>
+					</div>
+				</article>
+				<article class="even">
+					<div class="inner">
+						<img src="img/p12.jpg" alt="12" />
+						<h2>Numquam, commodi explicabo!</h2>
+						<p>
+							Libero nisi esse odio vero magnam, repellendus fuga?
+						</p>
+					</div>
+				</article>
+				<article class="odd">
+					<div class="inner">
+						<img src="img/p13.jpg" alt="13" />
+						<h2>Eius, molestiae enim.</h2>
+						<p>
+							Nulla magni architecto nobis facilis, illum totam
+							aliquid!
+						</p>
+					</div>
+				</article>
+				<article class="even">
+					<div class="inner">
+						<img src="img/p14.jpg" alt="14" />
+						<h2>Consequuntur, modi quibusdam!</h2>
+						<p>Sint quia vel quos vero nisi cumque similique?</p>
+					</div>
+				</article>
+				<article class="odd">
+					<div class="inner">
+						<img src="img/p15.jpg" alt="15" />
+						<h2>Odio, eum itaque?</h2>
+						<p>
+							Dolorum ad accusantium cumque odio repellendus,
+							voluptate quidem?
+						</p>
+					</div>
+				</article>
+				<article class="even">
+					<div class="inner">
+						<img src="img/p16.jpg" alt="16" />
+						<h2>Eum, officia quod?</h2>
+						<p>
+							Fugit doloribus cum rem, aspernatur laudantium nemo
+							perferendis!
+						</p>
+					</div>
+				</article>
+				<article class="odd">
+					<div class="inner">
+						<img src="img/p17.jpg" alt="17" />
+						<h2>Quasi, deserunt provident?</h2>
+						<p>
+							Atque laborum consectetur autem, maxime minus
+							maiores quidem!
+						</p>
+					</div>
+				</article>
+				<article class="even">
+					<div class="inner">
+						<img src="img/p18.jpg" alt="18" />
+						<h2>Accusamus, blanditiis architecto.</h2>
+						<p>
+							Enim alias ad exercitationem id eius incidunt
+							reiciendis!
+						</p>
+					</div>
+				</article>
+				<article class="odd">
+					<div class="inner">
+						<img src="img/p19.jpg" alt="19" />
+						<h2>Fuga, quia nulla?</h2>
+						<p>
+							Molestias dolorem aperiam veniam debitis adipisci
+							quisquam quod!
+						</p>
+					</div>
+				</article>
+				<article class="even">
+					<div class="inner">
+						<img src="img/p20.jpg" alt="20" />
+						<h2>Illo, vero accusantium?</h2>
+						<p>
+							Dolor quia quis quod quidem dolores, ipsa
+							exercitationem.
+						</p>
+					</div>
+				</article>
+            </section>
 		</main>
 		<footer>
 			<div class="inner">
