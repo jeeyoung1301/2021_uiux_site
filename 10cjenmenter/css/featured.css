@@ -700,6 +700,95 @@ main#featuredContents section.location .con ul li.active a {
   }
 }
 
+main#featuredContents section.tabMenu {
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+main#featuredContents section.tabMenu ul {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+main#featuredContents section.tabMenu ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+main#featuredContents section.tabMenu ul li {
+  float: left;
+  margin-left: 20px;
+  width: 100px;
+  height: 26px;
+}
+
+main#featuredContents section.tabMenu ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font: bold 7px/26px "orbitron";
+  color: #aaa;
+  letter-spacing: 1px;
+  text-align: center;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+main#featuredContents section.tabMenu ul li.on a {
+  background: linear-gradient(45deg, aqua, cornflowerblue);
+  color: #fff;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 255, 255, 0.493);
+          box-shadow: 0 5px 20px rgba(0, 255, 255, 0.493);
+}
+
+main#featuredContents section.contents {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main#featuredContents section.contents::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+main#featuredContents section.contents article {
+  width: 20%;
+  float: left;
+  overflow: hidden;
+  padding: 12px;
+}
+
+main#featuredContents section.contents article .inner {
+  width: 100%;
+  background: #fff;
+  padding: 14px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+main#featuredContents section.contents article .inner img {
+  width: 100%;
+}
+
+main#featuredContents section.contents article .inner h2 {
+  font: bold 16px/1 "orbitron";
+  letter-spacing: 1px;
+  color: #444;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+main#featuredContents section.contents article .inner p {
+  font: 12px/1.2 "arial";
+  color: #777;
+  margin-bottom: 15px;
+}
+
 @media (max-width: 768px) {
   body {
     font-size: 14px;
