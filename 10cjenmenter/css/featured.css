@@ -145,6 +145,7 @@ header .navWrap nav > ul > li > ul.submenu > li {
   width: 100%;
   padding: 1rem;
   line-height: initial;
+  z-index: 3;
 }
 
 header .navWrap nav > ul > li > ul.submenu > li > a {
@@ -242,9 +243,9 @@ header .toggleMenu i {
     color: #f1f1f1;
   }
   header .navWrap > nav > ul > li > ul.submenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     top: auto;
     position: unset;
     -webkit-box-orient: horizontal;
@@ -701,47 +702,47 @@ main#featuredContents section.location .con ul li.active a {
 }
 
 main#featuredContents section.contents {
+  margin-top: 2rem;
+  padding: 20px;
+}
+
+main#featuredContents section.contents > ul.tabMenu {
   max-width: 1280px;
   margin: 0 auto;
-  margin-top: 2rem;
-}
-
-main#featuredContents section.contents > ul {
+  padding-left: 10px;
+  padding-bottom: 10px;
   width: 100%;
-  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-main#featuredContents section.contents > ul::after {
-  content: "";
-  display: block;
-  clear: both;
+main#featuredContents section.contents > ul.tabMenu li {
+  width: 150px;
+  line-height: 30px;
+  margin-right: 1rem;
 }
 
-main#featuredContents section.contents > ul li {
-  float: left;
-  margin-left: 20px;
-  width: 100px;
-  height: 26px;
+main#featuredContents section.contents > ul.tabMenu li:last-child {
+  margin-right: 0;
 }
 
-main#featuredContents section.contents > ul li a {
+main#featuredContents section.contents > ul.tabMenu li a {
   display: block;
   width: 100%;
   height: 100%;
   background: #fff;
-  font: bold 7px/26px "orbitron";
+  font-weight: bold;
+  font-size: 0.8rem;
   color: #aaa;
-  letter-spacing: 1px;
   text-align: center;
-  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-main#featuredContents section.contents > ul li.on a {
-  background: linear-gradient(45deg, aqua, cornflowerblue);
+main#featuredContents section.contents > ul.tabMenu li.on a {
+  background: linear-gradient(147deg, #bbcfdf, #e1c79e, #e89e96);
   color: #fff;
-  -webkit-box-shadow: 0 5px 20px rgba(0, 255, 255, 0.493);
-          box-shadow: 0 5px 20px rgba(0, 255, 255, 0.493);
 }
 
 main#featuredContents section.contents > section.filterContents {
@@ -765,10 +766,8 @@ main#featuredContents section.contents > section.filterContents article {
 
 main#featuredContents section.contents > section.filterContents article .inner {
   width: 100%;
+  height: 400px;
   background: #fff;
-  padding: 14px;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 main#featuredContents section.contents > section.filterContents article .inner img {
@@ -776,22 +775,84 @@ main#featuredContents section.contents > section.filterContents article .inner i
 }
 
 main#featuredContents section.contents > section.filterContents article .inner h2 {
-  font: bold 16px/1 "orbitron";
-  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 1rem;
   color: #444;
   margin-top: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 main#featuredContents section.contents > section.filterContents article .inner p {
   font: 12px/1.2 "arial";
   color: #777;
-  margin-bottom: 15px;
+}
+
+@media (max-width: 1200px) {
+  main#featuredContents section.contents section.filterContents article {
+    width: 25%;
+  }
+  main#featuredContents section.contents section.filterContents article .inner h2 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  main#featuredContents section.contents > ul.tabMenu li {
+    width: 100px;
+  }
+  main#featuredContents section.contents > ul.tabMenu li:nth-child(3) {
+    width: 150px;
+  }
+  main#featuredContents section.contents section.filterContents article {
+    width: 33.3%;
+  }
 }
 
 @media (max-width: 768px) {
   body {
     font-size: 14px;
+  }
+  main#featuredContents section.contents > ul.tabMenu li {
+    width: 70px;
+  }
+  main#featuredContents section.contents > ul.tabMenu li:nth-child(3) {
+    width: 150px;
+  }
+  main#featuredContents section.contents > section.filterContents article .inner {
+    height: 310px;
+  }
+  main#featuredContents section.contents > section.filterContents article .inner h2 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  main#featuredContents section.contents > ul.tabMenu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main#featuredContents section.contents > ul.tabMenu li {
+    margin-top: 1rem;
+  }
+  main#featuredContents section.contents > section.filterContents article {
+    width: 50%;
+  }
+  main#featuredContents section.contents > section.filterContents article .inner {
+    height: 400px;
+  }
+  main#featuredContents section.contents > section.filterContents article .inner h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 431px) {
+  main#featuredContents section.contents > ul.tabMenu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main#featuredContents section.contents > section.filterContents article .inner {
+    height: 300px;
   }
 }
 /*# sourceMappingURL=featured.css.map */

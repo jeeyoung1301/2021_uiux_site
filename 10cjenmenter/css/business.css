@@ -145,6 +145,7 @@ header .navWrap nav > ul > li > ul.submenu > li {
   width: 100%;
   padding: 1rem;
   line-height: initial;
+  z-index: 3;
 }
 
 header .navWrap nav > ul > li > ul.submenu > li > a {
@@ -242,9 +243,9 @@ header .toggleMenu i {
     color: #f1f1f1;
   }
   header .navWrap > nav > ul > li > ul.submenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     top: auto;
     position: unset;
     -webkit-box-orient: horizontal;

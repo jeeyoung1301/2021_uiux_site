@@ -1,12 +1,10 @@
 //header control
-const openSubmenu = document.querySelectorAll("header nav > ul > li"),
-	rotateI = document.querySelectorAll("header nav > ul > li > i"),
+const openSubmenu = document.querySelectorAll(".submenuTitle"),
+	rotateI = document.querySelectorAll(".submenuTitle > i"),
 	subMenuList = document.querySelectorAll(".submenu");
 
 for (let i = 0; i < openSubmenu.length; i++) {
 	openSubmenu[i].addEventListener("click", (e) => {
-		e.preventDefault();
-
 		if (subMenuList[i].style.display === "flex") {
 			subMenuList[i].style.display = "none";
 			rotateI[i].style.transform = "rotate(0deg)";
@@ -130,41 +128,6 @@ window.addEventListener("scroll", () => {
 		activeTitle.classList.add("active");
 	} else {
 		activeTitle.classList.remove("active");
-	}
-});
-
-//featuredContents isotope
-window.addEventListener("load", () => {
-	const grid = new Isotope(".filterContents", {
-		itemSelector: "article",
-		columWidth: "article",
-		transitionDuration: "0.5s",
-	});
-
-	const btns = document.querySelectorAll("#featuredContents .tabMenu > li");
-
-	for (let i = 0; i < btns.length; i++) {
-		btns[i].addEventListener("click", (e) => {
-			e.preventDefault();
-
-			const isOn = e.currentTarget.classList.contains("on");
-			if (isOn) return;
-
-			activation(e);
-		});
-	}
-
-	function activation(e) {
-		for (let j = 0; j < btns.length; j++) {
-			btns[j].classList.remove("on");
-		}
-		e.currentTarget.classList.add("on");
-
-		const btn_a = e.currentTarget.querySelector("a");
-		const a_href = btn_a.getAttribute("href");
-		console.log(a_href);
-
-		grid.arrange({ filter: a_href });
 	}
 });
 
