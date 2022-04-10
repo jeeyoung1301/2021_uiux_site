@@ -648,7 +648,7 @@ main#whoWeAre section.location .con ul li a {
   color: #f1f1f1;
 }
 
-main#whoWeAre section.location .con ul li.inactive {
+main#whoWeAre section.location .con ul li.inactive a {
   color: #888888;
 }
 
