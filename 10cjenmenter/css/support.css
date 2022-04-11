@@ -728,6 +728,9 @@ main#support section#faq .con .question .label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -783,5 +786,32 @@ main#support section#faq .con .question .answer p a {
 
 main#support section#faq .con .question .answer.active {
   height: 100%;
+}
+
+@media (max-width: 1200px) {
+  main#support section#faq {
+    margin: 100px 0;
+  }
+  main#support section#faq .con .question .label p {
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  main#support section.location .con h2 {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  main#support section.location .con h2 span {
+    font-size: 0.9rem;
+  }
+  main#support section#faq .con .question .label p {
+    font-size: 1rem;
+  }
+  main#support section#faq .con .question .answer p {
+    font-size: 0.9rem;
+  }
 }
 /*# sourceMappingURL=support.css.map */

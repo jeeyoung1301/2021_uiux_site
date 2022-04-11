@@ -33,6 +33,7 @@ main#support {
 				}
 				.label {
 					display: flex;
+					align-items: center;
 					justify-content: space-between;
 					padding: 30px;
 					font-size: 1rem;
@@ -78,6 +79,64 @@ main#support {
 					}
 					&.active {
 						height: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include xl {
+	main#support {
+		section#faq {
+			margin: 100px 0;
+
+			.con {
+				.question {
+					.label {
+						p {
+							padding-right: 2rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@include lg {
+	main#support {
+		section.location {
+			.con {
+				h2 {
+					padding-bottom: 20px;
+				}
+			}
+		}
+	}
+}
+@include sm {
+	main#support {
+		section.location {
+			.con {
+				h2 {
+					span {
+						font-size: 0.9rem;
+					}
+				}
+			}
+		}
+		section#faq {
+			.con {
+				.question {
+					.label {
+						p {
+							font-size: 1rem;
+						}
+					}
+					.answer {
+						p {
+							font-size: 0.9rem;
+						}
 					}
 				}
 			}
