@@ -1356,8 +1356,8 @@ main section.latestNews .con article:last-child {
     bottom: 13%;
   }
   main section.businessWrap .business {
-    -ms-grid-columns: (260px)[3];
-        grid-template-columns: repeat(3, 260px);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     max-width: 990px;
   }
   main section.featuredContents .title {

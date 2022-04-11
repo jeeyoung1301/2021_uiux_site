@@ -704,27 +704,27 @@ main#support section.location .con h2 span {
   font-weight: lighter;
 }
 
-main#support section#faq {
+main#support section.faq {
   margin: 200px 0;
 }
 
-main#support section#faq .con {
+main#support section.faq .con {
   margin: 0 auto;
   max-width: 1280px;
   padding: 0 2rem;
 }
 
-main#support section#faq .con .question {
+main#support section.faq .con .question {
   width: 100%;
   color: #333;
   border-top: 0.5px solid #c4c4c4;
 }
 
-main#support section#faq .con .question:last-child {
+main#support section.faq .con .question:last-child {
   border-bottom: 0.5px solid #c4c4c4;
 }
 
-main#support section#faq .con .question .label {
+main#support section.faq .con .question .label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -739,60 +739,60 @@ main#support section#faq .con .question .label {
   cursor: pointer;
 }
 
-main#support section#faq .con .question .label p {
+main#support section.faq .con .question .label p {
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-main#support section#faq .con .question .label i {
+main#support section.faq .con .question .label i {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #c4c4c4;
 }
 
-main#support section#faq .con .question .label.active {
+main#support section.faq .con .question .label.active {
   border-top: 1px solid #000;
 }
 
-main#support section#faq .con .question .label.active p span {
+main#support section.faq .con .question .label.active p span {
   color: #ff5a00;
 }
 
-main#support section#faq .con .question .label.active i {
+main#support section.faq .con .question .label.active i {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   color: #000;
 }
 
-main#support section#faq .con .question .answer {
+main#support section.faq .con .question .answer {
   background: #f7f7f7;
   height: 0;
   overflow: hidden;
 }
 
-main#support section#faq .con .question .answer p {
+main#support section.faq .con .question .answer p {
   color: #333;
   font-size: 1rem;
   padding: 30px;
 }
 
-main#support section#faq .con .question .answer p span {
+main#support section.faq .con .question .answer p span {
   font-weight: bold;
 }
 
-main#support section#faq .con .question .answer p a {
+main#support section.faq .con .question .answer p a {
   text-decoration: underline;
 }
 
-main#support section#faq .con .question .answer.active {
+main#support section.faq .con .question .answer.active {
   height: 100%;
 }
 
 @media (max-width: 1200px) {
-  main#support section#faq {
+  main#support section.faq {
     margin: 100px 0;
   }
-  main#support section#faq .con .question .label p {
+  main#support section.faq .con .question .label p {
     padding-right: 2rem;
   }
 }
@@ -807,10 +807,10 @@ main#support section#faq .con .question .answer.active {
   main#support section.location .con h2 span {
     font-size: 0.9rem;
   }
-  main#support section#faq .con .question .label p {
+  main#support section.faq .con .question .label p {
     font-size: 1rem;
   }
-  main#support section#faq .con .question .answer p {
+  main#support section.faq .con .question .answer p {
     font-size: 0.9rem;
   }
 }

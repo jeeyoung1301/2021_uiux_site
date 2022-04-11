@@ -59,8 +59,7 @@ main#whoWeAre {
 				padding-bottom: 2rem;
 			}
 			h4 {
-				padding: 0 2rem;
-				max-width: 800px;
+				max-width: 1000px;
 				font-size: 1.3rem;
 				font-weight: lighter;
 				line-height: 2rem;
@@ -85,6 +84,17 @@ main#whoWeAre {
 @include xxl {
 	body {
 		font-size: 14px;
+	}
+}
+@include xl {
+	main#whoWeAre {
+		section.whoWeAre {
+			article {
+				h4 {
+					padding: 0 2rem;
+				}
+			}
+		}
 	}
 }
 @include lg {

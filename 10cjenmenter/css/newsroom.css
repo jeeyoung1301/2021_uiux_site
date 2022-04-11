@@ -592,4 +592,385 @@ footer .inner .con .downCon .copyRight {
     font-size: 0.7rem;
   }
 }
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+main#newsRoom section.location {
+  background: #121212;
+  padding-top: 80px;
+}
+
+main#newsRoom section.location .con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+main#newsRoom section.location .con h2 {
+  font-size: 3rem;
+  color: #f1f1f1;
+}
+
+main#newsRoom section.location .con ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#newsRoom section.location .con ul li {
+  padding: 0 1rem;
+  border-right: 1px solid #f1f1f1;
+  font-size: 0.8rem;
+}
+
+main#newsRoom section.location .con ul li:first-child {
+  padding-left: 0;
+}
+
+main#newsRoom section.location .con ul li:last-child {
+  border-right: none;
+}
+
+main#newsRoom section.location .con ul li a {
+  font-size: 0.8rem;
+  color: #f1f1f1;
+}
+
+main#newsRoom section.location .con ul li.inactive a {
+  color: #888888;
+}
+
+main#newsRoom section.location .con ul li.active a {
+  color: #ff5a00;
+  font-weight: bold;
+}
+
+@media (max-width: 1400px) {
+  main#newsRoom section.location {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  main#newsRoom section.location .con {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main#newsRoom section.location .con h2 {
+    font-size: 2rem;
+  }
+  main#newsRoom section.location .con ul {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media (max-width: 576px) {
+  main#newsRoom section.location .con {
+    padding: 1rem;
+  }
+  main#newsRoom section.location .con h2 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+  }
+  main#newsRoom section.location .con ul {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  main#newsRoom section.location .con ul li {
+    font-size: 0.5rem;
+  }
+  main#newsRoom section.location .con ul li a {
+    font-size: 0.5rem;
+  }
+}
+
+main#newsRoom section.newsRoom {
+  margin: 50px 0;
+}
+
+main#newsRoom section.newsRoom .titleWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 2rem 2rem;
+}
+
+main#newsRoom section.newsRoom .titleWrap .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main#newsRoom section.newsRoom .titleWrap .title h3 {
+  font-size: 2.9rem;
+  padding-right: 10px;
+}
+
+main#newsRoom section.newsRoom .titleWrap .title button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 3.5rem;
+  padding-top: 10px;
+  color: #ff5a00;
+  padding-right: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main#newsRoom section.newsRoom .titleWrap .title button:hover {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+@media (max-width: 576px) {
+  main#newsRoom section.newsRoom .titleWrap .title button {
+    font-size: 3rem;
+  }
+}
+
+main#newsRoom section.newsRoom .titleWrap .search {
+  width: 400px;
+}
+
+main#newsRoom section.newsRoom .titleWrap .search form {
+  position: relative;
+  z-index: 1;
+}
+
+main#newsRoom section.newsRoom .titleWrap .search form .searchTitle {
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  text-indent: -9999px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 20px;
+}
+
+main#newsRoom section.newsRoom .titleWrap .search form .searchInp {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #c4c4c4;
+  font-size: 0.9rem;
+  text-indent: 1rem;
+}
+
+main#newsRoom section.newsRoom .titleWrap .search form .searchBtn {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+  background: url(../images/searchIcon.png) no-repeat center;
+  border: none;
+}
+
+main#newsRoom section.newsRoom .contentWrap ul {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 2rem;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+main#newsRoom section.newsRoom .contentWrap ul li {
+  border: 1px solid #c4c4c4;
+}
+
+main#newsRoom section.newsRoom .contentWrap ul li img {
+  width: 100%;
+  height: 210px;
+}
+
+main#newsRoom section.newsRoom .contentWrap ul li .txt {
+  padding: 1rem;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main#newsRoom section.newsRoom .contentWrap ul li .txt .title h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+main#newsRoom section.newsRoom .contentWrap ul li .txt .title p {
+  font-size: 0.9rem;
+  color: #686868;
+  font-weight: bold;
+}
+
+main#newsRoom section.newsRoom .contentWrap ul li .txt .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main#newsRoom section.newsRoom .contentWrap ul li .txt .button button {
+  background: #fff;
+  border-style: none;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 10px 16px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1400px) {
+  main#newsRoom section.newsRoom .titleWrap .title h3 {
+    font-size: 2rem;
+  }
+  main#newsRoom section.newsRoom .titleWrap .title button {
+    font-size: 3rem;
+  }
+  main#newsRoom section.newsRoom .titleWrap .search {
+    width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  main#newsRoom section.location .con {
+    padding: 1rem 3rem;
+  }
+  main#newsRoom section.newsRoom .titleWrap {
+    padding: 2rem 3rem;
+  }
+  main#newsRoom section.newsRoom .contentWrap ul {
+    padding: 0 3rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  main#newsRoom section.newsRoom .contentWrap ul li .txt .title h3 {
+    font-size: 1rem;
+  }
+  main#newsRoom section.newsRoom .contentWrap ul li .txt .title p {
+    font-size: 0.8rem;
+  }
+  main#newsRoom section.newsRoom .contentWrap ul li .txt .button button {
+    line-height: 35px;
+    height: 35px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  main#newsRoom section.newsRoom .titleWrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main#newsRoom section.newsRoom .contentWrap ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main#newsRoom section.newsRoom .contentWrap ul li img {
+    height: 50%;
+  }
+  main#newsRoom section.newsRoom .contentWrap ul li .txt {
+    height: 160px;
+  }
+}
+
+@media (max-width: 576px) {
+  main#newsRoom section.location .con {
+    padding: 1rem 2rem;
+  }
+  main#newsRoom section.newsRoom {
+    margin: 1rem 0;
+  }
+  main#newsRoom section.newsRoom .titleWrap {
+    padding: 1rem 2rem;
+  }
+  main#newsRoom section.newsRoom .titleWrap .title {
+    margin-bottom: 1rem;
+  }
+  main#newsRoom section.newsRoom .titleWrap .title h3 {
+    font-size: 1.5rem;
+  }
+  main#newsRoom section.newsRoom .titleWrap .title button {
+    font-size: 2rem;
+  }
+  main#newsRoom section.newsRoom .titleWrap .search {
+    width: 100%;
+  }
+  main#newsRoom section.newsRoom .contentWrap ul {
+    padding: 0 2rem;
+  }
+}
 /*# sourceMappingURL=newsroom.css.map */

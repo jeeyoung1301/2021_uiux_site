@@ -777,8 +777,7 @@ main#whoWeAre section.whoWeAre article h3 {
 }
 
 main#whoWeAre section.whoWeAre article h4 {
-  padding: 0 2rem;
-  max-width: 800px;
+  max-width: 1000px;
   font-size: 1.3rem;
   font-weight: lighter;
   line-height: 2rem;
@@ -802,6 +801,12 @@ main#whoWeAre section.whoWeAre article p {
 @media (max-width: 1400px) {
   body {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  main#whoWeAre section.whoWeAre article h4 {
+    padding: 0 2rem;
   }
 }
 
