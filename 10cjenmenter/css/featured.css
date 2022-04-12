@@ -718,7 +718,7 @@ main#featuredContents section.contents > ul.tabMenu {
 }
 
 main#featuredContents section.contents > ul.tabMenu li {
-  width: 150px;
+  width: 160px;
   line-height: 30px;
   margin-right: 1rem;
 }
@@ -742,7 +742,8 @@ main#featuredContents section.contents > ul.tabMenu li a {
 
 main#featuredContents section.contents > ul.tabMenu li.on a {
   background: linear-gradient(147deg, #bbcfdf, #e1c79e, #e89e96);
-  color: #fff;
+  color: #333;
+  font-size: 0.9rem;
 }
 
 main#featuredContents section.contents > section.filterContents {
@@ -801,7 +802,7 @@ main#featuredContents section.contents > section.filterContents article .inner p
     width: 100px;
   }
   main#featuredContents section.contents > ul.tabMenu li:nth-child(3) {
-    width: 150px;
+    width: 160px;
   }
   main#featuredContents section.contents section.filterContents article {
     width: 33.3%;
@@ -816,7 +817,7 @@ main#featuredContents section.contents > section.filterContents article .inner p
     width: 70px;
   }
   main#featuredContents section.contents > ul.tabMenu li:nth-child(3) {
-    width: 150px;
+    width: 160px;
   }
   main#featuredContents section.contents > section.filterContents article .inner {
     height: 310px;
