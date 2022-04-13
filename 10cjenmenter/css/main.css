@@ -786,8 +786,8 @@ main section.whoWeAre h2.title {
   opacity: 0;
   -webkit-transform: scale(0.1);
           transform: scale(0.1);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 main section.whoWeAre h2.title.active {
@@ -798,6 +798,17 @@ main section.whoWeAre h2.title.active {
 
 main section.whoWeAre .txt {
   margin-bottom: 4rem;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+main section.whoWeAre .txt.active {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
 }
 
 main section.whoWeAre .txt p {
@@ -841,6 +852,17 @@ main section.whoWeAre .txt svg {
 
 main section.whoWeAre article {
   font-family: "Yeon Sung";
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+main section.whoWeAre article.active {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
 }
 
 main section.whoWeAre article h3 {

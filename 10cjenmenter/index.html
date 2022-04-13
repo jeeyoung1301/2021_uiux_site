@@ -736,5 +736,55 @@
 				</div>
 			</div>
 		</footer>
+
+		<script>
+			//scroll animation
+
+			const body = document.body,
+				html = document.documentElement;
+
+			const height = Math.max(
+				body.scrollHeight,
+				body.offsetHeight,
+				html.clientHeight,
+				html.scrollHeight,
+				html.offsetHeight
+			);
+			function getScrollPercentage() {
+				return ((body.scrollTop + window.innerHeight) / height) * 100;
+			}
+
+			window.addEventListener("scroll", () => {
+				const activeTitle = document.querySelector(
+						".whoWeAre > h2.title"
+					),
+					activeTxt = document.querySelector(".whoWeAre > .txt"),
+					activeArticle = document.querySelector(
+						".whoWeAre > article"
+					);
+				let titlePosition = activeTitle.getBoundingClientRect().top,
+					txtPosition = activeTxt.getBoundingClientRect().top,
+					articlePosition = activeArticle.getBoundingClientRect().top,
+					screenPosition = window.innerHeight;
+
+				if (titlePosition < screenPosition) {
+					activeTitle.classList.add("active");
+				} else {
+					activeTitle.classList.remove("active");
+				}
+
+				if (txtPosition < screenPosition) {
+					activeTxt.classList.add("active");
+				} else {
+					activeTxt.classList.remove("active");
+				}
+
+				if (articlePosition < screenPosition) {
+					activeArticle.classList.add("active");
+				} else {
+					activeArticle.classList.remove("active");
+				}
+			});
+		</script>
 	</body>
 </html>

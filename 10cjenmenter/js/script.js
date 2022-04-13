@@ -15,6 +15,19 @@ for (let i = 0; i < openSubmenu.length; i++) {
 	});
 }
 
+let lastScrollTop = 0;
+const showHeader = document.querySelector("header");
+document.addEventListener("scroll", () => {
+	let presentScrollTop =
+		window.pageYOffset || document.documentElement.presentScrollTop;
+	if (presentScrollTop > lastScrollTop) {
+		showHeader.style.top = "-80px";
+	} else {
+		showHeader.style.top = "0";
+	}
+	lastScrollTop = presentScrollTop;
+});
+
 //toggle menu control
 const toggleNav = document.querySelector("nav"),
 	toggleMenu = document.querySelector(".toggleMenu");
@@ -102,33 +115,6 @@ const slide02 = new Swiper(".slide02", {
 			autoplay: { enabled: false },
 		},
 	},
-});
-
-//scroll animation
-
-const body = document.body,
-	html = document.documentElement;
-
-const height = Math.max(
-	body.scrollHeight,
-	body.offsetHeight,
-	html.clientHeight,
-	html.scrollHeight,
-	html.offsetHeight
-);
-function getScrollPercentage() {
-	return ((body.scrollTop + window.innerHeight) / height) * 100;
-}
-
-window.addEventListener("scroll", () => {
-	const activeTitle = document.querySelector(".whoWeAre > h2.title");
-	let titlePosition = activeTitle.getBoundingClientRect().top;
-	let screenPosition = window.innerHeight;
-	if (titlePosition < screenPosition) {
-		activeTitle.classList.add("active");
-	} else {
-		activeTitle.classList.remove("active");
-	}
 });
 
 //footer control
