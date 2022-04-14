@@ -489,6 +489,12 @@ footer .inner .con .upCon .left .sns {
 footer .inner .con .upCon .left .sns li a i {
   color: #f1f1f1;
   padding-top: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .inner .con .upCon .left .sns li a i:hover {
+  color: #ff5a00;
 }
 
 footer .inner .con .downCon {
