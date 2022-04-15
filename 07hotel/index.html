@@ -1,807 +1,1589 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css/animate.css">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/animate.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/wow.js"></script>
 
-    <title>hotel</title>
-  </head>
-  <body>
-      <header id="headerWrap">
-            <div class="topWrap">
-                <div class="top clearfix">
-                    <div class="m-0 logo"><a href="index.html"><img src="images/gnb_logo_signiel.png" alt="" class=""></a></div>
-                    <ul class="clearfix m-0 float-right util">
-                        <li class="float-left"><a href="#">글로벌</a></li>
-                        <li class="float-left ml-2"><a href="#">호텔찾기</a></li>
-                        <li class="float-left ml-2"><a href="#">멤버십</a></li>
-                        <li class="float-left ml-2"><a href="#">예약조회</a></li>
-                        <li class="float-left ml-2"><a href="#">로그인</a></li>
-                        <li class="lan float-left ml-2">
-                            <a class="nav-link dropdown-toggle p-0 pl-4" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">한국어</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId" style="z-index: 1112;">
-                                <a class="dropdown-item ml-4" href="#">English</a>
-                                <a class="dropdown-item ml-4" href="#">日本語</a>
-                                <a class="dropdown-item ml-4" href="#">中文(简体字)</a>
-                            </div>
-                        </li>
-                        <li class="currency float-left ml-2">
-                            <a class="nav-link dropdown-toggle p-0" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">KRW</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId" style="z-index: 1112;">
-                                <a class="dropdown-item" href="#">Australia (AUD)</a>
-                                <a class="dropdown-item" href="#">Canada (CAD)</a>
-                                <a class="dropdown-item" href="#">中國 (CNY)</a>
-                                <a class="dropdown-item" href="#">EU (EUR)</a>
-                                <a class="dropdown-item" href="#">Hong Kong (HKD)</a>
-                                <a class="dropdown-item" href="#">日本 (JPY)</a>
-                                <a class="dropdown-item" href="#">Россия (RUB)</a>
-                                <a class="dropdown-item" href="#">USA (USD)</a>
-                                <a class="dropdown-item" href="#">Việt Nam (VND)</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="navWrap">
-                <nav class="navbar navbar-expand-lg navbar-light pl-3 pr-3 pl-md-0 pr-md-0 d-xl-block">
-                    <a class="navbar-brand" href="index.html"><img src="images/gnb_logo_signiel.png" alt=""></a>
-                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <div class="mo-login mt-3 pb-2">
-                            <a href="#!">로그인 &#10148;</a>
-                            <a href="#!">회원가입</a>
-                        </div>
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white d-block d-lg-none" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">객실예약</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white" href="sig_intro.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">시그니엘 서울 소개</a>
-                                <div class="dropdown-menu clearfix" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="sig_intro.html">시그니엘 서울 소개</a>
-                                    <a class="dropdown-item" href="#">시그니엘 서울 위치</a>
-                                    <a class="dropdown-item" href="#">주요명소</a>
-                                    <a class="dropdown-item" href="#">공지사항</a>
-                                    <a class="dropdown-item" href="#">갤러리</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">객실</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="rooms_delux.html">그랜드 디럭스</a>
-                                    <a class="dropdown-item" href="#">프리미어</a>
-                                    <a class="dropdown-item" href="#">시그니엘 프리미어</a>
-                                    <a class="dropdown-item" href="#">스위트</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">스페셜 오퍼</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="#">객실 프로모션</a>
-                                    <a class="dropdown-item" href="#">식음 프로모션</a>
-                                    <a class="dropdown-item" href="#">호텔 이벤트</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">다이닝</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="#">레스토랑</a>
-                                    <a class="dropdown-item" href="#">멤버스 레스토랑</a>
-                                    <a class="dropdown-item" href="#">바&라운지</a>
-                                    <a class="dropdown-item" href="#">베이커리</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">부대시설</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="#">스파&피트니스</a>
-                                    <a class="dropdown-item" href="#">서비스</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">웨딩&컨벤션</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="#">호텔 웨딩</a>
-                                    <a class="dropdown-item" href="#">호텔 컨벤션</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <button class="btn text-white btn-sm" onclick="location.href='https://www.lottehotel.com/global/ko/lotte-hotel-rewards.html'">LOTTE HOTEL REWARDS</button>
-                        <ul class="mo-util">
-                            <li class="mo-lan ml-2">
-                                <a class="nav-link dropdown-toggle p-0" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">한국어</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item ml-4" href="#">English</a>
-                                    <a class="dropdown-item ml-4" href="#">日本語</a>
-                                    <a class="dropdown-item ml-4" href="#">中文(简体字)</a>
-                                </div>
-                            </li>
-                            <li class="mo-currency ml-2">
-                                <a class="nav-link dropdown-toggle p-0" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">KRW</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="#">Australia (AUD)</a>
-                                    <a class="dropdown-item" href="#">Canada (CAD)</a>
-                                    <a class="dropdown-item" href="#">中國 (CNY)</a>
-                                    <a class="dropdown-item" href="#">EU (EUR)</a>
-                                    <a class="dropdown-item" href="#">Hong Kong (HKD)</a>
-                                    <a class="dropdown-item" href="#">日本 (JPY)</a>
-                                    <a class="dropdown-item" href="#">Россия (RUB)</a>
-                                    <a class="dropdown-item" href="#">USA (USD)</a>
-                                    <a class="dropdown-item" href="#">Việt Nam (VND)</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-      </header>
-      <div class="visual">
-            <div class="video">
-                <video src="images/SIGNIEL SEOUL by LOTTE Hotels & Resorts (official)_1.m4v" autoplay muted loop></video>
-            </div>
-            <div class="txt text-white d-lg-block d-none">
-                <form action="#" method="post">
-                    <fieldset>
-                        <ul class="clearfix py-2">
-                            <li class="float-left d-flex flex-column px-5">
-                                <label for="hotel">호텔</label>
-                                <input type="hidden" id="hotel"> 시그니엘 서울
-                            </li>
-                            <li class="float-left d-flex flex-column pl-3">
-                                <label for="chek-in">체크인</label>
-                                <input type="date" id="chek-in">
-                            </li>
-                            <li class="float-left d-flex flex-column pl-1 pr-3">
-                                <label for="chek-out">체크아웃</label>
-                                <input type="date" id="chek-out">
-                            </li>
-                            <li class="float-left d-flex flex-column pl-3">
-                                <label for="num">성인</label>
-                                <input type="number" id="num" placeholder="0" class="adult">
-                            </li>
-                            <li class="float-left d-flex flex-column pl-1 pr-3">
-                                <label for="num">어린이</label>
-                                <input type="number" id="num" placeholder="0" class="child">
-                            </li>
-                            <li class="float-left d-flex flex-column px-4">
-                                <div class="promotion-code">
-                                    <div class="btn text-white">
-                                        <img src="images/Vector.png" alt=""> <button type="button" class="btn text-white" data-toggle="modal" data-target="#promotion" > 프로모션 코드</button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="float-left d-flex flex-column text-center mt-2">
-                                <a href="#!">검색</a>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="modal fade" id="promotion" tabindex="-1" aria-labelledby="promotion-code" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header border-bottom-0 p-0">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form class="d-flex align-items-center justify-content-around">
-                                <div class="form-group mb-0">
-                                    <label for="promotionCode" class="col-form-label"></label>
-                                    <select name="promotionCode" id="promotionCode">
-                                        <option value="Corporate">
-                                            Corporate
-                                        </option>
-                                        <option value="Travel Agency">
-                                            Travel Agency
-                                        </option>
-                                    </select>
-                                </div>
-                                <div class="form-group mb-0">
-                                    <input type="text" class="form-control" id="message-text">
-                                </div>
-                                <div class="modal-footer p-0 border-top-0">
-                                    <button type="button" class="btn btn-secondary">코드확인</button>
-                                </div>
-                            </form>
-                        </div>
+		<title>hotel</title>
+	</head>
+	<body>
+		<header id="headerWrap">
+			<div class="topWrap">
+				<div class="top clearfix">
+					<div class="m-0 logo">
+						<a href="index.html"
+							><img
+								src="images/gnb_logo_signiel.png"
+								alt=""
+								class=""
+						/></a>
+					</div>
+					<ul class="clearfix m-0 float-right util">
+						<li class="float-left"><a href="#">글로벌</a></li>
+						<li class="float-left ml-2">
+							<a href="#">호텔찾기</a>
+						</li>
+						<li class="float-left ml-2"><a href="#">멤버십</a></li>
+						<li class="float-left ml-2">
+							<a href="#">예약조회</a>
+						</li>
+						<li class="float-left ml-2"><a href="#">로그인</a></li>
+						<li class="lan float-left ml-2">
+							<a
+								class="nav-link dropdown-toggle p-0 pl-4"
+								href="#"
+								id="dropdownId"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>한국어</a
+							>
+							<div
+								class="dropdown-menu"
+								aria-labelledby="dropdownId"
+								style="z-index: 1112"
+							>
+								<a class="dropdown-item ml-4" href="#"
+									>English</a
+								>
+								<a class="dropdown-item ml-4" href="#"
+									>日本語</a
+								>
+								<a class="dropdown-item ml-4" href="#"
+									>中文(简体字)</a
+								>
+							</div>
+						</li>
+						<li class="currency float-left ml-2">
+							<a
+								class="nav-link dropdown-toggle p-0"
+								href="#"
+								id="dropdownId"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>KRW</a
+							>
+							<div
+								class="dropdown-menu"
+								aria-labelledby="dropdownId"
+								style="z-index: 1112"
+							>
+								<a class="dropdown-item" href="#"
+									>Australia (AUD)</a
+								>
+								<a class="dropdown-item" href="#"
+									>Canada (CAD)</a
+								>
+								<a class="dropdown-item" href="#">中國 (CNY)</a>
+								<a class="dropdown-item" href="#">EU (EUR)</a>
+								<a class="dropdown-item" href="#"
+									>Hong Kong (HKD)</a
+								>
+								<a class="dropdown-item" href="#">日本 (JPY)</a>
+								<a class="dropdown-item" href="#"
+									>Россия (RUB)</a
+								>
+								<a class="dropdown-item" href="#">USA (USD)</a>
+								<a class="dropdown-item" href="#"
+									>Việt Nam (VND)</a
+								>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="navWrap">
+				<nav
+					class="navbar navbar-expand-lg navbar-light pl-3 pr-3 pl-md-0 pr-md-0 d-xl-block"
+				>
+					<a class="navbar-brand" href="index.html"
+						><img src="images/gnb_logo_signiel.png" alt=""
+					/></a>
+					<button
+						class="navbar-toggler d-lg-none"
+						type="button"
+						data-toggle="collapse"
+						data-target="#collapsibleNavId"
+						aria-controls="collapsibleNavId"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="collapsibleNavId">
+						<div class="mo-login mt-3 pb-2">
+							<a href="#!">로그인 &#10148;</a>
+							<a href="#!">회원가입</a>
+						</div>
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link text-white d-block d-lg-none"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>객실예약</a
+								>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link text-white"
+									href="sig_intro.html"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>시그니엘 서울 소개</a
+								>
+								<div
+									class="dropdown-menu clearfix"
+									aria-labelledby="dropdownId"
+								>
+									<a
+										class="dropdown-item"
+										href="sig_intro.html"
+										>시그니엘 서울 소개</a
+									>
+									<a class="dropdown-item" href="#"
+										>시그니엘 서울 위치</a
+									>
+									<a class="dropdown-item" href="#"
+										>주요명소</a
+									>
+									<a class="dropdown-item" href="#"
+										>공지사항</a
+									>
+									<a class="dropdown-item" href="#">갤러리</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link text-white"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>객실</a
+								>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownId"
+								>
+									<a
+										class="dropdown-item"
+										href="rooms_delux.html"
+										>그랜드 디럭스</a
+									>
+									<a class="dropdown-item" href="#"
+										>프리미어</a
+									>
+									<a class="dropdown-item" href="#"
+										>시그니엘 프리미어</a
+									>
+									<a class="dropdown-item" href="#">스위트</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link text-white"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>스페셜 오퍼</a
+								>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownId"
+								>
+									<a class="dropdown-item" href="#"
+										>객실 프로모션</a
+									>
+									<a class="dropdown-item" href="#"
+										>식음 프로모션</a
+									>
+									<a class="dropdown-item" href="#"
+										>호텔 이벤트</a
+									>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link text-white"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>다이닝</a
+								>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownId"
+								>
+									<a class="dropdown-item" href="#"
+										>레스토랑</a
+									>
+									<a class="dropdown-item" href="#"
+										>멤버스 레스토랑</a
+									>
+									<a class="dropdown-item" href="#"
+										>바&라운지</a
+									>
+									<a class="dropdown-item" href="#"
+										>베이커리</a
+									>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link text-white"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>부대시설</a
+								>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownId"
+								>
+									<a class="dropdown-item" href="#"
+										>스파&피트니스</a
+									>
+									<a class="dropdown-item" href="#">서비스</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link text-white"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>웨딩&컨벤션</a
+								>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownId"
+								>
+									<a class="dropdown-item" href="#"
+										>호텔 웨딩</a
+									>
+									<a class="dropdown-item" href="#"
+										>호텔 컨벤션</a
+									>
+								</div>
+							</li>
+						</ul>
+						<button
+							class="btn text-white btn-sm"
+							onclick="location.href='https://www.lottehotel.com/global/ko/lotte-hotel-rewards.html'"
+						>
+							LOTTE HOTEL REWARDS
+						</button>
+						<ul class="mo-util">
+							<li class="mo-lan ml-2">
+								<a
+									class="nav-link dropdown-toggle p-0"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>한국어</a
+								>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownId"
+								>
+									<a class="dropdown-item ml-4" href="#"
+										>English</a
+									>
+									<a class="dropdown-item ml-4" href="#"
+										>日本語</a
+									>
+									<a class="dropdown-item ml-4" href="#"
+										>中文(简体字)</a
+									>
+								</div>
+							</li>
+							<li class="mo-currency ml-2">
+								<a
+									class="nav-link dropdown-toggle p-0"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>KRW</a
+								>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownId"
+								>
+									<a class="dropdown-item" href="#"
+										>Australia (AUD)</a
+									>
+									<a class="dropdown-item" href="#"
+										>Canada (CAD)</a
+									>
+									<a class="dropdown-item" href="#"
+										>中國 (CNY)</a
+									>
+									<a class="dropdown-item" href="#"
+										>EU (EUR)</a
+									>
+									<a class="dropdown-item" href="#"
+										>Hong Kong (HKD)</a
+									>
+									<a class="dropdown-item" href="#"
+										>日本 (JPY)</a
+									>
+									<a class="dropdown-item" href="#"
+										>Россия (RUB)</a
+									>
+									<a class="dropdown-item" href="#"
+										>USA (USD)</a
+									>
+									<a class="dropdown-item" href="#"
+										>Việt Nam (VND)</a
+									>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div class="visual">
+			<div class="video">
+				<video
+					src="images/SIGNIEL SEOUL by LOTTE Hotels & Resorts (official)_1.m4v"
+					autoplay
+					muted
+					loop
+				></video>
+			</div>
+			<div class="txt text-white d-lg-block d-none">
+				<form action="#" method="post">
+					<fieldset>
+						<ul class="clearfix py-2">
+							<li class="float-left d-flex flex-column px-5">
+								<label for="hotel">호텔</label>
+								<input type="hidden" id="hotel" /> 시그니엘 서울
+							</li>
+							<li class="float-left d-flex flex-column pl-3">
+								<label for="chek-in">체크인</label>
+								<input type="date" id="chek-in" />
+							</li>
+							<li class="float-left d-flex flex-column pl-1 pr-3">
+								<label for="chek-out">체크아웃</label>
+								<input type="date" id="chek-out" />
+							</li>
+							<li class="float-left d-flex flex-column pl-3">
+								<label for="num">성인</label>
+								<input
+									type="number"
+									id="num"
+									placeholder="0"
+									class="adult"
+								/>
+							</li>
+							<li class="float-left d-flex flex-column pl-1 pr-3">
+								<label for="num">어린이</label>
+								<input
+									type="number"
+									id="num"
+									placeholder="0"
+									class="child"
+								/>
+							</li>
+							<li class="float-left d-flex flex-column px-4">
+								<div class="promotion-code">
+									<div class="btn text-white">
+										<img src="images/Vector.png" alt="" />
+										<button
+											type="button"
+											class="btn text-white"
+											data-toggle="modal"
+											data-target="#promotion"
+										>
+											프로모션 코드
+										</button>
+									</div>
+								</div>
+							</li>
+							<li
+								class="float-left d-flex flex-column text-center mt-2"
+							>
+								<a href="#!">검색</a>
+							</li>
+						</ul>
+					</fieldset>
+				</form>
+			</div>
+			<div
+				class="modal fade"
+				id="promotion"
+				tabindex="-1"
+				aria-labelledby="promotion-code"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header border-bottom-0 p-0">
+							<button
+								type="button"
+								class="close"
+								data-dismiss="modal"
+								aria-label="Close"
+							>
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form
+								class="d-flex align-items-center justify-content-around"
+							>
+								<div class="form-group mb-0">
+									<label
+										for="promotionCode"
+										class="col-form-label"
+									></label>
+									<select
+										name="promotionCode"
+										id="promotionCode"
+									>
+										<option value="Corporate">
+											Corporate
+										</option>
+										<option value="Travel Agency">
+											Travel Agency
+										</option>
+									</select>
+								</div>
+								<div class="form-group mb-0">
+									<input
+										type="text"
+										class="form-control"
+										id="message-text"
+									/>
+								</div>
+								<div class="modal-footer p-0 border-top-0">
+									<button
+										type="button"
+										class="btn btn-secondary"
+									>
+										코드확인
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img src="images/icon-pagedown.gif" alt="" class="pagedown" />
+		</div>
+		<section class="container special-offers mb-5">
+			<h2 class="pt-5 pb-3 text-center font-weight-bold">
+				추천 프로모션
+			</h2>
+			<div class="row">
+				<div
+					class="col-md-4 col-6 wow fadeInDown"
+					data-wow-delay="0.3s"
+				>
+					<div class="card" onclick="location.href=''">
+						<div
+							class="package d-flex align-items-center justify-content-center text-white"
+						>
+							패키지
+						</div>
+						<div class="card-img overflow-hidden">
+							<img
+								src="images/offers01.png"
+								alt=""
+								class="img-fluid w-100"
+							/>
+						</div>
+						<div class="card-body">
+							<h4 class="card-title">Falling in fall</h4>
+							<div class="card-text">
+								<h5>객실+24/30시간 투숙+기타 특전</h5>
+								<p class="mt-md-5">
+									<span style="font-weight: bold">투숙:</span>
+									2021년 10월 01일 - 2021년 11월 30일<br />
+									<span style="font-weight: bold">예약:</span>
+									2021년 10월 01일 - 2021년 11월 29일
+								</p>
+								<p class="float-right m-0 offer-price">
+									최저<span style="font-size: 24px"
+										>480,000</span
+									>KRW
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="col-md-4 col-6 wow fadeInDown"
+					data-wow-delay="0.8s"
+				>
+					<div class="card" onclick="location.href=''">
+						<div
+							class="package d-flex align-items-center justify-content-center text-white"
+						>
+							패키지
+						</div>
+						<div class="card-img overflow-hidden">
+							<img
+								src="images/offers02.png"
+								alt=""
+								class="w-100 img-fluid"
+							/>
+						</div>
+						<div class="card-body">
+							<h4 class="card-title">Eternal Promise</h4>
+							<div class="card-text clearfix">
+								<h5>객실+객실 데코레이션+와인/초콜릿</h5>
+								<p class="mt-md-5">
+									<span style="font-weight: bold">투숙:</span>
+									2021년 10월 01일 - 2021년 12월 22일<br />
+									<span style="font-weight: bold">예약:</span>
+									2021년 10월 01일 - 2021년 12월 21일
+								</p>
+								<p class="float-right m-0 offer-price">
+									최저<span style="font-size: 24px"
+										>750,000</span
+									>KRW
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="col-md-4 col-6 d-none d-md-block wow fadeInDown"
+					data-wow-delay="1.3s"
+				>
+					<div class="card" onclick="location.href=''">
+						<div
+							class="package d-flex align-items-center justify-content-center text-white"
+						>
+							패키지
+						</div>
+						<div class="card-img overflow-hidden">
+							<img
+								src="images/offers03.png"
+								alt=""
+								class="w-100 img-fluid"
+							/>
+						</div>
+						<div class="card-body">
+							<h4 class="card-title">Long and Lasting Love</h4>
+							<div class="card-text clearfix">
+								<h5>
+									객실+프로포즈 디너+스파<br />+케이크/샴페인+차량
+									서비스
+								</h5>
+								<p>
+									<span style="font-weight: bold">투숙:</span>
+									2021년 07월 01일 - 2021년 12월 22일<br />
+									<span style="font-weight: bold">예약:</span>
+									2021년 07월 01일 - 2021년 12월 21일
+								</p>
+								<p class="float-right m-0 offer-price">
+									최저<span style="font-size: 24px"
+										>4,950,413</span
+									>KRW
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="slide mb-5 pb-5 wow fadeInDown" data-wow-delay="0.3s">
+			<h2 class="rooms pt-5 pb-3 text-center font-weight-bold">객실</h2>
+			<div id="carousel" class="carousel" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li
+						data-target="#carousel"
+						data-slide-to="0"
+						class="active"
+					></li>
+					<li data-target="#carousel" data-slide-to="1"></li>
+					<li data-target="#carousel" data-slide-to="2"></li>
+					<li data-target="#carousel" data-slide-to="3"></li>
+					<li data-target="#carousel" data-slide-to="4"></li>
+					<li data-target="#carousel" data-slide-to="5"></li>
+					<li data-target="#carousel" data-slide-to="6"></li>
+					<li data-target="#carousel" data-slide-to="7"></li>
+					<li data-target="#carousel" data-slide-to="8"></li>
+					<li data-target="#carousel" data-slide-to="9"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active position-relative">
+						<div class="img text-center">
+							<img
+								src="images/01grand-delux-room.jpg"
+								class="d-block img-fluid"
+								alt="..."
+							/>
+							<div class="title">
+								<h5 class="text-white">그랜드 디럭스 룸</h5>
+							</div>
+							<div class="carousel-caption">
+								<p style="font-size: 12px" class="">
+									<span
+										style="
+											font-weight: bold;
+											font-size: 14px;
+										"
+										>그랜드 디럭스 룸</span
+									><br />
+									| 침대타입 더블 | 투숙인원 2명 | 전망
+									시티뷰/리버뷰/전망욕실 | 객실면적 40~50m<sup
+										>2</sup
+									>
+								</p>
+							</div>
+						</div>
+						<div
+							class="txtWrap position-absolute d-none d-lg-block"
+						>
+							<div class="bar mb-4"></div>
+							<div class="txt">
+								<h4 class="pl-4 mb-3">그랜드 디럭스 룸</h4>
+								<p class="pl-4">
+									우아한 잍네리어와 현대적 세련미가 조화롭게
+									어우러진 시그니엘 서울의 그랜드 디럭스 룸은
+									서울 시내 동급 호텔 대비 넓은
+									40~50m<sup>2</sup>의 여유로운 공간을
+									제공합니다.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item position-relative">
+						<div class="img text-center">
+							<img
+								src="images/02premier-room.jpg"
+								class="d-block img-fluid"
+								alt="..."
+							/>
+							<div class="title">
+								<h5 class="text-white">프리미어 룸</h5>
+							</div>
+							<div class="carousel-caption">
+								<p style="font-size: 12px">
+									<span
+										style="
+											font-weight: bold;
+											font-size: 14px;
+										"
+										>프리미어 룸</span
+									><br />
+									| 침대타입 더블/트윈 | 투숙인원 2명 | 전망
+									시티뷰/리버뷰/전망욕실 | 객실면적 46~60m<sup
+										>2</sup
+									>
+								</p>
+							</div>
+						</div>
+						<div
+							class="txtWrap position-absolute d-none d-lg-block"
+						>
+							<div class="bar mb-4"></div>
+							<div class="txt">
+								<h4 class="pl-4 mb-3">프리미어 룸</h4>
+								<p class="pl-4">
+									시그니엘 서울의 프리미어 룸은 세련미와
+									우아함을 더한 고급스러운 인테리어로 구성되어
+									있으며, 대형 창문을 통해 서울의 화려한
+									장관을 감상할 수 있는 고품격 객실입니다.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item position-relative">
+						<div class="img text-center">
+							<img
+								src="images/03signiel-premier-room.jpg"
+								class="d-block img-fluid"
+								alt="..."
+							/>
+							<div class="title">
+								<h5 class="text-white">시그니엘 프리미어 룸</h5>
+							</div>
+							<div class="carousel-caption">
+								<p style="font-size: 12px">
+									<span
+										style="
+											font-weight: bold;
+											font-size: 14px;
+										"
+										>시그니엘 프리미어 룸</span
+									><br />
+									| 침대타입 더블/트윈 | 투숙인원 2명 | 전망
+									시티뷰/전망욕실/리버뷰 및 전망욕실 |
+									객실면적 56~65m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<div
+							class="txtWrap position-absolute d-none d-lg-block"
+						>
+							<div class="bar mb-4"></div>
+							<div class="txt">
+								<h4 class="pl-4 mb-3">시그니엘 프리미어 룸</h4>
+								<p class="pl-4">
+									시그니엘 서울의 시그니엘 프리미어 룸은
+									침실과 함께 여유로운 업무 공간이 구비되어
+									성공적인 비지니스와 여유로운 휴식을 함께
+									즐길 수 있는 비즈니스 객실입니다.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item position-relative">
+						<div class="img text-center">
+							<img
+								src="images/04deluxe-suite-room.jpg"
+								class="d-block img-fluid"
+								alt="..."
+							/>
+							<div class="title">
+								<h5 class="text-white">디럭스 스위트 룸</h5>
+							</div>
+							<div class="carousel-caption">
+								<p style="font-size: 12px">
+									<span
+										style="
+											font-weight: bold;
+											font-size: 14px;
+										"
+										>디럭스 스위트 룸</span
+									><br />
+									| 침대타입 더블/트윈 | 투숙인원 2명 | 전망
+									시티뷰 | 객실면적 59~73m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<div
+							class="txtWrap position-absolute d-none d-lg-block"
+						>
+							<div class="bar mb-4"></div>
+							<div class="txt">
+								<h4 class="pl-4 mb-3">디럭스 스위트 룸</h4>
+								<p class="pl-4">
+									시그니엘 서울의 디럭스 스위트 룸은 일반
+									객실보다 더욱 넓고 쾌적한 공간을 제공하는
+									객실입니다. 침실과 응접실의 공간 분리로
+									편안함과 안정된 휴식을 누리실 수 있습니다.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item position-relative">
+						<div class="img text-center">
+							<img
+								src="images//05premier-suite-room.jpg"
+								class="d-block img-fluid"
+								alt="..."
+							/>
+							<div class="title">
+								<h5 class="text-white">프리미어 스위트 룸</h5>
+							</div>
+							<div class="carousel-caption">
+								<p style="font-size: 12px">
+									<span
+										style="
+											font-weight: bold;
+											font-size: 14px;
+										"
+										>프리미어 스위트 룸</span
+									><br />
+									| 침대타입 더블/트윈 | 투숙인원 2명 | 전망
+									시티뷰 | 객실면적 70~86m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<div
+							class="txtWrap position-absolute d-none d-lg-block"
+						>
+							<div class="bar mb-4"></div>
+							<div class="txt">
+								<h4 class="pl-4 mb-3">프리미어 스위트 룸</h4>
+								<p class="pl-4">
+									시그니엘 서울의 프리미어 스위트 룸은 넓고
+									여유로운 공간에서 고품격 휴식을 만끽할 수
+									있는 고급형 프리미어 스위트 룸입니다.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item position-relative">
+						<div class="img text-center">
+							<img
+								src="images/06korean-premier-room.jpg"
+								class="d-block img-fluid"
+								alt="..."
+							/>
+							<div class="title">
+								<h5 class="text-white">코리안 프리미어 룸</h5>
+							</div>
+							<div class="carousel-caption">
+								<p style="font-size: 12px">
+									<span
+										style="
+											font-weight: bold;
+											font-size: 14px;
+										"
+										>코리안 프리미어 룸</span
+									><br />
+									| 침대타입 더블 | 투숙인원 2명 | 전망 리버뷰
+									및 전망욕실 | 객실면적 40m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<div
+							class="txtWrap position-absolute d-none d-lg-block"
+						>
+							<div class="bar mb-4"></div>
+							<div class="txt">
+								<h4 class="pl-4 mb-3">코리안 프리미어 룸</h4>
+								<p class="pl-4">
+									시그니엘 서울의 코리안 스위트 룸은 한국
+									전통미와 현대적인 시설의 조화가 이루어진
+									최고급 온돌로 구성되어 있으며 객실 곳곳에
+									배치된 전통가구와 편백나무로 구성된 욕실은
+									한국적인 멋을 더욱 돋보이게 합니다.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item position-relative">
+						<div class="img text-center">
+							<img
+								src="images/07korean-signiel-premier-room.jpg"
+								class="d-block img-fluid"
+								alt="..."
+							/>
+							<div class="title">
+								<h5 class="text-white">
+									코리안 시그니엘 프리미어 룸
+								</h5>
+							</div>
+							<div class="carousel-caption">
+								<p style="font-size: 12px">
+									<span
+										style="
+											font-weight: bold;
+											font-size: 14px;
+										"
+										>코리안 시그니엘 프리미어 룸</span
+									><br />
+									| 침대타입 더블 | 투숙인원 2명 | 전망 리버뷰
+									| 객실면적 43m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<div
+							class="txtWrap position-absolute d-none d-lg-block"
+						>
+							<div class="bar mb-4"></div>
+							<div class="txt">
+								<h4
+									class="pl-4 mb-3"
+									style="font-size: 1.3rem; font-weight: bold"
+								>
+									코리안 시그니엘 프리미어 룸
+								</h4>
+								<p class="pl-4">
+									시그니엘 서울의 코리안 스위트 룸은 한국
+									전통미와 현대적인 시설의 조화가 이루어진
+									최고급 온돌로 구성되어 있으며 객실 곳곳에
+									배치된 전통가구와 편백나무로 구성된 욕실은
+									한국적인 멋을 더욱 돋보이게 합니다.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item position-relative">
+						<div class="img text-center">
+							<img
+								src="images/08korean-suite-room.jpg"
+								class="d-block img-fluid"
+								alt="..."
+							/>
+							<div class="title">
+								<h5 class="text-white">코리안 스위트 룸</h5>
+							</div>
+							<div class="carousel-caption">
+								<p style="font-size: 12px">
+									<span
+										style="
+											font-weight: bold;
+											font-size: 14px;
+										"
+										>코리안 스위트 룸</span
+									><br />
+									| 침대타입 더블 | 투숙인원 2명 | 전망 리버뷰
+									| 객실면적 84m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<div
+							class="txtWrap position-absolute d-none d-lg-block"
+						>
+							<div class="bar mb-4"></div>
+							<div class="txt">
+								<h4 class="pl-4 mb-3">코리안 스위트 룸</h4>
+								<p class="pl-4">
+									시그니엘 서울의 코리안 스위트 룸은 한국
+									전통미와 현대적인 시설의 조화가 이루어진
+									최고급 온돌로 구성되어 있으며 객실 곳곳에
+									배치된 전통가구와 편백나무로 구성된 욕실은
+									한국적인 멋을 더욱 돋보이게 합니다.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item position-relative">
+						<div class="img text-center">
+							<img
+								src="images/09presidential-suite-room.jpg"
+								class="d-block img-fluid"
+								alt="..."
+							/>
+							<div class="title">
+								<h5 class="text-white">프레지덴셜 스위트 룸</h5>
+							</div>
+							<div class="carousel-caption">
+								<p style="font-size: 12px">
+									<span
+										style="
+											font-weight: bold;
+											font-size: 14px;
+										"
+										>프레지덴셜 스위트 룸</span
+									><br />
+									| 침대타입 더블 | 투숙인원 2명 | 전망 시티뷰
+									| 객실면적 143m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<div
+							class="txtWrap position-absolute d-none d-lg-block"
+						>
+							<div class="bar mb-4"></div>
+							<div class="txt">
+								<h4 class="pl-4 mb-3">프레지덴셜 스위트 룸</h4>
+								<p class="pl-4">
+									시그니엘 서울의 프레지덴셜 스위트 룸은 넓은
+									공간과 쾌적한 거실로 럭셔리한 디자인의
+									응접실, 최고의 레스토랑을 연상시키는
+									다이닝룸 등의 공간 구성으로 고급스러운
+									분위기를 연출하는 객실입니다.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item position-relative">
+						<div class="img text-center">
+							<img
+								src="images/10loyal-suite-room.jpg"
+								class="d-block img-fluid"
+								alt="..."
+							/>
+							<div class="title">
+								<h5 class="text-white">로얄 스위트 룸</h5>
+							</div>
+							<div class="carousel-caption">
+								<p style="font-size: 12px">
+									<span
+										style="
+											font-weight: bold;
+											font-size: 14px;
+										"
+										>로얄 스위트 룸</span
+									><br />
+									| 침대타입 더블 | 투숙인원 2명 | 전망 시티뷰
+									| 객실면적 353m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<div
+							class="txtWrap position-absolute d-none d-lg-block"
+						>
+							<div class="bar mb-4"></div>
+							<div class="txt">
+								<h4 class="pl-4 mb-3">로얄 스위트 룸</h4>
+								<p class="pl-4">
+									100층에 위치한 로얄스위트 룸은 세계 각국의
+									국빈과 국내외 VVIP를 위한 시그니엘서울의
+									하나뿐인 최고급 객실입니다.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev"
+					href="#carousel"
+					role="button"
+					data-slide="prev"
+				>
+					<span
+						class="carousel-control-prev-icon"
+						aria-hidden="true"
+					></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next"
+					href="#carousel"
+					role="button"
+					data-slide="next"
+				>
+					<span
+						class="carousel-control-next-icon"
+						aria-hidden="true"
+					></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</section>
+		<section class="container introduction mb-5">
+			<h2 class="py-5 text-center font-weight-bold">시그니엘 서울</h2>
+			<div
+				class="row mb-5 dining wow fadeInDown flex-column flex-lg-row align-items-center"
+				data-wow-delay="0.1s"
+			>
+				<div
+					class="col-lg-5 d-flex flex-column justify-content-center align-items-center align-items-lg-start order-2 order-lg-1 text-center text-lg-left pt-3 pt-lg-0 txt"
+				>
+					<div
+						class="icon d-flex align-items-center justify-content-center mb-3"
+					>
+						<img src="images/food.svg" alt="" />
+					</div>
+					<h4>다이닝</h4>
+					<p>
+						탁트인 도심의 전경을 바라보며 세계 최고 수준의 셰프들이
+						직접 선보이는 다양한 요리를 즐기실 수 있습니다.
+					</p>
+				</div>
+				<div class="img-view col-lg-7 order-1 order-lg-2 p-0">
+					<img src="images/dining01.jpg" alt="" class="img-1st" />
+					<img src="images/dining02.jpg" alt="" class="img-2nd" />
+				</div>
+			</div>
+			<div
+				class="row mb-5 facilities wow fadeInDown flex-column flex-lg-row align-items-center"
+				data-wow-delay="0.2s"
+			>
+				<div
+					class="col-lg-5 d-flex flex-column justify-content-center align-items-center align-items-lg-start order-2 pt-3 pt-lg-0 txt"
+				>
+					<div
+						class="icon d-flex align-items-center justify-content-center mb-3"
+					>
+						<img src="images/hot-tub.svg" alt="" />
+					</div>
+					<h4>부대시설</h4>
+					<p>
+						고객의 라이프 스타일과 1:1 맞춤 카운셀링 결과를 토대로,
+						각 개인에 적합한 프로그램 및 트리트먼트를 제공합니다.
+					</p>
+				</div>
+				<div class="col-lg-7 img-view order-1 p-0">
+					<img src="images/facilities01.jpg" alt="" class="img-1st" />
+					<img src="images/facilities02.jpg" alt="" class="img-2nd" />
+				</div>
+			</div>
+			<div
+				class="row wedding-conference wow fadeInDown flex-column flex-lg-row align-items-center"
+				data-wow-delay="0.3s"
+			>
+				<div
+					class="col-lg-5 d-flex flex-column justify-content-center align-items-center align-items-lg-start order-2 order-lg-1 text-center text-lg-left pt-3 pt-lg-0 txt"
+				>
+					<div
+						class="icon d-flex align-items-center justify-content-center mb-3"
+					>
+						<img src="images/glass-cheers-solid.svg" alt="" />
+					</div>
+					<h4>웨딩&컨벤션</h4>
+					<p>
+						가장 특별한 날, 웨딩&파티를 위한 최고의 장소와 섬세한
+						배려로 잊지 못할 순간을 선사하고, 고객의 성공적인 행사를
+						위해 첨단 시설과 품격 높은 서비스를 제공합니다.
+					</p>
+				</div>
+				<div class="img-view col-lg-7 order-1 order-lg-2 p-0">
+					<img src="images/wedding.jpg" alt="" class="img-1st" />
+					<img src="images/conference.jpg" alt="" class="img-2nd" />
+				</div>
+			</div>
+		</section>
+		<section class="rewards">
+			<div class="container">
+				<h2 class="py-5 text-center">Lotte Hotel Rewards</h2>
+				<div class="row">
+					<div class="col-12 col-md-4 text-center">
+						<img
+							src="images/pc-mai-rewards1.png"
+							alt=""
+							class="pb-4"
+						/>
+						<p>회원 전용 이벤트를 누려보세요</p>
+					</div>
+					<div class="col-12 col-md-4 text-center">
+						<img
+							src="images/pc-mai-rewards2.png"
+							alt=""
+							class="pb-4"
+						/>
+						<p>
+							멤버십 회원만을 위해 할인된<br />
+							가격을 제공합니다.
+						</p>
+					</div>
+					<div class="col-12 col-md-4 text-center">
+						<img
+							src="images/pc-mai-rewards3.png"
+							alt=""
+							class="pb-4"
+						/>
+						<p>
+							포인트를 적립하고, 현금처럼<br />실용적으로
+							사용하세요
+						</p>
+					</div>
+					<div class="rewardsBtn py-5">
+						<button class="btn border-dark">
+							롯데호텔 리워즈 가입하기
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container location mt-5">
+			<div class="row location">
+				<div class="col-12 col-lg-4 text-white">
+					<div class="txt">
+						<h4>시그니엘 서울 소개</h4>
+						<p class="mt-4">
+							국내 최고층 건물인 롯데월드타워 76층~101층에 위치한
+							시그니엘 서울은 한국의 아름다움을 현대적인 감각으로
+							풀어낸 객실(235실)에서 서울의 파노라믹한
+							스카이라인과 환상적인 야경을 조망할 수 있으며 일몰과
+							일출을 한 자리에서 감상할 수 있는 국내 유일의
+							호텔입니다.
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-8 p-0">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12659.205272910214!2d127.1025242!3d37.5126039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbeb4a183daa6684f!2z7Iuc6re464uI7JeYIOyEnOyauA!5e0!3m2!1sko!2skr!4v1644774277701!5m2!1sko!2skr"
+						width="100%"
+						height="460"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+					></iframe>
+				</div>
+			</div>
+			<div class="row info mt-5">
+				<div class="col-6 col-md-3 pr-0">
+					<p>체크인 15:00<br />체크아웃 12:00</p>
+				</div>
+				<div class="col-6 col-md-3 pr-0">
+					<p>객실: 235<br />레스토랑 & 바: 5<br />연회장: 5</p>
+				</div>
+				<div class="col-6 col-md-3 pr-0">
+					<p>
+						대표번호: +82-2-3213-1000<br />객실예약: +82-2-3213-1111
+					</p>
+				</div>
+				<div class="col-6 col-md-3 pr-0">
+					<p>
+						대표부대시설: 레스토랑, 바&라운지, 스파, 사우나, 수영장,
+						피트니스, 살롱 드 시그니엘
+					</p>
+				</div>
+			</div>
+		</section>
+		<div
+			class="container promotion-video position-relative text-center mt-5 mb-5"
+		>
+			<a href="#" class="youtube position-absolute">
+				<img src="images/btn_play.png" alt="" />
+			</a>
+			<img src="images/youtube01.PNG" alt="" class="img-fluid" />
+			<div class="popUp">
+				<iframe
+					width="1120"
+					height="630"
+					src="https://www.youtube.com/embed/K-DuVXfANSQ?mute=1"
+					title="YouTube video player"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container p-0">
+				<div class="footer-top pt-3">
+					<a href="#!" class="mt-3"
+						><img src="images/footer-logo.png" alt=""
+					/></a>
+					<div class="app">
+						<div class="application">
+							<a href="#!" class="pr-1"
+								><img src="images/footer_appstore.png" alt=""
+							/></a>
+							<a href="#!" class="pr-1"
+								><img src="images/footer-googleplay.png" alt=""
+							/></a>
+						</div>
+						<div class="sns">
+							<a href="#!" class="pr-1"
+								><img src="images/footer-lhm.png" alt=""
+							/></a>
+							<a href="#!" class="pr-1"
+								><img src="images/footer-sns-tripa.png" alt=""
+							/></a>
+							<a href="#!" class="pr-1"
+								><img
+									src="images/footer-sns-facebook.png"
+									alt=""
+							/></a>
+							<a href="#!" class="pr-1"
+								><img
+									src="images/footer-sns-instagram.png"
+									alt=""
+							/></a>
+							<a href="#!" class="pr-1"
+								><img
+									src="images/footer-sns-youtube.png"
+									alt=""
+							/></a>
+							<a href="#!"
+								><img src="images/footer-sns-blog.png" alt=""
+							/></a>
+						</div>
+					</div>
+				</div>
+				<div class="row py-5">
+					<div class="col-12 col-md-8 left pr-0">
+						<div class="info text-white">
+							<p>
+								(주)호텔롯데 05551,서울특별시 송파구 올림픽로
+								300<br />
+								롯데월드타워 76-101층/02-3213-1000
+							</p>
+							<p>대표이사 김현식/사업자등록번호 104-81-25980/</p>
+							<p>통신판매신고번호 중구02802호</p>
+						</div>
+					</div>
+					<div class="col-4 right">
+						<div class="row">
+							<div class="col-4">
+								<ul>
+									<li><a href="#!">호텔찾기</a></li>
+									<li><a href="#!">롯데호텔 소개</a></li>
+									<li><a href="#!">브랜드 소개</a></li>
+									<li><a href="#!">수상</a></li>
+									<li><a href="#!">갤러리</a></li>
+								</ul>
+							</div>
+							<div class="col-4">
+								<ul>
+									<li><a href="#!">고객의 소리</a></li>
+									<li><a href="#!">지점별 연락처</a></li>
+									<li><a href="#!">준법 HOT LINE</a></li>
+									<li><a href="#!">컴플라이언스</a></li>
+									<li><a href="#!">채용</a></li>
+								</ul>
+							</div>
+							<div class="col-4">
+								<ul>
+									<li><a href="#!">서비스아카데미</a></li>
+									<li><a href="#!">신규 개발</a></li>
+									<li><a href="#!">임직원</a></li>
+									<li><a href="#!">사이트맵</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom text-white py-4">
+				<div class="txt">
+					<div class="left">
+						<p class="mb-0">
+							개인정보처리방침 | 영상정보처리기기운영관리방침
+							<span>| 이용약관 | 롯데호텔 리워즈 회원약관</span>
+						</p>
+					</div>
+					<form action="#" method="post" class="form">
+						<fieldset>
+							<select name="familySite" id="site">
+								<option value="">
+									<a href="#">패밀리사이트</a>
+								</option>
+								<option value="롯데지주">
+									<a href="#">롯데지주</a>
+								</option>
+								<option value="롯데건설">
+									<a href="#">롯데건설</a>
+								</option>
+								<option value="롯데글로벌로지스">
+									<a href="#">롯데글로벌로지스</a>
+								</option>
+								<option value="롯데기공">
+									<a href="#">롯데기공</a>
+								</option>
+								<option value="롯데렌탈">
+									<a href="#">롯데렌탈</a>
+								</option>
+								<option value="롯데비피화학">
+									<a href="#">롯데비피화학</a>
+								</option>
+								<option value="롯데면세점제주">
+									<a href="#">롯데면세점제주</a>
+								</option>
+								<option value="롯데멤버스(L.POINT)">
+									<a href="#">롯데멤버스(L.POINT)</a>
+								</option>
+								<option value="롯데물산">
+									<a href="#">롯데물산</a>
+								</option>
+								<option value="롯데스카이힐CC">
+									<a href="#">롯데스카이힐CC</a>
+								</option>
+								<option value="롯데상사">
+									<a href="#">롯데상사</a>
+								</option>
+								<option value="롯데시네마">
+									<a href="#">롯데시네마</a>
+								</option>
+								<option value="롯데아사히주류">
+									<a href="#">롯데아사히주류</a>
+								</option>
+								<option value="롯데알미늄">
+									<a href="#">롯데알미늄</a>
+								</option>
+								<option value="롯데엠시시">
+									<a href="#">롯데엠시시</a>
+								</option>
+								<option value="롯데월드">
+									<a href="#">롯데월드</a>
+								</option>
+								<option value="롯데유통사업본부">
+									<a href="#">롯데유통사업본부</a>
+								</option>
+								<option value="롯데인재개발원">
+									<a href="#">롯데인재개발원</a>
+								</option>
+								<option value="롯데자산개발">
+									<a href="#">롯데자산개발</a>
+								</option>
+								<option value="롯데자이언츠">
+									<a href="#">롯데자이언츠</a>
+								</option>
+								<option value="롯데정밀화학">
+									<a href="#">롯데정밀화학</a>
+								</option>
+								<option value="롯데정보통신">
+									<a href="#">롯데정보통신</a>
+								</option>
+								<option value="롯데제과">
+									<a href="#">롯데제과</a>
+								</option>
+								<option value="롯데제이티비">
+									<a href="#">롯데제이티비</a>
+								</option>
+								<option value="롯데중앙연구소">
+									<a href="#">롯데중앙연구소</a>
+								</option>
+								<option value="롯데채용사이트">
+									<a href="#">롯데채용사이트</a>
+								</option>
+								<option value="롯데칠성음료(음료BG)">
+									<a href="#">롯데칠성음료(음료BG)</a>
+								</option>
+								<option value="롯데칠성음료(주류BG)">
+									<a href="#">롯데칠성음료(주류BG)</a>
+								</option>
+								<option value="롯데캐피탈">
+									<a href="#">롯데캐피탈</a>
+								</option>
+								<option value="롯데케미칼">
+									<a href="#">롯데케미칼</a>
+								</option>
+								<option value="롯데푸드">
+									<a href="#">롯데푸드</a>
+								</option>
+								<option value="롯데하이마트">
+									<a href="#">롯데하이마트</a>
+								</option>
+								<option value="롯데쇼핑e커머스">
+									<a href="#">롯데쇼핑e커머스</a>
+								</option>
+								<option value="롯데호텔">
+									<a href="#">롯데호텔</a>
+								</option>
+								<option value="대홍기획">
+									<a href="#">대홍기획</a>
+								</option>
+								<option value="캐논코리아비즈니스솔루션">
+									<a href="#">캐논코리아비즈니스솔루션</a>
+								</option>
+								<option value="코리아세븐">
+									<a href="#">코리아세븐</a>
+								</option>
+								<option value="한국후지필름">
+									<a href="#">한국후지필름</a>
+								</option>
+								<option value="롯데백화점">
+									<a href="#">롯데백화점</a>
+								</option>
+								<option value="롯데마트">
+									<a href="#">롯데마트</a>
+								</option>
+								<option value="롯데슈퍼">
+									<a href="#">롯데슈퍼</a>
+								</option>
+								<option value="롯데홈쇼핑">
+									<a href="#">롯데홈쇼핑</a>
+								</option>
+								<option value="롯데롭스">
+									<a href="#">롯데롭스</a>
+								</option>
+								<option value="FRL코리아">
+									<a href="#">FRL코리아</a>
+								</option>
+								<option value="롯데건설 CM사업본부">
+									<a href="#">롯데건설 CM사업본부</a>
+								</option>
+								<option value="롯데뮤지엄">
+									<a href="#">롯데뮤지엄</a>
+								</option>
+								<option value="롯데사회공헌사이트">
+									<a href="#">롯데사회공헌사이트</a>
+								</option>
+								<option value="롯데지알에스">
+									<a href="#">롯데지알에스</a>
+								</option>
+								<option value="롯데콘서트홀">
+									<a href="#">롯데콘서트홀</a>
+								</option>
+								<option value="부산롯데호텔">
+									<a href="#">부산롯데호텔</a>
+								</option>
+								<option value="롯데면세점부산">
+									<a href="#">롯데면세점부산</a>
+								</option>
+							</select>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</footer>
+		<button class="btn scrollTop text-white">
+			<i class="fas fa-chevron-up"></i>
+		</button>
 
-                    </div>
-                </div>
-            </div>
-            <img src="images/icon-pagedown.gif" alt="" class="pagedown">
-      </div>
-      <section class="container special-offers mb-5">
-          <h2 class="pt-5 pb-3 text-center text-lg-left font-weight-bold">추천 프로모션</h2>
-          <div class="row">
-              <div class="col-md-4 col-6 wow fadeInDown" data-wow-delay="0.3s">
-                  <div class="card" onclick="location.href=''">
-                      <div class="package d-flex align-items-center justify-content-center text-white">패키지</div>
-                      <div class="card-img overflow-hidden">
-                          <img src="images/offers01.png" alt="" class="img-fluid w-100">
-                      </div>
-                      <div class="card-body">
-                          <h4 class="card-title">Falling in fall</h4>
-                          <div class="card-text">
-                              <h5>객실+24/30시간 투숙+기타 특전</h5>
-                              <p class="mt-md-5">
-                                <span style="font-weight: bold;">투숙:</span> 2021년 10월 01일 - 2021년 11월 30일<br>
-                                <span style="font-weight: bold;">예약:</span> 2021년 10월 01일 - 2021년 11월 29일
-                              </p>
-                              <p class="float-right m-0 offer-price">최저<span style="font-size: 24px;">480,000</span>KRW</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-4 col-6 wow fadeInDown" data-wow-delay="0.8s">
-                  <div class="card" onclick="location.href=''">
-                      <div class="package d-flex align-items-center justify-content-center text-white">패키지</div>
-                      <div class="card-img overflow-hidden ">
-                          <img src="images/offers02.png" alt="" class="w-100 img-fluid">
-                      </div>
-                      <div class="card-body">
-                          <h4 class="card-title">Eternal Promise</h4>
-                          <div class="card-text clearfix">
-                              <h5>객실+객실 데코레이션+와인/초콜릿</h5>
-                              <p class="mt-md-5">
-                                <span style="font-weight: bold;">투숙:</span> 2021년 10월 01일 - 2021년 12월 22일<br>
-                                <span style="font-weight: bold;">예약:</span> 2021년 10월 01일 - 2021년 12월 21일
-                              </p>
-                              <p class="float-right m-0 offer-price">최저<span style="font-size: 24px;">750,000</span>KRW</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-4 col-6 d-none d-md-block wow fadeInDown" data-wow-delay="1.3s">
-                  <div class="card" onclick="location.href=''">
-                      <div class="package d-flex align-items-center justify-content-center text-white">패키지</div>
-                      <div class="card-img overflow-hidden">
-                          <img src="images/offers03.png" alt="" class="w-100 img-fluid">
-                      </div>
-                      <div class="card-body">
-                          <h4 class="card-title">Long and Lasting Love</h4>
-                          <div class="card-text clearfix">
-                              <h5>객실+프로포즈 디너+스파<br>+케이크/샴페인+차량 서비스</h5>
-                              <p>
-                                  <span style="font-weight: bold;">투숙:</span> 2021년 07월 01일 - 2021년 12월 22일<br>
-                                  <span style="font-weight: bold;">예약:</span> 2021년 07월 01일 - 2021년 12월 21일
-                              </p>
-                              <p class="float-right m-0 offer-price">최저<span style="font-size: 24px;">4,950,413</span>KRW</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-      <section class="slide mb-5 wow fadeInDown" data-wow-delay="0.3s">
-          <h2 class="rooms pt-5 pb-3 text-center text-lg-left font-weight-bold">객실</h2>
-          <div id="carousel" class="carousel" data-ride="carousel">
-                <ol class="carousel-indicators">
-                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel" data-slide-to="1"></li>
-                        <li data-target="#carousel" data-slide-to="2"></li>
-                        <li data-target="#carousel" data-slide-to="3"></li>
-                        <li data-target="#carousel" data-slide-to="4"></li>
-                        <li data-target="#carousel" data-slide-to="5"></li>
-                        <li data-target="#carousel" data-slide-to="6"></li>
-                        <li data-target="#carousel" data-slide-to="7"></li>
-                        <li data-target="#carousel" data-slide-to="8"></li>
-                        <li data-target="#carousel" data-slide-to="9"></li>
-                </ol>
-                <div class="carousel-inner">
-                        <div class="carousel-item active position-relative">
-                        <div class="img text-center">
-                            <img src="images/01grand-delux-room.jpg" class="d-block img-fluid" alt="...">
-                            <div class="title">
-                                <h5 class="text-white">그랜드 디럭스 룸</h5>
-                            </div>
-                            <div class="carousel-caption">
-                                <p style="font-size: 12px;" class=""><span style="font-weight: bold;font-size: 14px;">그랜드 디럭스 룸</span><br> | 침대타입 더블 | 투숙인원 2명 | 전망 시티뷰/리버뷰/전망욕실 | 객실면적 40~50m<sup>2</sup></p>
-                            </div>
-                        </div>
-                        <div class="txtWrap position-absolute d-none d-lg-block">
-                            <div class="bar mb-4"></div>
-                            <div class="txt">
-                                <h4 class="pl-4 mb-3">그랜드 디럭스 룸</h4>
-                                <p class="pl-4">
-                                우아한 잍네리어와 현대적 세련미가 조화롭게 어우러진 시그니엘 서울의
-                                그랜드 디럭스 룸은 서울 시내 동급 호텔 대비 넓은 40~50m<sup>2</sup>의 여유로운 공간을 제공합니다.
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="carousel-item position-relative">
-                        <div class="img text-center">
-                            <img src="images/02premier-room.jpg" class="d-block img-fluid" alt="...">
-                            <div class="title">
-                                <h5 class="text-white">프리미어 룸</h5>
-                            </div>
-                            <div class="carousel-caption">
-                                <p style="font-size: 12px;"><span style="font-weight: bold;font-size: 14px;">프리미어 룸</span><br> | 침대타입 더블/트윈 | 투숙인원 2명 | 전망 시티뷰/리버뷰/전망욕실 | 객실면적 46~60m<sup>2</sup></p>
-                            </div>
-                        </div>
-                        <div class="txtWrap position-absolute d-none d-lg-block">
-                            <div class="bar mb-4"></div>
-                            <div class="txt">
-                                <h4 class="pl-4 mb-3">프리미어 룸</h4>
-                                <p class="pl-4">
-                                시그니엘 서울의 프리미어 룸은 세련미와 우아함을 더한 고급스러운 인테리어로 구성되어 있으며,
-                                대형 창문을 통해 서울의 화려한 장관을 감상할 수 있는 고품격 객실입니다.
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="carousel-item position-relative">
-                        <div class="img text-center">
-                            <img src="images/03signiel-premier-room.jpg" class="d-block img-fluid" alt="...">
-                            <div class="title">
-                                <h5 class="text-white">시그니엘 프리미어 룸</h5>
-                            </div>
-                            <div class="carousel-caption">
-                                <p style="font-size: 12px;"><span style="font-weight: bold;font-size: 14px;">시그니엘 프리미어 룸</span><br> | 침대타입 더블/트윈 | 투숙인원 2명 | 전망 시티뷰/전망욕실/리버뷰 및 전망욕실 | 객실면적 56~65m<sup>2</sup></p>
-                            </div>
-                        </div>
-                        <div class="txtWrap position-absolute d-none d-lg-block">
-                            <div class="bar mb-4"></div>
-                            <div class="txt">
-                                <h4 class="pl-4 mb-3">시그니엘 프리미어 룸</h4>
-                                <p class="pl-4">
-                                시그니엘 서울의 시그니엘 프리미어 룸은 침실과 함께 여유로운 업무 공간이 구비되어
-                                성공적인 비지니스와 여유로운 휴식을 함께 즐길 수 있는 비즈니스 객실입니다.
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="carousel-item position-relative">
-                        <div class="img text-center">
-                            <img src="images/04deluxe-suite-room.jpg" class="d-block img-fluid" alt="...">
-                            <div class="title">
-                                <h5 class="text-white">디럭스 스위트 룸</h5>
-                            </div>
-                            <div class="carousel-caption">
-                                <p style="font-size: 12px;"><span style="font-weight: bold;font-size: 14px;">디럭스 스위트 룸</span><br> | 침대타입 더블/트윈 | 투숙인원 2명 | 전망 시티뷰 | 객실면적 59~73m<sup>2</sup></p>
-                            </div>
-                        </div>
-                        <div class="txtWrap position-absolute d-none d-lg-block">
-                            <div class="bar mb-4"></div>
-                            <div class="txt">
-                                <h4 class="pl-4 mb-3">디럭스 스위트 룸</h4>
-                                <p class="pl-4">
-                                    시그니엘 서울의 디럭스 스위트 룸은 일반 객실보다 더욱 넓고 쾌적한 공간을 제공하는 객실입니다.
-                                        침실과 응접실의 공간 분리로 편안함과 안정된 휴식을 누리실 수 있습니다.
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="carousel-item position-relative">
-                        <div class="img text-center">
-                            <img src="images//05premier-suite-room.jpg" class="d-block img-fluid" alt="...">
-                            <div class="title">
-                                <h5 class="text-white">프리미어 스위트 룸</h5>
-                            </div>
-                            <div class="carousel-caption">
-                                <p style="font-size: 12px;"><span style="font-weight: bold;font-size: 14px;">프리미어 스위트 룸</span><br> | 침대타입 더블/트윈 | 투숙인원 2명 | 전망 시티뷰 | 객실면적 70~86m<sup>2</sup></p>
-                            </div>
-                        </div>
-                        <div class="txtWrap position-absolute d-none d-lg-block">
-                            <div class="bar mb-4"></div>
-                            <div class="txt">
-                                <h4 class="pl-4 mb-3">프리미어 스위트 룸</h4>
-                                <p class="pl-4">
-                                    시그니엘 서울의 프리미어 스위트 룸은 넓고 여유로운 공간에서 고품격 휴식을 만끽할 수 있는 고급형 프리미어 스위트 룸입니다.
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="carousel-item position-relative">
-                        <div class="img text-center">
-                            <img src="images/06korean-premier-room.jpg" class="d-block img-fluid" alt="...">
-                            <div class="title">
-                                <h5 class="text-white">코리안 프리미어 룸</h5>
-                            </div>
-                            <div class="carousel-caption">
-                                <p style="font-size: 12px;"><span style="font-weight: bold;font-size: 14px;">코리안 프리미어 룸</span><br> | 침대타입 더블 | 투숙인원 2명 | 전망 리버뷰 및 전망욕실 | 객실면적 40m<sup>2</sup></p>
-                            </div>
-                        </div>
-                        <div class="txtWrap position-absolute d-none d-lg-block">
-                            <div class="bar mb-4"></div>
-                            <div class="txt">
-                                <h4 class="pl-4 mb-3">코리안 프리미어 룸</h4>
-                                <p class="pl-4">
-                                    시그니엘 서울의 코리안 스위트 룸은 한국 전통미와 현대적인 시설의 조화가 이루어진 최고급 온돌로 구성되어 있으며
-                                    객실 곳곳에 배치된 전통가구와 편백나무로 구성된 욕실은 한국적인 멋을 더욱 돋보이게 합니다.
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="carousel-item position-relative">
-                        <div class="img text-center">
-                            <img src="images/07korean-signiel-premier-room.jpg" class="d-block img-fluid" alt="...">
-                            <div class="title">
-                                <h5 class="text-white">코리안 시그니엘 프리미어 룸</h5>
-                            </div>
-                            <div class="carousel-caption">
-                                <p style="font-size: 12px;"><span style="font-weight: bold;font-size: 14px;">코리안 시그니엘 프리미어 룸</span><br> | 침대타입 더블 | 투숙인원 2명 | 전망 리버뷰 | 객실면적 43m<sup>2</sup></p>
-                            </div>
-                        </div>
-                        <div class="txtWrap position-absolute d-none d-lg-block">
-                            <div class="bar mb-4"></div>
-                            <div class="txt">
-                                <h4 class="pl-4 mb-3" style="font-size: 1.3rem;font-weight: bold;">코리안 시그니엘 프리미어 룸</h4>
-                                <p class="pl-4">
-                                    시그니엘 서울의 코리안 스위트 룸은 한국 전통미와 현대적인 시설의 조화가 이루어진 최고급 온돌로 구성되어 있으며
-                                    객실 곳곳에 배치된 전통가구와 편백나무로 구성된 욕실은 한국적인 멋을 더욱 돋보이게 합니다.
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="carousel-item position-relative">
-                        <div class="img text-center">
-                            <img src="images/08korean-suite-room.jpg" class="d-block img-fluid" alt="...">
-                            <div class="title">
-                                <h5 class="text-white">코리안 스위트 룸</h5>
-                            </div>
-                            <div class="carousel-caption">
-                                <p style="font-size: 12px;"><span style="font-weight: bold;font-size: 14px;">코리안 스위트 룸</span><br> | 침대타입 더블 | 투숙인원 2명 | 전망 리버뷰 | 객실면적 84m<sup>2</sup></p>
-                            </div>
-                        </div>
-                        <div class="txtWrap position-absolute d-none d-lg-block">
-                            <div class="bar mb-4"></div>
-                            <div class="txt">
-                                <h4 class="pl-4 mb-3">코리안 스위트 룸</h4>
-                                <p class="pl-4">
-                                    시그니엘 서울의 코리안 스위트 룸은 한국 전통미와 현대적인 시설의 조화가 이루어진 최고급 온돌로 구성되어 있으며
-                                    객실 곳곳에 배치된 전통가구와 편백나무로 구성된 욕실은 한국적인 멋을 더욱 돋보이게 합니다.
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="carousel-item position-relative">
-                        <div class="img text-center">
-                            <img src="images/09presidential-suite-room.jpg" class="d-block img-fluid" alt="...">
-                            <div class="title">
-                                <h5 class="text-white">프레지덴셜 스위트 룸</h5>
-                            </div>
-                            <div class="carousel-caption">
-                                <p style="font-size: 12px;"><span style="font-weight: bold;font-size: 14px;">프레지덴셜 스위트 룸</span><br> | 침대타입 더블 | 투숙인원 2명 | 전망 시티뷰 | 객실면적 143m<sup>2</sup></p>
-                            </div>
-                        </div>
-                        <div class="txtWrap position-absolute d-none d-lg-block">
-                            <div class="bar mb-4"></div>
-                            <div class="txt">
-                                <h4 class="pl-4 mb-3">프레지덴셜 스위트 룸</h4>
-                                <p class="pl-4">
-                                    시그니엘 서울의 프레지덴셜 스위트 룸은 넓은 공간과 쾌적한 거실로 럭셔리한 디자인의 응접실,
-                                    최고의 레스토랑을 연상시키는 다이닝룸 등의 공간 구성으로 고급스러운 분위기를 연출하는 객실입니다.
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="carousel-item position-relative">
-                        <div class="img text-center">
-                            <img src="images/10loyal-suite-room.jpg" class="d-block img-fluid" alt="...">
-                            <div class="title">
-                                <h5 class="text-white">로얄 스위트 룸</h5>
-                            </div>
-                            <div class="carousel-caption">
-                                <p style="font-size: 12px;"><span style="font-weight: bold;font-size: 14px;">로얄 스위트 룸</span><br> | 침대타입 더블 | 투숙인원 2명 | 전망 시티뷰 | 객실면적 353m<sup>2</sup></p>
-                            </div>
-                        </div>
-                        <div class="txtWrap position-absolute d-none d-lg-block">
-                            <div class="bar mb-4"></div>
-                            <div class="txt">
-                                <h4 class="pl-4 mb-3">로얄 스위트 룸</h4>
-                                <p class="pl-4">
-                                    100층에 위치한 로얄스위트 룸은 세계 각국의 국빈과 국내외 VVIP를 위한 시그니엘서울의 하나뿐인 최고급 객실입니다.
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                </div>
-                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-          </div>
-      </section>
-      <section class="container introduction mb-5">
-          <h2 class="py-5 text-center text-lg-left font-weight-bold">시그니엘 서울</h2>
-          <div class="row mb-5 dining wow fadeInDown flex-column flex-lg-row align-items-center" data-wow-delay="0.1s">
-              <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center align-items-lg-start order-2 order-lg-1 text-center text-lg-left pt-3 pt-lg-0 txt">
-                  <div class="icon d-flex align-items-center justify-content-center mb-3"><img src="images/food.svg" alt=""></div>
-                  <h4>다이닝</h4>
-                  <p>탁트인 도심의 전경을 바라보며 세계 최고 수준의 셰프들이 직접 선보이는 다양한 요리를 즐기실 수 있습니다.</p>
-              </div>
-              <div class="img-view col-lg-7 order-1 order-lg-2 p-0">
-                <img src="images/dining01.jpg" alt="" class="img-1st">
-                <img src="images/dining02.jpg" alt="" class="img-2nd">
-            </div>
-          </div>
-          <div class="row mb-5 facilities wow fadeInDown flex-column flex-lg-row align-items-center" data-wow-delay="0.2s">
-              <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center align-items-lg-start order-2 pt-3 pt-lg-0 txt">
-                  <div class="icon d-flex align-items-center justify-content-center mb-3"><img src="images/hot-tub.svg" alt=""></div>
-                  <h4>부대시설</h4>
-                  <p>고객의 라이프 스타일과 1:1 맞춤 카운셀링 결과를 토대로, 각 개인에 적합한 프로그램 및 트리트먼트를 제공합니다.</p>
-              </div>
-              <div class="col-lg-7 img-view order-1 p-0">
-                <img src="images/facilities01.jpg" alt="" class="img-1st">
-                <img src="images/facilities02.jpg" alt="" class="img-2nd">
-            </div>
-          </div>
-          <div class="row wedding-conference wow fadeInDown flex-column flex-lg-row align-items-center" data-wow-delay="0.3s">
-              <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center align-items-lg-start order-2 order-lg-1 text-center text-lg-left pt-3 pt-lg-0 txt">
-                  <div class="icon d-flex align-items-center justify-content-center mb-3"><img src="images/glass-cheers-solid.svg" alt=""></div>
-                  <h4>웨딩&컨벤션</h4>
-                  <p>가장 특별한 날, 웨딩&파티를 위한 최고의 장소와 섬세한 배려로 잊지 못할 순간을 선사하고, 고객의 성공적인 행사를 위해 첨단 시설과 품격 높은 서비스를 제공합니다. </p>
-              </div>
-              <div class="img-view col-lg-7 order-1 order-lg-2 p-0">
-                <img src="images/wedding.jpg" alt="" class="img-1st">
-                <img src="images/conference.jpg" alt="" class="img-2nd">
-            </div>
-          </div>
-      </section>
-      <section class="rewards">
-          <div class="container">
-              <h2 class="py-5 text-center">Lotte Hotel Rewards</h2>
-              <div class="row">
-                  <div class="col-12 col-md-4 text-center">
-                      <img src="images/pc-mai-rewards1.png" alt="" class="pb-4">
-                      <p>회원 전용 이벤트를 누려보세요</p>
-                  </div>
-                  <div class="col-12 col-md-4 text-center">
-                      <img src="images/pc-mai-rewards2.png" alt="" class="pb-4">
-                      <p>멤버십 회원만을 위해 할인된<br> 가격을 제공합니다.</p>
-                  </div>
-                  <div class="col-12 col-md-4 text-center">
-                      <img src="images/pc-mai-rewards3.png" alt="" class="pb-4">
-                      <p>포인트를 적립하고, 현금처럼<br>실용적으로 사용하세요</p>
-                  </div>
-                  <div class="rewardsBtn py-5">
-                      <button class="btn border-dark">롯데호텔 리워즈 가입하기</button>
-                  </div>
-              </div>
-          </div>
-      </section>
-      <section class="container location mt-5">
-          <div class="row location">
-              <div class="col-12 col-lg-4 text-white">
-                  <div class="txt">
-                      <h4>시그니엘 서울 소개</h4>
-                      <p class="mt-4">
-                          국내 최고층 건물인 롯데월드타워 76층~101층에 위치한 시그니엘 서울은 
-                          한국의 아름다움을 현대적인 감각으로 풀어낸 객실(235실)에서 서울의 
-                          파노라믹한 스카이라인과 환상적인 야경을 조망할 수 있으며 일몰과 일출을 
-                          한 자리에서 감상할 수 있는 국내 유일의 호텔입니다.
-                      </p>
-                  </div>
-              </div>
-              <div class="col-12 col-lg-8 p-0">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12659.205272910214!2d127.1025242!3d37.5126039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbeb4a183daa6684f!2z7Iuc6re464uI7JeYIOyEnOyauA!5e0!3m2!1sko!2skr!4v1644774277701!5m2!1sko!2skr" width="100%" height="460" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-              </div>
-          </div>
-          <div class="row info mt-5">
-              <div class="col-6 col-md-3 pr-0">
-                  <p>체크인 15:00<br>체크아웃 12:00</p>
-              </div>
-              <div class="col-6 col-md-3 pr-0">
-                  <p>객실: 235<br>레스토랑 & 바: 5<br>연회장: 5</p>
-              </div>
-              <div class="col-6 col-md-3 pr-0">
-                  <p>대표번호: +82-2-3213-1000<br>객실예약: +82-2-3213-1111</p>
-              </div>
-              <div class="col-6 col-md-3 pr-0">
-                  <p>대표부대시설: 레스토랑, 바&라운지, 스파, 사우나, 수영장, 피트니스, 살롱 드 시그니엘</p>
-              </div>
-          </div>
-      </section>
-      <div class="container promotion-video position-relative text-center mt-5 mb-5">
-          <a href="#" class="youtube position-absolute">
-            <img src="images/btn_play.png" alt="">
-          </a>
-          <img src="images/youtube01.PNG" alt="" class="img-fluid">
-          <div class="popUp">
-            <iframe width="1120" height="630" src="https://www.youtube.com/embed/K-DuVXfANSQ?mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-      </div>
-      <footer class="footer">
-          <div class="container p-0">
-              <div class="footer-top pt-3">
-                <a href="#!" class="mt-3"><img src="images/footer-logo.png" alt=""></a>
-                <div class="app">
-                    <div class="application">
-                        <a href="#!" class="pr-1"><img src="images/footer_appstore.png" alt=""></a>
-                        <a href="#!" class="pr-1"><img src="images/footer-googleplay.png" alt=""></a>
-                    </div>
-                    <div class="sns">
-                        <a href="#!" class="pr-1"><img src="images/footer-lhm.png" alt=""></a>
-                        <a href="#!" class="pr-1"><img src="images/footer-sns-tripa.png" alt=""></a>
-                        <a href="#!" class="pr-1"><img src="images/footer-sns-facebook.png" alt=""></a>
-                        <a href="#!" class="pr-1"><img src="images/footer-sns-instagram.png" alt=""></a>
-                        <a href="#!" class="pr-1"><img src="images/footer-sns-youtube.png" alt=""></a>
-                        <a href="#!"><img src="images/footer-sns-blog.png" alt=""></a>
-                    </div>
-                </div>
-              </div>
-              <div class="row py-5">
-                  <div class="col-12 col-md-8 left pr-0">
-                      <div class="info text-white">
-                          <p>(주)호텔롯데  05551,서울특별시 송파구 올림픽로 300<br> 롯데월드타워 76-101층/02-3213-1000</p>
-                          <p>대표이사 김현식/사업자등록번호 104-81-25980/</p>
-                          <p>통신판매신고번호 중구02802호</p>
-                      </div>
-                  </div>
-                  <div class="col-4 right">
-                      <div class="row">
-                          <div class="col-4">
-                              <ul>
-                                  <li><a href="#!">호텔찾기</a></li>
-                                  <li><a href="#!">롯데호텔 소개</a></li>
-                                  <li><a href="#!">브랜드 소개</a></li>
-                                  <li><a href="#!">수상</a></li>
-                                  <li><a href="#!">갤러리</a></li>
-                              </ul>
-                          </div>
-                          <div class="col-4">
-                              <ul>
-                                  <li><a href="#!">고객의 소리</a></li>
-                                  <li><a href="#!">지점별 연락처</a></li>
-                                  <li><a href="#!">준법 HOT LINE</a></li>
-                                  <li><a href="#!">컴플라이언스</a></li>
-                                  <li><a href="#!">채용</a></li>
-                              </ul>
-                          </div>
-                          <div class="col-4">
-                              <ul>
-                                  <li><a href="#!">서비스아카데미</a></li>
-                                  <li><a href="#!">신규 개발</a></li>
-                                  <li><a href="#!">임직원</a></li>
-                                  <li><a href="#!">사이트맵</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="footer-bottom text-white py-4">
-            <div class="txt">
-                <div class="left">
-                    <p class="mb-0">개인정보처리방침 | 영상정보처리기기운영관리방침 <span>| 이용약관 | 롯데호텔 리워즈 회원약관</span></p>
-                </div>
-                <form action="#" method="post" class="form">
-                    <fieldset>
-                        <select name="familySite" id="site">
-                            <option value=""><a href="#">패밀리사이트</a></option>
-                            <option value="롯데지주"><a href="#">롯데지주</a></option>
-                            <option value="롯데건설"><a href="#">롯데건설</a></option>
-                            <option value="롯데글로벌로지스"><a href="#">롯데글로벌로지스</a></option>
-                            <option value="롯데기공"><a href="#">롯데기공</a></option>
-                            <option value="롯데렌탈"><a href="#">롯데렌탈</a></option>
-                            <option value="롯데비피화학"><a href="#">롯데비피화학</a></option>
-                            <option value="롯데면세점제주"><a href="#">롯데면세점제주</a></option>
-                            <option value="롯데멤버스(L.POINT)"><a href="#">롯데멤버스(L.POINT)</a></option>
-                            <option value="롯데물산"><a href="#">롯데물산</a></option>
-                            <option value="롯데스카이힐CC"><a href="#">롯데스카이힐CC</a></option>
-                            <option value="롯데상사"><a href="#">롯데상사</a></option>
-                            <option value="롯데시네마"><a href="#">롯데시네마</a></option>
-                            <option value="롯데아사히주류"><a href="#">롯데아사히주류</a></option>
-                            <option value="롯데알미늄"><a href="#">롯데알미늄</a></option>
-                            <option value="롯데엠시시"><a href="#">롯데엠시시</a></option>
-                            <option value="롯데월드"><a href="#">롯데월드</a></option>
-                            <option value="롯데유통사업본부"><a href="#">롯데유통사업본부</a></option>
-                            <option value="롯데인재개발원"><a href="#">롯데인재개발원</a></option>
-                            <option value="롯데자산개발"><a href="#">롯데자산개발</a></option>
-                            <option value="롯데자이언츠"><a href="#">롯데자이언츠</a></option>
-                            <option value="롯데정밀화학"><a href="#">롯데정밀화학</a></option>
-                            <option value="롯데정보통신"><a href="#">롯데정보통신</a></option>
-                            <option value="롯데제과"><a href="#">롯데제과</a></option>
-                            <option value="롯데제이티비"><a href="#">롯데제이티비</a></option>
-                            <option value="롯데중앙연구소"><a href="#">롯데중앙연구소</a></option>
-                            <option value="롯데채용사이트"><a href="#">롯데채용사이트</a></option>
-                            <option value="롯데칠성음료(음료BG)"><a href="#">롯데칠성음료(음료BG)</a></option>
-                            <option value="롯데칠성음료(주류BG)"><a href="#">롯데칠성음료(주류BG)</a></option>
-                            <option value="롯데캐피탈"><a href="#">롯데캐피탈</a></option>
-                            <option value="롯데케미칼"><a href="#">롯데케미칼</a></option>
-                            <option value="롯데푸드"><a href="#">롯데푸드</a></option>
-                            <option value="롯데하이마트"><a href="#">롯데하이마트</a></option>
-                            <option value="롯데쇼핑e커머스"><a href="#">롯데쇼핑e커머스</a></option>
-                            <option value="롯데호텔"><a href="#">롯데호텔</a></option>
-                            <option value="대홍기획"><a href="#">대홍기획</a></option>
-                            <option value="캐논코리아비즈니스솔루션"><a href="#">캐논코리아비즈니스솔루션</a></option>
-                            <option value="코리아세븐"><a href="#">코리아세븐</a></option>
-                            <option value="한국후지필름"><a href="#">한국후지필름</a></option>
-                            <option value="롯데백화점"><a href="#">롯데백화점</a></option>
-                            <option value="롯데마트"><a href="#">롯데마트</a></option>
-                            <option value="롯데슈퍼"><a href="#">롯데슈퍼</a></option>
-                            <option value="롯데홈쇼핑"><a href="#">롯데홈쇼핑</a></option>
-                            <option value="롯데롭스"><a href="#">롯데롭스</a></option>
-                            <option value="FRL코리아"><a href="#">FRL코리아</a></option>
-                            <option value="롯데건설 CM사업본부"><a href="#">롯데건설 CM사업본부</a></option>
-                            <option value="롯데뮤지엄"><a href="#">롯데뮤지엄</a></option>
-                            <option value="롯데사회공헌사이트"><a href="#">롯데사회공헌사이트</a></option>
-                            <option value="롯데지알에스"><a href="#">롯데지알에스</a></option>
-                            <option value="롯데콘서트홀"><a href="#">롯데콘서트홀</a></option>
-                            <option value="부산롯데호텔"><a href="#">부산롯데호텔</a></option>
-                            <option value="롯데면세점부산"><a href="#">롯데면세점부산</a></option>
-                        </select>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-      </footer>
-      <button class="btn scrollTop text-white"><i class="fas fa-chevron-up"></a></button>
+		<script>
+			const btt = document.querySelector(".scrollTop");
+			const docElem = document.documentElement;
+			let docHeight = Math.max(
+				docElem.scrollHeight,
+				docElem.offsetHeight
+			);
+			let scrollPos;
+			let offset = docHeight / 5;
 
+			window.addEventListener("scroll", function () {
+				scrollPos = docElem.scrollTop;
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/wow.js"></script>
+				if (scrollPos > offset) {
+					btt.classList.add("active");
+				} else {
+					btt.classList.remove("active");
+				}
+			});
 
-    <script>
-        const btt = document.querySelector('.scrollTop');
-        const docElem = document.documentElement;
-        let docHeight = Math.max(docElem.scrollHeight, docElem.offsetHeight);
-        let scrollPos;
-        let offset = docHeight / 5
+			btt.addEventListener("click", function (e) {
+				e.preventDefault();
+				scrollToTop();
+			});
+			function scrollToTop() {
+				let scrollInterval = setInterval(function () {
+					if (scrollPos != 0) {
+						window.scrollBy(0, -55);
+					} else {
+						clearInterval(scrollInterval);
+					}
+				}, 10);
+			}
 
-        window.addEventListener('scroll',function(){
+			const youtube01 = document.querySelector(".promotion-video > a");
+			const popUp = document.querySelector(".popUp");
 
-            scrollPos = docElem.scrollTop;
-        
-            if(scrollPos > offset){
-                btt.classList.add('active')
-            }
-            else{
-                btt.classList.remove('active')
-            }
+			youtube01.addEventListener("click", function (e) {
+				popUp.style.display = "block";
+				e.preventDefault();
+			});
+			popUp.addEventListener("click", function (e) {
+				if (e.target.classList.contains("popUp")) {
+					popUp.style.display = "none";
+				}
+			});
 
-
-        });
-
-        btt.addEventListener('click',function(e){
-            e.preventDefault();
-            scrollToTop()
-        });
-        function scrollToTop(){
-            let scrollInterval = setInterval(function(){
-                if(scrollPos != 0){
-                    window.scrollBy(0,-55);
-                }
-                else{
-                    clearInterval(scrollInterval)
-                }
-            },10)
-        };
-
-        const youtube01 = document.querySelector('.promotion-video > a')
-        const popUp = document.querySelector('.popUp')
-
-        youtube01.addEventListener('click',function(e){
-            popUp.style.display = 'block';
-            e.preventDefault();
-        });
-        popUp.addEventListener('click',function(e){
-            if(e.target.classList.contains('popUp')){
-                popUp.style.display = 'none'
-            }
-        })
-
-        new WOW().init();
-
-
-    </script>
-
-  </body>
+			new WOW().init();
+		</script>
+	</body>
 </html>

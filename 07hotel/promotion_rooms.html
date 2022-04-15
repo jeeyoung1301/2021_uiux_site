@@ -1,343 +1,727 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
 
-    <title>hotel</title>
-  </head>
-  <body>
-      <header id="subheaderWrap">
-            <div class="topWrap">
-                <div class="top clearfix">
-                    <h1 class="m-0"><a href="index.html"><img src="images/gnb_logo_signiel.png" alt="" class=""></a></h1>
-                    <ul class="clearfix m-0 float-right util">
-                        <li class="float-left"><a href="#">글로벌</a></li>
-                        <li class="float-left ml-2"><a href="#">호텔찾기</a></li>
-                        <li class="float-left ml-2"><a href="#">멤버십</a></li>
-                        <li class="float-left ml-2"><a href="#">예약조회</a></li>
-                        <li class="float-left ml-2"><a href="#">로그인</a></li>
-                        <li class="lan float-left ml-2">
-                            <a class="nav-link dropdown-toggle p-0 pl-4" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">한국어</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item ml-4" href="#">English</a>
-                                <a class="dropdown-item ml-4" href="#">日本語</a>
-                                <a class="dropdown-item ml-4" href="#">中文(简体字)</a>
-                            </div>
-                        </li>
-                        <li class="currency float-left ml-2">
-                            <a class="nav-link dropdown-toggle p-0" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">KRW</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Australia (AUD)</a>
-                                <a class="dropdown-item" href="#">Canada (CAD)</a>
-                                <a class="dropdown-item" href="#">中國 (CNY)</a>
-                                <a class="dropdown-item" href="#">EU (EUR)</a>
-                                <a class="dropdown-item" href="#">Hong Kong (HKD)</a>
-                                <a class="dropdown-item" href="#">日本 (JPY)</a>
-                                <a class="dropdown-item" href="#">Россия (RUB)</a>
-                                <a class="dropdown-item" href="#">USA (USD)</a>
-                                <a class="dropdown-item" href="#">Việt Nam (VND)</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="navWrap">
-                <nav class="navbar navbar-expand-md navbar-light pl-3 pr-3 pl-md-0 pr-md-0 d-xl-block">
-                    <a class="navbar-brand" href="index.html"><img src="images/gnb_logo_signiel.png" alt=""></a>
-                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <div class="mo-login mt-3 pb-2">
-                            <a href="#!">로그인 &#10148;</a>
-                            <a href="#!">회원가입</a>
-                        </div>
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white d-block d-md-none" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">객실예약</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white" href="sig_intro.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">시그니엘 서울 소개</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="sig_intro.html">시그니엘 서울 소개</a>
-                                    <a class="dropdown-item" href="#">시그니엘 서울 위치</a>
-                                    <a class="dropdown-item" href="#">주요명소</a>
-                                    <a class="dropdown-item" href="#">공지사항</a>
-                                    <a class="dropdown-item" href="#">갤러리</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">객실</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="rooms_delux.html">그랜드 디럭스</a>
-                                    <a class="dropdown-item" href="#">프리미어</a>
-                                    <a class="dropdown-item" href="#">시그니엘 프리미어</a>
-                                    <a class="dropdown-item" href="#">스위트</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">스페셜 오퍼</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="promotion_rooms.html">객실 프로모션</a>
-                                    <a class="dropdown-item" href="#">식음 프로모션</a>
-                                    <a class="dropdown-item" href="#">호텔 이벤트</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">다이닝</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="#">레스토랑</a>
-                                    <a class="dropdown-item" href="#">멤버스 레스토랑</a>
-                                    <a class="dropdown-item" href="#">바&라운지</a>
-                                    <a class="dropdown-item" href="#">베이커리</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">부대시설</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="#">스파&피트니스</a>
-                                    <a class="dropdown-item" href="#">서비스</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">웨딩&컨벤션</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="#">호텔 웨딩</a>
-                                    <a class="dropdown-item" href="#">호텔 컨벤션</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <button class="btn text-white btn-sm">LOTTE HOTEL REWARDS</button>
-                        <div class="mo-util">
-                            <li class="mo-lan ml-2">
-                                <a class="nav-link dropdown-toggle p-0" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">한국어</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item ml-4" href="#">English</a>
-                                    <a class="dropdown-item ml-4" href="#">日本語</a>
-                                    <a class="dropdown-item ml-4" href="#">中文(简体字)</a>
-                                </div>
-                            </li>
-                            <li class="mo-currency ml-2">
-                                <a class="nav-link dropdown-toggle p-0" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">KRW</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="#">Australia (AUD)</a>
-                                    <a class="dropdown-item" href="#">Canada (CAD)</a>
-                                    <a class="dropdown-item" href="#">中國 (CNY)</a>
-                                    <a class="dropdown-item" href="#">EU (EUR)</a>
-                                    <a class="dropdown-item" href="#">Hong Kong (HKD)</a>
-                                    <a class="dropdown-item" href="#">日本 (JPY)</a>
-                                    <a class="dropdown-item" href="#">Россия (RUB)</a>
-                                    <a class="dropdown-item" href="#">USA (USD)</a>
-                                    <a class="dropdown-item" href="#">Việt Nam (VND)</a>
-                                </div>
-                            </li>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-      </header>
+		<title>hotel</title>
+	</head>
+	<body>
+		<header id="headerWrap">
+			<div class="topWrap">
+				<div class="top clearfix">
+					<div class="m-0 logo">
+						<a href="index.html"
+							><img
+								src="images/gnb_logo_signiel.png"
+								alt=""
+								class=""
+						/></a>
+					</div>
+					<ul class="clearfix m-0 float-right util">
+						<li class="float-left"><a href="#">글로벌</a></li>
+						<li class="float-left ml-2">
+							<a href="#">호텔찾기</a>
+						</li>
+						<li class="float-left ml-2"><a href="#">멤버십</a></li>
+						<li class="float-left ml-2">
+							<a href="#">예약조회</a>
+						</li>
+						<li class="float-left ml-2"><a href="#">로그인</a></li>
+						<li class="lan float-left ml-2">
+							<a
+								class="nav-link dropdown-toggle p-0 pl-4"
+								href="#"
+								id="dropdownId"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>한국어</a
+							>
+							<div
+								class="dropdown-menu"
+								aria-labelledby="dropdownId"
+								style="z-index: 1112"
+							>
+								<a class="dropdown-item ml-4" href="#"
+									>English</a
+								>
+								<a class="dropdown-item ml-4" href="#"
+									>日本語</a
+								>
+								<a class="dropdown-item ml-4" href="#"
+									>中文(简体字)</a
+								>
+							</div>
+						</li>
+						<li class="currency float-left ml-2">
+							<a
+								class="nav-link dropdown-toggle p-0"
+								href="#"
+								id="dropdownId"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>KRW</a
+							>
+							<div
+								class="dropdown-menu"
+								aria-labelledby="dropdownId"
+								style="z-index: 1112"
+							>
+								<a class="dropdown-item" href="#"
+									>Australia (AUD)</a
+								>
+								<a class="dropdown-item" href="#"
+									>Canada (CAD)</a
+								>
+								<a class="dropdown-item" href="#">中國 (CNY)</a>
+								<a class="dropdown-item" href="#">EU (EUR)</a>
+								<a class="dropdown-item" href="#"
+									>Hong Kong (HKD)</a
+								>
+								<a class="dropdown-item" href="#">日本 (JPY)</a>
+								<a class="dropdown-item" href="#"
+									>Россия (RUB)</a
+								>
+								<a class="dropdown-item" href="#">USA (USD)</a>
+								<a class="dropdown-item" href="#"
+									>Việt Nam (VND)</a
+								>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="navWrap">
+				<nav
+					class="navbar navbar-expand-lg navbar-light pl-3 pr-3 pl-md-0 pr-md-0 d-xl-block"
+				>
+					<a class="navbar-brand" href="index.html"
+						><img src="images/gnb_logo_signiel.png" alt=""
+					/></a>
+					<button
+						class="navbar-toggler d-lg-none"
+						type="button"
+						data-toggle="collapse"
+						data-target="#collapsibleNavId"
+						aria-controls="collapsibleNavId"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="collapsibleNavId">
+						<div class="mo-login mt-3 pb-2">
+							<a href="#!">로그인 &#10148;</a>
+							<a href="#!">회원가입</a>
+						</div>
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link text-white d-block d-lg-none"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>객실예약</a
+								>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link text-white"
+									href="sig_intro.html"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>시그니엘 서울 소개</a
+								>
+								<div
+									class="dropdown-menu clearfix"
+									aria-labelledby="dropdownId"
+								>
+									<a
+										class="dropdown-item"
+										href="sig_intro.html"
+										>시그니엘 서울 소개</a
+									>
+									<a class="dropdown-item" href="#"
+										>시그니엘 서울 위치</a
+									>
+									<a class="dropdown-item" href="#"
+										>주요명소</a
+									>
+									<a class="dropdown-item" href="#"
+										>공지사항</a
+									>
+									<a class="dropdown-item" href="#">갤러리</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link text-white"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>객실</a
+								>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownId"
+								>
+									<a
+										class="dropdown-item"
+										href="rooms_delux.html"
+										>그랜드 디럭스</a
+									>
+									<a class="dropdown-item" href="#"
+										>프리미어</a
+									>
+									<a class="dropdown-item" href="#"
+										>시그니엘 프리미어</a
+									>
+									<a class="dropdown-item" href="#">스위트</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link text-white"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>스페셜 오퍼</a
+								>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownId"
+								>
+									<a class="dropdown-item" href="#"
+										>객실 프로모션</a
+									>
+									<a class="dropdown-item" href="#"
+										>식음 프로모션</a
+									>
+									<a class="dropdown-item" href="#"
+										>호텔 이벤트</a
+									>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link text-white"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>다이닝</a
+								>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownId"
+								>
+									<a class="dropdown-item" href="#"
+										>레스토랑</a
+									>
+									<a class="dropdown-item" href="#"
+										>멤버스 레스토랑</a
+									>
+									<a class="dropdown-item" href="#"
+										>바&라운지</a
+									>
+									<a class="dropdown-item" href="#"
+										>베이커리</a
+									>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link text-white"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>부대시설</a
+								>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownId"
+								>
+									<a class="dropdown-item" href="#"
+										>스파&피트니스</a
+									>
+									<a class="dropdown-item" href="#">서비스</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link text-white"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>웨딩&컨벤션</a
+								>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownId"
+								>
+									<a class="dropdown-item" href="#"
+										>호텔 웨딩</a
+									>
+									<a class="dropdown-item" href="#"
+										>호텔 컨벤션</a
+									>
+								</div>
+							</li>
+						</ul>
+						<button
+							class="btn text-white btn-sm"
+							onclick="location.href='https://www.lottehotel.com/global/ko/lotte-hotel-rewards.html'"
+						>
+							LOTTE HOTEL REWARDS
+						</button>
+						<ul class="mo-util">
+							<li class="mo-lan ml-2">
+								<a
+									class="nav-link dropdown-toggle p-0"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>한국어</a
+								>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownId"
+								>
+									<a class="dropdown-item ml-4" href="#"
+										>English</a
+									>
+									<a class="dropdown-item ml-4" href="#"
+										>日本語</a
+									>
+									<a class="dropdown-item ml-4" href="#"
+										>中文(简体字)</a
+									>
+								</div>
+							</li>
+							<li class="mo-currency ml-2">
+								<a
+									class="nav-link dropdown-toggle p-0"
+									href="#"
+									id="dropdownId"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									>KRW</a
+								>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownId"
+								>
+									<a class="dropdown-item" href="#"
+										>Australia (AUD)</a
+									>
+									<a class="dropdown-item" href="#"
+										>Canada (CAD)</a
+									>
+									<a class="dropdown-item" href="#"
+										>中國 (CNY)</a
+									>
+									<a class="dropdown-item" href="#"
+										>EU (EUR)</a
+									>
+									<a class="dropdown-item" href="#"
+										>Hong Kong (HKD)</a
+									>
+									<a class="dropdown-item" href="#"
+										>日本 (JPY)</a
+									>
+									<a class="dropdown-item" href="#"
+										>Россия (RUB)</a
+									>
+									<a class="dropdown-item" href="#"
+										>USA (USD)</a
+									>
+									<a class="dropdown-item" href="#"
+										>Việt Nam (VND)</a
+									>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
 
-      <div class="container promotionRooms">
-          <div class="row">
-              <div class="subLocation pl-2 col-12 pb-5 pl-1 pt-3">
-                &#8636; <i class="fas fa-home"><a href="index.html"></a></i> | 스페셜 오퍼 | 객실 프로모션
-              </div>
-              <div class="subTitle text-center">
-                  <h4>객실 프로모션</h4>
-                  <p>시그니엘 서울에서만 만날 수 있는<br>특별한 호텔 패키지 및 프로모션 상품들을 확인하세요.</p>
-              </div>
-              <div class="col-12 text-center pc"><img src="images/subpage/promotion_rooms_pc.png" alt=""></div>
-              <div class="col-12 text-center mo"><img src="images/subpage/promotion_rooms_mo.png" alt=""></div>
-          </div>
-      </div>
+		<div class="container promotionRooms">
+			<div class="row">
+				<div class="subLocation pl-2 col-12 pb-5 pl-1 pt-3">
+					&#8636;
+					<i class="fas fa-home"><a href="index.html"></a></i> |
+					스페셜 오퍼 | 객실 프로모션
+				</div>
+				<div class="subTitle text-center pb-md-5 pb-3">
+					<h4>객실 프로모션</h4>
+					<p>
+						시그니엘 서울에서만 만날 수 있는<br />특별한 호텔 패키지
+						및 프로모션 상품들을 확인하세요.
+					</p>
+				</div>
+				<div class="col-12 text-center pc">
+					<img src="images/subpage/promotion_rooms_pc.png" alt="" />
+				</div>
+				<div class="col-12 text-center mo">
+					<img src="images/subpage/promotion_rooms_mo.png" alt="" />
+				</div>
+			</div>
+		</div>
 
-      <footer class="footer">
-          <div class="container p-0">
-              <div class="footer-top">
-                <a href="#!" class="mt-3"><img src="images/footer-logo.png" alt=""></a>
-                <div class="app">
-                    <div class="application">
-                        <a href="#!" class="pr-1"><img src="images/footer_appstore.png" alt=""></a>
-                        <a href="#!" class="pr-1"><img src="images/footer-googleplay.png" alt=""></a>
-                    </div>
-                    <div class="sns">
-                        <a href="#!" class="pr-1"><img src="images/footer-lhm.png" alt=""></a>
-                        <a href="#!" class="pr-1"><img src="images/footer-sns-tripa.png" alt=""></a>
-                        <a href="#!" class="pr-1"><img src="images/footer-sns-facebook.png" alt=""></a>
-                        <a href="#!" class="pr-1"><img src="images/footer-sns-instagram.png" alt=""></a>
-                        <a href="#!" class="pr-1"><img src="images/footer-sns-youtube.png" alt=""></a>
-                        <a href="#!"><img src="images/footer-sns-blog.png" alt=""></a>
-                    </div>
-                </div>
-              </div>
-              <div class="row py-5">
-                  <div class="col-12 col-md-8 left pr-0">
-                      <div class="info text-white">
-                          <p>(주)호텔롯데  05551,서울특별시 송파구 올림픽로 300<br> 롯데월드타워 76-101층/02-3213-1000</p>
-                          <p>대표이사 김현식/사업자등록번호 104-81-25980/</p>
-                          <p>통신판매신고번호 중구02802호</p>
-                      </div>
-                  </div>
-                  <div class="col-4 right">
-                      <div class="row">
-                          <div class="col-4">
-                              <ul>
-                                  <li><a href="#!">호텔찾기</a></li>
-                                  <li><a href="#!">롯데호텔 소개</a></li>
-                                  <li><a href="#!">브랜드 소개</a></li>
-                                  <li><a href="#!">수상</a></li>
-                                  <li><a href="#!">갤러리</a></li>
-                              </ul>
-                          </div>
-                          <div class="col-4">
-                              <ul>
-                                  <li><a href="#!">고객의 소리</a></li>
-                                  <li><a href="#!">지점별 연락처</a></li>
-                                  <li><a href="#!">준법 HOT LINE</a></li>
-                                  <li><a href="#!">컴플라이언스</a></li>
-                                  <li><a href="#!">채용</a></li>
-                              </ul>
-                          </div>
-                          <div class="col-4">
-                              <ul>
-                                  <li><a href="#!">서비스아카데미</a></li>
-                                  <li><a href="#!">신규 개발</a></li>
-                                  <li><a href="#!">임직원</a></li>
-                                  <li><a href="#!">사이트맵</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="footer-bottom text-white py-4">
-            <div class="txt">
-                <div class="left">
-                    <p class="mb-0">개인정보처리방침 | 영상정보처리기기운영관리방침 <span>| 이용약관 | 롯데호텔 리워즈 회원약관</span></p>
-                </div>
-                <form action="#" method="post" class="form">
-                    <fieldset>
-                        <select name="familySite" id="site">
-                            <option value=""><a href="#!">패밀리사이트</a></option>
-                            <option value="롯데지주"><a href="#!">롯데지주</a></option>
-                            <option value="롯데건설"><a href="#!">롯데건설</a></option>
-                            <option value="롯데글로벌로지스"><a href="#!">롯데글로벌로지스</a></option>
-                            <option value="롯데기공"><a href="#!">롯데기공</a></option>
-                            <option value="롯데렌탈"><a href="#!">롯데렌탈</a></option>
-                            <option value="롯데비피화학"><a href="#!">롯데비피화학</a></option>
-                            <option value="롯데면세점제주"><a href="#!">롯데면세점제주</a></option>
-                            <option value="롯데멤버스(L.POINT)"><a href="#!">롯데멤버스(L.POINT)</a></option>
-                            <option value="롯데물산"><a href="#!">롯데물산</a></option>
-                            <option value="롯데스카이힐CC"><a href="#!">롯데스카이힐CC</a></option>
-                            <option value="롯데상사"><a href="#!">롯데상사</a></option>
-                            <option value="롯데시네마"><a href="#!">롯데시네마</a></option>
-                            <option value="롯데아사히주류"><a href="#!">롯데아사히주류</a></option>
-                            <option value="롯데알미늄"><a href="#!">롯데알미늄</a></option>
-                            <option value="롯데엠시시"><a href="#!">롯데엠시시</a></option>
-                            <option value="롯데월드"><a href="#!">롯데월드</a></option>
-                            <option value="롯데유통사업본부"><a href="#!">롯데유통사업본부</a></option>
-                            <option value="롯데인재개발원"><a href="#!">롯데인재개발원</a></option>
-                            <option value="롯데자산개발"><a href="#!">롯데자산개발</a></option>
-                            <option value="롯데자이언츠"><a href="#!">롯데자이언츠</a></option>
-                            <option value="롯데정밀화학"><a href="#!">롯데정밀화학</a></option>
-                            <option value="롯데정보통신"><a href="#!">롯데정보통신</a></option>
-                            <option value="롯데제과"><a href="#!">롯데제과</a></option>
-                            <option value="롯데제이티비"><a href="#!">롯데제이티비</a></option>
-                            <option value="롯데중앙연구소"><a href="#!">롯데중앙연구소</a></option>
-                            <option value="롯데채용사이트"><a href="#!">롯데채용사이트</a></option>
-                            <option value="롯데칠성음료(음료BG)"><a href="#!">롯데칠성음료(음료BG)</a></option>
-                            <option value="롯데칠성음료(주류BG)"><a href="#!">롯데칠성음료(주류BG)</a></option>
-                            <option value="롯데캐피탈"><a href="#!">롯데캐피탈</a></option>
-                            <option value="롯데케미칼"><a href="#!">롯데케미칼</a></option>
-                            <option value="롯데푸드"><a href="#!">롯데푸드</a></option>
-                            <option value="롯데하이마트"><a href="#!">롯데하이마트</a></option>
-                            <option value="롯데쇼핑e커머스"><a href="#!">롯데쇼핑e커머스</a></option>
-                            <option value="롯데호텔"><a href="#!">롯데호텔</a></option>
-                            <option value="대홍기획"><a href="#!">대홍기획</a></option>
-                            <option value="캐논코리아비즈니스솔루션"><a href="#!">캐논코리아비즈니스솔루션</a></option>
-                            <option value="코리아세븐"><a href="#!">코리아세븐</a></option>
-                            <option value="한국후지필름"><a href="#!">한국후지필름</a></option>
-                            <option value="롯데백화점"><a href="#!">롯데백화점</a></option>
-                            <option value="롯데마트"><a href="#!">롯데마트</a></option>
-                            <option value="롯데슈퍼"><a href="#!">롯데슈퍼</a></option>
-                            <option value="롯데홈쇼핑"><a href="#!">롯데홈쇼핑</a></option>
-                            <option value="롯데롭스"><a href="#!">롯데롭스</a></option>
-                            <option value="FRL코리아"><a href="#!">FRL코리아</a></option>
-                            <option value="롯데건설 CM사업본부"><a href="#!">롯데건설 CM사업본부</a></option>
-                            <option value="롯데뮤지엄"><a href="#!">롯데뮤지엄</a></option>
-                            <option value="롯데사회공헌사이트"><a href="#!">롯데사회공헌사이트</a></option>
-                            <option value="롯데지알에스"><a href="#!">롯데지알에스</a></option>
-                            <option value="롯데콘서트홀"><a href="#!">롯데콘서트홀</a></option>
-                            <option value="부산롯데호텔"><a href="#!">부산롯데호텔</a></option>
-                            <option value="롯데면세점부산"><a href="#!">롯데면세점부산</a></option>
-                        </select>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-      </footer>
+		<footer class="footer">
+			<div class="container p-0">
+				<div class="footer-top">
+					<a href="#!" class="mt-3"
+						><img src="images/footer-logo.png" alt=""
+					/></a>
+					<div class="app">
+						<div class="application">
+							<a href="#!" class="pr-1"
+								><img src="images/footer_appstore.png" alt=""
+							/></a>
+							<a href="#!" class="pr-1"
+								><img src="images/footer-googleplay.png" alt=""
+							/></a>
+						</div>
+						<div class="sns">
+							<a href="#!" class="pr-1"
+								><img src="images/footer-lhm.png" alt=""
+							/></a>
+							<a href="#!" class="pr-1"
+								><img src="images/footer-sns-tripa.png" alt=""
+							/></a>
+							<a href="#!" class="pr-1"
+								><img
+									src="images/footer-sns-facebook.png"
+									alt=""
+							/></a>
+							<a href="#!" class="pr-1"
+								><img
+									src="images/footer-sns-instagram.png"
+									alt=""
+							/></a>
+							<a href="#!" class="pr-1"
+								><img
+									src="images/footer-sns-youtube.png"
+									alt=""
+							/></a>
+							<a href="#!"
+								><img src="images/footer-sns-blog.png" alt=""
+							/></a>
+						</div>
+					</div>
+				</div>
+				<div class="row py-5">
+					<div class="col-12 col-md-8 left pr-0">
+						<div class="info text-white">
+							<p>
+								(주)호텔롯데 05551,서울특별시 송파구 올림픽로
+								300<br />
+								롯데월드타워 76-101층/02-3213-1000
+							</p>
+							<p>대표이사 김현식/사업자등록번호 104-81-25980/</p>
+							<p>통신판매신고번호 중구02802호</p>
+						</div>
+					</div>
+					<div class="col-4 right">
+						<div class="row">
+							<div class="col-4">
+								<ul>
+									<li><a href="#!">호텔찾기</a></li>
+									<li><a href="#!">롯데호텔 소개</a></li>
+									<li><a href="#!">브랜드 소개</a></li>
+									<li><a href="#!">수상</a></li>
+									<li><a href="#!">갤러리</a></li>
+								</ul>
+							</div>
+							<div class="col-4">
+								<ul>
+									<li><a href="#!">고객의 소리</a></li>
+									<li><a href="#!">지점별 연락처</a></li>
+									<li><a href="#!">준법 HOT LINE</a></li>
+									<li><a href="#!">컴플라이언스</a></li>
+									<li><a href="#!">채용</a></li>
+								</ul>
+							</div>
+							<div class="col-4">
+								<ul>
+									<li><a href="#!">서비스아카데미</a></li>
+									<li><a href="#!">신규 개발</a></li>
+									<li><a href="#!">임직원</a></li>
+									<li><a href="#!">사이트맵</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom text-white py-4">
+				<div class="txt">
+					<div class="left">
+						<p class="mb-0">
+							개인정보처리방침 | 영상정보처리기기운영관리방침
+							<span>| 이용약관 | 롯데호텔 리워즈 회원약관</span>
+						</p>
+					</div>
+					<form action="#" method="post" class="form">
+						<fieldset>
+							<select name="familySite" id="site">
+								<option value="">
+									<a href="#!">패밀리사이트</a>
+								</option>
+								<option value="롯데지주">
+									<a href="#!">롯데지주</a>
+								</option>
+								<option value="롯데건설">
+									<a href="#!">롯데건설</a>
+								</option>
+								<option value="롯데글로벌로지스">
+									<a href="#!">롯데글로벌로지스</a>
+								</option>
+								<option value="롯데기공">
+									<a href="#!">롯데기공</a>
+								</option>
+								<option value="롯데렌탈">
+									<a href="#!">롯데렌탈</a>
+								</option>
+								<option value="롯데비피화학">
+									<a href="#!">롯데비피화학</a>
+								</option>
+								<option value="롯데면세점제주">
+									<a href="#!">롯데면세점제주</a>
+								</option>
+								<option value="롯데멤버스(L.POINT)">
+									<a href="#!">롯데멤버스(L.POINT)</a>
+								</option>
+								<option value="롯데물산">
+									<a href="#!">롯데물산</a>
+								</option>
+								<option value="롯데스카이힐CC">
+									<a href="#!">롯데스카이힐CC</a>
+								</option>
+								<option value="롯데상사">
+									<a href="#!">롯데상사</a>
+								</option>
+								<option value="롯데시네마">
+									<a href="#!">롯데시네마</a>
+								</option>
+								<option value="롯데아사히주류">
+									<a href="#!">롯데아사히주류</a>
+								</option>
+								<option value="롯데알미늄">
+									<a href="#!">롯데알미늄</a>
+								</option>
+								<option value="롯데엠시시">
+									<a href="#!">롯데엠시시</a>
+								</option>
+								<option value="롯데월드">
+									<a href="#!">롯데월드</a>
+								</option>
+								<option value="롯데유통사업본부">
+									<a href="#!">롯데유통사업본부</a>
+								</option>
+								<option value="롯데인재개발원">
+									<a href="#!">롯데인재개발원</a>
+								</option>
+								<option value="롯데자산개발">
+									<a href="#!">롯데자산개발</a>
+								</option>
+								<option value="롯데자이언츠">
+									<a href="#!">롯데자이언츠</a>
+								</option>
+								<option value="롯데정밀화학">
+									<a href="#!">롯데정밀화학</a>
+								</option>
+								<option value="롯데정보통신">
+									<a href="#!">롯데정보통신</a>
+								</option>
+								<option value="롯데제과">
+									<a href="#!">롯데제과</a>
+								</option>
+								<option value="롯데제이티비">
+									<a href="#!">롯데제이티비</a>
+								</option>
+								<option value="롯데중앙연구소">
+									<a href="#!">롯데중앙연구소</a>
+								</option>
+								<option value="롯데채용사이트">
+									<a href="#!">롯데채용사이트</a>
+								</option>
+								<option value="롯데칠성음료(음료BG)">
+									<a href="#!">롯데칠성음료(음료BG)</a>
+								</option>
+								<option value="롯데칠성음료(주류BG)">
+									<a href="#!">롯데칠성음료(주류BG)</a>
+								</option>
+								<option value="롯데캐피탈">
+									<a href="#!">롯데캐피탈</a>
+								</option>
+								<option value="롯데케미칼">
+									<a href="#!">롯데케미칼</a>
+								</option>
+								<option value="롯데푸드">
+									<a href="#!">롯데푸드</a>
+								</option>
+								<option value="롯데하이마트">
+									<a href="#!">롯데하이마트</a>
+								</option>
+								<option value="롯데쇼핑e커머스">
+									<a href="#!">롯데쇼핑e커머스</a>
+								</option>
+								<option value="롯데호텔">
+									<a href="#!">롯데호텔</a>
+								</option>
+								<option value="대홍기획">
+									<a href="#!">대홍기획</a>
+								</option>
+								<option value="캐논코리아비즈니스솔루션">
+									<a href="#!">캐논코리아비즈니스솔루션</a>
+								</option>
+								<option value="코리아세븐">
+									<a href="#!">코리아세븐</a>
+								</option>
+								<option value="한국후지필름">
+									<a href="#!">한국후지필름</a>
+								</option>
+								<option value="롯데백화점">
+									<a href="#!">롯데백화점</a>
+								</option>
+								<option value="롯데마트">
+									<a href="#!">롯데마트</a>
+								</option>
+								<option value="롯데슈퍼">
+									<a href="#!">롯데슈퍼</a>
+								</option>
+								<option value="롯데홈쇼핑">
+									<a href="#!">롯데홈쇼핑</a>
+								</option>
+								<option value="롯데롭스">
+									<a href="#!">롯데롭스</a>
+								</option>
+								<option value="FRL코리아">
+									<a href="#!">FRL코리아</a>
+								</option>
+								<option value="롯데건설 CM사업본부">
+									<a href="#!">롯데건설 CM사업본부</a>
+								</option>
+								<option value="롯데뮤지엄">
+									<a href="#!">롯데뮤지엄</a>
+								</option>
+								<option value="롯데사회공헌사이트">
+									<a href="#!">롯데사회공헌사이트</a>
+								</option>
+								<option value="롯데지알에스">
+									<a href="#!">롯데지알에스</a>
+								</option>
+								<option value="롯데콘서트홀">
+									<a href="#!">롯데콘서트홀</a>
+								</option>
+								<option value="부산롯데호텔">
+									<a href="#!">부산롯데호텔</a>
+								</option>
+								<option value="롯데면세점부산">
+									<a href="#!">롯데면세점부산</a>
+								</option>
+							</select>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</footer>
 
-      <button class="btn scrollTop text-white">Top</button>
+		<button class="btn scrollTop text-white">Top</button>
 
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="js/jquery-3.1.1.min.js"></script>
+		<script>
+			const nav = document.querySelector(".navWrap");
+			let scrollY = window.pageYOffset;
+			const btt = document.querySelector(".scrollTop");
+			const docElem = document.documentElement;
+			let docHeight = Math.max(
+				docElem.scrollHeight,
+				docElem.offsetHeight
+			);
+			let scrollPos;
+			let offset = docHeight / 5;
 
-    <script>
-        const nav = document.querySelector('.navWrap');
-        let scrollY = window.pageYOffset;
-        const btt = document.querySelector('.scrollTop');
-        const docElem = document.documentElement;
-        let docHeight = Math.max(docElem.scrollHeight, docElem.offsetHeight);
-        let scrollPos;
-        let offset = docHeight / 5
+			window.addEventListener("scroll", function () {
+				scrollY = window.pageYOffset;
+				if (scrollY > 48) {
+					nav.classList.add("fixed-top");
+				} else {
+					nav.classList.remove("fixed-top");
+				}
 
-        window.addEventListener('scroll',function(){
-            scrollY = window.pageYOffset;
-            if(scrollY > 48){
-                nav.classList.add('fixed-top')
-            }
-            else{
-                nav.classList.remove('fixed-top')
-            }
-            
+				scrollPos = docElem.scrollTop;
 
-            scrollPos = docElem.scrollTop;
-        
-            if(scrollPos > offset){
-                btt.classList.add('active')
-            }
-            else{
-                btt.classList.remove('active')
-            }
+				if (scrollPos > offset) {
+					btt.classList.add("active");
+				} else {
+					btt.classList.remove("active");
+				}
+			});
 
-
-        });
-
-
-        btt.addEventListener('click',function(e){
-            e.preventDefault();
-            scrollToTop()
-        });
-        function scrollToTop(){
-            let scrollInterval = setInterval(function(){
-                if(scrollPos != 0){
-                    window.scrollBy(0,-55);
-                }
-                else{
-                    clearInterval(scrollInterval)
-                }
-            },10)
-        };
-
-    </script>
-
-  </body>
+			btt.addEventListener("click", function (e) {
+				e.preventDefault();
+				scrollToTop();
+			});
+			function scrollToTop() {
+				let scrollInterval = setInterval(function () {
+					if (scrollPos != 0) {
+						window.scrollBy(0, -55);
+					} else {
+						clearInterval(scrollInterval);
+					}
+				}, 10);
+			}
+		</script>
+	</body>
 </html>
