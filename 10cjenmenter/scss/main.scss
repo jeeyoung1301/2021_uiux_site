@@ -542,7 +542,7 @@ main {
 				height: 275px;
 			}
 		}
-		section.latestNews {
+		section.newsRoom {
 			.title {
 				max-width: 955px;
 				align-items: center;
@@ -597,7 +597,7 @@ main {
 				}
 			}
 		}
-		section.latestNews {
+		section.newsRoom {
 			.title {
 				max-width: 990px;
 			}
@@ -722,7 +722,7 @@ main {
 				}
 			}
 		}
-		section.latestNews {
+		section.newsRoom {
 			.title {
 				max-width: 760px;
 				h3 {
@@ -863,7 +863,6 @@ main {
 				align-items: center;
 				max-width: 570px;
 				.txt {
-					align-items: center;
 					h3 {
 						font-size: 2.1rem;
 					}
@@ -890,7 +889,7 @@ main {
 				}
 			}
 		}
-		section.latestNews {
+		section.newsRoom {
 			.title {
 				max-width: 570px;
 				h3 {
@@ -976,7 +975,6 @@ main {
 				grid-template-columns: repeat(2, 1fr);
 				grid-template-rows: 40px 1fr 1fr 1fr 1fr;
 				.title {
-					align-items: center;
 					h3 {
 						font-size: 1.5rem;
 					}
@@ -1020,7 +1018,7 @@ main {
 				}
 			}
 		}
-		section.latestNews {
+		section.newsRoom {
 			display: flex;
 			flex-direction: column;
 			align-items: center;

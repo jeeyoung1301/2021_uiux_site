@@ -1360,16 +1360,16 @@ main section.newsRoom .con article:last-child {
     max-width: 955px;
     height: 275px;
   }
-  main section.latestNews .title {
+  main section.newsRoom .title {
     max-width: 955px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  main section.latestNews .title h3 {
+  main section.newsRoom .title h3 {
     font-size: 2.5rem;
   }
-  main section.latestNews .con {
+  main section.newsRoom .con {
     max-width: 955px;
     height: 240px;
   }
@@ -1401,14 +1401,14 @@ main section.newsRoom .con article:last-child {
   main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner:hover .overlay {
     height: 50%;
   }
-  main section.latestNews .title {
+  main section.newsRoom .title {
     max-width: 990px;
   }
-  main section.latestNews .con {
+  main section.newsRoom .con {
     max-width: 990px;
     height: 250px;
   }
-  main section.latestNews .con article .txt h4 {
+  main section.newsRoom .con article .txt h4 {
     font-size: 1rem;
     line-height: 1.3rem;
   }
@@ -1522,31 +1522,31 @@ main section.newsRoom .con article:last-child {
         -ms-flex-align: center;
             align-items: center;
   }
-  main section.latestNews .title {
+  main section.newsRoom .title {
     max-width: 760px;
   }
-  main section.latestNews .title h3 {
+  main section.newsRoom .title h3 {
     font-size: 2rem;
   }
-  main section.latestNews .con {
+  main section.newsRoom .con {
     max-width: 760px;
     height: auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  main section.latestNews .con article {
+  main section.newsRoom .con article {
     width: 50%;
     margin-right: 0;
     padding-right: 1rem;
     padding-bottom: 1rem;
   }
-  main section.latestNews .con article:nth-of-type(2) {
+  main section.newsRoom .con article:nth-of-type(2) {
     padding-right: 0;
   }
-  main section.latestNews .con article .txt {
+  main section.newsRoom .con article .txt {
     height: 24%;
   }
-  main section.latestNews .con article .txt h4 {
+  main section.newsRoom .con article .txt h4 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -1555,7 +1555,7 @@ main section.newsRoom .con article:last-child {
     font-size: 1rem;
     margin-bottom: 5px;
   }
-  main section.latestNews .con article .articleImg {
+  main section.newsRoom .con article .articleImg {
     height: 76%;
   }
 }
@@ -1659,11 +1659,6 @@ main section.newsRoom .con article:last-child {
             align-items: center;
     max-width: 570px;
   }
-  main section.featuredContents .title .txt {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   main section.featuredContents .title .txt h3 {
     font-size: 2.1rem;
   }
@@ -1684,27 +1679,27 @@ main section.newsRoom .con article:last-child {
   main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .overlay.longTitle .title h {
     font-size: 1rem;
   }
-  main section.latestNews .title {
+  main section.newsRoom .title {
     max-width: 570px;
   }
-  main section.latestNews .title h3 {
+  main section.newsRoom .title h3 {
     font-size: 2.1rem;
   }
-  main section.latestNews .con {
+  main section.newsRoom .con {
     max-width: 570px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main section.latestNews .con article {
+  main section.newsRoom .con article {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding-right: 0;
   }
-  main section.latestNews .con article .txt {
+  main section.newsRoom .con article .txt {
     width: 300px;
     height: auto;
     display: -webkit-box;
@@ -1717,17 +1712,17 @@ main section.newsRoom .con article:last-child {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  main section.latestNews .con article .txt h4 {
+  main section.newsRoom .con article .txt h4 {
     -webkit-line-clamp: 3;
     font-size: 1.1rem;
     line-height: 1.5rem;
     font-weight: lighter;
   }
-  main section.latestNews .con article .articleImg {
+  main section.newsRoom .con article .articleImg {
     width: 270px;
     height: auto;
   }
-  main section.latestNews .con article .articleImg img {
+  main section.newsRoom .con article .articleImg img {
     width: 100%;
   }
 }
@@ -1771,11 +1766,6 @@ main section.newsRoom .con article:last-child {
     -ms-grid-rows: 40px 1fr 1fr 1fr 1fr;
         grid-template-rows: 40px 1fr 1fr 1fr 1fr;
   }
-  main section.businessWrap .business .title {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   main section.businessWrap .business .title h3 {
     font-size: 1.5rem;
   }
@@ -1806,7 +1796,7 @@ main section.newsRoom .con article:last-child {
   main section.featuredContents .slide02 .swiper-wrapper .swiper-slide .inner .overlay .title h4 {
     font-size: 1.1rem;
   }
-  main section.latestNews {
+  main section.newsRoom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1819,27 +1809,27 @@ main section.newsRoom .con article:last-child {
             align-items: center;
     padding: 5rem 2rem;
   }
-  main section.latestNews .title {
+  main section.newsRoom .title {
     max-width: unset;
     width: 100%;
   }
-  main section.latestNews .title h3 {
+  main section.newsRoom .title h3 {
     font-size: 1.5rem;
   }
-  main section.latestNews .title button {
+  main section.newsRoom .title button {
     font-size: 3rem;
   }
-  main section.latestNews .con {
+  main section.newsRoom .con {
     width: 100%;
     max-width: unset;
   }
-  main section.latestNews .con article .txt {
+  main section.newsRoom .con article .txt {
     width: 60%;
   }
-  main section.latestNews .con article .txt h4 {
+  main section.newsRoom .con article .txt h4 {
     font-size: 1rem;
   }
-  main section.latestNews .con article .articleImg {
+  main section.newsRoom .con article .articleImg {
     width: 40%;
   }
 }
